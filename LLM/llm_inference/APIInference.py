@@ -77,10 +77,8 @@ class GPT_Inference(APIInference):
         limit_error_times = 0
         while response is None and filter_n < 10:
             try:
-                #print(message)
-                #print(requests.post("http://9.135.143.158:8998/chat1", json=message, headers=self.headers))
-                
-                response = requests.post("http://9.134.231.57:8998/chat1", json=message, headers=self.headers).json()
+               
+                response = requests.post("your api", json=message, headers=self.headers).json()
                 
                 #response = json.loads(response)
                 assert 'choices' in response
@@ -135,9 +133,9 @@ class Llama_Inference(APIInference):
         
 
         if gen_kwargs['model'] == 'Llama_7B':
-            self.api_ = 'http://11.198.27.49:8081/generate'
+            self.api_ = 'your api'
         elif gen_kwargs['model'] == 'Llama_70B':
-            self.api_ = "http://9.91.15.176:8081/generate"
+            self.api_ = "your api"
         else:
             pass
         
