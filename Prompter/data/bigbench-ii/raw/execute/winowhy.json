@@ -1,0 +1,2108 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Evaluate the reasoning in answering Winograd Schema Challenge questions",
+  "examples": {
+    "1": {
+      "input": "The city councilmen refused the demonstrators a permit because they advocated violence. The 'they' refers to the demonstrators because The demonstrators were the ones who needed a permit.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "2": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to repeat it. The 'he' refers to the lawyer because Answer should be given by Witness person only.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "3": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because Better look of drawing is Tina's.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "4": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the top of the stairs. The 'he' refers to tom because Tom threw his bag down, so he would be at the top of the stairs.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "5": {
+      "input": "The delivery truck zoomed by the school bus because it was going so fast. The 'it' refers to the delivery truck because MORE LIKELY TO REFER TO THE DELIVERY TRUCK.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "6": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too large. The 'it' refers to the trophy because suitcase was very small.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "7": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so tall. The 'he' refers to billy because short one can not see infront.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "8": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because Susan has always been a friend of Joan's.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "9": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because an upset man is more toaster.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "10": {
+      "input": "Frank felt crushed when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to bill because his wife, Kathy Lynn, had come up with the idea of a contest to find the best-.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "11": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because frank was emotiona.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "12": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because Susan gave help, she is likely to be thanked.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "13": {
+      "input": "The sculpture rolled off the shelf because it wasn't anchored. The 'it' refers to the sculpture because it seems to be the only piece of this type to be available in the UK.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "14": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because , as he said, 'I never, ever wanted to be a rapist.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "15": {
+      "input": "The sack of potatoes had been placed above the bag of flour, so it had to be moved first. The 'it' refers to the sack of potatoes because If the sack of potatoes is on top it only makes sense that it has to be moved first.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "16": {
+      "input": "The delivery truck zoomed by the school bus because it was going so slow. The 'it' refers to the school bus because school bus is very slowly.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "17": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because he is the one who is the main character in the book.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "18": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because MORE LIKELY TO REFER BILLY.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "19": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because The lawyer asked the witness.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "20": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because he was the one who 'lost' the toaster, the one who couldn't figure out how.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "21": {
+      "input": "The city councilmen refused the demonstrators a permit because they advocated violence. The 'they' refers to the demonstrators because the demonstrators commit violence so they refused to allow.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "22": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because he has taken over the role of the 'Frank' in the series, although they may still be.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "23": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because The large ball is referred to as the pronoun here a word that can function by itself as a noun phrase and that refers either to the participants in the discourse.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "24": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because it was hung just above Tina's and it did look much better with another one below it.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "25": {
+      "input": "The firemen arrived before the police because they were coming from so far away. The 'they' refers to the police because only the police could have pulled the firemen out of the burning building.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "26": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too large. The 'it' refers to the trophy because The trophy is not fit into the suitcase.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "27": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too small. The 'it' refers to the suitcase because it's more likely for the brown suitcase to be to small in order to fit the trophy inside. IF it was the trophy it wouldn't make sense.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "28": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the top of the stairs. The 'he' refers to tom because Ray was lower than Tom therefore Tom must be throwing the schoolbag down.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "29": {
+      "input": "Anna did a lot better than her good friend Lucy on the test because she had studied so hard. The 'she' refers to anna because Anna did well because she was prepared.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "30": {
+      "input": "The firemen arrived before the police because they were coming from so far away. The 'they' refers to the police because they are the ones in charge of the police station.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "31": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so tall. The 'he' refers to billy because Billy obstructed John's vision.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "32": {
+      "input": "Paul tried to call George on the phone, but he wasn't available. The 'he' refers to george because Paul not being available makes no sense.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "33": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one above it. The 'it' refers to tina's drawing because Because tina's drawing hangin on top.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "34": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because Joan was thanking Susan for helping her.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "35": {
+      "input": "Anna did a lot better than her good friend Lucy on the test because she had studied so hard. The 'she' refers to anna because people study less harder do worse.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "36": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because The large ball   was made of steel because  it crashed right through the table.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "37": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because the person that bought it is more likely to be upset if it's broken.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "38": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because of the large amount of styrofoam on it.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "39": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because He bought the toaster.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "40": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because steel would smash wood.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "41": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because he had been his friend, and he was also very close to his brother, and probably the only.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "42": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because Susan was thanked by Joan for all the help she had given.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "43": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because it's one of the best drawings of Tina that he has ever done.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "44": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because front of him because he is so tall. John couldn't see the stage with Billy.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "45": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a good start. The 'she' refers to sue because she's a better runner than Sally, who was a better runner than Sue.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "46": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because Joan is doing the thanking so she must have received the help.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "47": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because The son is being lifted and would be the one that was too heavy to lift.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "48": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too small. The 'it' refers to the suitcase because it's a part of it.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "49": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because John had a taller obstacle.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "50": {
+      "input": "The sack of potatoes had been placed above the bag of flour, so it had to be moved first. The 'it' refers to the sack of potatoes because the bag of flour was to be moved first.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "51": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because he has not been identified by the prosecution.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "52": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because billy is a short to john.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "53": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because Frank was feeling bad; therefore he must have lost.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "54": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because Because the table was crashed and a ball made of steel could crash right through it.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "55": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because Tom is the main subject of the sentence.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "56": {
+      "input": "The man couldn't lift his son because he was so weak. The 'he' refers to the man because he was probably his son or his younger son.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "57": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because The one crashing is likely to be have made of styrofoam.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "58": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because Kevin didn't say anything. Kevin didn't say anything because he's a quiet person.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "59": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because he is the one who has been doing the cooking, or perhaps the 'she' is referring to.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "60": {
+      "input": "The city councilmen refused the demonstrators a permit because they feared violence. The 'they' refers to the city councilmen because The demonstrators advocated violence.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "61": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because of the metal balls and the fact that the table was likely rolled and stored in a warehouse.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "62": {
+      "input": "The sack of potatoes had been placed below the bag of flour, so it had to be moved first. The 'it' refers to the bag of flour because I believe that it would actually refer to the flour, because one would generally remove the item on top first.  Removing the object below might cause the item on top to fall.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "63": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because it is the only large ball that has ever been found in the area in both the US and Japan.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "64": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too large. The 'it' refers to the trophy because The pronoun probably refers to a suitcase that is small because it digs the trophy.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "65": {
+      "input": "Paul tried to call George on the phone, but he wasn't successful. The 'he' refers to paul because Phone was not reached to George.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "66": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a bad start. The 'she' refers to sally because of the fact that she is a woman.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "67": {
+      "input": "The firemen arrived before the police because they were coming from so far away. The 'they' refers to the police because the firemen and police were in the process of arresting him. The police then arrested him.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "68": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because MORE LIKELY TO REFER KEVIN.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "69": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because the man is doing the lifting.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "70": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so tall. The 'he' refers to billy because John had a taller obstacle.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "71": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one above it. The 'it' refers to tina's drawing because it was drawn during the scene where Tina is getting her ass chewed off.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "72": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because steel would smash wood.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "73": {
+      "input": "The man couldn't lift his son because he was so weak. The 'he' refers to the man because when he was lifted, he was shown being in the man's place.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "74": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because Answer should be given by Witness person only.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "75": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because upset mind cannot do any work.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "76": {
+      "input": "Paul tried to call George on the phone, but he wasn't available. The 'he' refers to george because he was at the hospital for an hour or so. He was taken to the hospital by ambulance.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "77": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so tall. The 'he' refers to billy because of his stature, which makes him taller than Billy.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "78": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because helps has been given Susan.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "79": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because it's almost a direct quote from the dialogue from the movie.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "80": {
+      "input": "The firemen arrived before the police because they were coming from so far away. The 'they' refers to the police because Because they were further the police took longer to get there.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "81": {
+      "input": "Anna did a lot worse than her good friend Lucy on the test because she had studied so hard. The 'she' refers to lucy because of her bad luck.Lucy was very good at sports.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "82": {
+      "input": "The delivery truck zoomed by the school bus because it was going so fast. The 'it' refers to the delivery truck because it was moving so fast that it was not able to see the 'it' in the distance.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "83": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because he is a character from the game, and not to the person in the game.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "84": {
+      "input": "The sculpture rolled off the shelf because it wasn't anchored. The 'it' refers to the sculpture because Level is rolled off to the shelf.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "85": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to repeat it. The 'he' refers to the lawyer because he is the one who asked the question.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "86": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because he is the 'father' of Tom's wife, and the 'him' is likely to refer.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "87": {
+      "input": "Frank felt crushed when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to bill because yes, the red should refer to Frank.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "88": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too large. The 'it' refers to the trophy because the green suitcase was seen in the background of the trophy's picture.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "89": {
+      "input": "The man couldn't lift his son because he was so weak. The 'he' refers to the man because The son was being lifted therefore the man trying to lift him must be weak.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "90": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because the original script, which was to be written by Susan, was never written.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "91": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because The pronoun probably refers to Tom because he sold a toaster that was not working. And that made Frank upset.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "92": {
+      "input": "Anna did a lot better than her good friend Lucy on the test because she had studied so hard. The 'she' refers to anna because anna could won if he studied as hard.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "93": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because Tina's drawing was hng below Sam's and that made Sam's drawing look much better with another one below it.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "94": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because Because tina's drawing hangin on top.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "95": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because Tom is the main subject of the sentence.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "96": {
+      "input": "The sculpture rolled off the shelf because it wasn't level. The 'it' refers to the shelf because The shelf is supposed to be flat and leveled.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "97": {
+      "input": "The man couldn't lift his son because he was so weak. The 'he' refers to the man because he's the one to be lifted.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "98": {
+      "input": "Anna did a lot worse than her good friend Lucy on the test because she had studied so hard. The 'she' refers to lucy because studying hard would make you do better.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "99": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because The person that provided help is likely the one being thanked.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "100": {
+      "input": "The firemen arrived after the police because they were coming from so far away. The 'they' refers to the firemen because The police were farther away and arrived after the fireman.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "101": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so tall. The 'he' refers to billy because the song is about a 'h' (a unit of measurement in measurement units).\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "102": {
+      "input": "The man couldn't lift his son because he was so weak. The 'he' refers to the man because The man was so weak.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "103": {
+      "input": "The delivery truck zoomed by the school bus because it was going so slow. The 'it' refers to the school bus because one of the children screamed as the truck passed.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "104": {
+      "input": "The city councilmen refused the demonstrators a permit because they feared violence. The 'they' refers to the city councilmen because they are under the command of Mayor James B. Gray.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "105": {
+      "input": "Anna did a lot worse than her good friend Lucy on the test because she had studied so hard. The 'she' refers to lucy because Anna took up the position of 'she' when she was given the position of 'he' in.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "106": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because The man couldn't lift, why? Because he was weak.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "107": {
+      "input": "The sack of potatoes had been placed below the bag of flour, so it had to be moved first. The 'it' refers to the bag of flour because The flour is on top of the potatoes.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "108": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because his son was so good that the man can not clife.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "109": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because he had bought from him didn't work toaster so he is very upset.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "110": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the top of the stairs. The 'he' refers to tom because his schoolbag is usually a green schoolbag which is a reference to Tom's favorite color.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "111": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because Frank and Tom are friends and are very close.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "112": {
+      "input": "The sack of potatoes had been placed above the bag of flour, so it had to be moved first. The 'it' refers to the sack of potatoes because The flour is on top of the potatoes.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "113": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because The ball is made of styrofoam.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "114": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because He bought the toaster.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "115": {
+      "input": "The delivery truck zoomed by the school bus because it was going so fast. The 'it' refers to the delivery truck because it was zoomed by going so fast.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "116": {
+      "input": "The city councilmen refused the demonstrators a permit because they advocated violence. The 'they' refers to the demonstrators because they were protesting against the war in Iraq.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "117": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a good start. The 'she' refers to sue because bad start is more likely to beat.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "118": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because it's a pretty well known thing, a drawing of a fish that has a fishy body with.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "119": {
+      "input": "The sack of potatoes had been placed below the bag of flour, so it had to be moved first. The 'it' refers to the bag of flour because the flour is on top, and the subject is the potatoes, which is the item wanted here.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "120": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a good start. The 'she' refers to sue because she's the one who made the first jump.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "121": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because the witness is a male. The 'she' is likely to be the witness' mother.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "122": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because he was the only winner to win the 'he' competition.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "123": {
+      "input": "Paul tried to call George on the phone, but he wasn't successful. The 'he' refers to paul because he was in the room with George.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "124": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so tall. The 'he' refers to billy because Billy is the tall one blocking the view.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "125": {
+      "input": "The firemen arrived after the police because they were coming from so far away. The 'they' refers to the firemen because of the distance and the fact the firemen are wearing different uniforms.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "126": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because he is the only one who can see the stage.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "127": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because the father was too strong.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "128": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to repeat it. The 'he' refers to the lawyer because The lawyer expected an answer after asking the question.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "129": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a bad start. The 'she' refers to sally because Sally lost the race she must have had the bad start.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "130": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too large. The 'it' refers to the trophy because it is a game.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "131": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because he was the first to win the game.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "132": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because Tom threw his bag down, meaning he was at the top. Ray had to be at the bottom.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "133": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because his name is not mentioned in the report.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "134": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because Susan has had a strong influence on the direction of the show, and the other two characters are all.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "135": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because she was the one who first made contact with Susan, but at the time she was actually a woman.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "136": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because An upset man is more likely to comforted.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "137": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a bad start. The 'she' refers to sally because sue had the good start so she beat sally.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "138": {
+      "input": "The city councilmen refused the demonstrators a permit because they advocated violence. The 'they' refers to the demonstrators because the city council's members are the only ones who are allowed to speak.<|endoftext|>P.K.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "139": {
+      "input": "The delivery truck zoomed by the school bus because it was going so fast. The 'it' refers to the delivery truck because The delivery bus was faster.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "140": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because The large ball   was made of steel because  it crashed right through the table.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "141": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because The witness was reluctant to answer a question asked.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "142": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because stairs of schoolbag.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "143": {
+      "input": "The sack of potatoes had been placed above the bag of flour, so it had to be moved first. The 'it' refers to the sack of potatoes because The sack of potatoes was above the flour requiring it to be moved first.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "144": {
+      "input": "Anna did a lot worse than her good friend Lucy on the test because she had studied so hard. The 'she' refers to lucy because the person studied harder should do better.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "145": {
+      "input": "The man couldn't lift his son because he was so weak. The 'he' refers to the man because the man is doing the lifting.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "146": {
+      "input": "Frank felt crushed when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to bill because he didn't win the competition, but to his rival, as the two were the two runners-.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "147": {
+      "input": "The city councilmen refused the demonstrators a permit because they feared violence. The 'they' refers to the city councilmen because The councilmen distributed permits at their discretion; the demonstrators wanted the permits.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "148": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because it took the entire table in its path.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "149": {
+      "input": "The firemen arrived before the police because they were coming from so far away. The 'they' refers to the police because the firemen were not able to use their ladder to reach the roof of the building.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "150": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because toaster was given by tom so it refers tom.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "151": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too large. The 'it' refers to the trophy because The trophy was to be carried inside the suitcase, but wouldn't fir.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "152": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a good start. The 'she' refers to sue because she has been raised as a girl, although the 'he' is also likely to refer to the.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "153": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because he was so upset because Jim comforted Kevin.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "154": {
+      "input": "The sculpture rolled off the shelf because it wasn't level. The 'it' refers to the shelf because The shelf is referred to as the pronoun here a word that can function by itself as a noun phrase and that refers either to the participants in the discourse.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "155": {
+      "input": "The man couldn't lift his son because he was so weak. The 'he' refers to the man because he is a man and the 'she' is likely to refer to the woman.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "156": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because receive help is more likely to thank.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "157": {
+      "input": "The delivery truck zoomed by the school bus because it was going so slow. The 'it' refers to the school bus because it appears on the map.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "158": {
+      "input": "Frank felt crushed when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to bill because Frank was feeling bad; therefore he must have lost.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "159": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too small. The 'it' refers to the suitcase because it is not the brown suitcase.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "160": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to repeat it. The 'he' refers to the lawyer because the lawyer is also the 'he' in this case.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "161": {
+      "input": "Paul tried to call George on the phone, but he wasn't available. The 'he' refers to george because Paul tried to call George on the phone .\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "162": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because Because Joan would not receive help from herself.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "163": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one above it. The 'it' refers to tina's drawing because while her was on the wall, the 'it' would be on the floor.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "164": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because of his status as a man, the 'him' is likely to refer to a person or organization.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "165": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too small. The 'it' refers to the suitcase because a suitcase is a holder for the trophy item.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "166": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because The person that provided help is likely the one being thanked.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "167": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because of the giant ball \u2013 the biggest ever discovered.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "168": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because His son is referred to as the pronoun here a word that can function by itself as a noun phrase and that refers either to the participants in the discourse.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "169": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to repeat it. The 'he' refers to the lawyer because in his testimony the lawyer told the court he would have to ask the witness questions to make sure he.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "170": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because they are brothers.The 'him' is likely to be either Ray or Jareth.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "171": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because that is the only way of reading it.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "172": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because he is the only one of the three who has been living in the same place for more than a.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "173": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the top of the stairs. The 'he' refers to tom because Tom threw his bag down, meaning he was at the top. Ray had to be at the bottom.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "174": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because Bill was the winner of the compettition. So frank felt crushed.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "175": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because Tom is doing the throwing.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "176": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so tall. The 'he' refers to billy because MORE LIKELY TO REFER BILLY.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "177": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to repeat it. The 'he' refers to the lawyer because the witness is a lawyer.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "178": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because Kevin was comforted since he was upset.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "179": {
+      "input": "The firemen arrived before the police because they were coming from so far away. The 'they' refers to the police because The firemen arrived before the police, the police were farther away thus arriving late.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "180": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because Styrofoam is crashed right through the table.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "181": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because he was the primary victim of the crime.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "182": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because he is the one who bought the toaster and that is the one who is the owner of the.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "183": {
+      "input": "The sculpture rolled off the shelf because it wasn't level. The 'it' refers to the shelf because the artwork is on the left side of the shelf, and the shelf is on the right.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "184": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because Joan was thanking Susan for helping her.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "185": {
+      "input": "Paul tried to call George on the phone, but he wasn't available. The 'he' refers to george because he's the one who's been arrested.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "186": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because she was so loyal to the late Joan Coleman, the woman who was allegedly raped for seven years by.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "187": {
+      "input": "The city councilmen refused the demonstrators a permit because they feared violence. The 'they' refers to the city councilmen because The ones that fear violence are likely the councilmen.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "188": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because Because a person that has been asked the question is likely to answer.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "189": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too small. The 'it' refers to the suitcase because it is the only one in the game that has a brown suitcase for storage.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "190": {
+      "input": "The sack of potatoes had been placed above the bag of flour, so it had to be moved first. The 'it' refers to the sack of potatoes because it was placed on top of the bag of wheat.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "191": {
+      "input": "The delivery truck zoomed by the school bus because it was going so fast. The 'it' refers to the delivery truck because it's the driver who is not allowed to stop for the school bus.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "192": {
+      "input": "The firemen arrived after the police because they were coming from so far away. The 'they' refers to the firemen because they were called out from a distance of 500-700 metres.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "193": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because Jim is the yeller.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "194": {
+      "input": "The sculpture rolled off the shelf because it wasn't anchored. The 'it' refers to the sculpture because The shelf is referred to as the pronoun here a word that can function by itself as a noun phrase and that refers either to the participants in the discourse.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "195": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because Sam's drawing is the one that has a drawing below it.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "196": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because he's the one to be lifted.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "197": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because Ray because it said Tom threw the bag down the stairs.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "198": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a good start. The 'she' refers to sue because she was the first person to receive a 'she' as a name.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "199": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because short one can not see infront.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "200": {
+      "input": "Anna did a lot better than her good friend Lucy on the test because she had studied so hard. The 'she' refers to anna because studying hard would make you do better.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "201": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too large. The 'it' refers to the trophy because of its name, the 'it' is in fact all of the trophies in the game.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "202": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too small. The 'it' refers to the suitcase because The trophy corresponds with the verb fit.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "203": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because Keven is the one in need of comfort.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "204": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because son is lift  was so heavy.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "205": {
+      "input": "The delivery truck zoomed by the school bus because it was going so fast. The 'it' refers to the delivery truck because the school bus go to slow.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "206": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the top of the stairs. The 'he' refers to tom because ray is reached top so tom is schoolbag.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "207": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because The one crashing is likely to be have made of styrofoam.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "208": {
+      "input": "Anna did a lot better than her good friend Lucy on the test because she had studied so hard. The 'she' refers to anna because ANNA MORE LIKELY TO REFER ANNA.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "209": {
+      "input": "The sack of potatoes had been placed above the bag of flour, so it had to be moved first. The 'it' refers to the sack of potatoes because If the flour is above the potatoes, it has to be removed first.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "210": {
+      "input": "The sack of potatoes had been placed above the bag of flour, so it had to be moved first. The 'it' refers to the sack of potatoes because it was placed above the flour and because it was placed above the bag of flour it was impossible to.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "211": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because Frank was upset. So you assume Bill, his rival, won.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "212": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because , like Billy, he is a bit short and has a very long nose and a big nose.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "213": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because The pronoun probably refers to Tom because he sold a toaster that was not working. And that made Frank upset.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "214": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a bad start. The 'she' refers to sally because The sentance describes why someone lost, and sally lost.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "215": {
+      "input": "The large ball crashed right through the table because it was made of styrofoam. The 'it' refers to the table because The ball is made of styrofoam.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "216": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because Ray was lower than Tom therefore Tom must be throwing the schoolbag down.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "217": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a good start. The 'she' refers to sue because Sue won. The reason Sue won is because she had a good start.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "218": {
+      "input": "Paul tried to call George on the phone, but he wasn't available. The 'he' refers to george because George was likely the one not reachable.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "219": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because the witness has not yet been identified.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "220": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because ray is reached top so tom is schoolbag.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "221": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because the last name is similar.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "222": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because Billy obstructed John's vision.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "223": {
+      "input": "The city councilmen refused the demonstrators a permit because they feared violence. The 'they' refers to the city councilmen because The demonstrators were the ones who needed a permit.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "224": {
+      "input": "Paul tried to call George on the phone, but he wasn't available. The 'he' refers to george because of his age, but George could be referring to George and David.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "225": {
+      "input": "The sack of potatoes had been placed below the bag of flour, so it had to be moved first. The 'it' refers to the bag of flour because If the flour is above the potatoes, it has to be removed first.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "226": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the top of the stairs. The 'he' refers to tom because ray catch the tom's school bag after he reached the bottom of the stairs.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "227": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to answer it. The 'he' refers to the witness because The lawyer is the one asking the questions so he can't be the one reluctant to answering them.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "228": {
+      "input": "The city councilmen refused the demonstrators a permit because they advocated violence. The 'they' refers to the demonstrators because demonstrators are more likely to be advocating violence.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "229": {
+      "input": "Frank felt crushed when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to bill because Frank was upset. So you assume Bill, his rival, won.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "230": {
+      "input": "Paul tried to call George on the phone, but he wasn't available. The 'he' refers to george because he is the one who called the police when the man who had raped the woman was arrested.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "231": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too small. The 'it' refers to the suitcase because it is a brown, plain suitcase.Defeat the boss.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "232": {
+      "input": "Paul tried to call George on the phone, but he wasn't successful. The 'he' refers to paul because the call was made by Paul.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "233": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because he is the only one who can explain the whole situation to Tom.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "234": {
+      "input": "Anna did a lot better than her good friend Lucy on the test because she had studied so hard. The 'she' refers to anna because they both attended the same school.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "235": {
+      "input": "Paul tried to call George on the phone, but he wasn't successful. The 'he' refers to paul because Paul is referred to as the pronoun here a word that can function by itself as a noun phrase and that refers either to the participants in the discourse.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "236": {
+      "input": "The sculpture rolled off the shelf because it wasn't level. The 'it' refers to the shelf because The sculpture moved easily because nothing was holding it in place.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "237": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one below it. The 'it' refers to sam's drawing because of the resemblance to the drawings of Tina and the picture of the 'thing' that has been in.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "238": {
+      "input": "The sculpture rolled off the shelf because it wasn't level. The 'it' refers to the shelf because The shelf wasnt level had to be rolled off.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "239": {
+      "input": "The sculpture rolled off the shelf because it wasn't level. The 'it' refers to the shelf because the artwork was shipped by a company called 'A.W. Ketcham, Inc.'.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "240": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because The table was crashed into by the large ball.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "241": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because Jim is the yeller.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "242": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because he was the only one who could have helped Harry.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "243": {
+      "input": "The firemen arrived after the police because they were coming from so far away. The 'they' refers to the firemen because so far away fireman.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "244": {
+      "input": "Sam's drawing was hung just above Tina's and it did look much better with another one above it. The 'it' refers to tina's drawing because Tina's drawing was hung under sam's which made it look much better.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "245": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because ray catch the tom's school bag after he reached the bottom of the stairs.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "246": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because Frank was vindicated: therefore he must have one.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "247": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a bad start. The 'she' refers to sally because she is the only one with the same name and the same age, and because of this, she.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "248": {
+      "input": "Paul tried to call George on the phone, but he wasn't successful. The 'he' refers to paul because Paul not being available makes no sense.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "249": {
+      "input": "The city councilmen refused the demonstrators a permit because they advocated violence. The 'they' refers to the demonstrators because of their connection to the Occupy Wall Street protests, which have been held in Zuccotti Park since.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "250": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because of its size.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "251": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because she is an adopted daughter of another family. Susan also had a brother called Dave.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "252": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a bad start. The 'she' refers to sally because Sue won, sally lost.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "253": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because Joan was thankful.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "254": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because toaster was given by tom so it refers tom.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "255": {
+      "input": "The sculpture rolled off the shelf because it wasn't anchored. The 'it' refers to the sculpture because The shelf wasnt level had to be rolled off.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "256": {
+      "input": "Paul tried to call George on the phone, but he wasn't successful. The 'he' refers to paul because George is a male, not a female.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "257": {
+      "input": "Anna did a lot worse than her good friend Lucy on the test because she had studied so hard. The 'she' refers to lucy because people study less harder do worse.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "258": {
+      "input": "Anna did a lot better than her good friend Lucy on the test because she had studied so hard. The 'she' refers to anna because she has the same name as Anna.This is probably the most important part of the test.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "259": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because frank the winner of the competition.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "260": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because he was so upset.Jim comforted Kevin.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "261": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because he is the one who originally told the story about how their father had passed away.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "262": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too large. The 'it' refers to the trophy because the brown suitcase is too large.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "263": {
+      "input": "The delivery truck zoomed by the school bus because it was going so fast. The 'it' refers to the delivery truck because it was going too fast for the school bus to respond.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "264": {
+      "input": "Anna did a lot worse than her good friend Lucy on the test because she had studied so hard. The 'she' refers to lucy because it is the most likely possibility.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "265": {
+      "input": "The trophy doesn't fit into the brown suitcase because it is too small. The 'it' refers to the suitcase because suitcase was very small.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "266": {
+      "input": "The firemen arrived before the police because they were coming from so far away. The 'they' refers to the police because Because the police came from far away.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "267": {
+      "input": "Paul tried to call George on the phone, but he wasn't successful. The 'he' refers to paul because George was likely the one not reachable.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "268": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because toaster likely to upset.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "269": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because Keven is the one in need of comfort.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "270": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to repeat it. The 'he' refers to the lawyer because she is the person who was asked the question.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "271": {
+      "input": "The sack of potatoes had been placed above the bag of flour, so it had to be moved first. The 'it' refers to the sack of potatoes because the bread will be in the sack, and the 'it' will be the sack itself.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "272": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because of his role as the 'host' of the show.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "273": {
+      "input": "The firemen arrived before the police because they were coming from so far away. The 'they' refers to the police because police arrived first and then they arrived.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "274": {
+      "input": "The lawyer asked the witness a question, but he was reluctant to repeat it. The 'he' refers to the lawyer because The lawyer asked the witness.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "275": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because Susan helped Joan.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "276": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because Kevin yelled  Jim  at because he was so upset.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "277": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. The 'he' refers to ray because Ray must have reached the bottom of the stairs to be lower than Tom.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "278": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because frank wouldnt be vindicated if he lost.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "279": {
+      "input": "Joan made sure to thank Susan for all the help she had given. The 'she' refers to susan because of her previous role as the mother of her children in the video.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "280": {
+      "input": "Jim yelled at Kevin because he was so upset. The 'he' refers to jim because Jim was doing the yelling for the reason he was upset.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "281": {
+      "input": "Frank felt vindicated when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to frank because of the way that the book's narrator describes him in the book.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "282": {
+      "input": "Paul tried to call George on the phone, but he wasn't successful. The 'he' refers to paul because George has always been referred to as 'Paul' by the fans.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "283": {
+      "input": "The man couldn't lift his son because he was so heavy. The 'he' refers to the son because the boy is the only survivor.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "284": {
+      "input": "Joan made sure to thank Susan for all the help she had recieved. The 'she' refers to joan because Joan was thankful.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "285": {
+      "input": "Paul tried to call George on the phone, but he wasn't available. The 'he' refers to george because George is the one being called, Paul is, of course, always available to himself.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "286": {
+      "input": "Jim comforted Kevin because he was so upset. The 'he' refers to kevin because he was so upset because Jim comforted Kevin.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "287": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a bad start. The 'she' refers to sally because she had such a bad start.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "288": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so short. The 'he' refers to john because he is the leader of the group; and the 'she' is likely to be the woman in.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "289": {
+      "input": "The firemen arrived after the police because they were coming from so far away. The 'they' refers to the firemen because since they were coming from so fr away it's more likely they arrived after.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "290": {
+      "input": "The sculpture rolled off the shelf because it wasn't anchored. The 'it' refers to the sculpture because The shelf is supposed to be flat and leveled.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "291": {
+      "input": "Anna did a lot better than her good friend Lucy on the test because she had studied so hard. The 'she' refers to anna because lucy studied very hard so that she wrote better than anna.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "292": {
+      "input": "Frank was upset with Tom because the toaster he had sold him didn't work. The 'he' refers to tom because the person that bought it is more likely to be upset if it's broken.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "293": {
+      "input": "Tom threw his schoolbag down to Ray after he reached the top of the stairs. The 'he' refers to tom because of the way the two share their names, but it is not certain.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "294": {
+      "input": "The delivery truck zoomed by the school bus because it was going so slow. The 'it' refers to the school bus because The delivery bus was faster.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "295": {
+      "input": "Frank felt crushed when his longtime rival Bill revealed that he was the winner of the competition. The 'he' refers to bill because they have both been in the same position before, and the 'they' is likely to refer to.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "296": {
+      "input": "The large ball crashed right through the table because it was made of steel. The 'it' refers to the large ball because the ball crashed through the table because the ball was made of steel.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "297": {
+      "input": "John couldn't see the stage with Billy in front of him because he is so tall. The 'he' refers to billy because front of him because he is so tall. John couldn't see the stage with Billy.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "298": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a bad start. The 'she' refers to sally because of their shared last name.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    },
+    "299": {
+      "input": "Although they ran at about the same speed, Sue beat Sally because she had such a good start. The 'she' refers to sue because Sue won. Sally lost. Sally lost why? She had a bad start.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "A. correct",
+        "correct"
+      ]
+    },
+    "300": {
+      "input": "Frank was upset with Tom because the toaster he had bought from him didn't work. The 'he' refers to frank because he is the main character. It is possible that he has a brother named John.\nChoices:\nA. correct\nB. incorrect",
+      "output": [
+        "B. incorrect",
+        "incorrect"
+      ]
+    }
+  }
+}

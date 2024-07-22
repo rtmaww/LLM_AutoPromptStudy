@@ -1,0 +1,458 @@
+{
+    "metadata": {
+        "num_examples": 50
+    },
+    "task_desc": "",
+    "examples": {
+        "1": {
+            "input": "What are the unemployment statistics for the years 1965 and 1990 ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "2": {
+            "input": "Which hair care product told us `` hate that gray , wash it away '' ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "B",
+                "B.",
+                "B. ENTY (Entity)",
+                "ENTY (Entity)"
+            ]
+        },
+        "3": {
+            "input": "What appointments secretary to Richard Nixon went to jail ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "4": {
+            "input": "What Russian composer 's Prelude in C Sharp Minor brought him fame and fortune ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "5": {
+            "input": "What U.S. general died December 1 , 1945 , when his jeep collided with a truck ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "6": {
+            "input": "What does the number `` 5 '' stand for on FUBU clothing ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "A",
+                "A.",
+                "A. ABBR (Abbreviation)",
+                "ABBR (Abbreviation)"
+            ]
+        },
+        "7": {
+            "input": "What is Margaret Thatcher known for ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "8": {
+            "input": "How many Jews were executed in concentration camps during WWII ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "9": {
+            "input": "What rabbit got its name because its ears resembled those of a jackass ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "B",
+                "B.",
+                "B. ENTY (Entity)",
+                "ENTY (Entity)"
+            ]
+        },
+        "10": {
+            "input": "What is a Jake brake ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "11": {
+            "input": "What is the best distance education university or college ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "12": {
+            "input": "What is deconstructionism ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "13": {
+            "input": "What is a Certified Nurse Midwife ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "14": {
+            "input": "Who made the most appearances in the center square on Hollywood Squares ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "15": {
+            "input": "When was the first steel mill in the United States built ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "16": {
+            "input": "What is the name of the managing director of Apricot Computer ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "17": {
+            "input": "What makes hamburgers taste like steakburgers ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "18": {
+            "input": "How many home runs did Babe Ruth hit in his lifetime ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "19": {
+            "input": "What TV quiz show left the air in 1975 to the tune of Vera Lynn 's We 'll Meet Again ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "B",
+                "B.",
+                "B. ENTY (Entity)",
+                "ENTY (Entity)"
+            ]
+        },
+        "20": {
+            "input": "How do I make fuel bricks from recycled newspaper ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "21": {
+            "input": "What country was Erich Honecker the leader of ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "E",
+                "E.",
+                "E. LOC (Location)",
+                "LOC (Location)"
+            ]
+        },
+        "22": {
+            "input": "How many people was Randy Craft convicted of killing ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "23": {
+            "input": "Name one of the major gods of Hinduism .\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "24": {
+            "input": "Where can I find a review of Nightmare on Elm Street in a film journal ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "E",
+                "E.",
+                "E. LOC (Location)",
+                "LOC (Location)"
+            ]
+        },
+        "25": {
+            "input": "Who won two gold medals in skiing in the Olympic Games in Calgary ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "26": {
+            "input": "How can I find online spelling ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "27": {
+            "input": "How do websites like Yahoo and Excite make money ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "28": {
+            "input": "What is Nicholas Cage 's profession ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "29": {
+            "input": "What snack food has ridges ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "B",
+                "B.",
+                "B. ENTY (Entity)",
+                "ENTY (Entity)"
+            ]
+        },
+        "30": {
+            "input": "How long were Tyrannosaurus Rex 's teeth ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "31": {
+            "input": "What are differences between 1980 and 1990 ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "32": {
+            "input": "What season begins with the vernal equinox ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "33": {
+            "input": "Name a South African diamond producer ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "34": {
+            "input": "Whose acceptance speech of more than 3 minutes prompted a time limit on Academy Award thank-yous ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "D",
+                "D.",
+                "D. HUM (Human being)",
+                "HUM (Human being)"
+            ]
+        },
+        "35": {
+            "input": "What was the only country in the Western Hemisphere to join the Russian-led boycott of the 1984 Summer Olympics ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "E",
+                "E.",
+                "E. LOC (Location)",
+                "LOC (Location)"
+            ]
+        },
+        "36": {
+            "input": "Where did Indian Pudding come from ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "37": {
+            "input": "Where in the United States do people live the longest ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "E",
+                "E.",
+                "E. LOC (Location)",
+                "LOC (Location)"
+            ]
+        },
+        "38": {
+            "input": "When was the last major eruption of Mount St. Helens ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "39": {
+            "input": "What 's the biggest-selling U.S. magazine aimed at a black audience ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "B",
+                "B.",
+                "B. ENTY (Entity)",
+                "ENTY (Entity)"
+            ]
+        },
+        "40": {
+            "input": "How many months does a normal human pregnancy last ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "41": {
+            "input": "When will the millennium officially begin ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "F",
+                "F.",
+                "F. NUM (Numeric value)",
+                "NUM (Numeric value)"
+            ]
+        },
+        "42": {
+            "input": "What 's the difference between TFT and dual-scan display ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "43": {
+            "input": "What is RCD ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "A",
+                "A.",
+                "A. ABBR (Abbreviation)",
+                "ABBR (Abbreviation)"
+            ]
+        },
+        "44": {
+            "input": "What auto race was Wilbur Reed the first to win three times ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "B",
+                "B.",
+                "B. ENTY (Entity)",
+                "ENTY (Entity)"
+            ]
+        },
+        "45": {
+            "input": "How does hair curl ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "46": {
+            "input": "What is a fear of women ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "B",
+                "B.",
+                "B. ENTY (Entity)",
+                "ENTY (Entity)"
+            ]
+        },
+        "47": {
+            "input": "What country owns Corsica ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "E",
+                "E.",
+                "E. LOC (Location)",
+                "LOC (Location)"
+            ]
+        },
+        "48": {
+            "input": "What handicraft requires you to interlace your warp and weft ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "B",
+                "B.",
+                "B. ENTY (Entity)",
+                "ENTY (Entity)"
+            ]
+        },
+        "49": {
+            "input": "What is the definition of hazmat ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "C",
+                "C.",
+                "C. DESC (Description and abstract concept)",
+                "DESC (Description and abstract concept)"
+            ]
+        },
+        "50": {
+            "input": "What state is Niagara Falls located in ?\nChoices:\nA. ABBR (Abbreviation)\nB. ENTY (Entity)\nC. DESC (Description and abstract concept)\nD. HUM (Human being)\nE. LOC (Location)\nF. NUM (Numeric value)",
+            "output": [
+                "E",
+                "E.",
+                "E. LOC (Location)",
+                "LOC (Location)"
+            ]
+        }
+    }
+}

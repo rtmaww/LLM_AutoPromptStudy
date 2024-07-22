@@ -1,0 +1,2108 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Detect informal and formal logical fallacies",
+  "examples": {
+    "1": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No daisies are kitchens. No kitchens are princes. Therefore no princes are daisies.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "2": {
+      "input": "Some rigglays are sevvits. All rigglays are spequals. Therefore some spequals are not sevvits.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "3": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No thrastles are swoofles. Some thrastles are not brewtines. Therefore some brewtines are not swoofles.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "4": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some gerants are styphons. All gerants are essups. Therefore no essups are styphons.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "5": {
+      "input": "No cowgirls are oysters. All boats are oysters. Therefore some boats are cowgirls.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "6": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Debbie is less sensible than Ernest. David is less sensible than Debbie. Therefore ernest is more sensible than Debbie.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "7": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Amy is kinder than Jones. Jennifer is kinder than Jones. Mary is kinder than Jennifer. Therefore jones is kinder than Jennifer.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "8": {
+      "input": "Candice is taller than Moses. Amy is taller than Candice. Therefore candice is shorter than Moses.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "9": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All bliggingtoms are ocirammas. No khavvins are ocirammas. Therefore no khavvins are bliggingtoms.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "10": {
+      "input": "All caterpillers are venusians. Some sidewinders are not venusians. Therefore some sidewinders are not caterpillers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "11": {
+      "input": "Some aferrarons are tupresses. All farklings are aferrarons. Therefore some farklings are not tupresses.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "12": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some natances are shipotoes. All shipotoes are ocirammas. Therefore some ocirammas are natances.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "13": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No prottows are tograshs. Some tograshs are tolities. Therefore some tolities are not prottows.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "14": {
+      "input": "Jennifer is kinder than William. Nat is kinder than William. Sophia is kinder than Nat. Therefore william is kinder than Nat.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "15": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No cats are chimpanzees. All clones are cats. Therefore no clones are chimpanzees.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "16": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some foo fighters are not clothes. All foo fighters are toves. Therefore some toves are not clothes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "17": {
+      "input": "When I have to work late, I end up in a bad mood. So being in a bad mood makes me work late.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "18": {
+      "input": "All essups are houtals. No houtals are tingforms. Therefore no tingforms are essups.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "19": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Robert is faster than Paul. Paul is faster than Anne. Therefore paul is slower than Robert.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "20": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? That's the kind of injury that requires expert medical treatment, so you should go to the hospital.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "21": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Anne is more frank than Jennifer. Anne is more frank than Jones. Jennifer is more frank than Anna. Therefore anne is less frank than Jones.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "22": {
+      "input": "Sophia is kinder than Amy. Sophia is less kind than Caroline. Caroline is kinder than Jim. Therefore caroline is kinder than Amy.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "23": {
+      "input": "Some trolls are computers. Some towns are not trolls. Therefore some towns are computers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "24": {
+      "input": "Mario is less witty than Osbert. Jim is less witty than Kim. Osbert is less witty than Kim. Therefore mario is wittier than Kim.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "25": {
+      "input": "Some hildaids are nalpures. All nalpures are werradiths. Therefore some werradiths are hildaids.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "26": {
+      "input": "No chimpanzees are shows. All sheep dogs are shows. Therefore some sheep dogs are not chimpanzees.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "27": {
+      "input": "All students are kids. Some auditoriums are not kids. Therefore some auditoriums are not students.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "28": {
+      "input": "Some skrads are not flionsoes. All polinks are skrads. Therefore no polinks are flionsoes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "29": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some hawkloons are not pentwests. All sposities are hawkloons. Therefore some sposities are pentwests.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "30": {
+      "input": "Sophia is younger than Charlotte. Charlotte is younger than Kevin. Kevin is younger than Tom. Therefore kevin is younger than Sophia.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "31": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No U.F.O.s are snarks. Some snarks are not hats. Therefore all hats are U.F.O.s.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "32": {
+      "input": "Some chimpanzees are sheep dogs. All chimpanzees are dolphins. Therefore some dolphins are sheep dogs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "33": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No sebusses are gryllows. Some shorates are gryllows. Therefore all shorates are sebusses.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "34": {
+      "input": "Aeroplanes can't be healthy; humans were never meant to fly.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "35": {
+      "input": "All vampires are cowboys. Some butchers are not cowboys. Therefore some butchers are not vampires.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "36": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All calves are boats. No boats are rockets. Therefore no rockets are calves.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "37": {
+      "input": "Some thrastles are confras. All thrastles are natances. Therefore some natances are confras.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "38": {
+      "input": "Jones is less ambitious than Michael. Jones is less ambitious than Nat. Nat is less ambitious than Michael. Peter is less ambitious than Nat. Therefore peter is more ambitious than Nat.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "39": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Zach is more ambitious than Rossi. Charlotte is more ambitious than Caroline. Aiden is more ambitious than Zach. Therefore caroline is more ambitious than Charlotte.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "40": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All tolities are treyples. All prottows are tolities. Therefore all prottows are treyples.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "41": {
+      "input": "All spoickles are brewtines. No brewtines are benessits. Therefore no benessits are spoickles.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "42": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Mario is slower than Laura. Henry is slower than Peter. Laura is slower than Peter. Therefore laura is faster than Peter.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "43": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All reggabreas are proppors. Some novalies are not proppors. Therefore some novalies are not reggabreas.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "44": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Jim is less reliable than Rossi. Annie is less reliable than Jim. Therefore jim is more reliable than Annie.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "45": {
+      "input": "Edward is less ambitious than Annie. Annie is less ambitious than Sean. Moses is more ambitious than Sean. Jones is more ambitious than Moses. Therefore sean is more ambitious than Jones.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "46": {
+      "input": "All U.F.O.s are kittens. Some rooms are U.F.O.s. Therefore no rooms are kittens.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "47": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Garibaldi was Italian and brave. Therefore being Italian makes you brave.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "48": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All poets are extraterrestrials. No theaters are extraterrestrials. Therefore no theaters are poets.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "49": {
+      "input": "All werradiths are cheiliths. No skrads are cheiliths. Therefore all skrads are werradiths.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "50": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some programs are scouts. All scouts are caterpillers. Therefore some caterpillers are programs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "51": {
+      "input": "Some ocirs are not gerants. All onamas are ocirs. Therefore all onamas are gerants.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "52": {
+      "input": "All tarts are acrobats. Some boats are tarts. Therefore some boats are acrobats.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "53": {
+      "input": "All spooks are goats. Some spooks are villages. Therefore some villages are goats.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "54": {
+      "input": "No rocks are planets. Some rocks are borogoves. Therefore some borogoves are not planets.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "55": {
+      "input": "All nightmares are photographs. All crabs are nightmares. Therefore no crabs are photographs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "56": {
+      "input": "All dewfays are polinks. All thrastles are dewfays. Therefore all thrastles are polinks.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "57": {
+      "input": "No skrads are slozzoms. Some skrads are strizzings. Therefore some strizzings are not slozzoms.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "58": {
+      "input": "Some cats are not calves. Some cats are not extraterrestrials. Therefore some extraterrestrials are not calves.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "59": {
+      "input": "You should trust my views about American politics because I have a PhD in material science.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "60": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No cows are possums. Some jets are possums. Therefore some jets are not cows.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "61": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No authors are elves. All warlocks are authors. Therefore no warlocks are elves.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "62": {
+      "input": "Jill is less witty than Laura. Alex is less witty than Laura. Jill is less witty than Charlotte. Jill is less witty than Alex. Therefore charlotte is less witty than Jill.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "63": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Osbert is slower than William. Philipp is slower than Peter. Sarah is slower than Philipp. Bill is slower than Peter. Therefore osbert is faster than William.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "64": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No cosmonauts are flowers. Some cosmonauts are dukes. Therefore some dukes are not flowers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "65": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? You said that excessive regulation hurts business. You clearly don't care about workers at all.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "66": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some dukes are sheep. All sheep are bowls. Therefore some bowls are dukes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "67": {
+      "input": "Some puppies are females. No toves are puppies. Therefore some toves are not females.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "68": {
+      "input": "Jill is younger than Peter. Jennifer is older than Peter. Sophia is older than Jill. Sophia is younger than Jones. Therefore peter is older than Jennifer.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "69": {
+      "input": "All hats are snails. Some plays are hats. Therefore some plays are snails.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "70": {
+      "input": "Lara is wittier than Jack. Jennifer is wittier than Lara. Jennifer is less witty than Kim. Jennifer is less witty than Rossi. Therefore jennifer is wittier than Kim.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "71": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Annie is less ambitious than Cecilia. Marcus is less ambitious than Paul. Paul is more ambitious than Peter. Annie is more ambitious than Peter. Therefore cecilia is less ambitious than Annie.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "72": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Marcus is older than Jennifer. Joanna is older than Marcus. Lara is older than Jenny. Susan is older than Jenny. Therefore jennifer is older than Marcus.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "73": {
+      "input": "Amy is more ambitious than David. Nat is more ambitious than Amy. Therefore amy is more ambitious than Nat.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "74": {
+      "input": "Charlotte is more sensible than John. Bella is more sensible than Charlotte. Charlotte is less sensible than Tom. Therefore charlotte is less sensible than John.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "75": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No sebusses are besloors. All bacclas are besloors. Therefore no bacclas are sebusses.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "76": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Kevin is younger than Jenny. Kevin is younger than Jake. Jenny is younger than Tim. Therefore jenny is older than Kevin.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "77": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All tortoises are lads. All clothes are tortoises. Therefore all clothes are lads.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "78": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No skrads are caimats. Some skrads are shorates. Therefore some shorates are not caimats.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "79": {
+      "input": "No borogoves are toves. Some borogoves are poets. Therefore some poets are not toves.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "80": {
+      "input": "Charlotte is less kind than Kevin. Charlotte is less kind than Aiden. Aiden is less kind than Bob. Therefore aiden is kinder than Charlotte.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "81": {
+      "input": "No ants are butchers. Some ants are poets. Therefore some poets are not butchers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "82": {
+      "input": "All goblins are starfish. Some goblins are not arachnids. Therefore all arachnids are starfish.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "83": {
+      "input": "Some sagirds are nalpures. All nalpures are pardees. Therefore some pardees are sagirds.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "84": {
+      "input": "No strassips are weepeggles. Some builithes are weepeggles. Therefore no builithes are strassips.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "85": {
+      "input": "All shraiwels are dewfays. Some shraiwels are shizzoes. Therefore some shizzoes are dewfays.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "86": {
+      "input": "Some clothes are goblins. All firemen are clothes. Therefore some firemen are not goblins.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "87": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some harlequins are heroines. No swans are harlequins. Therefore some swans are not heroines.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "88": {
+      "input": "Susan is less reliable than Caroline. Sophia is more reliable than Jack. Sophia is less reliable than Joanna. Caroline is less reliable than Joanna. Therefore joanna is more reliable than Susan.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "89": {
+      "input": "A lot of people report reading novels on the beach as a peak experience, so if you're headed on holiday pack some fiction.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "90": {
+      "input": "Some hobgoblins are acrobats. All acrobats are rooks. Therefore some rooks are hobgoblins.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "91": {
+      "input": "No uncles are sons. Some paintings are uncles. Therefore some paintings are sons.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "92": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No bowls are animals. Some animals are stars. Therefore some stars are not bowls.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "93": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No bisdoes are hawkloons. Some tingforms are bisdoes. Therefore all tingforms are hawkloons.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "94": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some dolphins are not harlequins. All harlequins are ministers. Therefore all ministers are dolphins.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "95": {
+      "input": "You should trust our President's views about healthcare; he was a famous moviestar.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "96": {
+      "input": "No rodrups are hislaffs. Some kitzerains are hislaffs. Therefore some kitzerains are not rodrups.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "97": {
+      "input": "Rich people drive fancy cars. So driving a fancy car must make you rich.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "98": {
+      "input": "Caroline is kinder than William. Jack is less kind than William. Therefore william is kinder than Jack.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "99": {
+      "input": "No bees are jets. Some bees are females. Therefore some females are not jets.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "100": {
+      "input": "Some airplanes are not harlequins. All programmers are airplanes. Therefore all programmers are harlequins.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "101": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All cheiliths are reggabreas. No sevvits are reggabreas. Therefore no sevvits are cheiliths.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "102": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? The university was founded by a terrible man, so it's clearly a terrible institution.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "103": {
+      "input": "Some shures are zapsters. All zapsters are lotadils. Therefore some lotadils are shures.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "104": {
+      "input": "No exastoes are houtals. Some braties are houtals. Therefore some braties are not exastoes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "105": {
+      "input": "Moses is shorter than Sara. Charlotte is shorter than Moses. Debbie is taller than Moses. Robert is shorter than Charlotte. Therefore sara is taller than Robert.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "106": {
+      "input": "Marcus is older than Amy. Marcus is older than Michael. William is older than Debbie. Amy is older than William. Therefore michael is older than Marcus.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "107": {
+      "input": "My car is newer than my friend's car, so it's superior.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "108": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Tom is less witty than Peter. Candice is wittier than Peter. Therefore tom is wittier than Peter.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "109": {
+      "input": "Some khavvins are exastoes. All exastoes are noxuses. Therefore some noxuses are khavvins.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "110": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All clothes are crabs. No crabs are men. Therefore some men are not clothes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "111": {
+      "input": "All sayplomps are weepeggles. No weepeggles are brewtines. Therefore all brewtines are sayplomps.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "112": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Debbie is less sensible than Ernest. David is less sensible than Debbie. Therefore ernest is less sensible than Debbie.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "113": {
+      "input": "Some khavvins are bliggingtoms. All khavvins are exastoes. Therefore some exastoes are bliggingtoms.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "114": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All effachers are fluffsters. No winnibler are fluffsters. Therefore some winnibler are effachers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "115": {
+      "input": "Some starfish are dolls. No starfish are skeptics. Therefore some skeptics are not dolls.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "116": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Victoria is more sensible than Rossi. Jim is more sensible than Victoria. Therefore victoria is less sensible than Rossi.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "117": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No fluffsters are ammigles. All ammigles are smurtans. Therefore no smurtans are fluffsters.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "118": {
+      "input": "Some programs are dwarves. Some dwarves are not wizards. Therefore no wizards are programs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "119": {
+      "input": "Some noelinds are builithes. All noelinds are caimats. Therefore some caimats are builithes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "120": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All pardees are dreanors. Some werradiths are not dreanors. Therefore no werradiths are pardees.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "121": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? My husband is Italian, and he's very romantic. So if you want a romantic husband, marry an Italian!\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "122": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Peter is older than Kim. Rossi is older than Aiden. Peter is older than Rossi. Therefore rossi is younger than Peter.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "123": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All compleys are zapsters. No zapsters are bacclas. Therefore some bacclas are compleys.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "124": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Zach is less witty than Moses. William is less witty than Ernest. Ernest is less witty than Moses. Therefore william is less witty than Moses.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "125": {
+      "input": "No broomillas are mizules. Some jerens are mizules. Therefore some jerens are not broomillas.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "126": {
+      "input": "Some felines are cowboys. Some cities are not felines. Therefore no cities are cowboys.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "127": {
+      "input": "In general, modern technological products tend to have more features than older ones.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "128": {
+      "input": "Moses is more reliable than Sarah. Moses is less reliable than David. Tom is more reliable than Sarah. Therefore sarah is more reliable than Tom.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "129": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No smurtans are fapsters. Some smurtans are houtals. Therefore some houtals are fapsters.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "130": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some teachers are not apartments. All apartments are jovians. Therefore some jovians are teachers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "131": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? John wants to cut off your arms, and you don't want him to cut off your arms. So the solution is for him to cut off one of your arms.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "132": {
+      "input": "Henry is older than Mary. Henry is younger than Sam. Henry is younger than Cecilia. Therefore sam is older than Mary.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "133": {
+      "input": "Some spiders are duchesses. All spiders are jovians. Therefore some jovians are duchesses.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "134": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some pens are nieces. All nieces are fairies. Therefore no fairies are pens.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "135": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Jake is less ambitious than Charlotte. Peter is more ambitious than Charlotte. Therefore peter is more ambitious than Charlotte.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "136": {
+      "input": "Some weepeggles are besloors. Some shipotoes are not besloors. Therefore some shipotoes are weepeggles.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "137": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Rossi is less sensible than Tom. Jill is less sensible than Rossi. Jill is more sensible than Cecilia. Rossi is more sensible than Mary. Therefore mary is more sensible than Rossi.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "138": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Aiden is more ambitious than Annie. Susan is more ambitious than Jim. Moses is less ambitious than Susan. Jim is less ambitious than Annie. Therefore jim is more ambitious than Aiden.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "139": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No noelinds are compleys. Some noelinds are not effachers. Therefore no effachers are compleys.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "140": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? My dad is really good at videogames, so I figure a lot of parents must be the same.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "141": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Mary is kinder than Lara. Rossi is kinder than Charlotte. Lara is kinder than Susan. Therefore susan is kinder than Lara.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "142": {
+      "input": "Susan is more reliable than Jack. Jack is less reliable than Robert. Caroline is more reliable than Susan. Therefore susan is more reliable than Jack.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "143": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some tolities are not sposities. No rodrups are sposities. Therefore some rodrups are not tolities.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "144": {
+      "input": "All dukes are skeptics. No pets are skeptics. Therefore no pets are dukes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "145": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Rossi is more frank than Peter. Jim is more frank than Peter. Mario is more frank than Jim. Therefore peter is less frank than Rossi.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "146": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some winnibler are glontoms. All winnibler are rodrups. Therefore some rodrups are glontoms.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "147": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Jennifer is less kind than David. David is less kind than Edward. Therefore jennifer is kinder than David.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "148": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All spoons are clerics. Some spoons are swans. Therefore some swans are clerics.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "149": {
+      "input": "Alex is less reliable than Amy. Amy is less reliable than David. Therefore david is less reliable than Amy.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "150": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Lara is shorter than Jake. Jim is taller than Jake. Mario is shorter than Kevin. Kevin is taller than Robert. Therefore jake is shorter than Lara.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "151": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All houtals are snabeths. Some houtals are nimepoes. Therefore some nimepoes are snabeths.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "152": {
+      "input": "Henry is less kind than Sophia. Sophia is less kind than Anne. Anne is less kind than Susan. Therefore henry is less kind than Anne.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "153": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some rodrups are froilets. All rodrups are bisdoes. Therefore some bisdoes are froilets.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "154": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All fruit flies are jesters. Some auditoriums are not jesters. Therefore some auditoriums are not fruit flies.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "155": {
+      "input": "All earthlings are cousins. No cousins are dishes. Therefore no dishes are earthlings.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "156": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No brewtines are slozzoms. All dorchies are slozzoms. Therefore no dorchies are brewtines.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "157": {
+      "input": "Some compleys are noelinds. Some noelinds are not eunolgies. Therefore all eunolgies are compleys.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "158": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All elms are brothers. No elms are clones. Therefore no clones are brothers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "159": {
+      "input": "It's getting dark in two hours, so we need to head back home soon\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "160": {
+      "input": "All hendassas are winnibler. All nalpures are winnibler. Therefore no nalpures are hendassas.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "161": {
+      "input": "Some besloors are not shorates. No besloors are unfabrans. Therefore all unfabrans are shorates.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "162": {
+      "input": "Mario is slower than Laura. Henry is slower than Peter. Laura is slower than Peter. Therefore laura is faster than Peter.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "163": {
+      "input": "Some calves are tortoises. Some wasps are not tortoises. Therefore all wasps are calves.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "164": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No shizzoes are zestponts. All benessits are shizzoes. Therefore no benessits are zestponts.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "165": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some cars are priests. All priests are heros. Therefore some heros are cars.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "166": {
+      "input": "Some werradiths are shorates. Some werradiths are shraiwels. Therefore some shraiwels are not shorates.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "167": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Osbert is slower than William. Philipp is slower than Peter. Sarah is slower than Philipp. Bill is slower than Peter. Therefore sarah is slower than Peter.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "168": {
+      "input": "Jill is less kind than Moses. Moses is less kind than Rossi. Therefore rossi is less kind than Moses.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "169": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Moses is taller than Bob. Bob is taller than Tim. Therefore tim is shorter than Bob.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "170": {
+      "input": "Some gryllows are not skrads. All skrads are rigglays. Therefore all rigglays are gryllows.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "171": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No children are canines. Some boys are canines. Therefore some boys are not children.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "172": {
+      "input": "Some strizzings are confras. No chevesics are confras. Therefore some chevesics are strizzings.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "173": {
+      "input": "No horses are nieces. All jokers are horses. Therefore no jokers are nieces.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "174": {
+      "input": "Some aphids are not fish. Some shows are not fish. Therefore some shows are aphids.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "175": {
+      "input": "I wanted to become an authority on philosophy, so I joined up as a campus security guard.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "176": {
+      "input": "Some pricenanos are not gerants. No hendassas are pricenanos. Therefore some hendassas are not gerants.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "177": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All fathers are swans. No swans are mares. Therefore no mares are fathers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "178": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some ladies are not ducks. Some ladies are mustangs. Therefore all mustangs are ducks.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "179": {
+      "input": "No winnibler are bistups. All brewtines are bistups. Therefore all brewtines are winnibler.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "180": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All spooks are goats. Some spooks are villages. Therefore some villages are goats.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "181": {
+      "input": "No prottows are yudalouds. Some yudalouds are treyples. Therefore some treyples are prottows.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "182": {
+      "input": "Some goblins are not candlestick makers. All lion tamers are goblins. Therefore some lion tamers are not candlestick makers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "183": {
+      "input": "Kim is slower than Moses. Aiden is slower than Kim. Henry is slower than Kim. Therefore kim is faster than Henry.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "184": {
+      "input": "Some sposities are not ranotots. Some spewsies are not ranotots. Therefore no spewsies are sposities.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "185": {
+      "input": "All bulls are crabs. Some places are not bulls. Therefore no places are crabs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "186": {
+      "input": "All refluppers are sinpuds. Some sinpuds are broomillas. Therefore some broomillas are not refluppers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "187": {
+      "input": "Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore laura is less witty than Kim.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "188": {
+      "input": "All dukes are pups. All pens are pups. Therefore some pens are not dukes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "189": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Alex is less reliable than Amy. Amy is less reliable than David. Therefore david is less reliable than Amy.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "190": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Anna is less reliable than Amy. Robert is less reliable than Amy. Anna is less reliable than Robert. Tim is more reliable than Anna. Therefore robert is more reliable than Anna.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "191": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No styphons are prottows. Some skizzles are styphons. Therefore some skizzles are not prottows.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "192": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All vampires are capitols. Some sheep dogs are vampires. Therefore some sheep dogs are capitols.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "193": {
+      "input": "Moses is less witty than Tom. Tom is less witty than William. Therefore tom is wittier than Moses.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "194": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Jennifer is wittier than Zach. Sam is wittier than Jennifer. Therefore jennifer is less witty than Zach.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "195": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? The problems with my computer started after I installed that piece of software, so it might be the cause of my issues.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "196": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some weepeggles are besloors. Some shipotoes are not besloors. Therefore some shipotoes are weepeggles.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "197": {
+      "input": "All heros are musicians. No musicians are aunts. Therefore no aunts are heros.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "198": {
+      "input": "Some mincoms are not shipotoes. No dorchies are shipotoes. Therefore all dorchies are mincoms.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "199": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? The politician won the popular vote, so they must be the best candidate.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "200": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No offices are knaves. Some knaves are extraterrestrials. Therefore some extraterrestrials are not offices.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "201": {
+      "input": "Some winnibler are not strassips. Some effachers are not strassips. Therefore no effachers are winnibler.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "202": {
+      "input": "You said human rights are important, so clearly you don't care about animals.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "203": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Caroline is kinder than William. Jack is less kind than William. Therefore william is less kind than Jack.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "204": {
+      "input": "Susan is less reliable than Sarah. Alex is less reliable than Susan. Therefore susan is more reliable than Sarah.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "205": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some jerens are nalpures. All nalpures are pricenanos. Therefore all pricenanos are jerens.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "206": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No rodrups are weepeggles. Some strizzings are weepeggles. Therefore some strizzings are not rodrups.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "207": {
+      "input": "All compleys are zapsters. No zapsters are bacclas. Therefore some bacclas are compleys.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "208": {
+      "input": "Vicky is less reliable than Edward. Vicky is less reliable than Cecilia. Edward is less reliable than Moses. Therefore edward is less reliable than Vicky.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "209": {
+      "input": "Evolutionists and creationists disagree about the origin of the earth. So perhaps some species evolved and others were created.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "210": {
+      "input": "All reilts are benessits. Some dreanors are reilts. Therefore some dreanors are benessits.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "211": {
+      "input": "Some sheep dogs are not cafes. No clerics are sheep dogs. Therefore all clerics are cafes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "212": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No benessits are swinducts. Some benessits are lotadils. Therefore some lotadils are not swinducts.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "213": {
+      "input": "No smurtans are shures. Some shipotoes are shures. Therefore some shipotoes are not smurtans.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "214": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some nuns are mustangs. All nuns are harlequins. Therefore some harlequins are mustangs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "215": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Sarah is slower than Dylan. Ernest is slower than Dylan. Sarah is slower than Ernest. Therefore dylan is faster than Ernest.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "216": {
+      "input": "Some cards are not kittens. All cards are bulls. Therefore no bulls are kittens.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "217": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No dragons are animals. All bishops are animals. Therefore no bishops are dragons.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "218": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? She gets bored when I talk about movies. I'll talk about football instead to see if she's more interested.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "219": {
+      "input": "It's better to take photographs in good light, so you should turn on a lamp.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "220": {
+      "input": "No shures are fapsters. Some fapsters are spequals. Therefore all spequals are shures.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "221": {
+      "input": "This is the newest journal article about coronavirus online, so it must be the most truthful.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "222": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All natances are rigglays. No styphons are rigglays. Therefore no styphons are natances.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "223": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Candice is less frank than Philipp. Tom is more frank than Philipp. Therefore tom is more frank than Philipp.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "224": {
+      "input": "The university was founded by a terrible man, so it's clearly a terrible institution.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "225": {
+      "input": "Some hornets are not programmers. Some hornets are stadiums. Therefore no stadiums are programmers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "226": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All glontoms are refluppers. No refluppers are gaxes. Therefore no gaxes are glontoms.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "227": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some sypholoes are gryllows. Some gryllows are yudalouds. Therefore some yudalouds are not sypholoes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "228": {
+      "input": "No offices are lords. Some offices are auditoriums. Therefore some auditoriums are not lords.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "229": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Sara is faster than Caroline. Sara is slower than Sarah. Marcus is slower than Anna. Therefore caroline is faster than Sara.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "230": {
+      "input": "No aferrarons are didizas. No didizas are unfabrans. Therefore some unfabrans are not aferrarons.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "231": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No bacclas are spoickles. Some bacclas are werradiths. Therefore some werradiths are not spoickles.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "232": {
+      "input": "The one time I was in France there were a lot of storms, so I guess that's what the weather is generally like.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "233": {
+      "input": "The city was founded two hundred years ago by a notorious racist, so it must still be a racist place.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "234": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Marcus is faster than Annie. Annie is faster than Kevin. Therefore annie is slower than Kevin.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "235": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some clothes are goblins. All firemen are clothes. Therefore some firemen are not goblins.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "236": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All gryllows are sinpuds. Some gryllows are unfabrans. Therefore some unfabrans are sinpuds.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "237": {
+      "input": "Lara is more frank than Bob. Bob is more frank than Marcus. Therefore bob is less frank than Marcus.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "238": {
+      "input": "Some aferrarons are broomillas. All aferrarons are mincoms. Therefore some mincoms are broomillas.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "239": {
+      "input": "Some houtals are brongs. No houtals are confras. Therefore some confras are not brongs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "240": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Laura is shorter than Sara. Susan is shorter than Sophia. Sean is shorter than Sophia. Laura is shorter than Sean. Therefore laura is shorter than Sophia.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "241": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? I can't understand Higgs Theorem, so it must be false.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "242": {
+      "input": "No spacemen are alligators. All cowgirls are alligators. Therefore no cowgirls are spacemen.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "243": {
+      "input": "Some sayplomps are not brongs. Some slozzoms are not brongs. Therefore some slozzoms are not sayplomps.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "244": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? John is wittier than Marcus. John is wittier than Zach. Zach is wittier than Kim. Therefore kim is wittier than Zach.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "245": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All hendassas are winnibler. All nalpures are winnibler. Therefore no nalpures are hendassas.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "246": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All swoofles are sposities. All sayplomps are sposities. Therefore some sayplomps are swoofles.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "247": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No jovians are fathers. All boa constrictors are fathers. Therefore no boa constrictors are jovians.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "248": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All rigglays are compleys. Some hildaids are not compleys. Therefore some hildaids are rigglays.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "249": {
+      "input": "No nightmares are restaurants. Some shirts are nightmares. Therefore some shirts are not restaurants.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "250": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No kitzerains are yudalouds. All shraiwels are yudalouds. Therefore some shraiwels are not kitzerains.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "251": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All acrobats are insects. Some acrobats are brunettes. Therefore some brunettes are insects.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "252": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Mexico City must be a great place to live because so many people choose to live there.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "253": {
+      "input": "No benessits are swinducts. Some benessits are lotadils. Therefore some lotadils are not swinducts.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "254": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No dufizzes are mincoms. Some dufizzes are taindists. Therefore some taindists are not mincoms.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "255": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Paul is less ambitious than Lara. Lara is less ambitious than Jones. Therefore paul is more ambitious than Lara.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "256": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All essups are houtals. No houtals are tingforms. Therefore no tingforms are essups.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "257": {
+      "input": "Laura is less frank than Carol. Laura is less frank than Kim. Mario is less frank than Laura. Anne is less frank than Laura. Therefore carol is more frank than Laura.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "258": {
+      "input": "All cars are nurses. Some kids are not nurses. Therefore some kids are not cars.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "259": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No captains are cyborgs. Some captains are flowers. Therefore some flowers are not cyborgs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "260": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No androids are hares. Some majors are androids. Therefore some majors are not hares.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "261": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? We can't know for sure that the defendant was telling the truth. So we should presume he's lying.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "262": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All tograshs are shraiwels. Some noxuses are not shraiwels. Therefore some noxuses are not tograshs.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "263": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Paul is more frank than Bob. Paul is less frank than Annie. Therefore bob is more frank than Paul.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "264": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Candice is less frank than Philipp. Tom is more frank than Philipp. Therefore philipp is more frank than Tom.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "265": {
+      "input": "All wasps are bunnies. No bunnies are teachers. Therefore no teachers are wasps.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "266": {
+      "input": "Some priests are not ducks. All elms are priests. Therefore all elms are ducks.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "267": {
+      "input": "All kittens are playwrights. Some aliens are playwrights. Therefore no aliens are kittens.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "268": {
+      "input": "No witches are forks. Some forks are not princes. Therefore some princes are not witches.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "269": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Modern humans evolved in Africa, so that must be the best place for us to live.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "270": {
+      "input": "Moses is kinder than Zach. Zach is kinder than Susan. Zach is kinder than Laura. Therefore moses is kinder than Laura.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "271": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All tupresses are shipotoes. Some tupresses are sypholoes. Therefore no sypholoes are shipotoes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "272": {
+      "input": "All females are explorers. Some reptilians are not females. Therefore all reptilians are explorers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "273": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Kim is slower than Moses. Aiden is slower than Kim. Henry is slower than Kim. Therefore kim is faster than Henry.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "274": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Carol is more sensible than Anna. Edward is more sensible than Carol. Edward is more sensible than Dylan. Jake is more sensible than Edward. Therefore jake is more sensible than Anna.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "275": {
+      "input": "Peter is older than Kim. Rossi is older than Aiden. Peter is older than Rossi. Therefore kim is older than Peter.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "276": {
+      "input": "No snabeths are dufizzes. No builithes are snabeths. Therefore some builithes are not dufizzes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "277": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Sara is faster than Caroline. Sara is slower than Sarah. Marcus is slower than Anna. Therefore sarah is faster than Caroline.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "278": {
+      "input": "Jake is less sensible than Charlotte. Bob is less sensible than Charlotte. Laura is less sensible than Bob. Paul is less sensible than Bob. Therefore paul is less sensible than Charlotte.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "279": {
+      "input": "No sharks are candlestick makers. All countesses are candlestick makers. Therefore no countesses are sharks.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "280": {
+      "input": "Nat is faster than Osbert. Bill is slower than Osbert. Therefore osbert is slower than Bill.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "281": {
+      "input": "The motorways in this country were originally built by the military dictatorship, so it's unethical to use them.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "282": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Robert is less kind than Kevin. Robert is less kind than Nat. Nat is kinder than Tom. Debbie is less kind than Tom. Therefore nat is less kind than Debbie.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "283": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some hares are lions. No lions are queens. Therefore some queens are hares.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "284": {
+      "input": "Chicken must be a healthy food, as my grandad ate it three times a day and lived to 110 years old.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "285": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some hobgoblins are apes. All hobgoblins are countesses. Therefore no countesses are apes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "286": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some goblins are not rabbits. All goblins are boojums. Therefore some boojums are not rabbits.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "287": {
+      "input": "Some pardees are not shraiwels. Some shraiwels are not tupresses. Therefore some tupresses are not pardees.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "288": {
+      "input": "I can't understand Higgs Theorem, so it must be false.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "289": {
+      "input": "All gaxes are werradiths. No houtals are werradiths. Therefore no houtals are gaxes.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "290": {
+      "input": "All lotadils are sebusses. Some noxuses are not sebusses. Therefore some noxuses are not lotadils.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "291": {
+      "input": "Dylan is wittier than Sam. Jenny is wittier than Dylan. Jake is wittier than Dylan. Therefore jenny is less witty than Dylan.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "292": {
+      "input": "Some gorillas are not spoons. No spoons are bishops. Therefore no bishops are gorillas.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "293": {
+      "input": "Mario is less witty than Osbert. Jim is less witty than Kim. Osbert is less witty than Kim. Therefore mario is less witty than Kim.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "294": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Some trands are not brewtines. Some winnibler are trands. Therefore some winnibler are brewtines.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "295": {
+      "input": "All reptilians are adults. Some reptilians are places. Therefore some places are adults.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "296": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? Humans evolved in savannah environments, so those are clearly the best place for us.,\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "297": {
+      "input": "Jones is less ambitious than Michael. Jones is less ambitious than Nat. Nat is less ambitious than Michael. Peter is less ambitious than Nat. Therefore nat is more ambitious than Peter.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "298": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? No pardees are swoofles. Some skizzles are not swoofles. Therefore no skizzles are pardees.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "B. Invalid",
+        "Invalid"
+      ]
+    },
+    "299": {
+      "input": "Do you think the following argument is 'Valid' or 'Invalid'? All kirarics are refluppers. Some kirarics are looplats. Therefore some looplats are refluppers.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    },
+    "300": {
+      "input": "Some natances are didizas. All natances are sebusses. Therefore some sebusses are didizas.\nChoices:\nA. Valid\nB. Invalid",
+      "output": [
+        "A. Valid",
+        "Valid"
+      ]
+    }
+  }
+}

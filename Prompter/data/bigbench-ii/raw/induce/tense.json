@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Modify the tense of a given sentence",
+  "examples": {
+    "1": {
+      "input": "Because of the cold temperatures, she will have decided to stay indoors Change tense to PAST PERFECT: ",
+      "output": [
+        "Because of the cold temperatures, she had decided to stay indoors"
+      ]
+    },
+    "2": {
+      "input": "I will have finished reading the book. Change tense to PRESENT PERFECT: ",
+      "output": [
+        "I have finished reading the book."
+      ]
+    },
+    "3": {
+      "input": "I have been sleeping late on Saturdays for the last 2 months. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "I have been sleeping late on Saturdays for the last 2 months."
+      ]
+    },
+    "4": {
+      "input": "We had realized our mistake. Change tense to PRESENT PERFECT: ",
+      "output": [
+        "We have realized our mistake."
+      ]
+    },
+    "5": {
+      "input": "Tom has been traveling around the world since the month of December. Change tense to PAST PERFECT CONTINUOUS: ",
+      "output": [
+        "Tom had been traveling around the world since the month of December."
+      ]
+    },
+    "6": {
+      "input": "He did his work with diligence. Change tense to FUTURE PERFECT: ",
+      "output": [
+        "He will have done his work with diligence."
+      ]
+    },
+    "7": {
+      "input": "I will have been watching the concert for an hour. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "I have been watching the concert for an hour."
+      ]
+    },
+    "8": {
+      "input": "I was making dinner when she arrived. Change tense to PAST CONTINUOUS: ",
+      "output": [
+        "I was making dinner when she arrived."
+      ]
+    },
+    "9": {
+      "input": "I hadn\u2019t received any reply from him. Change tense to PRESENT PERFECT: ",
+      "output": [
+        "I haven\u2019t received any reply from him."
+      ]
+    },
+    "10": {
+      "input": "You had been shopping in that market before we came. Change tense to FUTURE PERFECT CONTINUOUS: ",
+      "output": [
+        "You will have been shopping in that market before we come."
+      ]
+    },
+    "11": {
+      "input": "The lyricist will have been writing a realistic song for the film. Change tense to PAST PERFECT CONTINUOUS: ",
+      "output": [
+        "The lyricist had been writing a realistic song for the film."
+      ]
+    },
+    "12": {
+      "input": "I will have been arranging all the necessary materials before the program starts. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "I have been arranging all the necessary materials before the program starts."
+      ]
+    },
+    "13": {
+      "input": "The weather changed, but the team will have planned its next move. Change tense to PAST PERFECT: ",
+      "output": [
+        "The weather changed, but the team had planned its next move."
+      ]
+    },
+    "14": {
+      "input": "I was helping him to do the task. Change tense to FUTURE CONTINUOUS: ",
+      "output": [
+        "I will be helping him to do the task."
+      ]
+    },
+    "15": {
+      "input": "The health department has decided that all children should be immunized against meningitis. Change tense to PAST PERFECT: ",
+      "output": [
+        "The health department had decided that all children should be immunized against meningitis."
+      ]
+    },
+    "16": {
+      "input": "I had been attending the program before I came here. Change tense to FUTURE PERFECT CONTINUOUS: ",
+      "output": [
+        "I will have been attending the program before I come here."
+      ]
+    },
+    "17": {
+      "input": "She is cooking dinner. Change tense to PAST CONTINUOUS: ",
+      "output": [
+        "She was cooking dinner."
+      ]
+    },
+    "18": {
+      "input": "The surgeon had operated on six patients before she attended a luncheon meeting. Change tense to FUTURE PERFECT: ",
+      "output": [
+        "The surgeon will have operated on six patients before she attends a luncheon meeting."
+      ]
+    },
+    "19": {
+      "input": "Sania is getting ready for school. Change tense to PAST CONTINUOUS: ",
+      "output": [
+        "Sania was getting ready for school."
+      ]
+    },
+    "20": {
+      "input": "They will have been playing cricket in that field for five hours. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "They have been playing cricket in that field for five hours."
+      ]
+    },
+    "21": {
+      "input": "The meeting ends at 6 o'clock. Change tense to SIMPLE PRESENT: ",
+      "output": [
+        "The meeting ends at 6 o'clock."
+      ]
+    },
+    "22": {
+      "input": "Will you have been going to the concert of the realistic songs before I come? Change tense to PAST PERFECT CONTINUOUS: ",
+      "output": [
+        "Had you been going to the concert of the realistic songs before I came?"
+      ]
+    },
+    "23": {
+      "input": "I will be having a party for my birthday. Change tense to PAST CONTINUOUS: ",
+      "output": [
+        "I was having a party for my birthday. "
+      ]
+    },
+    "24": {
+      "input": "He will not pass the test. Change tense to FUTURE PERFECT: ",
+      "output": [
+        "He will not have passed the test."
+      ]
+    },
+    "25": {
+      "input": "Are you visiting your cousin this weekend? Change tense to FUTURE CONTINUOUS: ",
+      "output": [
+        "Will you be visiting your cousin this weekend?"
+      ]
+    },
+    "26": {
+      "input": "She will look after her aged parents. Change tense to SIMPLE PRESENT: ",
+      "output": [
+        "She looks after her aged parents."
+      ]
+    },
+    "27": {
+      "input": "At five o'clock, I will have been waiting for thirty minutes. Change tense to FUTURE PERFECT CONTINUOUS: ",
+      "output": [
+        "At five o'clock, I will have been waiting for thirty minutes."
+      ]
+    },
+    "28": {
+      "input": "I will have been helping him to do the task for an hour. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "I have been helping him to do the task for an hour."
+      ]
+    },
+    "29": {
+      "input": "By the time you arrive, we will have finished the meal and the speeches. Change tense to SIMPLE FUTURE: ",
+      "output": [
+        "By the time you arrive, we will have finished the meal and the speeches."
+      ]
+    },
+    "30": {
+      "input": "You do not look happy to see me. Change tense to SIMPLE PAST: ",
+      "output": [
+        "You did not look happy to see me."
+      ]
+    },
+    "31": {
+      "input": "She will accept this offer. Change tense to SIMPLE PAST: ",
+      "output": [
+        "She accepted that offer."
+      ]
+    },
+    "32": {
+      "input": "He had completed his project by Saturday Change tense to FUTURE PERFECT: ",
+      "output": [
+        "He will have completed his project by Saturday."
+      ]
+    },
+    "33": {
+      "input": "They were playing football at 9am this morning. Change tense to FUTURE CONTINUOUS: ",
+      "output": [
+        "They will be playing football at 9am this morning."
+      ]
+    },
+    "34": {
+      "input": "I am happy. Change tense to SIMPLE PRESENT: ",
+      "output": [
+        "I am happy."
+      ]
+    },
+    "35": {
+      "input": "I will be meeting tom this saturday. Change tense to PAST CONTINUOUS: ",
+      "output": [
+        "I was meeting tom this saturday."
+      ]
+    },
+    "36": {
+      "input": "John will have baked a cake before you arrived. Change tense to PAST PERFECT: ",
+      "output": [
+        "John had baked a cake before you arrived."
+      ]
+    },
+    "37": {
+      "input": "Jane had been gossiping in the coffee shop for two hours. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "Jane has been gossiping in the coffee shop for two hours."
+      ]
+    },
+    "38": {
+      "input": "They will not be working here. Change tense to PAST CONTINUOUS: ",
+      "output": [
+        "They were not working here. "
+      ]
+    },
+    "39": {
+      "input": "Jeff had been studying in the library before he came to the class. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "Jeff has been studying in the library before he comes to the class."
+      ]
+    },
+    "40": {
+      "input": "She stayed up all night because she had received bad news. Change tense to PAST PERFECT: ",
+      "output": [
+        "She stayed up all night because she had received bad news."
+      ]
+    },
+    "41": {
+      "input": "At 6 o'clock, I was eating dinner. Change tense to PAST CONTINUOUS: ",
+      "output": [
+        "At 6 o'clock, I was eating dinner."
+      ]
+    },
+    "42": {
+      "input": "I was shopping at the Dhaka International Trade Fair with my elder brother. Change tense to FUTURE CONTINUOUS: ",
+      "output": [
+        "I will be shopping at the Dhaka International Trade Fair with my elder brother."
+      ]
+    },
+    "43": {
+      "input": "The child was playing with his dog. Change tense to PRESENT CONTINUOUS: ",
+      "output": [
+        "The child is playing with his dog."
+      ]
+    },
+    "44": {
+      "input": "I will have not been watching the cricket match for an hour. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "I have not been watching the cricket match for an hour."
+      ]
+    },
+    "45": {
+      "input": "I had been working at the company for five years when I got the promotion. Change tense to PAST PERFECT CONTINUOUS: ",
+      "output": [
+        "I had been working at the company for five years when I got the promotion."
+      ]
+    },
+    "46": {
+      "input": "She had applied for the job. Change tense to PRESENT PERFECT: ",
+      "output": [
+        "She has applied for the job."
+      ]
+    },
+    "47": {
+      "input": "Robert will have been reading various kinds of books on this topic. Change tense to PRESENT PERFECT CONTINUOUS: ",
+      "output": [
+        "Robert has been reading various kinds of books on this topic."
+      ]
+    },
+    "48": {
+      "input": "We participate in the Inter-house Debate Competition. Change tense to SIMPLE FUTURE: ",
+      "output": [
+        "We will participate in the Inter-house Debate Competition."
+      ]
+    },
+    "49": {
+      "input": "The raccon hid during the day. Change tense to SIMPLE FUTURE: ",
+      "output": [
+        "The raccon will hide during the day."
+      ]
+    },
+    "50": {
+      "input": "Grandmother will be telling a story. Change tense to PRESENT CONTINUOUS: ",
+      "output": [
+        "Grandmother is telling a story."
+      ]
+    }
+  }
+}

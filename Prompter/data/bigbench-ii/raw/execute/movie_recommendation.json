@@ -1,0 +1,2108 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Recommend movies similar to the given list of movies",
+  "examples": {
+    "1": {
+      "input": "Stargate, The Shawshank Redemption, Dances with Wolves, The Fugitive:\nChoices:\nA. Enter the Dragon\nB. Silent Night, Deadly Night\nC. Clear and Present Danger\nD. Mrs Doubtfire",
+      "output": [
+        "C. Clear and Present Danger",
+        "Clear and Present Danger"
+      ]
+    },
+    "2": {
+      "input": "Forrest Gump, Star Wars Episode VI - Return of the Jedi, Back to the Future, Independence Day:\nChoices:\nA. The Goods Live Hard, Sell Hard\nB. American Beauty\nC. Jonah Hex\nD. Captain America",
+      "output": [
+        "B. American Beauty",
+        "American Beauty"
+      ]
+    },
+    "3": {
+      "input": "The Fugitive, The Shawshank Redemption, Braveheart, Pulp Fiction:\nChoices:\nA. Dances with Wolves\nB. The Snapper\nC. When the Levees Broke A Requiem in Four Acts\nD. To Live and Die in LA",
+      "output": [
+        "A. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "4": {
+      "input": "Star Wars Episode IV - A New Hope, Schindler's List, Inception, The Matrix:\nChoices:\nA. The Expendables 3\nB. Twin Dragons\nC. Breaking the Waves\nD. The Lord of the Rings The Return of the King",
+      "output": [
+        "D. The Lord of the Rings The Return of the King",
+        "The Lord of the Rings The Return of the King"
+      ]
+    },
+    "5": {
+      "input": "Schindler's List, Apollo 13, The Shawshank Redemption, Pretty Woman:\nChoices:\nA. Goal! The Dream Begins\nB. The Break-Up\nC. Sherlock Holmes The Woman in Green\nD. Braveheart",
+      "output": [
+        "D. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "6": {
+      "input": "Schindler's List, The Shawshank Redemption, Dances with Wolves, Braveheart:\nChoices:\nA. Killing Zoe\nB. Apollo 13\nC. The 40-Year-Old Virgin\nD. The Navigator",
+      "output": [
+        "B. Apollo 13",
+        "Apollo 13"
+      ]
+    },
+    "7": {
+      "input": "Saving Private Ryan, Raiders of the Lost Ark, The Matrix, Inception:\nChoices:\nA. Gladiator\nB. The Wraith\nC. I'm Gonna Git You Sucka\nD. The Lost Room",
+      "output": [
+        "A. Gladiator",
+        "Gladiator"
+      ]
+    },
+    "8": {
+      "input": "Dances with Wolves, Pulp Fiction, Forrest Gump, Stargate:\nChoices:\nA. Designing Woman\nB. The Fugitive\nC. The Forgotten\nD. A Man Vanishes",
+      "output": [
+        "B. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "9": {
+      "input": "The Shawshank Redemption, Braveheart, Apollo 13, Schindler's List:\nChoices:\nA. Cell 211\nB. Jarhead\nC. Boys Town\nD. Dances with Wolves",
+      "output": [
+        "D. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "10": {
+      "input": "Star Wars Episode VI - Return of the Jedi, Star Wars Episode V - The Empire Strikes Back, Forrest Gump, Toy Story:\nChoices:\nA. Triumph of the Will\nB. Anastasia\nC. Smooth Talk\nD. Independence Day",
+      "output": [
+        "D. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "11": {
+      "input": "The Sixth Sense, One Flew Over the Cuckoo's Nest, Wallace & Gromit A Close Shave, The Maltese Falcon:\nChoices:\nA. Feast\nB. In the Loop\nC. Return with Honor\nD. Reservoir Dogs",
+      "output": [
+        "D. Reservoir Dogs",
+        "Reservoir Dogs"
+      ]
+    },
+    "12": {
+      "input": "Saving Private Ryan, Raiders of the Lost Ark, The Matrix, Star Wars Episode IV - A New Hope:\nChoices:\nA. Schindler's List\nB. Juice\nC. Furious 7\nD. Gone Baby Gone",
+      "output": [
+        "A. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "13": {
+      "input": "Crimson Tide, The Shawshank Redemption, Pulp Fiction, Forrest Gump:\nChoices:\nA. Phineas and Ferb the Movie Across the 2nd Dimension\nB. Dances with Wolves\nC. The Survivalist\nD. Death of a Salesman",
+      "output": [
+        "B. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "14": {
+      "input": "Forrest Gump, Star Wars Episode IV - A New Hope, Back to the Future, Star Wars Episode VI - Return of the Jedi:\nChoices:\nA. The Apple\nB. Independence Day\nC. Boiling Point\nD. Car Wash",
+      "output": [
+        "B. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "15": {
+      "input": "Minority Report, The Lion King, Shrek, Monsters, Inc:\nChoices:\nA. Bloodsucking Bastards\nB. Aladdin\nC. Okja\nD. First Reformed",
+      "output": [
+        "B. Aladdin",
+        "Aladdin"
+      ]
+    },
+    "16": {
+      "input": "The Fugitive, Forrest Gump, Pulp Fiction, The Shawshank Redemption:\nChoices:\nA. Comandante\nB. Neighbors\nC. Breathless\nD. Crimson Tide",
+      "output": [
+        "D. Crimson Tide",
+        "Crimson Tide"
+      ]
+    },
+    "17": {
+      "input": "Romancing the Stone, American Beauty, The Princess Bride, Star Wars Episode IV - A New Hope:\nChoices:\nA. Save the Last Dance\nB. Passion\nC. Being John Malkovich\nD. Trial and Error",
+      "output": [
+        "C. Being John Malkovich",
+        "Being John Malkovich"
+      ]
+    },
+    "18": {
+      "input": "Tombstone, Seven, Jurassic Park, Schindler's List:\nChoices:\nA. Officer and a Gentleman, An\nB. Sex and the City 2\nC. Dumb & Dumber\nD. Bicycle Thieves",
+      "output": [
+        "C. Dumb & Dumber",
+        "Dumb & Dumber"
+      ]
+    },
+    "19": {
+      "input": "Saving Private Ryan, Pulp Fiction, The Matrix, The Green Mile:\nChoices:\nA. Music From Another Room\nB. Hotel Transylvania 2\nC. The 400 Blows\nD. Raiders of the Lost Ark",
+      "output": [
+        "D. Raiders of the Lost Ark",
+        "Raiders of the Lost Ark"
+      ]
+    },
+    "20": {
+      "input": "Don Juan DeMarco, Mr Holland's Opus, What's Eating Gilbert Grape, Pulp Fiction:\nChoices:\nA. Get Shorty\nB. Kolya\nC. Death Wish 2\nD. Gold Diggers of 1933",
+      "output": [
+        "A. Get Shorty",
+        "Get Shorty"
+      ]
+    },
+    "21": {
+      "input": "The Terminator, Star Wars Episode VI - Return of the Jedi, Forrest Gump, Star Wars Episode IV - A New Hope:\nChoices:\nA. Independence Day\nB. The Human Condition III\nC. The Lifeguard\nD. Secretary",
+      "output": [
+        "A. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "22": {
+      "input": "Pulp Fiction, Forrest Gump, Dances with Wolves, The Usual Suspects:\nChoices:\nA. The Lawnmower Man\nB. Virus\nC. Jaws The Revenge\nD. Get Shorty",
+      "output": [
+        "D. Get Shorty",
+        "Get Shorty"
+      ]
+    },
+    "23": {
+      "input": "Dead Man Walking, Terminator 2 Judgment Day, The Shawshank Redemption, The Fugitive:\nChoices:\nA. King of New York\nB. Field of Dreams\nC. The General\nD. Braveheart",
+      "output": [
+        "D. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "24": {
+      "input": "Mr Holland's Opus, The Fugitive, Dances with Wolves, Stargate:\nChoices:\nA. Braveheart\nB. Reckless\nC. Nobody Knows\nD. 2010 The Year We Make Contact",
+      "output": [
+        "A. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "25": {
+      "input": "Batman, The Silence of the Lambs, Jurassic Park, Independence Day:\nChoices:\nA. The Sessions\nB. The Girl Who Kicked the Hornet's Nest\nC. Forrest Gump\nD. Before Night Falls",
+      "output": [
+        "C. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "26": {
+      "input": "The Shawshank Redemption, Saving Private Ryan, Braveheart, The Matrix:\nChoices:\nA. Dracula 2000\nB. 1492 Conquest of Paradise\nC. Schindler's List\nD. Auto Focus",
+      "output": [
+        "C. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "27": {
+      "input": "The Shawshank Redemption, Braveheart, Pulp Fiction, Get Shorty:\nChoices:\nA. The Fugitive\nB. Ghostbusters\nC. Malice\nD. Police Academy 2 Their First Assignment",
+      "output": [
+        "A. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "28": {
+      "input": "American Beauty, Star Wars Episode V - The Empire Strikes Back, Raiders of the Lost Ark, Star Wars Episode IV - A New Hope:\nChoices:\nA. Colombiana\nB. Snow Falling on Cedars\nC. Groundhog Day\nD. Santa's Little Helper",
+      "output": [
+        "C. Groundhog Day",
+        "Groundhog Day"
+      ]
+    },
+    "29": {
+      "input": "Inception, The Lord of the Rings The Return of the King, The Matrix, Raiders of the Lost Ark:\nChoices:\nA. The Dark Knight\nB. A Bucket Of Blood\nC. Transformers Dark of the Moon\nD. The Minus Man",
+      "output": [
+        "A. The Dark Knight",
+        "The Dark Knight"
+      ]
+    },
+    "30": {
+      "input": "Fargo, Pulp Fiction, American Beauty, Seven:\nChoices:\nA. The Usual Suspects\nB. Lady Vengeance\nC. K-19 The Widowmaker\nD. That Demon Within",
+      "output": [
+        "A. The Usual Suspects",
+        "The Usual Suspects"
+      ]
+    },
+    "31": {
+      "input": "Braveheart, Schindler's List, Terminator 2 Judgment Day, The Shawshank Redemption:\nChoices:\nA. The Sacrament\nB. Retroactive\nC. Dances with Wolves\nD. The Visitors",
+      "output": [
+        "C. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "32": {
+      "input": "Babe, The Secret Garden, The Lion King, Pinocchio:\nChoices:\nA. The Hairdresser's Husband\nB. Snow White and the Seven Dwarfs\nC. Things You Can Tell Just by Looking at Her\nD. Princess Caraboo",
+      "output": [
+        "B. Snow White and the Seven Dwarfs",
+        "Snow White and the Seven Dwarfs"
+      ]
+    },
+    "33": {
+      "input": "Schindler's List, The Shawshank Redemption, Terminator 2 Judgment Day, The Lion King:\nChoices:\nA. The Red Turtle\nB. Tarzan\nC. Nothing But Trouble\nD. Aladdin",
+      "output": [
+        "D. Aladdin",
+        "Aladdin"
+      ]
+    },
+    "34": {
+      "input": "The Big Lebowski, Star Wars Episode VI - Return of the Jedi, The Terminator, Star Wars Episode IV - A New Hope:\nChoices:\nA. OT Our Town\nB. Hocus Pocus\nC. Seven\nD. Lovely & Amazing",
+      "output": [
+        "C. Seven",
+        "Seven"
+      ]
+    },
+    "35": {
+      "input": "Blade Runner, Reservoir Dogs, L\u00e9on The Professional, Rear Window:\nChoices:\nA. Pickup on South Street\nB. One Flew Over the Cuckoo's Nest\nC. Home\nD. Trumbo",
+      "output": [
+        "B. One Flew Over the Cuckoo's Nest",
+        "One Flew Over the Cuckoo's Nest"
+      ]
+    },
+    "36": {
+      "input": "Aladdin, Fargo, Schindler's List, Braveheart:\nChoices:\nA. The Fugitive\nB. End of Watch\nC. Live Free or Die Hard\nD. Eddie Murphy Raw",
+      "output": [
+        "A. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "37": {
+      "input": "The Lion King, Toy Story, The Fugitive, Aladdin:\nChoices:\nA. Experimenter\nB. Highway 61\nC. Terminator 2 Judgment Day\nD. Short Circuit 2",
+      "output": [
+        "C. Terminator 2 Judgment Day",
+        "Terminator 2 Judgment Day"
+      ]
+    },
+    "38": {
+      "input": "The Big Lebowski, American Beauty, Raiders of the Lost Ark, The Princess Bride:\nChoices:\nA. House of Cards\nB. A Time to Kill\nC. Mirrors\nD. Indiana Jones and the Last Crusade",
+      "output": [
+        "D. Indiana Jones and the Last Crusade",
+        "Indiana Jones and the Last Crusade"
+      ]
+    },
+    "39": {
+      "input": "The Shawshank Redemption, Pulp Fiction, Don Juan DeMarco, Dances with Wolves:\nChoices:\nA. Broken Flowers\nB. Mr Holland's Opus\nC. Jackass 35\nD. Dark City",
+      "output": [
+        "B. Mr Holland's Opus",
+        "Mr Holland's Opus"
+      ]
+    },
+    "40": {
+      "input": "Star Wars Episode IV - A New Hope, The Usual Suspects, Star Wars Episode V - The Empire Strikes Back, Pulp Fiction:\nChoices:\nA. Fargo\nB. Conan the Barbarian\nC. Wisdom\nD. The Crew",
+      "output": [
+        "A. Fargo",
+        "Fargo"
+      ]
+    },
+    "41": {
+      "input": "LA Confidential, Star Wars Episode IV - A New Hope, Mission Impossible, Austin Powers International Man of Mystery:\nChoices:\nA. Once Were Warriors\nB. Dogfight\nC. New Waterford Girl\nD. Superman",
+      "output": [
+        "D. Superman",
+        "Superman"
+      ]
+    },
+    "42": {
+      "input": "Pulp Fiction, Stargate, The Fugitive, The Shawshank Redemption:\nChoices:\nA. The Astronaut Farmer\nB. It's Pat\nC. One-Eyed Jacks\nD. Dances with Wolves",
+      "output": [
+        "D. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "43": {
+      "input": "Independence Day, Star Wars Episode VI - Return of the Jedi, Star Wars Episode IV - A New Hope, Jurassic Park:\nChoices:\nA. Dead Man\nB. Back to the Future\nC. The Dish\nD. Unfinished Business",
+      "output": [
+        "B. Back to the Future",
+        "Back to the Future"
+      ]
+    },
+    "44": {
+      "input": "Toy Story, The Mask, Batman, The Lion King:\nChoices:\nA. Exit Wounds\nB. Punch-Drunk Love\nC. Seeking Justice\nD. Pretty Woman",
+      "output": [
+        "D. Pretty Woman",
+        "Pretty Woman"
+      ]
+    },
+    "45": {
+      "input": "The Lion King, Dances with Wolves, Braveheart, Schindler's List:\nChoices:\nA. Pickup on South Street\nB. Poltergeist III\nC. Crush\nD. The Shawshank Redemption",
+      "output": [
+        "D. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "46": {
+      "input": "Dances with Wolves, Terminator 2 Judgment Day, The Shawshank Redemption, Braveheart:\nChoices:\nA. The Hunting Party\nB. Schindler's List\nC. Baraka\nD. Reality Bites",
+      "output": [
+        "B. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "47": {
+      "input": "Pulp Fiction, The Usual Suspects, Schindler's List, Fargo:\nChoices:\nA. Stoked The Rise and Fall of Gator\nB. Surviving the Game\nC. Look Who's Talking\nD. The Shawshank Redemption",
+      "output": [
+        "D. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "48": {
+      "input": "The Shawshank Redemption, Forrest Gump, Dances with Wolves, Mr Holland's Opus:\nChoices:\nA. PK\nB. The Great Gatsby\nC. Philadelphia\nD. Casper Meets Wendy",
+      "output": [
+        "C. Philadelphia",
+        "Philadelphia"
+      ]
+    },
+    "49": {
+      "input": "The Usual Suspects, Schindler's List, Fargo, The Shawshank Redemption:\nChoices:\nA. With a Friend Like Harry\nB. Crash\nC. The Stepford Wives\nD. Pulp Fiction",
+      "output": [
+        "D. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "50": {
+      "input": "The Princess Bride, The Shawshank Redemption, Raiders of the Lost Ark, The Matrix:\nChoices:\nA. Black Mirror\nB. Power of Nightmares, The The Rise of the Politics of Fear\nC. Pulp Fiction\nD. Hope Springs",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "51": {
+      "input": "Jurassic Park, The Silence of the Lambs, Forrest Gump, Star Wars Episode IV - A New Hope:\nChoices:\nA. Venus in Fur\nB. Dummy\nC. Back to the Future\nD. The Rink",
+      "output": [
+        "C. Back to the Future",
+        "Back to the Future"
+      ]
+    },
+    "52": {
+      "input": "Batman, Pulp Fiction, Apollo 13, Schindler's List:\nChoices:\nA. The Last Kiss\nB. Europa\nC. Braveheart\nD. Rise of the Planet of the Apes",
+      "output": [
+        "C. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "53": {
+      "input": "Schindler's List, The Shawshank Redemption, Terminator 2 Judgment Day, Dances with Wolves:\nChoices:\nA. Braveheart\nB. 800 Bullets\nC. DOA\nD. Reindeer Games",
+      "output": [
+        "A. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "54": {
+      "input": "Aladdin, Terminator 2 Judgment Day, Batman, The Mask:\nChoices:\nA. WarGames\nB. King Kong\nC. Foreign Correspondent\nD. Pretty Woman",
+      "output": [
+        "D. Pretty Woman",
+        "Pretty Woman"
+      ]
+    },
+    "55": {
+      "input": "Star Wars Episode IV - A New Hope, The Lord of the Rings The Fellowship of the Ring, The Sixth Sense, Star Wars Episode V - The Empire Strikes Back:\nChoices:\nA. The Lord of the Rings The Two Towers\nB. The Adventures of Sherlock Holmes and Doctor Watson King of Blackmailers\nC. Quiz Show\nD. The Fugitive",
+      "output": [
+        "A. The Lord of the Rings The Two Towers",
+        "The Lord of the Rings The Two Towers"
+      ]
+    },
+    "56": {
+      "input": "The Fugitive, Get Shorty, Braveheart, The Shawshank Redemption:\nChoices:\nA. Snow White and the Seven Dwarfs\nB. Dances with Wolves\nC. The Rookie\nD. The Vow",
+      "output": [
+        "B. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "57": {
+      "input": "The Fugitive, Braveheart, Crimson Tide, Dances with Wolves:\nChoices:\nA. Timeline\nB. Jet Li's Fearless\nC. The Shawshank Redemption\nD. Escape From Tomorrow",
+      "output": [
+        "C. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "58": {
+      "input": "Raiders of the Lost Ark, Schindler's List, Inception, The Lord of the Rings The Two Towers:\nChoices:\nA. The Black Stallion Returns\nB. The Brothers Grimm\nC. WALL\u00b7E\nD. The Toxic Avenger, Part II",
+      "output": [
+        "C. WALL\u00b7E",
+        "WALL\u00b7E"
+      ]
+    },
+    "59": {
+      "input": "Dances with Wolves, The Shawshank Redemption, Braveheart, The Fugitive:\nChoices:\nA. The Village\nB. Beverly Hills Cop III\nC. Bring Me the Head of Alfredo Garcia\nD. Pulp Fiction",
+      "output": [
+        "D. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "60": {
+      "input": "Forrest Gump, The Fugitive, Independence Day, Fargo:\nChoices:\nA. Comic-Con Episode IV A Fan's Hope\nB. Harley Davidson and the Marlboro Man\nC. Heat\nD. Scratch",
+      "output": [
+        "C. Heat",
+        "Heat"
+      ]
+    },
+    "61": {
+      "input": "Dances with Wolves, Aladdin, Braveheart, Dead Man Walking:\nChoices:\nA. The Fugitive\nB. Tristram Shandy A Cock and Bull Story\nC. Barefoot in the Park\nD. Dante's Inferno An Animated Epic",
+      "output": [
+        "A. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "62": {
+      "input": "Braveheart, The Usual Suspects, Schindler's List, Toy Story:\nChoices:\nA. Breakin' 2 Electric Boogaloo\nB. Batman\nC. When a Woman Ascends the Stairs\nD. Webmaster",
+      "output": [
+        "B. Batman",
+        "Batman"
+      ]
+    },
+    "63": {
+      "input": "Schindler's List, Pulp Fiction, The Fugitive, The Usual Suspects:\nChoices:\nA. Braveheart\nB. Planes\nC. Lord of Illusions\nD. 2048 Nowhere to Run",
+      "output": [
+        "A. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "64": {
+      "input": "American Beauty, Pi, X-Men, The Godfather:\nChoices:\nA. Police Academy Mission to Moscow\nB. The Matrix\nC. Carnival of Souls\nD. SupermanDoomsday",
+      "output": [
+        "B. The Matrix",
+        "The Matrix"
+      ]
+    },
+    "65": {
+      "input": "Batman, Independence Day, Forrest Gump, The Silence of the Lambs:\nChoices:\nA. Skyline\nB. Jurassic Park\nC. Dragon Ball Z Broly - The Legendary Super Saiyan\nD. One Fine Day",
+      "output": [
+        "B. Jurassic Park",
+        "Jurassic Park"
+      ]
+    },
+    "66": {
+      "input": "Back to the Future, The Terminator, The Lord of the Rings The Return of the King, Star Wars Episode VI - Return of the Jedi:\nChoices:\nA. Jack Whitehall At Large\nB. With Six You Get Eggroll\nC. Man of Aran\nD. The Silence of the Lambs",
+      "output": [
+        "D. The Silence of the Lambs",
+        "The Silence of the Lambs"
+      ]
+    },
+    "67": {
+      "input": "Dances with Wolves, Dumb & Dumber, Seven, Braveheart:\nChoices:\nA. Sunset Blvd\nB. Pulp Fiction\nC. Children of the Corn II The Final Sacrifice\nD. The Great Yokai War",
+      "output": [
+        "B. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "68": {
+      "input": "The Silence of the Lambs, Forrest Gump, Die Hard With a Vengeance, Jurassic Park:\nChoices:\nA. Shine\nB. Banana Joe\nC. Max Keeble's Big Move\nD. Independence Day",
+      "output": [
+        "D. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "69": {
+      "input": "The Usual Suspects, Braveheart, Dances with Wolves, Pulp Fiction:\nChoices:\nA. Shake Hands with the Devil\nB. Fanny and Alexander\nC. The Fugitive\nD. Robin Hood",
+      "output": [
+        "C. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "70": {
+      "input": "Indiana Jones and the Last Crusade, Raiders of the Lost Ark, The Big Lebowski, Star Wars Episode V - The Empire Strikes Back:\nChoices:\nA. The Great Raid\nB. Edmond\nC. Falling Down\nD. Goodfellas",
+      "output": [
+        "D. Goodfellas",
+        "Goodfellas"
+      ]
+    },
+    "71": {
+      "input": "Apollo 13, Batman, Dances with Wolves, Braveheart:\nChoices:\nA. Schindler's List\nB. Crimes and Misdemeanors\nC. King Kong\nD. Gorillas in the Mist",
+      "output": [
+        "A. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "72": {
+      "input": "Apollo 13, The Shawshank Redemption, Dances with Wolves, Braveheart:\nChoices:\nA. Monster House\nB. Schindler's List\nC. A Guy Thing\nD. Peter Pan",
+      "output": [
+        "B. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "73": {
+      "input": "The Princess Bride, Goodfellas, Raiders of the Lost Ark, Star Wars Episode IV - A New Hope:\nChoices:\nA. She's So Lovely\nB. Indiana Jones and the Last Crusade\nC. Daddy Day Care\nD. 35 Up",
+      "output": [
+        "B. Indiana Jones and the Last Crusade",
+        "Indiana Jones and the Last Crusade"
+      ]
+    },
+    "74": {
+      "input": "The Shawshank Redemption, Forrest Gump, Kill Bill Vol 2, Kill Bill Vol 1:\nChoices:\nA. Wrong Turn 2 Dead End\nB. Fight Club\nC. My Mother's Castle\nD. The Madagascar Penguins in a Christmas Caper",
+      "output": [
+        "B. Fight Club",
+        "Fight Club"
+      ]
+    },
+    "75": {
+      "input": "Star Wars Episode I - The Phantom Menace, The Sixth Sense, Independence Day, Fight Club:\nChoices:\nA. Terminator 2 Judgment Day\nB. A Field in England\nC. Green Street Hooligans\nD. Guardians of the Galaxy 2",
+      "output": [
+        "A. Terminator 2 Judgment Day",
+        "Terminator 2 Judgment Day"
+      ]
+    },
+    "76": {
+      "input": "Blade Runner, The Shawshank Redemption, Forrest Gump, Fight Club:\nChoices:\nA. Seven Sisters\nB. The Dark Knight\nC. Mr Deeds Goes to Town\nD. Pacific Rim",
+      "output": [
+        "B. The Dark Knight",
+        "The Dark Knight"
+      ]
+    },
+    "77": {
+      "input": "Star Wars Episode V - The Empire Strikes Back, The Sixth Sense, Back to the Future, The Terminator:\nChoices:\nA. Family Guy Presents It's a Trap\nB. Charlie and the Chocolate Factory\nC. Futurama Bender's Game\nD. Toy Story",
+      "output": [
+        "D. Toy Story",
+        "Toy Story"
+      ]
+    },
+    "78": {
+      "input": "The Mask, Aladdin, The Lion King, Pretty Woman:\nChoices:\nA. Batman\nB. The Deadly Bees\nC. Hot Girls Wanted\nD. Mermaids",
+      "output": [
+        "A. Batman",
+        "Batman"
+      ]
+    },
+    "79": {
+      "input": "Dances with Wolves, Clear and Present Danger, The Fugitive, Stargate:\nChoices:\nA. Creep\nB. The Shawshank Redemption\nC. The Messengers\nD. The Best Man",
+      "output": [
+        "B. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "80": {
+      "input": "The Fugitive, Terminator 2 Judgment Day, Aladdin, Toy Story:\nChoices:\nA. The Edge of Love\nB. Untitled Spider-Man Reboot\nC. The Lion King\nD. Daddy Day Camp",
+      "output": [
+        "C. The Lion King",
+        "The Lion King"
+      ]
+    },
+    "81": {
+      "input": "The Fugitive, Crimson Tide, Braveheart, The Shawshank Redemption:\nChoices:\nA. Pulp Fiction\nB. Autumn Marathon\nC. I'm Not There\nD. The Limey",
+      "output": [
+        "A. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "82": {
+      "input": "The Matrix, Star Wars Episode V - The Empire Strikes Back, Star Wars Episode VI - Return of the Jedi, Star Wars Episode IV - A New Hope:\nChoices:\nA. The Crossing Guard\nB. The Maiden Heist\nC. Terminator 2 Judgment Day\nD. The Magic Ring",
+      "output": [
+        "C. Terminator 2 Judgment Day",
+        "Terminator 2 Judgment Day"
+      ]
+    },
+    "83": {
+      "input": "Back to the Future, Spirited Away, The Sixth Sense, The Terminator:\nChoices:\nA. The English Patient\nB. The Expendables\nC. Iron Eagle II\nD. The Lord of the Rings The Two Towers",
+      "output": [
+        "D. The Lord of the Rings The Two Towers",
+        "The Lord of the Rings The Two Towers"
+      ]
+    },
+    "84": {
+      "input": "American Beauty, Forrest Gump, The Usual Suspects, The Silence of the Lambs:\nChoices:\nA. Kong Skull Island\nB. Star Wars Episode IV - A New Hope\nC. Three Men and a Little Lady\nD. Scream",
+      "output": [
+        "B. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "85": {
+      "input": "Batman, The Mask, Pretty Woman, The Lion King:\nChoices:\nA. Tape\nB. Cry_Wolf\nC. Pulp Fiction\nD. Without a Paddle",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "86": {
+      "input": "Dances with Wolves, The Shawshank Redemption, Schindler's List, Pulp Fiction:\nChoices:\nA. Braveheart\nB. The Pretty One\nC. Elsa & Fred\nD. The Sound of Music",
+      "output": [
+        "A. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "87": {
+      "input": "Batman, The Mask, The Fugitive, Pretty Woman:\nChoices:\nA. The Front Page\nB. Maelstrom\nC. The Lion King\nD. Lamerica",
+      "output": [
+        "C. The Lion King",
+        "The Lion King"
+      ]
+    },
+    "88": {
+      "input": "Braveheart, The Fugitive, Fargo, Dances with Wolves:\nChoices:\nA. Mars Attacks!\nB. Mr Jealousy\nC. The Element of Crime\nD. Schindler's List",
+      "output": [
+        "D. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "89": {
+      "input": "Schindler's List, Braveheart, The Silence of the Lambs, Tombstone:\nChoices:\nA. Orlando\nB. Guilty of Romance\nC. Forrest Gump\nD. All the Real Girls",
+      "output": [
+        "C. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "90": {
+      "input": "American Beauty, Austin Powers International Man of Mystery, Star Wars Episode V - The Empire Strikes Back, Mission Impossible:\nChoices:\nA. Dragon Ball The Curse Of The Blood Rubies\nB. Moonlight Mile\nC. Hollywood Homicide\nD. Star Wars Episode IV - A New Hope",
+      "output": [
+        "D. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "91": {
+      "input": "Mr Holland's Opus, Dances with Wolves, Forrest Gump, Philadelphia:\nChoices:\nA. The Shawshank Redemption\nB. Borat Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan\nC. The Double\nD. Neon Bull",
+      "output": [
+        "A. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "92": {
+      "input": "Pulp Fiction, Clear and Present Danger, The Shawshank Redemption, The Fugitive:\nChoices:\nA. Dances with Wolves\nB. My Sister's Keeper\nC. Rocky II\nD. Rat Race",
+      "output": [
+        "A. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "93": {
+      "input": "Inception, Inside Out, Edge of Tomorrow, Star Wars Episode VII - The Force Awakens:\nChoices:\nA. Pulp Fiction\nB. Dutch\nC. Murder in the First\nD. Mystery, Alaska",
+      "output": [
+        "A. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "94": {
+      "input": "Batman, The Lion King, Pretty Woman, Terminator 2 Judgment Day:\nChoices:\nA. Drag Me to Hell\nB. The Old Man and the Sea\nC. The Mask\nD. 'night Mother",
+      "output": [
+        "C. The Mask",
+        "The Mask"
+      ]
+    },
+    "95": {
+      "input": "The Lion King, Schindler's List, Braveheart, Dances with Wolves:\nChoices:\nA. Serpico\nB. The Shawshank Redemption\nC. Cop Land\nD. Song of the Thin Man",
+      "output": [
+        "B. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "96": {
+      "input": "Schindler's List, Jurassic Park, The Silence of the Lambs, Forrest Gump:\nChoices:\nA. Batman\nB. Alien Resurrection\nC. A Tale of Two Cities\nD. The Quiet American",
+      "output": [
+        "A. Batman",
+        "Batman"
+      ]
+    },
+    "97": {
+      "input": "Reservoir Dogs, The Usual Suspects, Goodfellas, The Matrix:\nChoices:\nA. Star Wars Episode V - The Empire Strikes Back\nB. Cradle 2 the Grave\nC. Irreversible\nD. Stigmata",
+      "output": [
+        "A. Star Wars Episode V - The Empire Strikes Back",
+        "Star Wars Episode V - The Empire Strikes Back"
+      ]
+    },
+    "98": {
+      "input": "Dances with Wolves, Schindler's List, Batman, The Fugitive:\nChoices:\nA. The Dinner Game\nB. Metal A Headbanger's Journey\nC. Pulp Fiction\nD. FX2",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "99": {
+      "input": "Aladdin, Toy Story, The Lion King, Pulp Fiction:\nChoices:\nA. Being Elmo A Puppeteer's Journey\nB. Far From Home The Adventures of Yellow Dog\nC. Terminator 2 Judgment Day\nD. RoboGeisha",
+      "output": [
+        "C. Terminator 2 Judgment Day",
+        "Terminator 2 Judgment Day"
+      ]
+    },
+    "100": {
+      "input": "Pulp Fiction, Forrest Gump, The Fugitive, Braveheart:\nChoices:\nA. Little Women\nB. Dances with Wolves\nC. Bring It On All or Nothing\nD. Dead Alive",
+      "output": [
+        "B. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "101": {
+      "input": "American Beauty, The Terminator, Toy Story, Star Wars Episode V - The Empire Strikes Back:\nChoices:\nA. Wild Wild West\nB. Dirty Pretty Things\nC. Logan Lucky\nD. Batman",
+      "output": [
+        "D. Batman",
+        "Batman"
+      ]
+    },
+    "102": {
+      "input": "The Fugitive, Willy Wonka & the Chocolate Factory, So I Married an Axe Murderer, Batman:\nChoices:\nA. Seven\nB. Meet the Spartans\nC. Leprechaun 4 In Space\nD. Harlem Nights",
+      "output": [
+        "A. Seven",
+        "Seven"
+      ]
+    },
+    "103": {
+      "input": "Goodfellas, The Big Lebowski, Raiders of the Lost Ark, The Silence of the Lambs:\nChoices:\nA. Doctor Dolittle\nB. Pi\nC. House Party 3\nD. Star Wars Episode IV - A New Hope",
+      "output": [
+        "D. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "104": {
+      "input": "The Terminator, Toy Story, The Sixth Sense, Star Wars Episode VI - Return of the Jedi:\nChoices:\nA. Indecent Proposal\nB. Star Wars Episode V - The Empire Strikes Back\nC. Gray's Anatomy\nD. The Girl Next Door",
+      "output": [
+        "B. Star Wars Episode V - The Empire Strikes Back",
+        "Star Wars Episode V - The Empire Strikes Back"
+      ]
+    },
+    "105": {
+      "input": "Terminator 2 Judgment Day, Dead Man Walking, Braveheart, The Shawshank Redemption:\nChoices:\nA. The Fugitive\nB. Music and Lyrics\nC. Deuce Bigalow Male Gigolo\nD. Louis CK Oh My God",
+      "output": [
+        "A. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "106": {
+      "input": "Jurassic Park, The Silence of the Lambs, Batman, American Beauty:\nChoices:\nA. Night of the Living Dead\nB. Forrest Gump\nC. Ghost Ship\nD. Revenge for Jolly!",
+      "output": [
+        "B. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "107": {
+      "input": "Jurassic Park, Dances with Wolves, The Silence of the Lambs, Seven:\nChoices:\nA. Love and Other Disasters\nB. Tigerland\nC. Braveheart\nD. I Love You, Man",
+      "output": [
+        "C. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "108": {
+      "input": "Star Wars Episode V - The Empire Strikes Back, Star Wars Episode IV - A New Hope, Star Wars Episode VI - Return of the Jedi, The Matrix:\nChoices:\nA. Baby's Day Out\nB. Les Mis\u00e9rables\nC. Terminator 2 Judgment Day\nD. Dudley Do-Right",
+      "output": [
+        "C. Terminator 2 Judgment Day",
+        "Terminator 2 Judgment Day"
+      ]
+    },
+    "109": {
+      "input": "Schindler's List, The Lord of the Rings The Two Towers, Inception, The Dark Knight:\nChoices:\nA. Couples Retreat\nB. Those Magnificent Men in Their Flying Machines\nC. Star Wars Episode IV - A New Hope\nD. Friday After Next",
+      "output": [
+        "C. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "110": {
+      "input": "Forrest Gump, Pulp Fiction, The Fugitive, Dances with Wolves:\nChoices:\nA. Dragonheart 3 The Sorcerer's Curse\nB. Chi-Raq\nC. Stargate\nD. Tae Guk Gi The Brotherhood of War",
+      "output": [
+        "C. Stargate",
+        "Stargate"
+      ]
+    },
+    "111": {
+      "input": "Dances with Wolves, Braveheart, Schindler's List, Pulp Fiction:\nChoices:\nA. The Son's Room\nB. The Shawshank Redemption\nC. Psycho\nD. The Way South",
+      "output": [
+        "B. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "112": {
+      "input": "The Shawshank Redemption, Apollo 13, Terminator 2 Judgment Day, Dead Man Walking:\nChoices:\nA. Frankenstein Unbound\nB. Jon Stewart Has Left the Building\nC. Clear and Present Danger\nD. Little Giants",
+      "output": [
+        "C. Clear and Present Danger",
+        "Clear and Present Danger"
+      ]
+    },
+    "113": {
+      "input": "Star Wars Episode IV - A New Hope, Psycho, LA Confidential, Mission Impossible:\nChoices:\nA. Anchorman 2 The Legend Continues\nB. Corpse Bride\nC. 2001 A Space Odyssey\nD. The Nine Lives of Tomas Katz",
+      "output": [
+        "C. 2001 A Space Odyssey",
+        "2001 A Space Odyssey"
+      ]
+    },
+    "114": {
+      "input": "The Shawshank Redemption, Pulp Fiction, The Fugitive, Fargo:\nChoices:\nA. Blitz\nB. Only Lovers Left Alive\nC. The Chase\nD. The Usual Suspects",
+      "output": [
+        "D. The Usual Suspects",
+        "The Usual Suspects"
+      ]
+    },
+    "115": {
+      "input": "Forrest Gump, The Silence of the Lambs, Mission Impossible, Jurassic Park:\nChoices:\nA. Joe Somebody\nB. Dogfight\nC. Independence Day\nD. Twin Peaks Fire Walk with Me",
+      "output": [
+        "C. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "116": {
+      "input": "The Lion King, Pulp Fiction, Terminator 2 Judgment Day, Aladdin:\nChoices:\nA. Toy Story\nB. Drowning Mona\nC. Stage Beauty\nD. Mrs Miniver",
+      "output": [
+        "A. Toy Story",
+        "Toy Story"
+      ]
+    },
+    "117": {
+      "input": "Pulp Fiction, The Dark Knight, The Silence of the Lambs, Forrest Gump:\nChoices:\nA. The Da Vinci Code\nB. Inception\nC. Identity Thief\nD. War for the Planet of the Apes",
+      "output": [
+        "B. Inception",
+        "Inception"
+      ]
+    },
+    "118": {
+      "input": "Dances with Wolves, The Shawshank Redemption, Stargate, Tombstone:\nChoices:\nA. The Fugitive\nB. Frankenstein Unbound\nC. Easter Parade\nD. One Crazy Summer",
+      "output": [
+        "A. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "119": {
+      "input": "Inception, Pulp Fiction, Forrest Gump, Raiders of the Lost Ark:\nChoices:\nA. Who's Afraid of Virginia Woolf\nB. Fantastic Mr Fox\nC. Clash of the Titans\nD. Independence Day",
+      "output": [
+        "D. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "120": {
+      "input": "Jurassic Park, Forrest Gump, Independence Day, Mission Impossible:\nChoices:\nA. The Godfather Trilogy 1972-1990\nB. Star Wars Episode VI - Return of the Jedi\nC. Halloween II\nD. Alice Through the Looking Glass",
+      "output": [
+        "B. Star Wars Episode VI - Return of the Jedi",
+        "Star Wars Episode VI - Return of the Jedi"
+      ]
+    },
+    "121": {
+      "input": "The Princess Bride, American Beauty, Monty Python and the Holy Grail, Raiders of the Lost Ark:\nChoices:\nA. The Nutty Professor\nB. Star Wars Episode IV - A New Hope\nC. Antichrist\nD. Stroszek",
+      "output": [
+        "B. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "122": {
+      "input": "Star Wars Episode VI - Return of the Jedi, Back to the Future, Toy Story, The Terminator:\nChoices:\nA. Europa\nB. 'night Mother\nC. Star Wars Episode IV - A New Hope\nD. Of Human Bondage",
+      "output": [
+        "C. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "123": {
+      "input": "Crimson Tide, Braveheart, The Usual Suspects, Forrest Gump:\nChoices:\nA. Dances with Wolves\nB. Withnail & I\nC. The True Memoirs of an International Assassin\nD. Bicycle Thieves",
+      "output": [
+        "A. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "124": {
+      "input": "The Mask, Aladdin, The Lion King, Pretty Woman:\nChoices:\nA. Ordinary Miracle\nB. Three Billboards Outside Ebbing, Missouri\nC. In the Mood For Love\nD. Batman",
+      "output": [
+        "D. Batman",
+        "Batman"
+      ]
+    },
+    "125": {
+      "input": "Heat, The Fugitive, Forrest Gump, The Silence of the Lambs:\nChoices:\nA. Death Race 2\nB. Cannonball Run II\nC. Independence Day\nD. Slumber Party Massacre II",
+      "output": [
+        "C. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "126": {
+      "input": "Forrest Gump, The Silence of the Lambs, The Fugitive, Jurassic Park:\nChoices:\nA. The Burrowers\nB. Children of the Corn III\nC. Hood of Horror\nD. Braveheart",
+      "output": [
+        "D. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "127": {
+      "input": "Terminator 2 Judgment Day, The Fugitive, The Shawshank Redemption, Dead Man Walking:\nChoices:\nA. Walk, Don't Run\nB. Shaun the Sheep Movie\nC. Rocky IV\nD. Braveheart",
+      "output": [
+        "D. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "128": {
+      "input": "The Matrix, The Shawshank Redemption, Pulp Fiction, Inception:\nChoices:\nA. Zeus and Roxanne\nB. Bella\nC. Forrest Gump\nD. The Devil Wears Prada",
+      "output": [
+        "C. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "129": {
+      "input": "Star Wars Episode V - The Empire Strikes Back, Groundhog Day, Mission Impossible, Star Wars Episode IV - A New Hope:\nChoices:\nA. View from the Top\nB. The Doors\nC. Raiders of the Lost Ark\nD. Quick Change",
+      "output": [
+        "C. Raiders of the Lost Ark",
+        "Raiders of the Lost Ark"
+      ]
+    },
+    "130": {
+      "input": "The Usual Suspects, The Matrix, The Godfather, Pi:\nChoices:\nA. Little Miss Marker\nB. Pulp Fiction\nC. What Love Is\nD. The Spy Next Door",
+      "output": [
+        "B. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "131": {
+      "input": "Pulp Fiction, The Shawshank Redemption, Schindler's List, Dances with Wolves:\nChoices:\nA. Easter Parade\nB. Captain America The First Avenger\nC. Braveheart\nD. Manic",
+      "output": [
+        "C. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "132": {
+      "input": "Braveheart, The Fugitive, Get Shorty, Mr Holland's Opus:\nChoices:\nA. Dances with Wolves\nB. Candyman Farewell to the Flesh\nC. Down Argentine Way\nD. Revenge of the Green Dragons",
+      "output": [
+        "A. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "133": {
+      "input": "Forrest Gump, Star Wars Episode VI - Return of the Jedi, Back to the Future, The Matrix:\nChoices:\nA. Out of the Past\nB. Sleeping with the Enemy\nC. Independence Day\nD. Ghost in the Shell Arise - Border 2 Ghost Whispers",
+      "output": [
+        "C. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "134": {
+      "input": "Braveheart, The Usual Suspects, Dances with Wolves, Pulp Fiction:\nChoices:\nA. Metropolis\nB. Nadja\nC. Marty\nD. Toy Story",
+      "output": [
+        "D. Toy Story",
+        "Toy Story"
+      ]
+    },
+    "135": {
+      "input": "Pretty Woman, The Mask, Pulp Fiction, The Lion King:\nChoices:\nA. The Eyes of Tammy Faye\nB. Hollywoodland\nC. Snow White and the Huntsman\nD. Batman",
+      "output": [
+        "D. Batman",
+        "Batman"
+      ]
+    },
+    "136": {
+      "input": "Braveheart, Pulp Fiction, The Shawshank Redemption, The Fugitive:\nChoices:\nA. Death Wish 4 The Crackdown\nB. Get Shorty\nC. Family Guy Presents Something, Something, Something, Dark Side\nD. And Now Ladies and Gentlemen",
+      "output": [
+        "B. Get Shorty",
+        "Get Shorty"
+      ]
+    },
+    "137": {
+      "input": "Braveheart, Forrest Gump, The Silence of the Lambs, Independence Day:\nChoices:\nA. Mogambo\nB. Jurassic Park\nC. Dorian Gray\nD. Play It Again, Sam",
+      "output": [
+        "B. Jurassic Park",
+        "Jurassic Park"
+      ]
+    },
+    "138": {
+      "input": "The Fugitive, Schindler's List, Fargo, Braveheart:\nChoices:\nA. Dances with Wolves\nB. Arachnophobia\nC. The Good Son\nD. Liam",
+      "output": [
+        "A. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "139": {
+      "input": "Forrest Gump, The Silence of the Lambs, The Usual Suspects, The Blues Brothers:\nChoices:\nA. From Hell\nB. The Insider\nC. Independence Day\nD. Bride of Chucky",
+      "output": [
+        "C. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "140": {
+      "input": "The Lord of the Rings The Two Towers, The Lord of the Rings The Fellowship of the Ring, Star Wars Episode IV - A New Hope, The Matrix:\nChoices:\nA. The Return\nB. The Hidden Fortress\nC. Schindler's List\nD. The End of the Affair",
+      "output": [
+        "C. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "141": {
+      "input": "Batman, Terminator 2 Judgment Day, The Lion King, Aladdin:\nChoices:\nA. De-Lovely\nB. Wrong\nC. Deepwater Horizon\nD. The Mask",
+      "output": [
+        "D. The Mask",
+        "The Mask"
+      ]
+    },
+    "142": {
+      "input": "Pulp Fiction, Forrest Gump, The Fugitive, The Usual Suspects:\nChoices:\nA. Wisdom\nB. Lost and Delirious\nC. People I Know\nD. Braveheart",
+      "output": [
+        "D. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "143": {
+      "input": "Heat, Independence Day, Braveheart, Forrest Gump:\nChoices:\nA. The Silence of the Lambs\nB. Sandy Wexler\nC. The Dictator\nD. Nutty Professor II The Klumps",
+      "output": [
+        "A. The Silence of the Lambs",
+        "The Silence of the Lambs"
+      ]
+    },
+    "144": {
+      "input": "Braveheart, Dances with Wolves, Pulp Fiction, Schindler's List:\nChoices:\nA. Tickling Giants\nB. Shadow of the Vampire\nC. The Usual Suspects\nD. On the Town",
+      "output": [
+        "C. The Usual Suspects",
+        "The Usual Suspects"
+      ]
+    },
+    "145": {
+      "input": "Star Wars Episode IV - A New Hope, Independence Day, Star Wars Episode VI - Return of the Jedi, Forrest Gump:\nChoices:\nA. The Terminator\nB. The International\nC. Jeffrey\nD. Shoot 'Em Up",
+      "output": [
+        "A. The Terminator",
+        "The Terminator"
+      ]
+    },
+    "146": {
+      "input": "Stargate, The Shawshank Redemption, Dances with Wolves, The Fugitive:\nChoices:\nA. Angel at My Table, An\nB. Beauty of the Day\nC. Pulp Fiction\nD. The Omega Man",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "147": {
+      "input": "Interview with the Vampire The Vampire Chronicles, The Mask, The Lion King, Babe:\nChoices:\nA. Big Mommas Like Father, Like Son\nB. Sweet Smell of Success\nC. In the Line of Fire\nD. Faces of Death",
+      "output": [
+        "C. In the Line of Fire",
+        "In the Line of Fire"
+      ]
+    },
+    "148": {
+      "input": "Reservoir Dogs, Goodfellas, The Usual Suspects, A Clockwork Orange:\nChoices:\nA. London\nB. The Big Chill\nC. Casablanca\nD. Pulp Fiction",
+      "output": [
+        "D. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "149": {
+      "input": "Dances with Wolves, Pulp Fiction, Schindler's List, The Usual Suspects:\nChoices:\nA. Braveheart\nB. Boys on the Side\nC. Bats\nD. Suburban Commando",
+      "output": [
+        "A. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "150": {
+      "input": "Star Wars Episode VI - Return of the Jedi, Raiders of the Lost Ark, The Lion King, Groundhog Day:\nChoices:\nA. Bringing Down the House\nB. The Circus\nC. Star Wars Episode IV - A New Hope\nD. Maximum Risk",
+      "output": [
+        "C. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "151": {
+      "input": "Star Wars Episode VI - Return of the Jedi, The Sixth Sense, The Terminator, Star Wars Episode V - The Empire Strikes Back:\nChoices:\nA. Maleficent\nB. They\nC. Back to the Future\nD. Quest for Camelot",
+      "output": [
+        "C. Back to the Future",
+        "Back to the Future"
+      ]
+    },
+    "152": {
+      "input": "The Shawshank Redemption, Fight Club, The Matrix, Kill Bill Vol 1:\nChoices:\nA. Kill Bill Vol 2\nB. Leprechaun 3\nC. Kenny & Company\nD. Playing God",
+      "output": [
+        "A. Kill Bill Vol 2",
+        "Kill Bill Vol 2"
+      ]
+    },
+    "153": {
+      "input": "Dances with Wolves, Schindler's List, Toy Story, Pulp Fiction:\nChoices:\nA. Braveheart\nB. The Legend of Hell House\nC. A Detective Story\nD. The Adventures of Sharkboy and Lavagirl 3-D",
+      "output": [
+        "A. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "154": {
+      "input": "Star Wars Episode IV - A New Hope, The Terminator, Back to the Future, Toy Story:\nChoices:\nA. Gosford Park\nB. Star Wars Episode VI - Return of the Jedi\nC. Scott Pilgrim vs the World\nD. Young Doctors in Love",
+      "output": [
+        "B. Star Wars Episode VI - Return of the Jedi",
+        "Star Wars Episode VI - Return of the Jedi"
+      ]
+    },
+    "155": {
+      "input": "The Fugitive, The Shawshank Redemption, Beauty and the Beast, Schindler's List:\nChoices:\nA. The Lion King\nB. Urban Cowboy\nC. Space Truckers\nD. Universal Soldier Day of Reckoning",
+      "output": [
+        "A. The Lion King",
+        "The Lion King"
+      ]
+    },
+    "156": {
+      "input": "The Terminator, Star Wars Episode V - The Empire Strikes Back, Batman, Mission Impossible:\nChoices:\nA. The Ridiculous 6\nB. Shadows and Fog\nC. Star Wars Episode IV - A New Hope\nD. Akira Kurosawa's Dreams",
+      "output": [
+        "C. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "157": {
+      "input": "Inception, Gladiator, The Matrix, Saving Private Ryan:\nChoices:\nA. Robots\nB. King of Comedy\nC. Raiders of the Lost Ark\nD. Won't You Be My Neighbor",
+      "output": [
+        "C. Raiders of the Lost Ark",
+        "Raiders of the Lost Ark"
+      ]
+    },
+    "158": {
+      "input": "Independence Day, Back to the Future, Star Wars Episode VI - Return of the Jedi, Toy Story:\nChoices:\nA. LA Confidential\nB. Too Many Cooks\nC. Rocky Balboa\nD. Max Keeble's Big Move",
+      "output": [
+        "A. LA Confidential",
+        "LA Confidential"
+      ]
+    },
+    "159": {
+      "input": "The Mask, In the Line of Fire, Interview with the Vampire The Vampire Chronicles, Batman:\nChoices:\nA. Infernal Affairs\nB. Paul\nC. The Art of War\nD. Aladdin",
+      "output": [
+        "D. Aladdin",
+        "Aladdin"
+      ]
+    },
+    "160": {
+      "input": "Braveheart, The Fugitive, Tombstone, Get Shorty:\nChoices:\nA. Thoroughly Modern Millie\nB. Cocktail\nC. Hands Off the Loot\nD. The Shawshank Redemption",
+      "output": [
+        "D. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "161": {
+      "input": "Mr Holland's Opus, What's Eating Gilbert Grape, Braveheart, Don Juan DeMarco:\nChoices:\nA. Kevin Hart I'm a Grown Little Man\nB. IQ\nC. Pulp Fiction\nD. Penguins of Madagascar",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "162": {
+      "input": "Raiders of the Lost Ark, Up, Inception, The Matrix:\nChoices:\nA. Star Wars Episode IV - A New Hope\nB. Rebel Without a Cause\nC. It's a Very Merry Muppet Christmas Movie\nD. DOA",
+      "output": [
+        "A. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "163": {
+      "input": "Dances with Wolves, The Shawshank Redemption, Apollo 13, Schindler's List:\nChoices:\nA. Braveheart\nB. Popeye\nC. House II The Second Story\nD. In China They Eat Dogs",
+      "output": [
+        "A. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "164": {
+      "input": "The Fugitive, Schindler's List, Braveheart, The Mask:\nChoices:\nA. The Real McCoy\nB. Batman\nC. Master and Commander The Far Side of the World\nD. Supercop",
+      "output": [
+        "B. Batman",
+        "Batman"
+      ]
+    },
+    "165": {
+      "input": "Raiders of the Lost Ark, Star Wars Episode IV - A New Hope, Toy Story 3, L\u00e9on The Professional:\nChoices:\nA. Stand Up Guys\nB. Rosemary's Baby\nC. Blade Runner\nD. Before Midnight",
+      "output": [
+        "C. Blade Runner",
+        "Blade Runner"
+      ]
+    },
+    "166": {
+      "input": "Braveheart, Jurassic Park, The Silence of the Lambs, Forrest Gump:\nChoices:\nA. Blind Fury\nB. Party Monster\nC. Satin Rouge\nD. The Fugitive",
+      "output": [
+        "D. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "167": {
+      "input": "Dances with Wolves, The Shawshank Redemption, The Fugitive, Pulp Fiction:\nChoices:\nA. The City of Women\nB. Avengers Infinity War - Part I\nC. Forrest Gump\nD. The Man Who Knew Too Much",
+      "output": [
+        "C. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "168": {
+      "input": "Star Wars Episode V - The Empire Strikes Back, The Matrix, Star Wars Episode VI - Return of the Jedi, The Terminator:\nChoices:\nA. Back to the Future\nB. Buried\nC. Bogus\nD. Last Man Standing",
+      "output": [
+        "A. Back to the Future",
+        "Back to the Future"
+      ]
+    },
+    "169": {
+      "input": "Schindler's List, The Shawshank Redemption, Terminator 2 Judgment Day, Aladdin:\nChoices:\nA. The Double Life of Veronique\nB. Bridget Jones's Diary\nC. The Lion King\nD. Cujo",
+      "output": [
+        "C. The Lion King",
+        "The Lion King"
+      ]
+    },
+    "170": {
+      "input": "Batman, The Usual Suspects, The Silence of the Lambs, Jurassic Park:\nChoices:\nA. The End of the Tour\nB. Forrest Gump\nC. Lust, Caution\nD. Shelter",
+      "output": [
+        "B. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "171": {
+      "input": "Spirited Away, Seven Samurai, LA Confidential, Dr Strangelove or How I Learned to Stop Worrying and Love the Bomb:\nChoices:\nA. The Usual Suspects\nB. Return to the Blue Lagoon\nC. Practical Magic\nD. Scrooge",
+      "output": [
+        "A. The Usual Suspects",
+        "The Usual Suspects"
+      ]
+    },
+    "172": {
+      "input": "Forrest Gump, The Shawshank Redemption, Pulp Fiction, Dances with Wolves:\nChoices:\nA. Women in Trouble\nB. The Fugitive\nC. Night at the Museum Secret of the Tomb\nD. While You Were Sleeping",
+      "output": [
+        "B. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "173": {
+      "input": "Back to the Future, Raiders of the Lost Ark, The Matrix, The Terminator:\nChoices:\nA. What's Up, Tiger Lily\nB. Cave of Forgotten Dreams\nC. Batman\nD. Quatermass and the Pit",
+      "output": [
+        "C. Batman",
+        "Batman"
+      ]
+    },
+    "174": {
+      "input": "Braveheart, Forrest Gump, The Silence of the Lambs, The Fugitive:\nChoices:\nA. Cannibal Holocaust\nB. Seven\nC. Bride & Prejudice\nD. Night at the Museum Secret of the Tomb",
+      "output": [
+        "B. Seven",
+        "Seven"
+      ]
+    },
+    "175": {
+      "input": "Batman, Forrest Gump, Jurassic Park, Independence Day:\nChoices:\nA. The Silence of the Lambs\nB. Deadly Outlaw Rekka\nC. The Discreet Charm of the Bourgeoisie\nD. Teenage Mutant Ninja Turtles Out of the Shadows",
+      "output": [
+        "A. The Silence of the Lambs",
+        "The Silence of the Lambs"
+      ]
+    },
+    "176": {
+      "input": "Spider-Man, Spider-Man 2, The Matrix, Independence Day:\nChoices:\nA. Jurassic World Fallen Kingdom\nB. The Fifth Element\nC. Across the Universe\nD. Insomnia",
+      "output": [
+        "B. The Fifth Element",
+        "The Fifth Element"
+      ]
+    },
+    "177": {
+      "input": "Pulp Fiction, The Shawshank Redemption, Dances with Wolves, Stargate:\nChoices:\nA. The Fugitive\nB. The Boss of It All\nC. Barb Wire\nD. Basic Instinct 2",
+      "output": [
+        "A. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "178": {
+      "input": "Braveheart, Pulp Fiction, Schindler's List, The Usual Suspects:\nChoices:\nA. Kazaam\nB. Eichmann\nC. Children of the Night\nD. Apollo 13",
+      "output": [
+        "D. Apollo 13",
+        "Apollo 13"
+      ]
+    },
+    "179": {
+      "input": "Raiders of the Lost Ark, Forrest Gump, The Matrix, Pulp Fiction:\nChoices:\nA. The Remains of the Day\nB. Independence Day\nC. Our Idiot Brother\nD. Zelary",
+      "output": [
+        "B. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "180": {
+      "input": "Apollo 13, Jurassic Park, Die Hard With a Vengeance, Forrest Gump:\nChoices:\nA. Killer Movie\nB. Stealth\nC. The Last Man on Earth\nD. True Lies",
+      "output": [
+        "D. True Lies",
+        "True Lies"
+      ]
+    },
+    "181": {
+      "input": "Dances with Wolves, Stargate, The Fugitive, The Shawshank Redemption:\nChoices:\nA. Angels with Dirty Faces\nB. Invincible\nC. Pulp Fiction\nD. The Old Man and the Sea",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "182": {
+      "input": "Braveheart, Pretty Woman, Schindler's List, Apollo 13:\nChoices:\nA. Bad Taste\nB. My Big Fat Greek Wedding 2\nC. The Santa Clause 2\nD. Dances with Wolves",
+      "output": [
+        "D. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "183": {
+      "input": "Jurassic Park, Mission Impossible, The Silence of the Lambs, Forrest Gump:\nChoices:\nA. Indignation\nB. Star Wars Episode VI - Return of the Jedi\nC. You'll Never Get Rich\nD. Amazon Women on the Moon",
+      "output": [
+        "B. Star Wars Episode VI - Return of the Jedi",
+        "Star Wars Episode VI - Return of the Jedi"
+      ]
+    },
+    "184": {
+      "input": "The Shawshank Redemption, Forrest Gump, Pulp Fiction, Braveheart:\nChoices:\nA. A Woman Under the Influence\nB. It's the Great Pumpkin, Charlie Brown\nC. The House\nD. Dances with Wolves",
+      "output": [
+        "D. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "185": {
+      "input": "Mission Impossible, Groundhog Day, Raiders of the Lost Ark, Star Wars Episode IV - A New Hope:\nChoices:\nA. Indiana Jones and the Last Crusade\nB. Suddenly, Last Summer\nC. Passion\nD. Life of Pi",
+      "output": [
+        "A. Indiana Jones and the Last Crusade",
+        "Indiana Jones and the Last Crusade"
+      ]
+    },
+    "186": {
+      "input": "Forrest Gump, The Matrix, Pulp Fiction, Inception:\nChoices:\nA. Like Crazy\nB. Win Win\nC. Morvern Callar\nD. Independence Day",
+      "output": [
+        "D. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "187": {
+      "input": "Star Wars Episode IV - A New Hope, The Sixth Sense, Spirited Away, The Silence of the Lambs:\nChoices:\nA. Harold & Kumar Escape from Guantanamo Bay\nB. They Live\nC. The Lord of the Rings The Fellowship of the Ring\nD. Just Go with It",
+      "output": [
+        "C. The Lord of the Rings The Fellowship of the Ring",
+        "The Lord of the Rings The Fellowship of the Ring"
+      ]
+    },
+    "188": {
+      "input": "Saving Private Ryan, Raiders of the Lost Ark, Inception, The Matrix:\nChoices:\nA. Lady Bird\nB. Fitzcarraldo\nC. The Lord of the Rings The Two Towers\nD. Ichi the Killer",
+      "output": [
+        "C. The Lord of the Rings The Two Towers",
+        "The Lord of the Rings The Two Towers"
+      ]
+    },
+    "189": {
+      "input": "Star Wars Episode V - The Empire Strikes Back, The Usual Suspects, Star Wars Episode IV - A New Hope, The Lord of the Rings The Return of the King:\nChoices:\nA. LA Confidential\nB. PS I Love You\nC. Boyz N the Hood\nD. Let It Ride",
+      "output": [
+        "A. LA Confidential",
+        "LA Confidential"
+      ]
+    },
+    "190": {
+      "input": "The Shawshank Redemption, Pulp Fiction, Schindler's List, Braveheart:\nChoices:\nA. The Bank Job\nB. Robot Carnival\nC. Dances with Wolves\nD. The Family Stone",
+      "output": [
+        "C. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "191": {
+      "input": "The Shawshank Redemption, Schindler's List, Aladdin, Terminator 2 Judgment Day:\nChoices:\nA. Wolf Children\nB. The Missing\nC. Jackass 3D\nD. The Lion King",
+      "output": [
+        "D. The Lion King",
+        "The Lion King"
+      ]
+    },
+    "192": {
+      "input": "X-Men, Planet of the Apes, Forrest Gump, Independence Day:\nChoices:\nA. The Terminator\nB. Remember Me\nC. Train to Busan\nD. Fast & Furious",
+      "output": [
+        "A. The Terminator",
+        "The Terminator"
+      ]
+    },
+    "193": {
+      "input": "The Usual Suspects, Seven Samurai, LA Confidential, Dr Strangelove or How I Learned to Stop Worrying and Love the Bomb:\nChoices:\nA. Apocalypse Now\nB. The Accidental Spy\nC. Follow Me, Boys!\nD. Nutty Professor II The Klumps",
+      "output": [
+        "A. Apocalypse Now",
+        "Apocalypse Now"
+      ]
+    },
+    "194": {
+      "input": "Fight Club, The Shawshank Redemption, Kill Bill Vol 1, Kill Bill Vol 2:\nChoices:\nA. Sorority House Massacre\nB. Evolution\nC. Memento\nD. Scooby-Doo Goes Hollywood",
+      "output": [
+        "C. Memento",
+        "Memento"
+      ]
+    },
+    "195": {
+      "input": "Forrest Gump, The Shawshank Redemption, The Matrix, Star Wars Episode I - The Phantom Menace:\nChoices:\nA. Fight Club\nB. I Shot Jesse James\nC. Out Cold\nD. Blackrock",
+      "output": [
+        "A. Fight Club",
+        "Fight Club"
+      ]
+    },
+    "196": {
+      "input": "Star Wars Episode V - The Empire Strikes Back, Star Wars Episode IV - A New Hope, The Dark Knight, Pulp Fiction:\nChoices:\nA. PowerRangers\nB. The Blair Witch Project\nC. Breathless\nD. Forrest Gump",
+      "output": [
+        "D. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "197": {
+      "input": "Pulp Fiction, The Fugitive, The Shawshank Redemption, Dances with Wolves:\nChoices:\nA. All Over the Guy\nB. Forrest Gump\nC. Elizabethtown\nD. The Bride of Frankenstein",
+      "output": [
+        "B. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "198": {
+      "input": "Apollo 13, Batman, Schindler's List, Braveheart:\nChoices:\nA. Tyler Perry's Daddy's Little Girls\nB. Titanic\nC. The Shawshank Redemption\nD. Adanggaman",
+      "output": [
+        "C. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "199": {
+      "input": "Go, Star Wars Episode IV - A New Hope, The Godfather Part II, The Godfather:\nChoices:\nA. Pulp Fiction\nB. The Hungover Games\nC. A Family Thing\nD. Casino",
+      "output": [
+        "A. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "200": {
+      "input": "The Fugitive, Dances with Wolves, Forrest Gump, The Shawshank Redemption:\nChoices:\nA. A Special Day\nB. David Cross Making America Great Again\nC. Happy Go Lovely\nD. Pulp Fiction",
+      "output": [
+        "D. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "201": {
+      "input": "The Shawshank Redemption, Clueless, Pulp Fiction, Dances with Wolves:\nChoices:\nA. Let Me In\nB. Schindler's List\nC. The Last Castle\nD. The Treasure of the Sierra Madre",
+      "output": [
+        "B. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "202": {
+      "input": "The Silence of the Lambs, Schindler's List, Desperado, Jurassic Park:\nChoices:\nA. Frozen River\nB. Gothika\nC. Spy Game\nD. Dances with Wolves",
+      "output": [
+        "D. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "203": {
+      "input": "Forrest Gump, The Fugitive, The Shawshank Redemption, Pulp Fiction:\nChoices:\nA. Anchors Aweigh\nB. Looney Tunes Back in Action\nC. Porky's Revenge\nD. Dances with Wolves",
+      "output": [
+        "D. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "204": {
+      "input": "Braveheart, The Usual Suspects, Crimson Tide, The Fugitive:\nChoices:\nA. Get Shorty\nB. The Firm\nC. Pillow Talk\nD. Hairspray",
+      "output": [
+        "A. Get Shorty",
+        "Get Shorty"
+      ]
+    },
+    "205": {
+      "input": "Gladiator, Saving Private Ryan, The Matrix, Inception:\nChoices:\nA. Bad Boy Bubby\nB. Raiders of the Lost Ark\nC. Whatever Works\nD. Porco Rosso",
+      "output": [
+        "B. Raiders of the Lost Ark",
+        "Raiders of the Lost Ark"
+      ]
+    },
+    "206": {
+      "input": "Raiders of the Lost Ark, The Matrix, Star Wars Episode IV - A New Hope, Inception:\nChoices:\nA. Attack of the Killer Tomatoes!\nB. Up\nC. Ernest Rides Again\nD. White Christmas",
+      "output": [
+        "B. Up",
+        "Up"
+      ]
+    },
+    "207": {
+      "input": "Star Wars Episode IV - A New Hope, The Fugitive, Being John Malkovich, Mission Impossible:\nChoices:\nA. Pet Sematary II\nB. Star Wars Episode V - The Empire Strikes Back\nC. Winnie Pooh\nD. Ken Park",
+      "output": [
+        "B. Star Wars Episode V - The Empire Strikes Back",
+        "Star Wars Episode V - The Empire Strikes Back"
+      ]
+    },
+    "208": {
+      "input": "The Fugitive, Braveheart, The Shawshank Redemption, Terminator 2 Judgment Day:\nChoices:\nA. Dead Man Walking\nB. World's Greatest Dad\nC. The Bad and the Beautiful\nD. Hood of Horror",
+      "output": [
+        "A. Dead Man Walking",
+        "Dead Man Walking"
+      ]
+    },
+    "209": {
+      "input": "Forrest Gump, Independence Day, The Mask, Jurassic Park:\nChoices:\nA. Hulk\nB. Batman\nC. Footloose\nD. The Void",
+      "output": [
+        "B. Batman",
+        "Batman"
+      ]
+    },
+    "210": {
+      "input": "Dances with Wolves, The Fugitive, The Shawshank Redemption, Forrest Gump:\nChoices:\nA. Pulp Fiction\nB. Gallipoli\nC. Money Monster\nD. Robin Hood Men in Tights",
+      "output": [
+        "A. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "211": {
+      "input": "Army of Darkness, Go, The Sixth Sense, Alien:\nChoices:\nA. Cool Hand Luke\nB. Children of the Corn III\nC. Ice Guardians\nD. Cinema Paradiso",
+      "output": [
+        "A. Cool Hand Luke",
+        "Cool Hand Luke"
+      ]
+    },
+    "212": {
+      "input": "The Usual Suspects, The Fugitive, Pulp Fiction, Terminator 2 Judgment Day:\nChoices:\nA. Keep the River on Your Right A Modern Cannibal Tale\nB. Grumpier Old Men\nC. Twelve Monkeys\nD. The Chumscrubber",
+      "output": [
+        "C. Twelve Monkeys",
+        "Twelve Monkeys"
+      ]
+    },
+    "213": {
+      "input": "Forrest Gump, The Silence of the Lambs, Seven, Fargo:\nChoices:\nA. Gandhi\nB. Schindler's List\nC. Dogfight\nD. Repo Man",
+      "output": [
+        "B. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "214": {
+      "input": "Braveheart, Pretty Woman, Apollo 13, Dances with Wolves:\nChoices:\nA. Batman Assault on Arkham\nB. The Shawshank Redemption\nC. Pok\u00e9mon Heroes\nD. The Flamingo Kid",
+      "output": [
+        "B. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "215": {
+      "input": "Seven Samurai, Blade Runner, Rear Window, Goodfellas:\nChoices:\nA. One Flew Over the Cuckoo's Nest\nB. 49 Up\nC. Stitch! The Movie\nD. To Catch a Thief",
+      "output": [
+        "A. One Flew Over the Cuckoo's Nest",
+        "One Flew Over the Cuckoo's Nest"
+      ]
+    },
+    "216": {
+      "input": "The Terminator, The Silence of the Lambs, Batman, Independence Day:\nChoices:\nA. Up in the Air\nB. Trailer Park Boys\nC. Jurassic Park\nD. Two Mules for Sister Sara",
+      "output": [
+        "C. Jurassic Park",
+        "Jurassic Park"
+      ]
+    },
+    "217": {
+      "input": "Snow White and the Seven Dwarfs, The Secret Garden, Beauty and the Beast, The Lion King:\nChoices:\nA. The Thing\nB. Pinocchio\nC. Nymphomaniac Volume I\nD. Lights in the Dusk",
+      "output": [
+        "B. Pinocchio",
+        "Pinocchio"
+      ]
+    },
+    "218": {
+      "input": "Fargo, Schindler's List, The Usual Suspects, Pulp Fiction:\nChoices:\nA. The Shawshank Redemption\nB. The Sandpiper\nC. Material Girls\nD. Life as We Know It",
+      "output": [
+        "A. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "219": {
+      "input": "Austin Powers International Man of Mystery, Star Wars Episode IV - A New Hope, Star Wars Episode V - The Empire Strikes Back, Mission Impossible:\nChoices:\nA. The Impostors\nB. Virunga\nC. Self-criticism of a Bourgeois Dog\nD. American Beauty",
+      "output": [
+        "D. American Beauty",
+        "American Beauty"
+      ]
+    },
+    "220": {
+      "input": "The Fifth Element, Gladiator, Gattaca, The Matrix:\nChoices:\nA. Birdman of Alcatraz\nB. Raiders of the Lost Ark\nC. Le Samoura\u00ef\nD. Imagine That",
+      "output": [
+        "B. Raiders of the Lost Ark",
+        "Raiders of the Lost Ark"
+      ]
+    },
+    "221": {
+      "input": "Twister, The Silence of the Lambs, Independence Day, Braveheart:\nChoices:\nA. They Shoot Horses, Don't They\nB. Forrest Gump\nC. The Salton Sea\nD. Extreme Days",
+      "output": [
+        "B. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "222": {
+      "input": "Dances with Wolves, Pulp Fiction, Schindler's List, The Shawshank Redemption:\nChoices:\nA. Sound of the Mountain\nB. Braveheart\nC. Ruby Red\nD. Candleshoe",
+      "output": [
+        "B. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "223": {
+      "input": "Braveheart, Pulp Fiction, Schindler's List, Dances with Wolves:\nChoices:\nA. City Lights\nB. The Shawshank Redemption\nC. The Man with the Iron Fists\nD. Picture Bride",
+      "output": [
+        "B. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "224": {
+      "input": "Raiders of the Lost Ark, Indiana Jones and the Last Crusade, Mission Impossible, Groundhog Day:\nChoices:\nA. Fred Armisen Standup for Drummers\nB. Star Wars Episode V - The Empire Strikes Back\nC. Deliver Us from Evil\nD. Red Lights",
+      "output": [
+        "B. Star Wars Episode V - The Empire Strikes Back",
+        "Star Wars Episode V - The Empire Strikes Back"
+      ]
+    },
+    "225": {
+      "input": "Pulp Fiction, Forrest Gump, Terminator 2 Judgment Day, Braveheart:\nChoices:\nA. Ruby & Quentin\nB. Insidious Chapter 3\nC. Fast Times at Ridgemont High\nD. The Fugitive",
+      "output": [
+        "D. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "226": {
+      "input": "Aladdin, The Lion King, Frequency, The Little Mermaid:\nChoices:\nA. Unreasonable Man, An\nB. Sleuth\nC. Gladiator\nD. Instinct",
+      "output": [
+        "C. Gladiator",
+        "Gladiator"
+      ]
+    },
+    "227": {
+      "input": "Stargate, Braveheart, The Shawshank Redemption, Dances with Wolves:\nChoices:\nA. Hot Tub Time Machine 2\nB. Morvern Callar\nC. The Bourne Identity\nD. The Fugitive",
+      "output": [
+        "D. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "228": {
+      "input": "One Flew Over the Cuckoo's Nest, Goodfellas, Rear Window, The Professional:\nChoices:\nA. A Night to Remember\nB. The Swan Princess\nC. Kinsey\nD. L\u00e9on The Professional",
+      "output": [
+        "D. L\u00e9on The Professional",
+        "L\u00e9on The Professional"
+      ]
+    },
+    "229": {
+      "input": "American Beauty, Dr Strangelove or How I Learned to Stop Worrying and Love the Bomb, The Lord of the Rings The Two Towers, Seven Samurai:\nChoices:\nA. Latter Days\nB. Dirty Dancing Havana Nights\nC. The Silence of the Lambs\nD. The Devil and Daniel Johnston",
+      "output": [
+        "C. The Silence of the Lambs",
+        "The Silence of the Lambs"
+      ]
+    },
+    "230": {
+      "input": "Spider-Man, The Sixth Sense, Fight Club, Independence Day:\nChoices:\nA. Once Bitten\nB. Ruby Sparks\nC. The Matrix\nD. Terminal Velocity",
+      "output": [
+        "C. The Matrix",
+        "The Matrix"
+      ]
+    },
+    "231": {
+      "input": "The Wizard of Oz, The Big Lebowski, Being John Malkovich, Run Lola Run:\nChoices:\nA. Dragon Ball Z Dead Zone\nB. Lightning in a Bottle\nC. The Omega Man\nD. Goodfellas",
+      "output": [
+        "D. Goodfellas",
+        "Goodfellas"
+      ]
+    },
+    "232": {
+      "input": "The Shawshank Redemption, The Usual Suspects, Pulp Fiction, Fargo:\nChoices:\nA. Damage\nB. Pie in the Sky\nC. The Fugitive\nD. A Plasticine Crow",
+      "output": [
+        "C. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "233": {
+      "input": "Independence Day, The Silence of the Lambs, Indiana Jones and the Temple of Doom, Fargo:\nChoices:\nA. Care Bears Movie II A New Generation\nB. Noises Off\nC. The Fugitive\nD. Lights Out",
+      "output": [
+        "C. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "234": {
+      "input": "The Fugitive, Pulp Fiction, The Usual Suspects, Twelve Monkeys:\nChoices:\nA. Why Don't You Play In Hell\nB. Terminator 2 Judgment Day\nC. MacGruber\nD. The Masque of the Red Death",
+      "output": [
+        "B. Terminator 2 Judgment Day",
+        "Terminator 2 Judgment Day"
+      ]
+    },
+    "235": {
+      "input": "The Silence of the Lambs, Schindler's List, The Usual Suspects, Seven:\nChoices:\nA. Blame It on the Bellboy\nB. Forrest Gump\nC. Barcelona\nD. Frank",
+      "output": [
+        "B. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "236": {
+      "input": "Dumb & Dumber, Jurassic Park, Schindler's List, Forrest Gump:\nChoices:\nA. The Counterfeiters\nB. Gone with the Wind\nC. Braveheart\nD. Pitfall",
+      "output": [
+        "C. Braveheart",
+        "Braveheart"
+      ]
+    },
+    "237": {
+      "input": "Star Wars Episode IV - A New Hope, Go, The Sixth Sense, Terminator 2 Judgment Day:\nChoices:\nA. Star Wars Episode V - The Empire Strikes Back\nB. The Zero Theorem\nC. Stranger than Fiction\nD. The New One-Armed Swordsman",
+      "output": [
+        "A. Star Wars Episode V - The Empire Strikes Back",
+        "Star Wars Episode V - The Empire Strikes Back"
+      ]
+    },
+    "238": {
+      "input": "Up, Star Wars Episode IV - A New Hope, L\u00e9on The Professional, Forrest Gump:\nChoices:\nA. RIPD\nB. The People vs Larry Flynt\nC. The Twilight Saga Breaking Dawn - Part 1\nD. Raiders of the Lost Ark",
+      "output": [
+        "D. Raiders of the Lost Ark",
+        "Raiders of the Lost Ark"
+      ]
+    },
+    "239": {
+      "input": "Schindler's List, The Fugitive, Heat, Braveheart:\nChoices:\nA. Wild Orchid\nB. The Silence of the Lambs\nC. Hello Ladies The Movie\nD. Star Trek",
+      "output": [
+        "B. The Silence of the Lambs",
+        "The Silence of the Lambs"
+      ]
+    },
+    "240": {
+      "input": "Clear and Present Danger, In the Line of Fire, The Fugitive, Braveheart:\nChoices:\nA. Three to Tango\nB. Choke\nC. Angel at My Table, An\nD. The Shawshank Redemption",
+      "output": [
+        "D. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "241": {
+      "input": "True Lies, Apollo 13, Batman, The Silence of the Lambs:\nChoices:\nA. Forrest Gump\nB. Leviathan\nC. Crossroads\nD. Pat Garrett and Billy the Kid",
+      "output": [
+        "A. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "242": {
+      "input": "Schindler's List, Pulp Fiction, Braveheart, The Usual Suspects:\nChoices:\nA. 12 Angry Men\nB. Mo' Better Blues\nC. Mindhunters\nD. The Shawshank Redemption",
+      "output": [
+        "D. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "243": {
+      "input": "American Beauty, Back to the Future, Star Wars Episode IV - A New Hope, Star Wars Episode V - The Empire Strikes Back:\nChoices:\nA. Jon Stewart Has Left the Building\nB. Hud\nC. The Mummy Tomb of the Dragon Emperor\nD. The Terminator",
+      "output": [
+        "D. The Terminator",
+        "The Terminator"
+      ]
+    },
+    "244": {
+      "input": "Pulp Fiction, The Fugitive, The Shawshank Redemption, Dances with Wolves:\nChoices:\nA. Babylon 5 A Call to Arms\nB. Letters from Iwo Jima\nC. Forrest Gump\nD. Saint Ralph",
+      "output": [
+        "C. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "245": {
+      "input": "Raiders of the Lost Ark, Groundhog Day, The Fugitive, Star Wars Episode IV - A New Hope:\nChoices:\nA. The Big Lebowski\nB. A Letter to Three Wives\nC. Hideaway\nD. Candyman",
+      "output": [
+        "A. The Big Lebowski",
+        "The Big Lebowski"
+      ]
+    },
+    "246": {
+      "input": "Catch Me If You Can, Shrek, Monsters, Inc, The Lion King:\nChoices:\nA. Aladdin\nB. Enter the Void\nC. Contraband\nD. No Small Affair",
+      "output": [
+        "A. Aladdin",
+        "Aladdin"
+      ]
+    },
+    "247": {
+      "input": "Apollo 13, The Silence of the Lambs, Jurassic Park, Batman:\nChoices:\nA. Babes in Toyland\nB. The Producers\nC. Molly's Game\nD. Independence Day",
+      "output": [
+        "D. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "248": {
+      "input": "Minority Report, Total Recall, Inside Out, Forrest Gump:\nChoices:\nA. Phenomena\nB. Lilting\nC. Catwoman\nD. Edge of Tomorrow",
+      "output": [
+        "D. Edge of Tomorrow",
+        "Edge of Tomorrow"
+      ]
+    },
+    "249": {
+      "input": "Go, Twelve Monkeys, Pulp Fiction, The Sixth Sense:\nChoices:\nA. Predators\nB. Terminator 2 Judgment Day\nC. Two Much\nD. Premium Rush",
+      "output": [
+        "B. Terminator 2 Judgment Day",
+        "Terminator 2 Judgment Day"
+      ]
+    },
+    "250": {
+      "input": "The Shawshank Redemption, Pulp Fiction, The Fugitive, Stargate:\nChoices:\nA. Guinevere\nB. White Frog\nC. Dances with Wolves\nD. Benny & Joon",
+      "output": [
+        "C. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "251": {
+      "input": "The Shawshank Redemption, Get Shorty, Tombstone, Pulp Fiction:\nChoices:\nA. A Bad Moms Christmas\nB. Mr Holland's Opus\nC. The Presidio\nD. Dragon Ball Z The History of Trunks",
+      "output": [
+        "B. Mr Holland's Opus",
+        "Mr Holland's Opus"
+      ]
+    },
+    "252": {
+      "input": "The Fugitive, Fargo, Groundhog Day, The Princess Bride:\nChoices:\nA. John Q\nB. Raiders of the Lost Ark\nC. No Man's Land\nD. The Morning After",
+      "output": [
+        "B. Raiders of the Lost Ark",
+        "Raiders of the Lost Ark"
+      ]
+    },
+    "253": {
+      "input": "Star Wars Episode V - The Empire Strikes Back, Batman, Jurassic Park, Toy Story:\nChoices:\nA. Ghostbusters II\nB. The Internet's Own Boy The Story of Aaron Swartz\nC. Only Old Men Are Going to Battle\nD. Inhale",
+      "output": [
+        "A. Ghostbusters II",
+        "Ghostbusters II"
+      ]
+    },
+    "254": {
+      "input": "Apollo 13, Schindler's List, Pretty Woman, Braveheart:\nChoices:\nA. The Fly\nB. Metropia\nC. Ciao, Professore!\nD. Dances with Wolves",
+      "output": [
+        "D. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "255": {
+      "input": "Braveheart, The Fugitive, Pulp Fiction, Get Shorty:\nChoices:\nA. Deliver Us from Evil\nB. The Closer You Get\nC. Jackass The Movie\nD. What's Eating Gilbert Grape",
+      "output": [
+        "D. What's Eating Gilbert Grape",
+        "What's Eating Gilbert Grape"
+      ]
+    },
+    "256": {
+      "input": "The Fugitive, Pulp Fiction, The Usual Suspects, Terminator 2 Judgment Day:\nChoices:\nA. The Amazing Panda Adventure\nB. Sweeney Todd\nC. Welcome to Sarajevo\nD. Seven",
+      "output": [
+        "D. Seven",
+        "Seven"
+      ]
+    },
+    "257": {
+      "input": "The Shawshank Redemption, Forrest Gump, Dances with Wolves, The Fugitive:\nChoices:\nA. Pulp Fiction\nB. The Girl on the Bridge\nC. Radioland Murders\nD. Father of the Bride",
+      "output": [
+        "A. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "258": {
+      "input": "Interstellar, Monsters, Inc, Back to the Future, Inception:\nChoices:\nA. My Fellow Americans\nB. Shadow of the Vampire\nC. Star Wars Episode VII - The Force Awakens\nD. Psycho II",
+      "output": [
+        "C. Star Wars Episode VII - The Force Awakens",
+        "Star Wars Episode VII - The Force Awakens"
+      ]
+    },
+    "259": {
+      "input": "Saving Private Ryan, Raiders of the Lost Ark, The Shawshank Redemption, The Matrix:\nChoices:\nA. Swing Kids\nB. UHF\nC. Pulp Fiction\nD. The BFG",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "260": {
+      "input": "Forrest Gump, The Dark Knight, The Shawshank Redemption, Fight Club:\nChoices:\nA. Bangkok Dangerous\nB. Clown\nC. Yogi Bear\nD. Blade Runner",
+      "output": [
+        "D. Blade Runner",
+        "Blade Runner"
+      ]
+    },
+    "261": {
+      "input": "Braveheart, Dances with Wolves, The Shawshank Redemption, The Usual Suspects:\nChoices:\nA. 3000 Miles to Graceland\nB. Crimson Tide\nC. Best Men\nD. A Very Harold & Kumar 3D Christmas",
+      "output": [
+        "B. Crimson Tide",
+        "Crimson Tide"
+      ]
+    },
+    "262": {
+      "input": "The Usual Suspects, Interview with the Vampire The Vampire Chronicles, The Shawshank Redemption, Pulp Fiction:\nChoices:\nA. Toy Soldiers\nB. The Fugitive\nC. The Wasp Woman\nD. Baxter",
+      "output": [
+        "B. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "263": {
+      "input": "The Godfather, Twelve Monkeys, Pi, Monty Python and the Holy Grail:\nChoices:\nA. Pulp Fiction\nB. The Machinist\nC. Yes Man\nD. Perfect Sense",
+      "output": [
+        "A. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "264": {
+      "input": "The Sixth Sense, Star Wars Episode V - The Empire Strikes Back, LA Confidential, Psycho:\nChoices:\nA. The Fiendish Plot of Dr Fu Manchu\nB. The Hurricane\nC. Sex Drive\nD. Star Wars Episode IV - A New Hope",
+      "output": [
+        "D. Star Wars Episode IV - A New Hope",
+        "Star Wars Episode IV - A New Hope"
+      ]
+    },
+    "265": {
+      "input": "The Mask, The Silence of the Lambs, Dumb & Dumber, Jurassic Park:\nChoices:\nA. Gerry\nB. Martin\nC. Nico Icon\nD. Schindler's List",
+      "output": [
+        "D. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "266": {
+      "input": "The Lion King, Terminator 2 Judgment Day, Schindler's List, The Shawshank Redemption:\nChoices:\nA. I'll Be Home For Christmas\nB. Lilya 4-Ever\nC. A Night in the Life of Jimmy Reardon\nD. Aladdin",
+      "output": [
+        "D. Aladdin",
+        "Aladdin"
+      ]
+    },
+    "267": {
+      "input": "The Shawshank Redemption, Kill Bill Vol 2, Forrest Gump, Fight Club:\nChoices:\nA. Emma\nB. Tyrannosaur\nC. Kill Bill Vol 1\nD. How to Steal a Million",
+      "output": [
+        "C. Kill Bill Vol 1",
+        "Kill Bill Vol 1"
+      ]
+    },
+    "268": {
+      "input": "Star Wars Episode IV - A New Hope, Indiana Jones and the Last Crusade, Star Wars Episode V - The Empire Strikes Back, The Big Lebowski:\nChoices:\nA. Tetsuo, the Ironman\nB. The Princess Bride\nC. The Barkley Marathons The Race That Eats Its Young\nD. Bug",
+      "output": [
+        "B. The Princess Bride",
+        "The Princess Bride"
+      ]
+    },
+    "269": {
+      "input": "Requiem for a Dream, Goodfellas, Schindler's List, The Lord of the Rings The Return of the King:\nChoices:\nA. The Twelve Tasks of Asterix\nB. The Woods\nC. Dead Again\nD. Seven Samurai",
+      "output": [
+        "D. Seven Samurai",
+        "Seven Samurai"
+      ]
+    },
+    "270": {
+      "input": "Spider-Man 2, The Fifth Element, X-Men, Spider-Man:\nChoices:\nA. The White Sun of the Desert\nB. The Happening\nC. Independence Day\nD. Destry Rides Again",
+      "output": [
+        "C. Independence Day",
+        "Independence Day"
+      ]
+    },
+    "271": {
+      "input": "Terminator 2 Judgment Day, Aladdin, The Shawshank Redemption, The Lion King:\nChoices:\nA. Iron Man & Hulk Heroes United\nB. Schindler's List\nC. Sherlock Jr\nD. Lilya 4-Ever",
+      "output": [
+        "B. Schindler's List",
+        "Schindler's List"
+      ]
+    },
+    "272": {
+      "input": "Batman, Independence Day, Jurassic Park, Forrest Gump:\nChoices:\nA. Pleasantville\nB. The Mask\nC. To Catch a Thief\nD. Microwave Massacre",
+      "output": [
+        "B. The Mask",
+        "The Mask"
+      ]
+    },
+    "273": {
+      "input": "The Terminator, Wayne's World, Star Wars Episode V - The Empire Strikes Back, Indiana Jones and the Temple of Doom:\nChoices:\nA. Nixon\nB. The Pink Panther\nC. The Pawnbroker\nD. Raiders of the Lost Ark",
+      "output": [
+        "D. Raiders of the Lost Ark",
+        "Raiders of the Lost Ark"
+      ]
+    },
+    "274": {
+      "input": "Gladiator, Raiders of the Lost Ark, Inception, Saving Private Ryan:\nChoices:\nA. Anna and the King\nB. Paris, Texas\nC. The Matrix\nD. The Parent Trap",
+      "output": [
+        "C. The Matrix",
+        "The Matrix"
+      ]
+    },
+    "275": {
+      "input": "Get Shorty, The Fugitive, Pulp Fiction, The Usual Suspects:\nChoices:\nA. Tomcats\nB. The Librarian Quest for the Spear\nC. Spacehunter Adventures in the Forbidden Zone\nD. Forrest Gump",
+      "output": [
+        "D. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "276": {
+      "input": "Pulp Fiction, Forrest Gump, Inside Out, Edge of Tomorrow:\nChoices:\nA. 1984\nB. Good Night, and Good Luck\nC. Kiss of the Dragon\nD. District 9",
+      "output": [
+        "D. District 9",
+        "District 9"
+      ]
+    },
+    "277": {
+      "input": "The Usual Suspects, Fargo, The Shawshank Redemption, Pulp Fiction:\nChoices:\nA. The Fugitive\nB. The Man in the Moon\nC. Friday the 13th Part IV The Final Chapter\nD. Big Top Scooby-Doo!",
+      "output": [
+        "A. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "278": {
+      "input": "Dances with Wolves, Get Shorty, The Fugitive, Braveheart:\nChoices:\nA. Barbershop 2 Back in Business\nB. Cool Runnings\nC. To Be or Not to Be\nD. The Shawshank Redemption",
+      "output": [
+        "D. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "279": {
+      "input": "Star Wars Episode IV - A New Hope, Raiders of the Lost Ark, Mission Impossible, Star Wars Episode V - The Empire Strikes Back:\nChoices:\nA. Indiana Jones and the Last Crusade\nB. Stander\nC. Too Late for Tears\nD. Tower Heist",
+      "output": [
+        "A. Indiana Jones and the Last Crusade",
+        "Indiana Jones and the Last Crusade"
+      ]
+    },
+    "280": {
+      "input": "Schindler's List, Dances with Wolves, Braveheart, The Shawshank Redemption:\nChoices:\nA. Tie Xi Qu West of the Tracks\nB. The Even Stevens Movie\nC. Pulp Fiction\nD. The Pink Panther 2",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "281": {
+      "input": "Braveheart, The Fugitive, The Shawshank Redemption, The Usual Suspects:\nChoices:\nA. Pale Rider\nB. Runaway Brain\nC. Crimson Tide\nD. Super Mario Bros",
+      "output": [
+        "C. Crimson Tide",
+        "Crimson Tide"
+      ]
+    },
+    "282": {
+      "input": "Goodfellas, Raiders of the Lost Ark, Star Wars Episode IV - A New Hope, The Silence of the Lambs:\nChoices:\nA. Monty Python and the Holy Grail\nB. Weekend at Bernie's\nC. American in Paris, An\nD. Let It Snow",
+      "output": [
+        "A. Monty Python and the Holy Grail",
+        "Monty Python and the Holy Grail"
+      ]
+    },
+    "283": {
+      "input": "Star Wars Episode IV - A New Hope, Raiders of the Lost Ark, The Matrix, Inception:\nChoices:\nA. Sabrina\nB. Child's Play\nC. Fun\nD. Up",
+      "output": [
+        "D. Up",
+        "Up"
+      ]
+    },
+    "284": {
+      "input": "Braveheart, Dances with Wolves, Apollo 13, Batman:\nChoices:\nA. Conquest of the Planet of the Apes\nB. The Garden of Words\nC. Terminator 2 Judgment Day\nD. Batman Mystery of the Batwoman",
+      "output": [
+        "C. Terminator 2 Judgment Day",
+        "Terminator 2 Judgment Day"
+      ]
+    },
+    "285": {
+      "input": "Forrest Gump, The Matrix, Raiders of the Lost Ark, Inception:\nChoices:\nA. Thirteen\nB. Agent Cody Banks 2 Destination London\nC. Pulp Fiction\nD. Master and Commander The Far Side of the World",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "286": {
+      "input": "The Lion King, Monsters, Inc, Catch Me If You Can, Minority Report:\nChoices:\nA. Shrek\nB. The Natural\nC. Strike!\nD. Gentlemen Broncos",
+      "output": [
+        "A. Shrek",
+        "Shrek"
+      ]
+    },
+    "287": {
+      "input": "Spirited Away, The Godfather, Requiem for a Dream, L\u00e9on The Professional:\nChoices:\nA. War of the Worlds\nB. Pulp Fiction\nC. City by the Sea\nD. Total Recall",
+      "output": [
+        "B. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "288": {
+      "input": "Forrest Gump, Braveheart, The Usual Suspects, The Fugitive:\nChoices:\nA. Get Shorty\nB. Billy Jack\nC. A Field in England\nD. Tank Girl",
+      "output": [
+        "A. Get Shorty",
+        "Get Shorty"
+      ]
+    },
+    "289": {
+      "input": "Raiders of the Lost Ark, The Matrix, Gattaca, Gladiator:\nChoices:\nA. Swimming Pool\nB. Maggie's Plan\nC. The Fifth Element\nD. For the Boys",
+      "output": [
+        "C. The Fifth Element",
+        "The Fifth Element"
+      ]
+    },
+    "290": {
+      "input": "Forrest Gump, The Fugitive, The Shawshank Redemption, Dances with Wolves:\nChoices:\nA. Voices from the List\nB. Planet 51\nC. Pulp Fiction\nD. Final Fantasy VII Advent Children",
+      "output": [
+        "C. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    },
+    "291": {
+      "input": "Dead Man Walking, Terminator 2 Judgment Day, The Fugitive, Braveheart:\nChoices:\nA. The Shawshank Redemption\nB. Private Benjamin\nC. Star Wars Episode III - Revenge of the Sith\nD. Session 9",
+      "output": [
+        "A. The Shawshank Redemption",
+        "The Shawshank Redemption"
+      ]
+    },
+    "292": {
+      "input": "Jurassic Park, Independence Day, Forrest Gump, Batman:\nChoices:\nA. The Firm\nB. Roger Dodger\nC. Innocent Man, An\nD. The Silence of the Lambs",
+      "output": [
+        "D. The Silence of the Lambs",
+        "The Silence of the Lambs"
+      ]
+    },
+    "293": {
+      "input": "Terminator 2 Judgment Day, The Lion King, Batman, Aladdin:\nChoices:\nA. Killing Me Softly\nB. A King in New York\nC. The Proposition\nD. Pretty Woman",
+      "output": [
+        "D. Pretty Woman",
+        "Pretty Woman"
+      ]
+    },
+    "294": {
+      "input": "Dances with Wolves, Mr Holland's Opus, Stargate, Get Shorty:\nChoices:\nA. Ride with the Devil\nB. It Runs in the Family\nC. The Usual Suspects\nD. Anomalisa",
+      "output": [
+        "C. The Usual Suspects",
+        "The Usual Suspects"
+      ]
+    },
+    "295": {
+      "input": "Batman, The Mask, The Lion King, Pretty Woman:\nChoices:\nA. Los Angeles Plays Itself\nB. Gintama The Final Chapter - Be Forever Yorozuya\nC. Doctor Who Last Christmas\nD. The Fugitive",
+      "output": [
+        "D. The Fugitive",
+        "The Fugitive"
+      ]
+    },
+    "296": {
+      "input": "Jurassic Park, Apollo 13, The Silence of the Lambs, Batman:\nChoices:\nA. The Little Shop of Horrors\nB. Prancer\nC. Forrest Gump\nD. Chuck & Buck",
+      "output": [
+        "C. Forrest Gump",
+        "Forrest Gump"
+      ]
+    },
+    "297": {
+      "input": "Pulp Fiction, Fargo, Twelve Monkeys, Monty Python and the Holy Grail:\nChoices:\nA. Cloud Atlas\nB. Friday Night Lights\nC. The Godfather\nD. Pride and Prejudice",
+      "output": [
+        "C. The Godfather",
+        "The Godfather"
+      ]
+    },
+    "298": {
+      "input": "Braveheart, The Fugitive, The Shawshank Redemption, The Usual Suspects:\nChoices:\nA. Down to the Bone\nB. Dances with Wolves\nC. Starship Troopers\nD. Return to Paradise",
+      "output": [
+        "B. Dances with Wolves",
+        "Dances with Wolves"
+      ]
+    },
+    "299": {
+      "input": "Terminator 2 Judgment Day, Schindler's List, The Lion King, The Shawshank Redemption:\nChoices:\nA. The Do-Over\nB. Tomboy\nC. Aladdin\nD. A Fistful of Dollars",
+      "output": [
+        "C. Aladdin",
+        "Aladdin"
+      ]
+    },
+    "300": {
+      "input": "The Lion King, The Fugitive, Schindler's List, The Shawshank Redemption:\nChoices:\nA. The Art of the Steal\nB. Pulp Fiction\nC. Battlestar Galactica The Plan\nD. Breakin' All the Rules",
+      "output": [
+        "B. Pulp Fiction",
+        "Pulp Fiction"
+      ]
+    }
+  }
+}

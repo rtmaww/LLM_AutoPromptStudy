@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Given a series of navigation instructions, determine whether one would end up back at the starting point",
+  "examples": {
+    "1": {
+      "input": "Always face forward. Take 6 steps backward. Take 6 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "2": {
+      "input": "Take 4 steps. Turn left. Turn left. Take 4 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "3": {
+      "input": "Take 3 steps. Take 3 steps. Turn right. Take 1 step. Take 2 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "4": {
+      "input": "Take 1 step. Take 7 steps. Take 1 step.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "5": {
+      "input": "Turn left. Turn around. Take 7 steps. Turn left. Turn right. Turn around. Take 7 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "6": {
+      "input": "Take 3 steps. Take 4 steps. Turn around. Take 1 step. Take 6 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "7": {
+      "input": "Turn right. Take 6 steps. Take 2 steps. Turn around. Take 7 steps. Take 1 step.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "8": {
+      "input": "Take 1 step. Take 7 steps. Turn around. Take 8 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "9": {
+      "input": "Always face forward. Take 7 steps left. Take 2 steps right. Take 5 steps backward. Take 8 steps left. Take 7 steps forward. Take 7 steps right. Take 9 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "10": {
+      "input": "Take 7 steps. Take 8 steps. Turn right. Turn right. Take 1 step. Take 7 steps. Take 6 steps. Take 1 step.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "11": {
+      "input": "Take 10 steps. Take 2 steps. Take 3 steps. Turn around. Take 4 steps. Turn around. Take 4 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "12": {
+      "input": "Always face forward. Take 6 steps forward. Take 10 steps left. Take 8 steps left. Take 2 steps backward. Take 4 steps backward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "13": {
+      "input": "Turn right. Take 5 steps. Take 3 steps. Turn around. Take 8 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "14": {
+      "input": "Always face forward. Take 2 steps left. Take 7 steps right. Take 5 steps left.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "15": {
+      "input": "Always face forward. Take 9 steps left. Take 4 steps forward. Take 2 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "16": {
+      "input": "Take 7 steps. Take 1 step. Turn left. Take 2 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "17": {
+      "input": "Always face forward. Take 10 steps backward. Take 10 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "18": {
+      "input": "Always face forward. Take 4 steps right. Take 3 steps right. Take 1 step right. Take 10 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "19": {
+      "input": "Take 1 step. Turn around. Take 4 steps. Turn around. Take 3 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "20": {
+      "input": "Take 8 steps. Take 1 step. Turn around. Take 9 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "21": {
+      "input": "Take 7 steps. Take 8 steps. Take 10 steps. Turn around. Turn around. Take 5 steps. Turn around.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "22": {
+      "input": "Always face forward. Take 2 steps backward. Take 9 steps right. Take 5 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "23": {
+      "input": "Always face forward. Take 4 steps forward. Take 9 steps backward. Take 3 steps left. Take 10 steps backward. Take 6 steps forward. Take 8 steps forward. Take 1 step forward. Take 10 steps right. Take 7 steps left.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "24": {
+      "input": "Always face forward. Take 5 steps forward. Take 7 steps left. Take 7 steps right. Take 5 steps backward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "25": {
+      "input": "Turn around. Take 9 steps. Turn around. Take 4 steps. Take 2 steps. Take 3 steps. Turn around.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "26": {
+      "input": "Always face forward. Take 3 steps right. Take 2 steps left. Take 1 step left.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "27": {
+      "input": "Turn left. Turn left. Take 7 steps. Turn around. Take 7 steps. Turn left.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "28": {
+      "input": "Always face forward. Take 8 steps left. Take 7 steps left. Take 2 steps right. Take 10 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "29": {
+      "input": "Always face forward. Take 2 steps forward. Take 7 steps right. Take 2 steps backward. Take 2 steps right.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "30": {
+      "input": "Take 6 steps. Turn around. Take 6 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "31": {
+      "input": "Take 2 steps. Take 3 steps. Turn around. Take 4 steps. Take 1 step.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "32": {
+      "input": "Always face forward. Take 6 steps left. Take 6 steps right. Take 4 steps forward. Take 10 steps forward. Take 6 steps left. Take 1 step left. Take 10 steps forward. Take 2 steps right.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "33": {
+      "input": "Turn around. Turn right. Take 5 steps. Take 2 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "34": {
+      "input": "Take 2 steps. Take 10 steps. Take 7 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "35": {
+      "input": "Take 3 steps. Take 9 steps. Turn left. Turn left. Take 2 steps. Take 8 steps. Take 2 steps. Turn left. Turn right.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "36": {
+      "input": "Always face forward. Take 9 steps forward. Take 7 steps left. Take 10 steps backward. Take 6 steps forward. Take 3 steps right. Take 3 steps backward. Take 10 steps right. Take 1 step left. Take 6 steps left.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "37": {
+      "input": "Take 4 steps. Turn left. Turn around. Turn right. Take 4 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "38": {
+      "input": "Take 10 steps. Take 7 steps. Turn around. Take 9 steps. Take 2 steps. Take 7 steps. Turn around. Take 1 step. Turn left.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "39": {
+      "input": "Always face forward. Take 7 steps forward. Take 7 steps backward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "40": {
+      "input": "Take 8 steps. Take 9 steps. Turn around. Take 5 steps. Turn left.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "41": {
+      "input": "Always face forward. Take 4 steps backward. Take 8 steps forward. Take 4 steps backward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "42": {
+      "input": "Take 9 steps. Take 9 steps. Take 4 steps. Turn right.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "43": {
+      "input": "Always face forward. Take 8 steps backward. Take 8 steps forward. Take 5 steps left. Take 5 steps right.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "44": {
+      "input": "Take 4 steps. Take 2 steps. Turn around. Take 6 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "45": {
+      "input": "Take 9 steps. Take 3 steps. Turn left. Turn left. Turn around. Turn right. Take 6 steps. Turn around.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "46": {
+      "input": "Always face forward. Take 4 steps backward. Take 1 step left. Take 5 steps forward. Take 3 steps backward. Take 9 steps left. Take 8 steps forward. Take 6 steps backward. Take 10 steps right.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "47": {
+      "input": "Take 5 steps. Take 5 steps. Take 7 steps. Take 10 steps.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    },
+    "48": {
+      "input": "Always face forward. Take 4 steps backward. Take 8 steps forward. Take 10 steps backward. Take 2 steps forward. Take 4 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "49": {
+      "input": "Always face forward. Take 7 steps left. Take 8 steps right. Take 1 step left.\nChoices:\nA. True\nB. False",
+      "output": [
+        "A",
+        "A.",
+        "A. True",
+        "True"
+      ]
+    },
+    "50": {
+      "input": "Always face forward. Take 6 steps left. Take 9 steps backward. Take 3 steps forward.\nChoices:\nA. True\nB. False",
+      "output": [
+        "B",
+        "B.",
+        "B. False",
+        "False"
+      ]
+    }
+  },
+  "num_examples": 60
+}

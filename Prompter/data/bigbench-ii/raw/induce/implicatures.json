@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Predict whether Speaker 2's answer to Speaker 1 counts as a yes or as a no",
+  "examples": {
+    "1": {
+      "input": "Speaker 1: 'Are you tired?' Speaker 2: 'I've been burning the candle at both ends all week.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "2": {
+      "input": "Speaker 1: 'Any luck getting me replaced?' Speaker 2: 'Is there anyone in this command that you don't either drink or play softball with?'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "3": {
+      "input": "Speaker 1: 'He still dead?' Speaker 2: 'Far as I know.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "4": {
+      "input": "Speaker 1: 'Have they reached an agreement?' Speaker 2: 'It seems they didn't have any common ground to stand on.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "5": {
+      "input": "Speaker 1: 'Will you be staying in Gotham for a while?' Speaker 2: 'As far as I know.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "6": {
+      "input": "Speaker 1: 'Want me to give you a hand changing her?' Speaker 2: 'Don't worry, I'm used to it.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "7": {
+      "input": "Speaker 1: 'You guys used to date regularly? Nice.' Speaker 2: 'Hardly.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "8": {
+      "input": "Speaker 1: 'Are you coming with me to the exhibition today?' Speaker 2: 'I made plans with Susan to go to the exhibition tomorrow afternoon.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "9": {
+      "input": "Speaker 1: 'Do you think that Dr. Luby will organize a theatre trip to New York this year?' Speaker 2: 'I have already signed up for it.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "10": {
+      "input": "Speaker 1: 'Are you following me?' Speaker 2: 'I'll tell you why.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "11": {
+      "input": "Speaker 1: 'You're both comin', right?' Speaker 2: 'We're already here.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "12": {
+      "input": "Speaker 1: 'Did you argue with the clerk?' Speaker 2: 'I was really angry, but I managed to hold my tongue.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "13": {
+      "input": "Speaker 1: 'Do you have any agricultural background?' Speaker 2: 'I used to work in an office.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "14": {
+      "input": "Speaker 1: 'Have you eve seen anything so wonderful in your entire life?' Speaker 2: 'Wow, cool! But, err, what is it?'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "15": {
+      "input": "Speaker 1: 'Like for an attic?' Speaker 2: 'Like for a submarine.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "16": {
+      "input": "Speaker 1: 'So you think now everything's gonna turn back to normal?' Speaker 2: 'As normal as it could be.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "17": {
+      "input": "Speaker 1: 'You mean like, hide and seek?' Speaker 2: 'Perfect! Hide and seek in the rain.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "18": {
+      "input": "Speaker 1: 'Should we go fishing?' Speaker 2: 'Fishing is off season.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "19": {
+      "input": "Speaker 1: 'Would you come out with me?' Speaker 2: 'You didn't think I would say yes to that, did you?'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "20": {
+      "input": "Speaker 1: 'Do you like that theory?' Speaker 2: 'Sounds good. Let's move on.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "21": {
+      "input": "Speaker 1: 'Are you feeling, alright?' Speaker 2: 'I'm afraid.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "22": {
+      "input": "Speaker 1: 'This, so, this is your new job opportunity? ' Speaker 2: 'You're gonna like this.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "23": {
+      "input": "Speaker 1: 'Can I get that doll?' Speaker 2: 'Great! I'd love to get rid of it!'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "24": {
+      "input": "Speaker 1: 'Fat?' Speaker 2: 'Fur, I was gonna say fur.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "25": {
+      "input": "Speaker 1: 'Did you fingerprint or anything?' Speaker 2: 'These guys always wear gloves. '\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "26": {
+      "input": "Speaker 1: 'Is your helper old?' Speaker 2: 'She's as old as the hills.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "27": {
+      "input": "Speaker 1: 'Are there any more cookies?' Speaker 2: 'All gone.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "28": {
+      "input": "Speaker 1: 'You want to do this to the whole world?' Speaker 2: 'So the whole world will be exactly how I want.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "29": {
+      "input": "Speaker 1: 'Should I bring my umbrella?' Speaker 2: 'Better safe than sorry.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "30": {
+      "input": "Speaker 1: 'Did you bring your blue and yellow sweater for me to wear to the game today? You know I like to wear school colours at the games.' Speaker 2: 'Oh! I knew I forgot something at home.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "31": {
+      "input": "Speaker 1: 'Are you gonna marry Lucy?' Speaker 2: 'Are you out of your gourd?'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "32": {
+      "input": "Speaker 1: 'Are you with me?' Speaker 2: 'To the death!'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "33": {
+      "input": "Speaker 1: 'Does he love his little girl?' Speaker 2: 'She's the apple of his eye.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "34": {
+      "input": "Speaker 1: 'But you're saying, you're a daughter of Eve?' Speaker 2: 'Well, my mum's name is Helen...'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "35": {
+      "input": "Speaker 1: 'You looked out for him?' Speaker 2: 'He looked out for me. He taught me.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "36": {
+      "input": "Speaker 1: 'Is the room warm?' Speaker 2: 'It is as cold as ice.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "37": {
+      "input": "Speaker 1: 'Did you buy an expensive car?' Speaker 2: 'Our car cost us an arm and a leg.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "38": {
+      "input": "Speaker 1: 'Did you have a good time at the party?' Speaker 2: 'It was gas.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "39": {
+      "input": "Speaker 1: 'Did you finish?' Speaker 2: 'I didn't get anywhere.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "40": {
+      "input": "Speaker 1: 'Have you ever been to Corto Maltese?' Speaker 2: 'Not since the shooting started.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "41": {
+      "input": "Speaker 1: 'Was that easy to find?' Speaker 2: 'I had to walk to the ends of the Earth to find it!'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "42": {
+      "input": "Speaker 1: 'Were they excited?' Speaker 2: 'You could feel a ripple of excitement.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "43": {
+      "input": "Speaker 1: 'Do you think father made all his money?' Speaker 2: 'He inherited it.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "44": {
+      "input": "Speaker 1: 'Did he ask you to marry him?' Speaker 2: 'He has been beating around the bush.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "45": {
+      "input": "Speaker 1: 'Is that a big mall?' Speaker 2: 'That mall is large enough to have its own zip code.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    },
+    "46": {
+      "input": "Speaker 1: 'Does she walk fast?' Speaker 2: 'She walks as slow as a turtle.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "47": {
+      "input": "Speaker 1: 'Did you talk to Kathy?' Speaker 2: 'My manager talked me out of it.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "48": {
+      "input": "Speaker 1: 'Did the Health Minister track all the patients?' Speaker 2: 'The Health Minister tracked some of the patients.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "49": {
+      "input": "Speaker 1: 'You're sure I'm not the chosen one?' Speaker 2: 'Emmet, your mother is the most powerful being in the universe.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "B. no",
+        "no"
+      ]
+    },
+    "50": {
+      "input": "Speaker 1: 'Do you want to come out for a juice?' Speaker 2: 'I am so thirsty that my throat is as dry as a bone.'\nChoices:\nA. yes\nB. no",
+      "output": [
+        "A. yes",
+        "yes"
+      ]
+    }
+  }
+}

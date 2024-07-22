@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Select the humorous edit that 'ruins' the input movie or musical artist name",
+  "examples": {
+    "1": {
+      "input": "the who!\nChoices:\nA. the pho!\nB. thd who!\nC. thqe who!\nD. the wqo!",
+      "output": [
+        "A. the pho!",
+        "the pho!"
+      ]
+    },
+    "2": {
+      "input": "born free\nChoices:\nA. barn free\nB. bsrn free\nC. born flee\nD. bornqfree",
+      "output": [
+        "C. born flee",
+        "born flee"
+      ]
+    },
+    "3": {
+      "input": "jurassic park\nChoices:\nA. jurassic mark\nB. jurassic pack\nC. jurassic pairk\nD. jurassic pork",
+      "output": [
+        "D. jurassic pork",
+        "jurassic pork"
+      ]
+    },
+    "4": {
+      "input": "friday the 13th\nChoices:\nA. xriday the 13th\nB. fridays the 13th\nC. friday the 12th\nD. fribay the 13th",
+      "output": [
+        "C. friday the 12th",
+        "friday the 12th"
+      ]
+    },
+    "5": {
+      "input": "braveheart\nChoices:\nA. bravehearts\nB. graveheart\nC. brasveheart\nD. braveheafrt",
+      "output": [
+        "B. graveheart",
+        "graveheart"
+      ]
+    },
+    "6": {
+      "input": "snakes on a plane\nChoices:\nA. snake on a plane\nB. shakes on a plane\nC. snakes on a plan\nD. snakes on a plaone",
+      "output": [
+        "B. shakes on a plane",
+        "shakes on a plane"
+      ]
+    },
+    "7": {
+      "input": "the guns of navarone\nChoices:\nA. the guns of mavarone\nB. the gins of navarone\nC. the guns of ngvarone\nD. the gun of navarone",
+      "output": [
+        "B. the gins of navarone",
+        "the gins of navarone"
+      ]
+    },
+    "8": {
+      "input": "the man with the golden gun\nChoices:\nA. the man with the golden bun\nB. the men with the golden gun\nC. the man withethe golden gun\nD. the dan with the golden gun",
+      "output": [
+        "A. the man with the golden bun",
+        "the man with the golden bun"
+      ]
+    },
+    "9": {
+      "input": "3:10 to yuma\nChoices:\nA. 3:10 tou yuma\nB. 3:k0 to yuma\nC. 3:10 to duma\nD. 3:10 to yumga",
+      "output": [
+        "C. 3:10 to duma",
+        "3:10 to duma"
+      ]
+    },
+    "10": {
+      "input": "buzzcocks\nChoices:\nA. buzzcofcks\nB. bdzzcocks\nC. buzzcoycks\nD. fuzzcocks",
+      "output": [
+        "D. fuzzcocks",
+        "fuzzcocks"
+      ]
+    },
+    "11": {
+      "input": "night of the demons\nChoices:\nA. nights of the demons\nB. night of the demon\nC. nighkt of the demons\nD. night of the lemons",
+      "output": [
+        "D. night of the lemons",
+        "night of the lemons"
+      ]
+    },
+    "12": {
+      "input": "the sisters of mercy\nChoices:\nA. the sister of mercy\nB. the svsters of mercy\nC. the sisters of msrcy\nD. the sisters of percy",
+      "output": [
+        "D. the sisters of percy",
+        "the sisters of percy"
+      ]
+    },
+    "13": {
+      "input": "the avengers\nChoices:\nA. toe avengers\nB. the avjngers\nC. thes avengers\nD. the avengegs",
+      "output": [
+        "A. toe avengers",
+        "toe avengers"
+      ]
+    },
+    "14": {
+      "input": "schindler's list\nChoices:\nA. schindler's lift\nB. schindler's list\nC. schindlerm's list\nD. schindler's liit",
+      "output": [
+        "A. schindler's lift",
+        "schindler's lift"
+      ]
+    },
+    "15": {
+      "input": "snoop dogg\nChoices:\nA. snoop dogs\nB. snoop logg\nC. snoopq dogg\nD. snhoop dogg",
+      "output": [
+        "B. snoop logg",
+        "snoop logg"
+      ]
+    },
+    "16": {
+      "input": "run dmc\nChoices:\nA. run dmv\nB. run bdmc\nC. runs dmc\nD. run hmc",
+      "output": [
+        "A. run dmv",
+        "run dmv"
+      ]
+    },
+    "17": {
+      "input": "city hall\nChoices:\nA. caty hall\nB. city halls\nC. city half\nD. city mall",
+      "output": [
+        "D. city mall",
+        "city mall"
+      ]
+    },
+    "18": {
+      "input": "pearl jam\nChoices:\nA. peajl jam\nB. pearl ham\nC. prarl jam\nD. npearl jam",
+      "output": [
+        "B. pearl ham",
+        "pearl ham"
+      ]
+    },
+    "19": {
+      "input": "johnny cash\nChoices:\nA. johnny cashs\nB. johnny rash\nC. johnny cabh\nD. sohnny cash",
+      "output": [
+        "B. johnny rash",
+        "johnny rash"
+      ]
+    },
+    "20": {
+      "input": "mad max\nChoices:\nA. made max\nB. madc max\nC. mad mix\nD. mjad max",
+      "output": [
+        "C. mad mix",
+        "mad mix"
+      ]
+    },
+    "21": {
+      "input": "the guns of navarone\nChoices:\nA. the guns of navaronpe\nB. the buns of navarone\nC. the guns gof navarone\nD. the guns of navfarone",
+      "output": [
+        "B. the buns of navarone",
+        "the buns of navarone"
+      ]
+    },
+    "22": {
+      "input": "the godfather\nChoices:\nA. the godfatrer\nB. the gobfather\nC. the godfathers\nD. thae godfather",
+      "output": [
+        "B. the gobfather",
+        "the gobfather"
+      ]
+    },
+    "23": {
+      "input": "clueless\nChoices:\nA. cluceless\nB. cluegess\nC. clueoess\nD. clubless",
+      "output": [
+        "D. clubless",
+        "clubless"
+      ]
+    },
+    "24": {
+      "input": "dangerous lies\nChoices:\nA. dangerous pies\nB. dangerous lie\nC. dangeroous lies\nD. dangerous lees",
+      "output": [
+        "A. dangerous pies",
+        "dangerous pies"
+      ]
+    },
+    "25": {
+      "input": "grateful dead\nChoices:\nA. groateful dead\nB. grateful deaf\nC. grateful devd\nD. gratueful dead",
+      "output": [
+        "B. grateful deaf",
+        "grateful deaf"
+      ]
+    },
+    "26": {
+      "input": "rush\nChoices:\nA. trush\nB. ruph\nC. rudsh\nD. tush",
+      "output": [
+        "D. tush",
+        "tush"
+      ]
+    },
+    "27": {
+      "input": "billie eilish\nChoices:\nA. pillie eilish\nB. bwillie eilish\nC. billir eilish\nD. billie eilksh",
+      "output": [
+        "A. pillie eilish",
+        "pillie eilish"
+      ]
+    },
+    "28": {
+      "input": "the green mile\nChoices:\nA. the green milk\nB. the greenzmile\nC. the geen mile\nD. the gdreen mile",
+      "output": [
+        "A. the green milk",
+        "the green milk"
+      ]
+    },
+    "29": {
+      "input": "big country\nChoices:\nA. mbig country\nB. big countrys\nC. pig country\nD. bag country",
+      "output": [
+        "C. pig country",
+        "pig country"
+      ]
+    },
+    "30": {
+      "input": "ghost busters\nChoices:\nA. ghostvbusters\nB. ghost bustqrs\nC. ghost buster\nD. ghost lusters",
+      "output": [
+        "D. ghost lusters",
+        "ghost lusters"
+      ]
+    },
+    "31": {
+      "input": "cat on a hot tin roof\nChoices:\nA. cat on a hkt tin roof\nB. cat on a hot tin riof\nC. cat on a hot tan roof\nD. fat on a hot tin roof",
+      "output": [
+        "D. fat on a hot tin roof",
+        "fat on a hot tin roof"
+      ]
+    },
+    "32": {
+      "input": "weezer\nChoices:\nA. weezej\nB. weepzer\nC. tweezer\nD. wemezer",
+      "output": [
+        "C. tweezer",
+        "tweezer"
+      ]
+    },
+    "33": {
+      "input": "shai\nChoices:\nA. skai\nB. sham\nC. shfi\nD. ghai",
+      "output": [
+        "B. sham",
+        "sham"
+      ]
+    },
+    "34": {
+      "input": "deadpool\nChoices:\nA. deadpowol\nB. deadfool\nC. ndeadpool\nD. dveadpool",
+      "output": [
+        "B. deadfool",
+        "deadfool"
+      ]
+    },
+    "35": {
+      "input": "dream theater\nChoices:\nA. drzeam theater\nB. dream thdeater\nC. dread theater\nD. dreavm theater",
+      "output": [
+        "C. dread theater",
+        "dread theater"
+      ]
+    },
+    "36": {
+      "input": "sally\nChoices:\nA. salliy\nB. asally\nC. silly\nD. tsally",
+      "output": [
+        "C. silly",
+        "silly"
+      ]
+    },
+    "37": {
+      "input": "calamity jane\nChoices:\nA. calamity jyane\nB. aalamity jane\nC. calamity june\nD. calamitf jane",
+      "output": [
+        "C. calamity june",
+        "calamity june"
+      ]
+    },
+    "38": {
+      "input": "some like it hot\nChoices:\nA. some liqe it hot\nB. some likewit hot\nC. some like it not\nD. some likt it hot",
+      "output": [
+        "C. some like it not",
+        "some like it not"
+      ]
+    },
+    "39": {
+      "input": "batman begins\nChoices:\nA. barman begins\nB. batman bewins\nC. hatman begins\nD. batman begin",
+      "output": [
+        "C. hatman begins",
+        "hatman begins"
+      ]
+    },
+    "40": {
+      "input": "pals\nChoices:\nA. panls\nB. pall\nC. palvs\nD. paws",
+      "output": [
+        "D. paws",
+        "paws"
+      ]
+    },
+    "41": {
+      "input": "the third man\nChoices:\nA. the third mans\nB. the third men\nC. the jhird man\nD. the third nan",
+      "output": [
+        "D. the third nan",
+        "the third nan"
+      ]
+    },
+    "42": {
+      "input": "spandau ballet\nChoices:\nA. spandau aballet\nB. spandfu ballet\nC. spaydau ballet\nD. spandau pallet",
+      "output": [
+        "D. spandau pallet",
+        "spandau pallet"
+      ]
+    },
+    "43": {
+      "input": "black narcissus\nChoices:\nA. blamck narcissus\nB. black narcissux\nC. black narcispsus\nD. blank narcissus",
+      "output": [
+        "D. blank narcissus",
+        "blank narcissus"
+      ]
+    },
+    "44": {
+      "input": "lady gaga\nChoices:\nA. lady gags\nB. lady gagxa\nC. laody gaga\nD. ladys gaga",
+      "output": [
+        "A. lady gags",
+        "lady gags"
+      ]
+    },
+    "45": {
+      "input": "blur\nChoices:\nA. blux\nB. bldur\nC. tlur\nD. blub",
+      "output": [
+        "D. blub",
+        "blub"
+      ]
+    },
+    "46": {
+      "input": "goodfellas\nChoices:\nA. gotdfellas\nB. gooofellas\nC. gooifellas\nD. foodfellas",
+      "output": [
+        "D. foodfellas",
+        "foodfellas"
+      ]
+    },
+    "47": {
+      "input": "diary of a wimpy kid\nChoices:\nA. diary of a wimpy skid\nB. diary of a wimpy gkid\nC. dizary of a wimpy kid\nD. diary of a wimpy kiq",
+      "output": [
+        "A. diary of a wimpy skid",
+        "diary of a wimpy skid"
+      ]
+    },
+    "48": {
+      "input": "animal farm\nChoices:\nA. animal fart\nB. anidal farm\nC. animalofarm\nD. animal fagm",
+      "output": [
+        "A. animal fart",
+        "animal fart"
+      ]
+    },
+    "49": {
+      "input": "star wars\nChoices:\nA. star ware\nB. star wsrs\nC. star nars\nD. star warts",
+      "output": [
+        "D. star warts",
+        "star warts"
+      ]
+    },
+    "50": {
+      "input": "modern talking\nChoices:\nA. mohdern talking\nB. modern tzlking\nC. msdern talking\nD. modern walking",
+      "output": [
+        "D. modern walking",
+        "modern walking"
+      ]
+    }
+  }
+}

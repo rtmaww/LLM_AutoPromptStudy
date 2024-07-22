@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Determine whether the first sentence entails or contradicts the second",
+  "examples": {
+    "1": {
+      "input": "Sentence 1: He's terminated this year. That means the rest of his contract gets thrown out the door. In addition, he has not lost several million dollars as a result of the termination of his shoe contract with Converse. \nSentence 2: He had fewer than several million dollars earlier.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "2": {
+      "input": "Sentence 1: Tartars and Arab clans / tribes exemplify this stage well. Such an inquiry can be either light-bearing or fruit-bearing (Pigou, 1946). In the analysis of human society, it isn't the fruit-bearing that dominates. \nSentence 2: In the analysis of human society, soemthing dominates.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "3": {
+      "input": "Sentence 1: That's one of the big things I've been working on. \" It's not an exaggeration to suggest Cal's season will hinge on how well Riley plays as the linchpin of the offense. Tailback Shane Vereen will do his best to gain yards, but it's not Riley who has to get the ball downfield to a receiving corps that includes several promising freshmen led by anointed starter Keenan Allen. \nSentence 2: Someone has to get the ball downfield\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "4": {
+      "input": "Sentence 1: Lowrey reels with an elbow, dropping Burnett to the lawn. But Burnett rolls and clips Lowrey's legs. Lowrey falls. \nSentence 2: Lowry fell just before that.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "5": {
+      "input": "Sentence 1: First Meridian. which is contesting the charges in court. First Meridian didn't allegedly say that the fees for these plans were its sole source of income. \nSentence 2: the fees for these plans were its sole source of income.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "6": {
+      "input": "Sentence 1: They won't be able to sit in circle time. They won't have any idea that the rules apply to them. it's that kind of thing that often brings the child to first attention. GROSS \nSentence 2: The idea often brings the child to first attention.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "7": {
+      "input": "Sentence 1: Thanks to a declining economy and the national mania for \"downsizing,\" Mel loses her job. As she searches-with growing desperation-to find another job, it becomes increasingly apparent that her husband's business is also in trouble. An assignment Mel's husband had been counting on isn't lost. \nSentence 2: Mel's husband had an assignment before.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "8": {
+      "input": "Sentence 1: Penelope asked. \" They are few and fer between. Not many of them failed to adapt to the transition. \nSentence 2: She tried to adapt to the transition.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "9": {
+      "input": "Sentence 1: I have a little thing for her. GOLD I don't know how you can keep the show on. \nSentence 2: You can keep the gold in some way.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "10": {
+      "input": "Sentence 1: In September, OSHA proposed cutting in half the permissible levels of exposure to crystalline silica at work sites. Minnesota recently began testing for crystalline silica and other fine particles at mines and along a busy haul route. It is rewriting air-quality standards for sand mining. \nSentence 2: Air-quality standards for sand mining have been previously established.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "11": {
+      "input": "Sentence 1: This is a question that everyone asks in our region. Israel's neighbors--Iran's neighbors know that Iran will become even more aggressive and sponsor even more terrorism when its economy is unshackled and it's been given a clear path to the bomb. And many of these neighbors say they'll respond by racing to get nuclear weapons of their own. \nSentence 2: Many of these neighbors will respond by racing to get nuclear weapons of their own\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "12": {
+      "input": "Sentence 1: After coming to Christ, in order to catch up with the kids in Sunday school, I read the Bible a lot. I learned that if you read 40 chapters per day, you could read through the entire Bible every monthor, what I did more often, through the New Testament every week. I began to see how each book of the Bible is distinctive, and also how each passage reinforces the major themes of the book in which it appears. \nSentence 2: Previously, I hadn't seen how each book of the Bible is distinctive, and also how each passage reinforces the major themes of the book in which it appears.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "13": {
+      "input": "Sentence 1: The proximate cause was physical, a failing heart. But the deeper cause was the strain his race for the presidency had placed on her mind and soul. In their desperation to cling to power, the partisans of John Quincy Adams hadn't recirculated and embellished the earlier libels against Rachel's character. \nSentence 2: The earlier libels against Rachel's character had been circulated before\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "14": {
+      "input": "Sentence 1: qwq KROFT: And you don't think the police were part of this. \nSentence 2: You were part of this.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "C. contradiction",
+        "contradiction"
+      ]
+    },
+    "15": {
+      "input": "Sentence 1: Yet we survived. Pop lived to be 88, Mom to 82. Both aunts made it well past 80, and I was 77 on my last birthday. \nSentence 2: I made it well past 80.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "C. contradiction",
+        "contradiction"
+      ]
+    },
+    "16": {
+      "input": "Sentence 1:  Mr. Chapin, 38, knows that many people find this kind of stuff laughable in an age of audioanimatronic theme parks. Yet he doesn't resist updating it. \nSentence 2: It's forced upon Mr. Chapin that he must update this kind of stuff.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "17": {
+      "input": "Sentence 1:  At the time he attaches no significance to his father's visit to the counter of a domestic airline before checking in for his international flight, but he knew even then with the deaf-and-dumb intuition of a child that his father would not be coming back, ever. He recalls nothing of his actual feelings as he and Dora struggle to lift an unprecedented second suitcase onto the scale and his father doesn't disappear into customs after rushed kisses and a vague guarantee of gifts on his return. \nSentence 2: His father kissed them and promised them gifts on his return.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "18": {
+      "input": "Sentence 1: The pilot brought us into position behind and to the left of the bears. Ramsay, like a modern day Buffalo Bill, rifle to his shoulder, leaned out the door, squinted through the scope, and fired a tranquilizer dart into the rump of the first bear. He quickly reloaded and darted the second bear. \nSentence 2: His tranquilizer gun had been loaded before\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "19": {
+      "input": "Sentence 1: After her brief response, he turns away, though line 34 indicates she has not said all she needs to say. The Troubles Delwar Divined  Analyzing videotapes I made of the diviner Delwar Kari in 1996 and comparing them with those I had shot in 1992 uncovered both continuities and contrasts. Both sets of tapes I revisited reveal a formulaic declamation of the results of a numerological sort of calculation process, one that he has kept shrouded in mystery. \nSentence 2: There are two sets of tapes I revisited.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "20": {
+      "input": "Sentence 1: We don't see them on the street. Again, as we said earlier, we see glimpses of what they might have been, what hopefully they might become. The same Tommy on the street is a different animal than the Tommy we saw here. \nSentence 2: Tommy is a wild animal.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "21": {
+      "input": "Sentence 1: having been in communications and been with Midway Airlines, I was considering the front desk as well- food and beverage in a management position or possibly even security. Mr. BRINKLEY: Well, both of you here today stood in line for a good long time, which became a kind of social scene, I understand. \nSentence 2: There are two of you here today.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "22": {
+      "input": "Sentence 1: What he's doing is totally and completely normal: He's discovering his body, and discovering that rubbing his penis feels good. There's nothing wrong with that. You can avoid making him feel bad or ashamed about the behavior. \nSentence 2: He expected you to feel bad or ashamed about the behavior.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "23": {
+      "input": "Sentence 1: In September, OSHA proposed cutting in half the permissible levels of exposure to crystalline silica at work sites. Minnesota recently began testing for crystalline silica and other fine particles at mines and along a busy haul route. It isn't rewriting air-quality standards for sand mining. \nSentence 2: Air-quality standards for sand mining have been previously rewritten.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "24": {
+      "input": "Sentence 1: And in the coming months I am looking forward to reaching out and working with leaders of both parties to meet the challenges we an only solve together.  Mitt Romney urged the leaders of both parties \" to reach across the aisle and do the people's work. \nSentence 2: There are more than two parties.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "25": {
+      "input": "Sentence 1: Speaker B: what's going to come out of this, not because of Democrats, but because people, Trump supporters and other things, you showed up at ours, we're going to show up at yours. this only gets worse.\r\nSpeaker A: Well, I'm not sure about that, but it is Donald Trump who has been inciting the violence. \nSentence 2: Someone has been inciting the violence.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "26": {
+      "input": "Sentence 1: VAN-SUSTEREN: In terms of Iowa, the caucus, if you have a job that doesn't let you takeoff the night of the caucus, you can't vote. In Iowa, you are not excluded from the system in both parties. \nSentence 2: There are less than two parties.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "C. contradiction",
+        "contradiction"
+      ]
+    },
+    "27": {
+      "input": "Sentence 1:  Their kids have played sports together. Women from both sides of town formed a mothers group. \nSentence 2: There are two sides of town.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "28": {
+      "input": "Sentence 1:  Many strands of contemporary thought, including those embraced by \"deep greens\" and the far left, express aspects of such discontent. But it isn't radical Islam that has become the lightning rod for this fury. \nSentence 2: The far left has become the lighting rod for this fury.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "29": {
+      "input": "Sentence 1: The other, initiated in Uganda, is called the Kampala Process. Diplomats from the United Nations, the US, the African Union, and other diplomats from the so-called Great Lakes region of sub-Saharan Africa have gotten involved in both talks due to the worsening humanitarian crisis this summer. M23 is not seen as the stumbling block to progress in both talks. \nSentence 2: There are less than two talks.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "C. contradiction",
+        "contradiction"
+      ]
+    },
+    "30": {
+      "input": "Sentence 1: FishEasy ST, $129; FishEasy Port Photograph A hefty (depth) charge. // able, $199. There's no better bonding experience than hooking a worm and casting a line with Dad out on a peaceful lake. \nSentence 2: Hooking a worm and casting a line with Dad out on a peaceful lake is better than bonding\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "31": {
+      "input": "Sentence 1: It was so packed, there were people sitting in their seats holding small to medium-sized bags because they couldn't go either way in the aisles.  Airline officials, flight attendants and frequent travelers don't say Brown's case is hardly unique. \nSentence 2: Brown's case is hardly official.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "32": {
+      "input": "Sentence 1:  The company denies that it found any problems with designs for the waste vessels before commissioning their construction. Project manager Craig Albert said Bechtel didn't decide to install one vessel before fixing all the welds because the repairs would be better performed after installation. \nSentence 2: Craig Albert fixed all the welds\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "33": {
+      "input": "Sentence 1:   Despite her sales figures, Katzen didn't begin to feel uncomfortable with the first two books and the level of cooking knowledge they represented. \nSentence 2: Despite her sales figures, Katzen didn't feel uncomfortable with the first two books and the level of cooking knowledge they represented in the past.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "34": {
+      "input": "Sentence 1:  In seizing his own Mideast moment, Obama offered a speech that was in some ways notable for what he did not mention. While critical of autocracy throughout the Mideast, he failed to mention the region's largest, richest and arguably most repressive nation, U.S. ally Saudi Arabia. \nSentence 2: Obama attempted to mention Saudi Arabia\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "C. contradiction",
+        "contradiction"
+      ]
+    },
+    "35": {
+      "input": "Sentence 1: This is a question that everyone asks in our region. Israel's neighbors--Iran's neighbors know that Iran will become even more aggressive and sponsor even more terrorism when its economy is unshackled and it's been given a clear path to the bomb. And many of these neighbors say they'll respond by racing to get nuclear weapons of their own. \nSentence 2: Israel will respond by racing to get nuclear weapons of their own\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "36": {
+      "input": "Sentence 1:  After all, once businesses have a full range of tech tools, they don't need to keeping boosting budgets to buy tons of new stuff. They used to change so fast that they lasted only about three years before needing an upgrade. \nSentence 2: They used an upgrade.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "37": {
+      "input": "Sentence 1: In the taxi on the way to Lutce, I ponder the question of pork.  When we were poor but not impoverished, A-Ma didn't dare to make pork for dinner. \nSentence 2: Making dinner took courage for A-MA.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "38": {
+      "input": "Sentence 1:  All the debate can finally be laid to rest. We don't know what happened to Jar Jar Binks after Revenge of the Sith, and what he's been doing since Return of the Jedi. \nSentence 2: Something happened to Jar Jar Binks after Revenge of the Sith, and he's been doing something since Return of the Jedi.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "39": {
+      "input": "Sentence 1: A corrections company hired 140 locals to help build a large prison complex. More importantly, once the prison was up and running in 2012, it would provide Millen with more than 200 permanent jobs. In the old industrial area, Stitch N Print, a small clothing manufacturer that left Millen in 2009, had reopened. \nSentence 2: Stitch N Print was open in the past.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "40": {
+      "input": "Sentence 1:  Their kids have played sports together. Women from both sides didn't form a mothers group. \nSentence 2: There are exactly two women.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "41": {
+      "input": "Sentence 1: The residual threat of reactionary takeover in the Russian Republic remained, but even in the worst-case scenario Russian forces would be both weaker and further removed from German borders than at any time during the Cold War. Despite these auspicious developments, the German government of Chancellor Kohl reacted almost with a sense of panic to the new international environment. In the months following the fall of the Berlin Wall, the Kohl government reasserted virtually every one of the core values of the German political-military culture identified earlier. \nSentence 2: The Kohl government asserted virtually every one of the core values of the German political-military culture before the fall of the Berlin Wall.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "42": {
+      "input": "Sentence 1:  \"Let the little children come to me,\" thought Fleur, rubbing her hands over her goosefleshed arms. \"There is no smaller child than I,\" and Fleur let herself heavily down onto the pavement once more, to venture toward the church. \nSentence 2: Fleur is a child.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "43": {
+      "input": "Sentence 1:  Mashable is a leading global media company that informs, inspires and entertains the digital generation. Mashable is redefining storytelling by documenting and shaping the digital revolution in a new voice, new formats and cutting-edge technologies to a uniquely dedicated audience of 45 million monthly unique visitors and 26 million social followers. \nSentence 2: Mashable has been defined before.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "44": {
+      "input": "Sentence 1:  Professor Skeel, the son of a teacher and an Air Force doctor, said he had \"zero\" experience of religion while moving six times with his father's deployments. But after entering the University of North Carolina in 1979, he began to feel \"a general sense that there had to be more than what I could see.\" \nSentence 2: He graduated from the University of North Carolina before 1979.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "C. contradiction",
+        "contradiction"
+      ]
+    },
+    "45": {
+      "input": "Sentence 1: This method results in a waveform with the values of the standard deviation over time and it is one of the features that constitutes the feature matrix of the NDC algorithm.  The comparison of both algorithms demonstrates that the NDC algorithm is more stable and presents more consistent results regardless of the record or dataset. \nSentence 2: There are exactly two datasets.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "46": {
+      "input": "Sentence 1:  Mashable is a leading global media company that informs, inspires and entertains the digital generation. Mashable is redefining storytelling by documenting and shaping the digital revolution in a new voice, new formats and cutting-edge technologies to a uniquely dedicated audience of 45 million monthly unique visitors and 26 million social followers. \nSentence 2: Storytelling has been defined before\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "47": {
+      "input": "Sentence 1: On Aug. 1 during an wide-ranging interview about the coming season, it was about five feet tall. Smith was proud of his horticultural skills. He started growing the plant shortly after taking over monumental task of turning around the Falcons in January 2008. \nSentence 2: He hadn't been growing the plant before Aug 1 of this year.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "C. contradiction",
+        "contradiction"
+      ]
+    },
+    "48": {
+      "input": "Sentence 1: He's terminated this year. That means the rest of his contract gets thrown out the door. In addition, he has not lost several million dollars as a result of the termination of his shoe contract with Converse. \nSentence 2: He had several million dollars earlier.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "49": {
+      "input": "Sentence 1: First Meridian. which is contesting the charges in court. First Meridian allegedly said that the fees for these plans were its sole source of income. \nSentence 2: the fees for these plans were its sole source of income.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "B. neutral",
+        "neutral"
+      ]
+    },
+    "50": {
+      "input": "Sentence 1: In the coming months, I will return to Comite for further tests and to decide whether I should make myself into a bit of a science experiment. Lucky you, you'll get to watch and maybe even learn from my mistakes. I will discover what my cholesterol number is and how big or small the cholesterol particles traveling through my bloodstream are. \nSentence 2: My cholesterol has a certain number and the cholesterol particles traveling though my bloodstream have a certain size.\n\nThe answer is: \nChoices:\nA. entailment\nB. neutral\nC. contradiction",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    }
+  }
+}

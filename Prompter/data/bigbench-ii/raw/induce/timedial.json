@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Pick the correct choice for a masked (temporal) span given the dialog context",
+  "examples": {
+    "1": {
+      "input": "Context: \nA: Tell me about yourself. \nB: I was born and raised in Beijing. I attended Peking University and received my bachelor's degree in Economics. I have worked for <MASK> as a financial consultant in Beijing for China Pacific Insurance Co. Ltd. \nA: What type of position are you looking for? \nB: I'm looking for a position in which I can utilize my experience. \nA: Are you interested in a full-time or part-time position? \nB: I am more interested in a full-time position. However, I would also consider a part-time position. \nA: Can you tell me about your responsibilities at your last job? \nB: I advised customers on financial matters. After I consulted the customer, I completed a customer inquiry form and catalogued the information in our database. I then collaborated with colleagues to prepare the best possible package for the client. The clients were then presented with a summarized report on their financial activities that I formulated on a quarterly basis. \nA: What is your greatest strength? \nB: I am an excellent communicator. People trust me and come to me for advice. One afternoon, my colleague was involved with a troublesome customer who felt he was not being served well. I made the customer a cup of coffee and invited both my colleague and the client to my desk where we solved the problem together. \nA: What is your greatest weakness? \nB: I tend to spend too much time making sure the customer is satisfied. However, I began setting time-limits for myself. \nA: Why do you want to work for our company? \nB: After following your firm's progress for the last 3 years, I am convinced that your company is becoming one of the market leaders and I would like to be a part of that team. \nA: When can you begin? \nB: Immediately. \nChoices:\nA. 40 years\nB. 3 days\nC. 2 years",
+      "output": [
+        "C. 2 years",
+        "2 years"
+      ]
+    },
+    "2": {
+      "input": "Context:\nA: I'm free on Sunday. I'd like to take a look in Beijing City, could you tell me where to go?\nB: Sure, no problem. I'll ring to have a city tour.on sunday morning we can go to the Great Wall, then we can go to the summer palace in the afternoon. In the evening we can have typical dinner in restaurant in Beijing. Quanjude, a restaurant serving roast ducks. However if you don't like above trips, we can go some famous places outside of Beijing.\nA: Any place will be fine. you make the decision.\nB: What time shall we start?\nA: I will pick you up at your hotel at <MASK>.\nB: Ok, then see you in sunday morning.\nChoices:\nA. 9 in the evening\nB. three in the morning\nC. nine in the morning",
+      "output": [
+        "C. nine in the morning",
+        "nine in the morning"
+      ]
+    },
+    "3": {
+      "input": "Context: \nA: What are you doing? \nB: What am I doing? What am I doing? Don't you know what day it is? \nA: Mumm. no. \nB: It's only the day when the world's biggest sporting event is kicking off. \nA: What? \nB: The World Cup ! The first match is today ! It's Mexico vs. South Africa ! It's going to be a really good match ! Both teams have a very strong offense and have skilled players. I think that South Africa will probably dominate the first half since they are the host country, and all. \nA: I have no idea what you're talking about. The only sporting event we watch at home is the Super Bowl. \nB: This is bigger than the Super Bowl, man ! Teams from 32 countries compete against each other <MASK> and fight to win that trophy. They first start in a group stage with bigger groups, each group having 4 teams. The top 2 teams pass on to an elimination stage before going on to the quarter final sand semifinals. \nA: Sounds interesting, but soccer doesn't really appeal to me. \nB: Are you kidding? Over seven hundred million people watched the final match of the World Cup ! It's a very exciting and nerve wracking sport ! Each nation is cheering on their team, hoping they will become the next champion. So far Brazil is the team with the most titles under their belt ; they're really good ! \nA: All I know about soccer is that you can't use your hands and that players are always falling down, trying to get a free kick or penalty kick. It seems like a sissy sport to me ! \nB: Whatever dude, I'm going to go watch the opening match.\nChoices:\nA. every 2 months\nB. every 32 minutes\nC. every four years",
+      "output": [
+        "C. every four years",
+        "every four years"
+      ]
+    },
+    "4": {
+      "input": "Context: \nA: Mr. Black, when is the earliest shipment you can make? \nB: In April or early May. \nA: I am afraid shipment by early May would be too late for us. Our customs formalities are quite complicated, and it takes time to distribute the goods to the farmers in our country. The fertilizers must be delivered before April, or else we can't be in time for the spring sowing. \nB: In that case, we will have to improve one month further on the time. Now is Jan. If the fertilizers should be shipped before the end of March, only <MASK> are left. The time is too limited. \nA: You understand a timely delivery is very important to us. \nB: All right. You can rest assured that we will do everything possible to advance shipment. The fertilizers will be delivered before April. \nChoices:\nA. three months\nB. one month\nC. 2 months",
+      "output": [
+        "C. 2 months",
+        "2 months"
+      ]
+    },
+    "5": {
+      "input": "Context: \nA: Are you alright, Ethan? You don't seem to be as cheerful as you normally are. \nB: To be honest, Ava, I've just had a really bad day. \nA: What happened? \nB: First, I slept through my alarm and ended up <MASK> late to work. \nA: What did your boss say? \nB: He told me that if I showed up late one more time, he'd fire me. He's so mean ! \nA: That's horrible. Was that the first time you'd shown up late to work? \nB: That was my second time. The first time, I was in a car accident. \nA: Is your boss Chinese? \nB: No, he's from Australia. Before I met him, I thought Australians were supposed to be relaxed and easy-going. I had no idea he'd be so fussy about things. \nA: What are you going to do? \nB: I think I'm going to look for another job. I need to find a boss that is a bit more sensitive and optimistic than my current boss. \nA: That sounds like a sensible plan. Do you want me to help you with your job search? \nB: That's very generous of you. Thanks for the offer. \nA: Don't mention it. That's what friends are for ! \nChoices:\nA. nine hours\nB. two seconds\nC. two hours",
+      "output": [
+        "C. two hours",
+        "two hours"
+      ]
+    },
+    "6": {
+      "input": "Context:\nA: Excuse me. I bought the CD here <MASK>. It's scratched, and doesn't play properly.\nB: I'm sorry about that, sir. I'll get you another one.\nA: The thing is I've replaced once already. I think it's just a faulty batch.\nB: I see. Maybe I can offer you a credit note.\nA: Well. To be honest, that's not much use to me. I'll leave the country tomorrow. I'd really prefer a refund.\nB: OK, sir. I'll see what I can do.\nChoices:\nA. four months ago\nB. Two seconds ago\nC. One day ago ",
+      "output": [
+        "C. One day ago ",
+        "One day ago "
+      ]
+    },
+    "7": {
+      "input": "Context:\nA: The Spring Festival is drawing close. By then we will have <MASK> off. I am expecting it.\nB: Can you tell me something about the Spring Festival?\nA: Just like you celebrate Christmas, we celebrate our lunar New Year's Day, the Spring Festival. It is a time for the family members and relatives to have a get-together.\nB: Christmas is also a special time for us to have the family reunion and to express our best wishes to those we love and those who love us in the coming new year.\nA: Christmas has more religious nature, while our Spring Festival is a more traditional holiday. On the New Year's Eve, we have a big dinner called'Family Reunion Dinner'. One of the traditional food to eat at the dinner is dumplings. After that, the adults usually sit chatting, watching TV, or playing cards.\nB: What are the children doing?\nA: They usually go outside to play firecrackers and fireworks.\nB: I heard one of the purposes to do it is to frighten the devils so they will not come to do any harm to people in the next year.\nA: Perhaps it is like what people told you. At 24 hours midnight, the time when the New Year really comes, we exchange'Happy New Year'to each other, and parents and grandparents will take out small packages wrapped with red paper, in them are some what we call'Lucky Money.\nB: Who will get the money?\nA: Of course the children.\nChoices:\nA. one year\nB. 24 hours\nC. three days",
+      "output": [
+        "C. three days",
+        "three days"
+      ]
+    },
+    "8": {
+      "input": "Context: \nA: Now please tell me something about your past work achievements. \nB: All right, madam. When I was sales manager at the Beijing Friendship Store. I succeeded in raising the yearly sales volume by 25 percent and profit margins from 50 percent to 80 percent. \nA: That is quite an achievement ! Do you consider it your most rewarding work experience? \nB: I don't think so. I'll create further achievement in the future. \nA: Have you received any honors? \nB: Yes. I got the title of Advance Worker in <MASK>. \nA: Do you have any publications? \nB: Yes. I wrote a thesis entitled On Interpersonal Relations in the Socialist Market Economy and it was published in China Daily. \nChoices:\nA. 2020\nB. 1925\nC. 2006",
+      "output": [
+        "C. 2006",
+        "2006"
+      ]
+    },
+    "9": {
+      "input": "Context:\nA: How are you, Mr Wilson? I am Tina.\nB: Glad to meet you, Mrs.Tina.\nA: Please have a seat. I know our employment of forcer has already given you the information about your employee contract, but I'd like to go over the main details again before signing. First, you'll be getting a monthly salary, with one month paid vacation after <MASK> of service.\nB: That's what I understand.\nA: You'll be covered by our medical plan while on duty.Since you'll be middle management, you're expected to be available up to 1.5 hours past normal working hours.Any approved time over that will be paid at time and a half, which you can take as salary or time off.\nB: Exactly my understanding.\nA: A reasonable number of sick days will be covered by the company.Any extended illness will be covered by insurance.Have you read the other terms of the contract?\nB: Yes, I have.\nA: Do you have any other questions?\nB: Just one. I noticed an item about flex-time.Is that a possibility for me?\nA: Yes, it is, but you'll have to discuss the details with your manager.\nB: That's acceptable.\nA: Good.Now, if you'll just sign here, you can start work in 3 days.\nChoices:\nA. Five years\nB. 3 days\nC. Six months",
+      "output": [
+        "C. Six months",
+        "Six months"
+      ]
+    },
+    "10": {
+      "input": "Context: \nA: Shakespeare was born in 1867. \nB: No, it sounds wrong. He was born in the 16th century. \nA: Are you sure? Can you make it more exact? \nB: <MASK>. \nChoices:\nA. 1768\nB. 1867\nC. 1564",
+      "output": [
+        "C. 1564",
+        "1564"
+      ]
+    },
+    "11": {
+      "input": "Context:\nA: Hi, Larry, how was your weekend?\nB: Not bad. We had a get-together with friends from college. I haven't seen many of them since graduation. How about you?\nA: Great. I hung out with Jo all day shopping, and the went out for dinner together.\nB: Sounds a good weekend. You know it always amazes me that two people as different as you and Jo can become such close friends.\nA: Yeah, I never thought we could be good friends either. We have our differences. She's more outgoing and active while I am more quiet and reversed, but we still get along extremely well. We can talk for hours about anything.\nB: That's great. I know people who can't stand each other for even <MASK>.\nA: When Jo and I are together, we argue a lot, but that's also part of the fun. Besides, I know she will always be there for me when I need her, and she knows I'll be there for her.\nB: It seems you two bring out the best of one another.\nA: Exactly. Having Jo as my friend is one of the best things that's ever happened to me.\nB: Yeah, you are so lucky to have found each other.\nA: Thanks, I think so too.\nChoices:\nA. Ten months\nB. 1 day\nC. Two minutes",
+      "output": [
+        "C. Two minutes",
+        "Two minutes"
+      ]
+    },
+    "12": {
+      "input": "Context: \nA: Honey, I have something important to say. \nB: Something important? \nA: Yes. I have just booked two tickets. \nB: Tickets? What tickets? \nA: Two air tickets. \nB: Air tickets? \nA: Yes. We will fly to Paris the day after tomorrow. \nB: We? The day after tomorrow? What are you talking about? \nA: Today is June 18, isn't it? \nB: Yes. So? \nA: Think about it ! \nB: Then it is <MASK> the day after tomorrow. \nA: Yes. Think about it carefully. \nB: Oh, come on. Tell me please. Why did you book tickets to Paris? \nA: Oh, honey ! Don't you remember this important day to us? \nB: Sorry. \nA: It is our 10th wedding anniversary this June 20. \nB: Our 10th wedding anniversary? \nA: Of course. You completely forgot it. \nB: Darling. I think you have made a mistake. \nA: I have made a mistake? \nB: Yes. We married on July 20 ten years ago. \nA: July 20? But I think it should be June 20. \nB: Yes. We had planned to marry on June 20, but something happened, so we had to put off our wedding day. \nA: Yes. I remember now. We put it off. I did make a mistake. But how shall we deal with the tickets? \nB: Since you have booked. Then let's celebrate our wedding anniversary before hand. \nChoices:\nA. October 10\nB. July 20\nC. June 20",
+      "output": [
+        "C. June 20",
+        "June 20"
+      ]
+    },
+    "13": {
+      "input": "Context: \nA: Good morning, Mr Wang. \nB: Good morning. What time is it now? \nA: It's just <MASK>. \nB: I'm on time today \nA: Yes, you're on time. Are you often late? \nB: Yes, quite often. \nA: You must leave home earlier today. \nB: No, I left home at 6:30 as usual. \nA: Why are you so early today? \nB: Because the traffic is not crowded.\nChoices:\nA. 8:00 PM \nB. 12:00 AM \nC. nine o'clock",
+      "output": [
+        "C. nine o'clock",
+        "nine o'clock"
+      ]
+    },
+    "14": {
+      "input": "Context: \nA: Hi, Kate. \nB: Hi, Don. What a surprise ! \nA: Yeah, I saw someone walking like you, but I wasn't sure. We haven't seen each other for how long? Almost <MASK>? But you look quite different now. \nB: Have you noticed what has changed? \nA: Oh, you look quite slender and more vivacious. What have you been taking? Are you on a diet? \nB: Yes. I'm on a diet, but I'Ve not taken anything. I just eat less and exercise more. And it really worked in the past three months. I'Ve lost twelve pounds. \nA: Wow ! That's great. I sincerely want to achieve my weight loss goals, but it's difficult for me to keep up the exercise. Also you know, old habits are hard to break. \nB: What kind of exercise do you think I do? I just go to dance everyday after work. I'm taking an amateur dance class. I dance two hours everyday. \nA: Dance? You only go dancing? That's not hard. I can do that. \nB: Sure. Join my class next week. \nChoices:\nA. Five days\nB. two hours \nC. three months",
+      "output": [
+        "C. three months",
+        "three months"
+      ]
+    },
+    "15": {
+      "input": "Context: \nA: So Chris, I've heard that you're from a big family. How many people? \nB: Nine total. Seven children and my parents. \nA: Seven children? That's a lot. Why did your parents have so many? \nB: Well, my mother came from a big family, and wanted to have one of her own. My father was an only child, and didn't really care about having a large family, but my mother talked him into it. \nA: Jeez, seven children. That must have a lot of problems. We have four children in my family and my grandparents can never get our names right. \nB: It can be hard, and there are certain sacrifices you have to make. \nA: Like what? I assume that there's no privacy. \nB: That's one. Another is the lack of personal property. Everything you have, from toys to clothes, is used by your brothers and sisters. Especially clothes. Three quarters of my wardrobe are hand-me-downs. \nA: And the age gap is also annoying. There's a <MASK> difference between my younger brother and me. We have nothing in common. \nB: Same problem here. There's an 18 - year gap between the oldest and youngest child in my family. The last child was born just as the oldest was going to college. \nChoices:\nA. 7-decade\nB. 18-day\nC. ten-year",
+      "output": [
+        "C. ten-year",
+        "ten-year"
+      ]
+    },
+    "16": {
+      "input": "Context: \nA: Hello Gina ! We've spoken so many times on the phone but's it's so good to finally meet you in person ! \nB: Hello sir. Good to meet you, too. \nA: Oh, please don't call me sir. Just call me Jason. \nB: Ok, Jason. So how was the flight? \nA: Pretty good. There was a bit of turbulence while we were over the Pacific Ocean but it wasn't too bad. The worst thing was the guy behind me. He snored all through the night ! \nB: Really? But you were in first class ! Nobody woke that guy up? \nA: The stewardess said it's not company policy to wake people up for any reason. \nB: That's terrible ! So you didn't get any sleep? \nA: Not much... but that's ok... I'm a night owl anyway. \nB: So, aside from visiting our factory and offices, are there any other things you want to accomplish while you're in China? \nA: I'd love to squeeze in a trip to the Great Wall. \nB: That's not a problem. We can have a company car take you there. It's only about a <MASK> drive. \nChoices:\nA. two minute\nB. one day\nC. two hour",
+      "output": [
+        "C. two hour",
+        "two hour"
+      ]
+    },
+    "17": {
+      "input": "Context: \nA: Thank you for agreeing to come in and meet with us today. \nB: Thank you for inviting me. \nA: I can see from your resume you were in charge of sales for Corporate World Unlimited from 1997 to 1999. Can you please tell me about your responsibilities? \nB: Yes. I was in charge of profit and loss for the northwest region of Canada. As a manager, I was directly responsible for a 50 % increase in sales over a <MASK> period. \nA: What, do you believe, are some of the key attributes that helped you to achieve such an outstanding increase in sales? \nB: I believe persistence and perseverance are key attributes.\nChoices:\nA. 50-seconds \nB. 99-hour \nC. four-month",
+      "output": [
+        "C. four-month",
+        "four-month"
+      ]
+    },
+    "18": {
+      "input": "Context:\nA: Hello, Peace Hotel.\nB: Hello, I'm calling from Beijing. I'd like to reserve a double room with a bath from tonight on for <MASK>, please.\nA: A moment, please. I'll check our room availability for these days... Yes, that's all right.What's your name please?\nB: John Smith. J-O-H-N S-M-I-T-H.\nChoices:\nA. six months\nB. two minutes\nC. seven days",
+      "output": [
+        "C. seven days",
+        "seven days"
+      ]
+    },
+    "19": {
+      "input": "Context: \nA: What's \u201c pi \u201d? \nB: That's the ratio of the circumference of a circle to its diameter, I think. \nA: I see. What is that ratio exactly? \nB: It's approximately 3.14, but the number continues forever. What's the diameter of your circle? \nA: It's 10 centimeters, so the circumference should be 31.4 centimeters. \nB: Ok. My next problem is to convert 10000 british pounds into us dollars. What's the exchange rate at the moment? \nA: According to the newspaper, the exchange rate is 1.85 dollars to the pound. \nB: That means that 10.000 pounds will buy me 18.500 dollars. \nA: What's the next question. \nB: Fractions. What's a quarter and an eighth? That's three-eights. Easy. The next question is \u201c what are prime numbers? \u201d. \nA: I can help you there. Those are numbers that cannot be created by multiplying two whole numbers, apart from the number itself and 1, together. \nB: So, 1,2 and 3 are prime numbers, but 4 isn't because 2 * 2 = 4. \nA: Exactly. Anything else? \nB: How many seconds in an hour? 60 seconds multiplied by <MASK> equals 3600 seconds altogether. \nA: You'll be a mathematician one day. \nChoices:\nA. one day\nB. 60 seconds\nC. 60 minutes",
+      "output": [
+        "C. 60 minutes",
+        "60 minutes"
+      ]
+    },
+    "20": {
+      "input": "Context: \nA: Good afternoon ! Trans Pacific Airline. How can I help you? \nB: I'm calling to cancel my reservation for Trans Pacific Flight 8 on July 19 from Taipei to Minneapolis. Could you please make it for the same flight on August 2 instead of July 19? \nA: What's your name, please? \nB: My name is Judy Wang. \nA: How do you spell your name, please? \nB: My first name is J-U-D-Y, and my last name is W-A-N-G. \nA: Please note that this ticket has a penalty of $ 75 for any change or cancellation. \nB: It's OK. Where should I pay for the penalty? \nA: At the airport. OK, Miss. Wang, your Flight 8 on July 19 from Taipei to Minneapolis is canceled. Your new reservation is Trans Pacific Flight 8 from Taipei to Minneapolis at 9 thirty a. m. on <MASK>. \nB: That's 1POJ7403. \nA: That's correct. \nB: Thank you ! \nA: Is there anything else I can do for you? \nB: No, thanks. I'm all set. Good-bye. \nChoices:\nA. January 14 \nB. December 13\nC. August 2",
+      "output": [
+        "C. August 2",
+        "August 2"
+      ]
+    },
+    "21": {
+      "input": "Context:\nA: Mr. Brown, I'd like to talk with you about something that is getting to be a problem. I'd like, if possible, to see it settled at this meeting.\nB: What is it, Mrs. Wang?\nA: It's about the quality of 300 cartons of dried mushrooms. They reached us <MASK>, and were immediately examined after they arrived. To our astonishment, about 20 % of them were moldy and in many cartons there were even small brownish bugs crawling in and out of the half eaten mushrooms. We can't accept them in this state. They are unfit for human consumption. And the Medical Officer of Health has issued a Stop Notice on them.\nB: Is that so? So far we haven't had any complaint of this kind. Our mushrooms have enjoyed a good reputation for their superior quality for years. We are really at a loss to understand why your lot was found moldy and wormeaten. Have you any evidence?\nA: Certainly. Here's a survey report by a well-known lab in London, whose testimony is absolutely reliable.\nB: Though everything may be as you say, there are many factors involved. What's more, your surveyors have not mentioned any cause for the damage.\nA: The mushrooms were packed in small one pound plastic bags, sixty of these bags to a carton. It is stated on the surveyor? s report that external conditions of goods at the time of survey are all sound and intact. So it is obvious the cause of the damage is that the mushrooms were not completely dried before packing.\nB: As you know, before shipment, the Commodity InspectionBureau inspected the goods in question. They concluded that the goods were well dehydrated from fresh and choice material and up to standard for export.\nA: I think the Inspection Bureau at your end, when effecting inspection, only selected a few package at random these happened to be up to the standard. The part that was not dried properly, most probably, escaped their attention. As the amount in question is only 20 % of the whole shipment, I think it is only reasonable that you should compensate us for the loss.\nB: The inspection certificate, which is based on a random selection of 20 % of the consignment as we've agreed on beforehand, is considered final and binding upon both parties. We do not accept any claims for compensation for loss incurred in transit, because you bought the goods F. O. B. Houston and on shipping quality, not on landed quality. Your claim, in our opinion, should be referred to the insurance company, as the mishap occurred after shipment.\nA: We've already got in touch with the underwriter. But they have refused to accept any liability. They attributed the accident to the effects of dampness during the long sea voyage.\nB: That's a matter over which we could exercise no control, then. I'm afraid I have to insist that you approach the insurance company for settlement, that is, if you have covered this risk in your coverage.\nA: To my regret, we failed to cover contamination. This is an unfortunate oversight on our part and a lesson to us.\nB: Otherwise the insurance company would no doubt have entertained your case.\nA: Well, live and learn. It seems we'll have to waive the claim.\nChoices:\nA. 20 years ago\nB. 20 minutes ago\nC. 20 days ago",
+      "output": [
+        "C. 20 days ago",
+        "20 days ago"
+      ]
+    },
+    "22": {
+      "input": "Context: \nA: Good evening, madam. May I help you? \nB: I want a facial. But this is the first time I've come here, so can you tell me how you do it? \nA: Sure. Most facials start with a thorough cleaning. Then we usually use a toner to invigorate the skin, followed by exfoliation treatment-a peeling mask or scrub that removes the dead cells that make the skin lock dull. After that, we'll massage your face and neck with oil or cream to improve the circulation and relieve the tension, followed by a mask to moisturize and soften the skin. \nB: That's exactly what I want. How long does it take? \nA: We have half-hour and one-hour treatments. \nB: What's the regular price? \nA: Well, the half-hour facial costs 50 yuan and the one-hour costs 80 yuan. If you want make-up, another 20 yuan will do. \nB: Good, I will take <MASK> facial with make-up. \nA: That's fine, madam. \nB: By the way, could you give me a manicure? Use a light nail-polish, please. \nA: Yes, madam. \nChoices:\nA. the 80 second\nB. the 20 hour\nC. the one hour",
+      "output": [
+        "C. the one hour",
+        "the one hour"
+      ]
+    },
+    "23": {
+      "input": "Context:\nA: I didn't receive an unemployment check this week and need to know why.\nB: Did you mail us your last Continued Claim Form?\nA: I am afraid that I forgot to send it in.\nB: We cannot pay you unless you turn that form in <MASK>.\nA: Is it too late to mail the Continued Claim Form in now?\nB: It can't be more than fourteen days late for us to accept it.\nA: I will mail it in a little early next time to avoid this problem.\nB: You can't possibly know in advance how much you will be working. If you mail it in too soon, we will reject it !\nA: Will my paycheck arrive late because I messed up on my form?\nB: Your check will be arriving late, but the next one will come right on time.\nChoices:\nA. every year\nB. every day\nC. every week",
+      "output": [
+        "C. every week",
+        "every week"
+      ]
+    },
+    "24": {
+      "input": "Context: \nA: Hey Claire, you've been really quiet these last few days. Is something wrong? \nB: I've been really stressed. It's the end of the year and I've got so much stuff to do ! I feel like I'm drowning in work. \nA: Well, stress is a real thing. It's not an imaginary condition. \nB: It's seriously affecting my life ! I can't sleep, I don't have much of an appetite and my husband says I've been kind of short tempered. Other people seem to handle stress okay... why am I so weak? \nA: You're not weak... you're stressed out ! Stress has been a part of the human condition for <MASK>. Back when we still lived in the trees we had to watch out for predators... and as you might imagine, that was pretty stressful. \nB: Yeah, but I don't see any tigers or leopards roaming around our office. My stress is just about silly paperwork ! \nA: But you're actually having the same reaction as our tree-dwelling ancestors ! It's called the flight or fight response. Each time you feel like something's threatening you, your body decides whether to run away or fight... it causes all sorts of chemical reactions in the body. \nB: So a deadline will cause that same reaction? \nA: It could. Modern humans actually have more flight or fight responses than our ancestors did. They just had a couple of close calls every day, but today, we have dozens or even hundreds ! \nB: So the life of a cave woman was less stressful than my life? \nChoices:\nA. couple of years \nB. few days \nC. millions of years",
+      "output": [
+        "C. millions of years",
+        "millions of years"
+      ]
+    },
+    "25": {
+      "input": "Context:\nA: Good morning Mike !\nB: Morning Sally ! What's up? you seem in a hurry !\nA: I am having an exam at nine, It's already eight thirty.\nB: Don't worry, I'll drive you.\nA: Thank you very much !\nB: How are your cases coming along?\nA: Very well, thanks, I will probably finish next week, but this is still a lot of work, I have been worked on in for <MASK>, and i'm so closed to end. I can feel it.\nB: Wow, Good for you.It sounds like a lot of work. I'm proud of you ! Is this the right building?\nA: Yes, It's only eight forty. Thanks so much !\nB: You're welcome.Good luck, bye !\nA: Have a nice day, bye !\nChoices:\nA. eight years\nB. nine minutes\nC. five months",
+      "output": [
+        "C. five months",
+        "five months"
+      ]
+    },
+    "26": {
+      "input": "Context: \nA: A guy in my office got the flu the other day. Today I seem to have come down with it, too. \nB: Very likely. You have a slight fever. Do you have a headache, too? \nA: Yes. I wonder if you could do something to help me recover soon, because I'll be on a business trip in two days. \nB: Well, you have to let your flu run its course. You must stop working and stay in bed to get plenty of rest. Usually it will take 4 to 6 days to make a full recovery. \nA: But I'm going on a business trip in <MASK> ! \nB: Maybe you'll have to cancel it or postpone it. If you go out while you are sick, it won't help you recover. You may even pass your disease on to others. \nChoices:\nA. Five hours\nB. Four months\nC. two days",
+      "output": [
+        "C. two days",
+        "two days"
+      ]
+    },
+    "27": {
+      "input": "Context:\nA: What are your working hours?\nB: Eight to twelve in the morning, <MASK>.\nA: Much better than mine.\nB: What are your hours?\nA: Mine aren't fixed. Sometimes I do the day shift, sometimes the night shift.\nChoices:\nA. ten to six in the morning\nB. eight to twelve in the evening\nC. one to five in the afternoon",
+      "output": [
+        "C. one to five in the afternoon",
+        "one to five in the afternoon"
+      ]
+    },
+    "28": {
+      "input": "Context: \nA: I'll participate in a quiz about the 29th Olympic Games in Beijing. It will be held tonight. Will you come? \nB: Sure. What do you know about the Olympic Games on the past? For example, do you know where and when the first Olympic Games were held in the ancient times? \nA: It was held in 776 B. C. at Olympia. It also has a long history of more than 2700 years. \nB: Haven't the Olympics been stopped for a long time? \nA: Yes, there were no games in 1916, 1940 and <MASK>, because of World War I and World War II. \nB: I see. Look, do you know what that emblem means? I've seen it so many times, but I don't know what it stands for. \nA: Oh, it's the Beijing 2008 Olympics'Emblem. It's a Chinese seal, meaning that Chinese people warmly welcome the friends from all over the world. \nB: I see. I believe there will be lots of foreigners coming to Beijing to watch the Games. \nA: Sure. \nChoices:\nA. 2008\nB. 2700 \nC. 1944",
+      "output": [
+        "C. 1944",
+        "1944"
+      ]
+    },
+    "29": {
+      "input": "Context:\nA: Come in and sit down, Jack. Now, what's the trouble?\nB: I've got a terrible pain in my stomach, Doctor.\nA: I see. When did it start?\nB: It started yesterday. I didn't eat any supper.\nA: Have you got a temperature?\nB: I think so. I feel very hot.\nA: Let's see. Yes. You'Ve got quite a high temperature.\nB: I've got an awful headache, too, and my throat hurts.\nA: Hm... I think you'Ve got the flu.\nB: Is it serious?\nA: No, not at all, but you must stay in bed for <MASK> and take this medicine.\nB: How often must I take it?\nA: Three times a day after meals.\nB: Thank you, Doctor.Goodbye.\nChoices:\nA. 5 minutes\nB. three months\nC. five days",
+      "output": [
+        "C. five days",
+        "five days"
+      ]
+    },
+    "30": {
+      "input": "Context: \nA: Mary, my friend recommend me for a job to work in a company, and I feel it's great. \nB: Really? Are you familiar with that company? \nA: He has introduced the company details to me. \nB: What does the company mainly do? \nA: The company deals in selling electronics. \nB: When was the company founded? \nA: It was founded in <MASK>, has been in business for 10 years. \nB: How many employees are there in total in the company? \nA: More than 2000 now. \nB: What education background do the employees usually have? \nA: The company deals in selling electronics. \nB: When was the company founded? \nA: It was founded in 2002, has been in business for 10 years. \nB: How many employees are there in total in the company? \nA: More than 2000 now. \nB: What education background do the employees usually have? \nA: More than half of the employees have bachelors'degree. \nB: Are there many promotion chances in the company? \nA: Three times every year. \nB: That's great. You can go take a look.\nChoices:\nA. 1710\nB. 2000\nC. 2002",
+      "output": [
+        "C. 2002",
+        "2002"
+      ]
+    },
+    "31": {
+      "input": "Context:\nA: Steven, I need badly your help.\nB: What's the matter?\nA: My wife has found that I have an affair with my secretary, and now she is going to divorce me.\nB: How could you cheat on your wife? You have been married for <MASK>.\nA: Yes, I know I'm wrong. But I swear that the affair lasts only for two months. And I still love my wife. I couldn't live without her.\nB: I will try my best to persuade her to reconsider the divorce. But are you sure that from now on you will be faithful to her forever?\nA: Yes, I swear.\nChoices:\nA. seventy years\nB. two months\nC. fifteen years",
+      "output": [
+        "C. fifteen years",
+        "fifteen years"
+      ]
+    },
+    "32": {
+      "input": "Context: \nA: Excuse me, Professor. I have to talk to you about why my homework didn't get done. \nB: What happened that you didn't get it done? \nA: I had to watch a football game instead. \nB: Well, you had <MASK> ; couldn't you have fit it in on another day? \nA: Yes, I think so. \nB: Either way, I only allow one missed assignment per semester. When will you be turning the make-up in? \nA: I'll make it up next week. \nB: Fine, but it cannot happen again if you want an \u201c A \u201d in the class. \nA: OK, I can do that. \nB: Remember that you are in college now, not high school.\nChoices:\nA. more than 20 days \nB. more than 13 seconds \nC. more than one day",
+      "output": [
+        "C. more than one day",
+        "more than one day"
+      ]
+    },
+    "33": {
+      "input": "Context: \nA: I know that you are interested in our washers. \nB: Yes, we are thinking of placing an order. However we would like to know what kinds of machines are available for export and in addition your sales terms, including mode of payment, discount and possible date of delivery. \nA: We supply washers of all types and sizes. We have years of experience in the manufacture of washers. \nB: We have read about this in your sales literature. Could you give us some idea of your prices? \nA: Our prices compare favorably with those offered by other manufactures either in Europe or anywhere else. Here are our latest price lists. You will see that our prices are very attractive. \nB: Do you take special orders? That is, do you make machines according to the specific requirements from clients? \nA: Sure, we do. \nB: How long does it usually take you to make delivery? \nA: As a rule, we deliver all our orders within <MASK> after receipt of relevant L / C. It takes longer, of course, for special orders. In no case would it take longer than six months. \nB: Good. One more thing, we'd like you to quote us on CIF basis. \nA: Okay. No problem. \nChoices:\nA. Five days\nB. Two years\nC. three months",
+      "output": [
+        "C. three months",
+        "three months"
+      ]
+    },
+    "34": {
+      "input": "Context: \nA: Would you like to go skating with me this afternoon? \nB: Oh, I'd love to. But we're going to clean our dormitory. I can't be absent. \nA: Maybe another time. People say that boys'dormitories are in a mess, is it true? \nB: In fact, our dormitory is much worse than they can be described. \nA: It's hard for me to imagine. How can you stand that? \nB: You'll get used to it gradually. \nA: Oh my God, don't you know that such living environment is not healthy? \nB: Yes, we do. That's why we have a cleaning <MASK>. \nA: Three months? Incredible !\nChoices:\nA. every five years\nB. every three minutes\nC. every three months",
+      "output": [
+        "C. every three months",
+        "every three months"
+      ]
+    },
+    "35": {
+      "input": "Context: \nA: Finally the class is over. Be quick. Ben must have been waiting for long. \nB: Oh, I am so tired. My back is sore and my neck hurts. \nA: That's normal. You have been sitting for three hours, with your attention highly concentrated. \nB: You are wrong, Shirley. I was always absent-minded in the class. I meant to concentrate on the class, but I was just so tired. Maybe I am old. \nA: No. You are just burning yourself out these days. Have a good rest and you will feel energetic again. \nB: One of my friends took the Adult College Entrance Exam last year. He filled the school column with his name, and his score was relinquished. \nA: How could he make such a silly mistake? \nB: He said he hadn't taken any exams for <MASK>, and couldn't get used to it immediately. He was extremely nervous then. \nA: He lost a very good chance to go to college, didn't he? \nB: Yeah. The test was fairly easy and almost every test-taker could pass that exam. Adult College Entrance Exam is much easier than college entrance exam. And there are fewer subjects. \nA: That's a very good lesson. We must familiarize ourselves with the exam from now on. \nChoices:\nA. two months\nB. three hours\nC. ten years",
+      "output": [
+        "C. ten years",
+        "ten years"
+      ]
+    },
+    "36": {
+      "input": "Context: \nA: Has the game started yet? \nB: Yeah, <MASK>. \nA: Who's winning? \nB: The Bulls, of course ! \nA: What ! That wasn't a foul ! C'mon, ref ! \nB: Don't worry, Shan always screws up free throws. \nA: You were right ! He didn't make the shot ! \nB: That was a great shot ! A three pointer, yeah ! \nA: Did you see that? He traveled and the ref didn't call it ! \nB: This ref needs glasses. Hey ref, open your eyes ! I can't believe he didn't see that ! \nA: Okay... end of the first quarter... Alright, I'm gonna make a beer run. \nChoices:\nA. two weeks ago \nB. one second ago \nC. about 5 minutes ago",
+      "output": [
+        "C. about 5 minutes ago",
+        "about 5 minutes ago"
+      ]
+    },
+    "37": {
+      "input": "Context:\nA: have you finished going through the contract?\nB: yes, but I have a few questions for you.\nA: Ok. Ask away.\nB: first, I'd like to know if you offer employees sick leave.\nA: yes, employees can take up to 10 days of sick leave per year. However, in order to get paid, you'll have to bring in a note from the doctor's.\nB: even if I'm only sick for <MASK>?\nA: that's correct.\nB: that's pretty strict, if you ask me.\nA: well, we'Ve had to add that to the contract because we found that many of our employees were taking almost one sick day a month, even though they weren't sick.\nB: I see. I guess that makes sense.\nA: do you have any other questions?\nB: yes. Maternity leave is mentioned in the contract, but there's nothing in the contract alout paternity leave. Do you offer anything to fathers?\nA: we do actually. We can add that as an amendment to your contract.\nB: how many days of paternity leave do you offer?\nA: men are allowed to take 10 days of paternity leave for their first child.\nB: why are women allowed so much more time for maternity leave?\nA: well, women are the ones giving birth. I think it's fair to give them more time, don't you?\nB: I guess so. I don't have any other questions. Should I sign here then?\nA: yes, please.\nChoices:\nA. one month\nB. 10 days\nC. two days",
+      "output": [
+        "C. two days",
+        "two days"
+      ]
+    },
+    "38": {
+      "input": "Context: \nA: IBA, Maria speaking. How can I help? \nB: Hello, I called earlier regarding interest rates on loans. Sorry, I just have a couple more questions. \nA: I'm here to help. Tell me your questions and I'll do my best to answer them. \nB: What if I require a loan for a short period of time? \nA: What repayment period were you thinking of? \nB: Say, <MASK>? Or less in fact. I want to repay the loan ASAP ; I don't like debt hanging over my head. \nA: A wise decision. If you decide to take out a short-term loan with us, say for 6 months or less, the interest rate shall be for that of a 6 - month loan. \nB: What if I repay it early. Any perks? \nA: Well, we could adjust the interest rate based on the original rate and the amount of days you actually borrowed the money for. \nB: So, the quicker I pay it back, the more I can save in interest? That's excellent. Thanks so much for your information. I'll come in shortly to take the relevant steps for the loan. \nA: It's our pleasure. We are always happy to have another satisfied customer. Thanks for calling. Goodbye. \nChoices:\nA. 10 days\nB. 5 weeks\nC. 6 months",
+      "output": [
+        "C. 6 months",
+        "6 months"
+      ]
+    },
+    "39": {
+      "input": "Context:\nA: What's your plan for your future?\nB: I'd like to work in a law firm to enrich my experience and put what I've learned into practice.\nA: Have you had any previous experience?\nB: Well. During the college years, I worked as a trainee every summer at lawyer's offices. Does that count?\nA: Of course it counts. What kind of work did you do there?\nB: I did clerical stuff and ran errands.\nA: In this office, we encourage full attendance by offering a bonus. If you take any leaves, we'll deduct money from your salary.\nB: May I know about the office hours?\nA: Office hours are nine to five-thirty. One hour for lunch. Do you have any questions?\nB: Er, may I know how much I will be paid monthly?\nA: We'll give you about 3000 to start. There'll be a trial period of three month. After <MASK>, we'll have a job performance review and consider giving you a raise.\nB: When will I know your decision?\nA: I'll call you in a day or two, did you write down your phone number on your resume?\nB: Yes, I did. Can you call after 7 p. m.? I'm usually out in the daytime.\nA: All right. Good-bye.\nB: Good-bye.\nChoices:\nA. seven years\nB. three days\nC. nine months",
+      "output": [
+        "C. nine months",
+        "nine months"
+      ]
+    },
+    "40": {
+      "input": "Context:\nA: Excuse me, is this the Guyon Travel Agency?\nB: Yes, sir. What can I do for you?\nA: I want to travel to the ancient town in the south of China. Would you please tell me something about it?\nB: Sure. There's network of canals. And there are white walls, black tiles, small bridges, flowing rivers, flagstones roads, blue sky and white clouds. Few places have preserved the past like this place. Walking on the ancient road makes us back to our sense.\nA: Wonderful. That's just what I expect, where is my first place if I go there?\nB: Zhouzhuang.\nA: How long does the tour take?\nB: It's <MASK>.\nA: what's the cost?\nB: It's about 300 yuan.\nA: I know. Thank you very much.\nB: That's all right. May you have a good trip !\nA: Thank you.\nB: My pleasure.\nChoices:\nA. 15 days \nB. 300 seconds \nC. about 24 hours ",
+      "output": [
+        "C. about 24 hours ",
+        "about 24 hours "
+      ]
+    },
+    "41": {
+      "input": "Context: \nA: I don't know what I'm going to do ! It's going to be impossible to make ends meet if I lose my job ! \nB: Don't worry. I don't think you're going to lose your job over one mistake. \nA: It was a rather big mistake. When you work as an investment adviser, one small mistake can cost the company millions. \nB: But it wasn't just you who was involved, right? You were only doing what your supervisor told you to do. \nA: That's true, but my supervisor is very dishonest. There's no reason he needs to tell our boss the truth. I'm sure he will tell our boss that it was all my fault, and there's nothing I can do about that. My boss won't believe me if I tell him the truth. \nB: Let's think realistically about what might happen. How much money do you have in your savings? \nA: I have enough to live off of for <MASK>. But I really don't want to spend my life savings on just living ! I'd rather invest my money somehow. \nB: Well, you can't have everything. Let's just figure out what you will do if you lose your job. When is your contract up on your apartment? \nA: Next month. So I can either move out then or renew my contract for another year. \nB: Well, that's good. If you lose your job, you can just move in with me until you find another job. That will save you plenty of money. \nA: That's very generous of you. I guess that would work. \nB: If you lose your job, you just have to go for a few months without buying all the junk you usually buy. If you live frugally, you'll save plenty of money. \nA: I guess working with so much money has made me rather greedy. Maybe losing my job would be a good thing ! \nChoices:\nA. about one day\nB. about one decade\nC. about 3 months",
+      "output": [
+        "C. about 3 months",
+        "about 3 months"
+      ]
+    },
+    "42": {
+      "input": "Context:\nA: hello, Kate ! How are you doing?\nB: fine, thanks. How are you?\nA: fine. How are your term papers?\nB: oh, my lord. I haven't really started them.\nA: how could it be? They are due <MASK>.\nB: I know but I was busy with my part-time job the last few days.\nA: Kate, you know, I am thinking of getting a part-time job next year because I really need more money and I don't want to ask my parents for any more. But I'm so busy ! How am I going to work and study\nB: to be honest with you, Jason, I don't think I'm doing a very good job of balancing my schoolwork with my job. I'm always two steps behind. I've got to get back to the dorm and continue writing tha\nA: my advisor?\nChoices:\nA. three seconds later\nB. two years later\nC. three weeks later",
+      "output": [
+        "C. three weeks later",
+        "three weeks later"
+      ]
+    },
+    "43": {
+      "input": "Context: \nA: Hello, I'd like to reserve a hotel room. \nB: That should be no problem. May I have your full name, please? \nA: My name is John Sandals. \nB: Hello, Mr. Sandals. My name is Michelle. What days do you need that reservation, sir? \nA: I'm planning to visit New York from Friday, April 14 until <MASK>. \nB: Our room rates recently went up. Is that okay with you, Mr. Sandals? \nA: How much per night are we talking about? \nB: Each night will be $ 308. \nA: That price is perfectly acceptable. \nB: Wonderful ! Do you prefer a smoking or nonsmoking room? \nA: Nonsmoking, please. \nB: Next question, Is a queen-size bed okay? \nA: That sounds fine. \nB: Okay, Mr. Sandals. Your reservation is in our computer. All we need now is a phone number. \nA: Certainly. My phone number is 626-555-1739. \nB: Thank you, Mr. Sandals. We look forward to seeing you in New York ! \nChoices:\nA. Monday , September 10\nB. Friday , March 12\nC. Monday , April 17",
+      "output": [
+        "C. Monday , April 17",
+        "Monday , April 17"
+      ]
+    },
+    "44": {
+      "input": "Context: \nA: And so, I just wanted to check in with you and find out where we are with this project. As you know, you'Ve missed a fairly significant deadline last week, and this will negativity impact the team's ability to move forward with the next stages of this project. \nB: I know, I'm really sorry that I missed the deadline. But really, it wasn't my fault. You see, we had all of these unexpected technical problems at the last minute, and that I couldn't get into the database and extract the kind of information that I needed for the data analysis. You know, if the tech guys would have done their job and kept the ARM stable, then I wouldn't have missed my deadline. \nA: Oh, come on ! An excuse like that is tantamount to lying. You're essentially blaming the tech team for your time management issues, rather than accepting responsibility for the fact that you were procrastinating for the past two weeks. \nB: No, I'm not trying to pass the buck here ; I know that it was me who is ultimately responsible for getting this done. But the thing is, I could have finished on time if the system hadn't gone down. And you know, with everything I'Ve got going on now, I can't afford to waste time dealing with technical problems. I'Ve got a lot on my plate and there are only twenty-four hours in a day... \nA: I'm not going to accept this excuse. You're using these small technical glitches as a crutch and trying to rationalize the fact that you'Ve missed your deadline. Look, we have standards and I expect you to live up to those standards. No more phoney cases. If you're in over your head, you tell me. No more missed deadlines. Now, I want that data on my desk by <MASK> !\nChoices:\nA. two am\nB. four pm\nC. nine am",
+      "output": [
+        "C. nine am",
+        "nine am"
+      ]
+    },
+    "45": {
+      "input": "Context: \nA: Are these your text books? Biochemistry, General Ecology, Botany, Cell Genetics, Molecular Genetics... \nB: Yes. I gotta review all of them for the final exam. It is just around the corner. \nA: Oh, right ! Do you have many exams at the end of each semester? \nB: That depends. Some semesters have many, some don't. And some courses don't have exams but only ask for papers. That's easy. \nA: And when do you prepare for your final exam? \nB: Honestly speaking, most students prepare it one month before the exam. \nA: Really? You only review your lessons in <MASK>? Does it work? \nB: Of course, it's useful. And it's very crucial to have the copies of teacher's notes, because most questions in the exam are based on them. \nA: Wow, and all the key points are included in them? You're so smart ! \nB: But the exam is not as simple as you may imagine. We have to stay up late. \nA: Do you have the classrooms open for the whole night? \nB: Yes, some people even pack up his bed quilt and sleep there. That's a little bit crazy. \nChoices:\nA. two hours\nB. one year\nC. one month",
+      "output": [
+        "C. one month",
+        "one month"
+      ]
+    },
+    "46": {
+      "input": "Context: \nA: Have you got the medicine yet? \nB: Yes, I've been given so much, that I simply don't know what to do with it all. \nA: Well, these are for internal use.You take a packet each time.Four times a day. \nB: What about these? \nA: They're painkillers.You take one tablet when you feel a pain, but not more than once within <MASK>. \nB: I see.Thank you, doctor. \nChoices:\nA. one week \nB. four minutes \nC. four hours",
+      "output": [
+        "C. four hours",
+        "four hours"
+      ]
+    },
+    "47": {
+      "input": "Context: \nA: How much tea are you going to order? \nB: We want to order 3,000 cases and hope to deliver the goods in two equal lots. \nA: When do you want to deliver the goods? \nB: We'd like you to execute the first delivery by June 30 and the second delivery by August 15. \nA: I'm sorry, but June 30 is quite soon. I can't guarantee 1 500 cases, I'd prefer the first shipment to be 1,000 cases and the next 2,000 cases. \nB: I can agree to that. \nA: Let me affirm this again - the first shipment of 1,000 cases, to be delivered in <MASK>, by June 30, and the second shipment of 2,000 cases by August 15. Right? \nB: Right. \nA: Well, if there's nothing else, I think we've settled everything. \nB: Let's hope it's the beginning of a long and prosperous relationship.\nChoices:\nA. 30 hours \nB. 15 seconds \nC. 27 days",
+      "output": [
+        "C. 27 days",
+        "27 days"
+      ]
+    },
+    "48": {
+      "input": "Context: \nA: Can you be serious for a moment, we've been dating for 6 months now, I really like you. I'd like to take a relationship to the next level. \nB: So what are you trying to say to me? \nA: It feels like you are not dedicate to our relationship. It seems like you treat it as a just casual dating. \nB: How should I say it? \nA: I don't want to be like this. I think we should get step further. \nB: It has only been <MASK>, our relationship hasn't had a chance to maturate. We are still have some hurdle we have to jump over. \nA: Like what? \nB: Last week I saw Brain kissing you on the cheek. \nA: It was only the cheek. \nB: That is ok, then? Starts on the cheek? pretty soon you french kiss in the back on his car. \nA: Oh, that is ridiculous. \nB: So is it ok if I kiss other women on the cheek? \nA: Definitely not. \nB: You see, we still have hurdle. \nChoices:\nA. 1 week\nB. 6 decades\nC. 6 months",
+      "output": [
+        "C. 6 months",
+        "6 months"
+      ]
+    },
+    "49": {
+      "input": "Context: \nA: You sure are buying a lot of things online. \nB: Yes, I ordered a camera and some personal care stuff online yesterday. They will be delivered in <MASK>. \nA: What are the advantages of buying online? \nB: Sometimes you can save money and you can find things that you had difficulty finding in a store. sometimes it's just convenient, like doing it late at night and sometimes it's just fun. \nA: The idea of doing it at night is interesting. Maybe I'll try it some day. \nChoices:\nA. three years\nB. two seconds\nC. two weeks",
+      "output": [
+        "C. two weeks",
+        "two weeks"
+      ]
+    },
+    "50": {
+      "input": "Context: \nA: Sir, I want to ask for a leave for <MASK>. Here is the request form. \nB: Let me see your form. You mentioned that you want five days to go back home for New Year, right? \nA: Yes, I need to go home to have a family reunion. \nB: Do you still remember we already have a New Year celebration on January 1st? \nA: Yes, sir. I remember it. But our Chinese usually celebrate the New Year on lunar calendar. \nB: Well, I understand that. Your request is approved. Remember to give my best regards to your parents. \nChoices:\nA. one year\nB. five minutes\nC. five days",
+      "output": [
+        "C. five days",
+        "five days"
+      ]
+    }
+  }
+}

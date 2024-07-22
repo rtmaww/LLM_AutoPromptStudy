@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "num_examples": 10
+  },
+  "task_desc": "Given a short answer along with its context, select the most appropriate question which has the given short answer as its answer",
+  "examples": {
+    "1": {
+      "input": "Short Answer: 1830 \nContext: France took control of Algeria in 1830 but began in earnest to rebuild its worldwide empire after 1850, concentrating chiefly in North and West Africa, as well as South-East Asia, with other conquests in Central and East Africa, as well as the South Pacific. Republicans, at first hostile to empire, only became supportive when Germany started to build her own colonial empire. As it developed, the new empire took on roles of trade with France, supplying raw materials and purchasing manufactured items, as well as lending prestige to the motherland and spreading French civilization and language as well as Catholicism. It also provided crucial manpower in both World Wars.\nChoices:\nA. When did french republicans begin to support the expansion of the french empire?\nB. When did france begin to restore its global empire in earnest?\nC. When did france seize power in algeria?",
+      "output": [
+        "C",
+        "C.",
+        "C. When did france seize power in algeria?",
+        "When did france seize power in algeria?"
+      ]
+    },
+    "2": {
+      "input": "Short Answer: the fertile highlands \nContext: Tea, coffee, sisal, pyrethrum, corn, and wheat are grown in the fertile highlands, one of the most successful agricultural production regions in Africa. Livestock predominates in the semi-arid savanna to the north and east. Coconuts, pineapples, cashew nuts, cotton, sugarcane, sisal, and corn are grown in the lower-lying areas. Unfortunately, the country has not attained the level of investment and efficiency in agriculture that can guarantee food security and coupled with resulting poverty (53% of the population lives below the poverty line), a significant portion of the population regularly starves and is heavily dependent on food aid. Poor roads, an inadequate railway network, under-used water transport and expensive air transport have isolated mostly arid and semi-arid areas and farmers in other regions often leave food to rot in the fields because they cannot access markets. This was last seen in August and September 2011 prompting the Kenyans for Kenya initiative by the Red Cross.\nChoices:\nA. Where does the country's livestock typically reign supreme?\nB. Where in the world are the most productive agricultural regions?",
+      "output": [
+        "B",
+        "B.",
+        "B. Where in the world are the most productive agricultural regions?",
+        "Where in the world are the most productive agricultural regions?"
+      ]
+    },
+    "3": {
+      "input": "Short Answer: General Electric \nContext: In 1893, George Westinghouse won the bid to light the 1893 World's Columbian Exposition in Chicago with alternating current, beating out a General Electric bid by one million dollars. This World's Fair devoted a building to electrical exhibits. It was a key event in the history of AC power, as Westinghouse demonstrated the safety, reliability, and efficiency of a fully integrated alternating current system to the American public. At the Columbian Exposition, under a banner announcing the \"Tesla Polyphase System\", Tesla demonstrated a series of electrical effects previously performed throughout America and Europe,:76 included using high-voltage, high-frequency alternating current to light a wireless gas-discharge lamp.:79 An observer noted:\nChoices:\nA. When it came to lighting the world's columbian exposition, george westinghouse beat out whom?\nB. Who could have outbid general electric for the contract to light the world's columbian exposition?",
+      "output": [
+        "A",
+        "A.",
+        "A. When it came to lighting the world's columbian exposition, george westinghouse beat out whom?",
+        "When it came to lighting the world's columbian exposition, george westinghouse beat out whom?"
+      ]
+    },
+    "4": {
+      "input": "Short Answer: 1997 \nContext: Following the election of the UK Labour Party to government in 1997, the UK formally subscribed to the Agreement on Social Policy, which allowed it to be included with minor amendments as the Social Chapter of the 1997 Treaty of Amsterdam. The UK subsequently adopted the main legislation previously agreed under the Agreement on Social Policy, the 1994 Works Council Directive, which required workforce consultation in businesses, and the 1996 Parental Leave Directive. In the 10 years following the 1997 Treaty of Amsterdam and adoption of the Social Chapter the European Union has undertaken policy initiatives in various social policy areas, including labour and industry relations, equal opportunity, health and safety, public health, protection of children, the disabled and elderly, poverty, migrant workers, education, training and youth.\nChoices:\nA. When did the parental leave directive come into existence?\nB. When did the united kingdom officially enter the social policy agreement?",
+      "output": [
+        "B",
+        "B.",
+        "B. When did the united kingdom officially enter the social policy agreement?",
+        "When did the united kingdom officially enter the social policy agreement?"
+      ]
+    },
+    "5": {
+      "input": "Short Answer: a board of trustees \nContext: The University of Chicago is governed by a board of trustees. The Board of Trustees oversees the long-term development and plans of the university and manages fundraising efforts, and is composed of 50 members including the university President. Directly beneath the President are the Provost, fourteen Vice Presidents (including the Chief Financial Officer, Chief Investment Officer, and Dean of Students of the university), the Directors of Argonne National Laboratory and Fermilab, the Secretary of the university, and the Student Ombudsperson. As of August 2009[update], the Chairman of the Board of Trustees is Andrew Alper, and the President of the university is Robert Zimmer. In December 2013 it was announced that the Director of Argonne National Laboratory, Eric Isaacs, would become Provost. Isaacs was replaced as Provost in March 2016 by Daniel Diermeier. \nChoices:\nA. In 2016, who succeeded isaacs as provost?\nB. Who is in charge of the university of chicago?",
+      "output": [
+        "B",
+        "B.",
+        "B. Who is in charge of the university of chicago?",
+        "Who is in charge of the university of chicago?"
+      ]
+    },
+    "6": {
+      "input": "Short Answer: Brough Park \nContext: Newcastle has a horse racing course at Gosforth Park. The city is also home to the Newcastle Eagles basketball team who play their home games at the new Sport Central complex at Northumbria University. The Eagles are the most successful team in the history of the British Basketball League (BBL). The city's speedway team Newcastle Diamonds are based at Brough Park in Byker, a venue that is also home to greyhound racing. Newcastle also hosts the start of the annual Great North Run, the world's largest half-marathon in which participants race over the Tyne Bridge into Gateshead and then towards the finish line 13.1 miles (21.1 km) away on the coast at South Shields. Another famous athletic event is the 5.9-mile (9.5 km) Blaydon Race (a road race from Newcastle to Blaydon), which has taken place on 9 June annually since 1981, to commemorate the celebrated Blaydon Races horse racing.\nChoices:\nA. What is the location of newcastle's horse racing track?\nB. In newcastle, where do you watch greyhound racing?",
+      "output": [
+        "B",
+        "B.",
+        "B. In newcastle, where do you watch greyhound racing?",
+        "In newcastle, where do you watch greyhound racing?"
+      ]
+    },
+    "7": {
+      "input": "Short Answer: Brandon McManus \nContext: Denver took the opening kickoff and started out strong with Peyton Manning completing an 18-yard pass to tight end Owen Daniels and a 22-yard throw to receiver Andre Caldwell. A pair of carries by C. J. Anderson moved the ball up 20 yards to the Panthers 14-yard line, but Carolina's defense dug in over the next three plays. First, linebacker Shaq Thompson tackled Ronnie Hillman for a 3-yard loss. Then after an incompletion, Thomas Davis tackled Anderson for a 1-yard gain on third down, forcing Denver to settle for a 3\u20130 lead on a Brandon McManus 34-yard field goal. The score marked the first time in the entire postseason that Carolina was facing a deficit.\nChoices:\nA. For denver, who kicked a field goal?\nB. Who was the lucky recipient of peyton manning's 22-yard pass?\nC. Ronnie hillman was tackled for a lack of yardage by who?\nD. On the first drive, peyton manning threw an 18-yard pass to who?\nE. On a shaq thompson tackle, who gave up 3 yards?\nF. On this drive, who rushed the ball twice for 20 yards?",
+      "output": [
+        "A",
+        "A.",
+        "A. For denver, who kicked a field goal?",
+        "For denver, who kicked a field goal?"
+      ]
+    },
+    "8": {
+      "input": "Short Answer: both houses of Congress \nContext: NASA immediately convened an accident review board, overseen by both houses of Congress. While the determination of responsibility for the accident was complex, the review board concluded that \"deficiencies existed in Command Module design, workmanship and quality control.\" At the insistence of NASA Administrator Webb, North American removed Harrison Storms as Command Module program manager. Webb also reassigned Apollo Spacecraft Program Office (ASPO) Manager Joseph Francis Shea, replacing him with George Low.\nChoices:\nA. Who took over as aspo manager from joseph francis shea?\nB. Who was in charge of nasa's accident investigation board?",
+      "output": [
+        "B",
+        "B.",
+        "B. Who was in charge of nasa's accident investigation board?",
+        "Who was in charge of nasa's accident investigation board?"
+      ]
+    },
+    "9": {
+      "input": "Short Answer: twice \nContext: Oxygen is more soluble in water than nitrogen is. Water in equilibrium with air contains approximately 1 molecule of dissolved O\n2 for every 2 molecules of N\n2, compared to an atmospheric ratio of approximately 1:4. The solubility of oxygen in water is temperature-dependent, and about twice as much (14.6 mg\u00b7L\u22121) dissolves at 0 \u00b0C than at 20 \u00b0C (7.6 mg\u00b7L\u22121). At 25 \u00b0C and 1 standard atmosphere (101.3 kPa) of air, freshwater contains about 6.04 milliliters (mL) of oxygen per liter, whereas seawater contains about 4.95 mL per liter. At 5 \u00b0C the solubility increases to 9.0 mL (50% more than at 25 \u00b0C) per liter for water and 7.2 mL (45% more) per liter for sea water.\nChoices:\nA. At 0 degrees celsius, how much more oxygen dissolves than at 20 degrees celsius?\nB. Under normal circumstances, how much oxygen can be contained in a liter of fresh water?",
+      "output": [
+        "A",
+        "A.",
+        "A. At 0 degrees celsius, how much more oxygen dissolves than at 20 degrees celsius?",
+        "At 0 degrees celsius, how much more oxygen dissolves than at 20 degrees celsius?"
+      ]
+    },
+    "10": {
+      "input": "Short Answer: 1,100 \nContext: The biodiversity of plant species is the highest on Earth with one 2001 study finding a quarter square kilometer (62 acres) of Ecuadorian rainforest supports more than 1,100 tree species. A study in 1999 found one square kilometer (247 acres) of Amazon rainforest can contain about 90,790 tonnes of living plants. The average plant biomass is estimated at 356 \u00b1 47 tonnes per hectare. To date, an estimated 438,000 species of plants of economic and social interest have been registered in the region with many more remaining to be discovered or catalogued. The total number of tree species in the region is estimated at 16,000.\nChoices:\nA. In the amazon rainforest, how many plant species are of concern to society and manufacturers?\nB. In the rainforest, how many tons of living plants are there?\nC. In 1999, how many tons of live plants were discovered in one square kilometer of amazon rainforest?\nD. What is the total number of tree species in the rainforest?\nE. How many square kilometers of ecuadorian rainforest are supported?",
+      "output": [
+        "D",
+        "D.",
+        "D. What is the total number of tree species in the rainforest?",
+        "What is the total number of tree species in the rainforest?"
+      ]
+    }
+  }
+}

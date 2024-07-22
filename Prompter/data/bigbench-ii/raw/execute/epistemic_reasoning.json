@@ -1,0 +1,2108 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Determine whether one sentence entails the next",
+  "examples": {
+    "1": {
+      "input": "Premise: Ava thinks that David suspects that two men are interacting with some sort of mechanical contraption that is mounted on a wall. Hypothesis: David suspects that two men are interacting with some sort of mechanical contraption that is mounted on a wall.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "2": {
+      "input": "Premise: David assumes that a young boy sits curiously on a rock near the water, looking at his reflection. Hypothesis: John assumes that a kid is outside looking into the water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "3": {
+      "input": "Premise: Sophia thinks that Olivia sees that three men in Soldier dress and helmets stand with guns outside of a building. Hypothesis: Olivia sees that three men in Soldier dress and helmets stand with guns outside of a building.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "4": {
+      "input": "Premise: Michael thinks that Sophia understands that a little boy in flannel pajama pants and an orange shirt is playing the guitar on the couch. Hypothesis: Sophia understands that a little boy in flannel pajama pants and an orange shirt is playing the guitar on the couch.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "5": {
+      "input": "Premise: Olivia recognizes that Sophia believes that bubbles surround a statue in the middle of a street. Hypothesis: Sophia believes that bubbles surround a statue in the middle of a street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "6": {
+      "input": "Premise: Robert knows that a dark-haired lady with a big smile is wearing a bright red scarf. Hypothesis: Robert knows that there is a happy lady with colorful clothing.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "7": {
+      "input": "Premise: Robert suspects that William understands that a woman and a child both wearing red outfits walking up a street. Hypothesis: William understands that a woman and a child both wearing red outfits walking up a street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "8": {
+      "input": "Premise: James suspects that Michael recognizes that a woman wearing a black dress and green sweater is walking down the street looking at her cellphone. Hypothesis: Michael recognizes that a woman wearing a black dress and green sweater is walking down the street looking at her cellphone.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "9": {
+      "input": "Premise: David understands that Abigail suspects that a young woman with brown hair and an elderly man with gray hair and a sweater jump in the air on a snowy hill with snowshoes on their feet. Hypothesis: Abigail suspects that David understands that a young woman with brown hair and an elderly man with gray hair and a sweater jump in the air on a snowy hill with snowshoes on their feet.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "10": {
+      "input": "Premise: Michael thinks that Taylor suspects that a group of men and women are sitting at a table eating and drinking. Hypothesis: Taylor suspects that a group of men and women are sitting at a table eating and drinking.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "11": {
+      "input": "Premise: Emma thinks that Joseph knows that a man wearing a stocking hat and has a beard is looking at the camera with two women sitting on the couch next to him. Hypothesis: Emma thinks that a man wearing a stocking hat and has a beard is looking at the camera with two women sitting on the couch next to him.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "12": {
+      "input": "Premise: Richard understands that a young boy poses behind the netting of an enclosed play area while three other children play. Hypothesis: Richard understands that a boy poses in front of children playing.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "13": {
+      "input": "Premise: Charles assumes that Abigail assumes that a woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street. Hypothesis: Abigail assumes that a woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "14": {
+      "input": "Premise: Evelyn believes that a lady digs through a garbage can looking to add to the shopping cart beside her. Hypothesis: Richard believes that lady digs through garbage.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "15": {
+      "input": "Premise: Richard remembers that James thinks that it is a march of people of different backgrounds all walking and one guy in a green shirt holds a flag. Hypothesis: James thinks that Richard remembers that it is a march of people of different backgrounds all walking and one guy in a green shirt holds a flag.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "16": {
+      "input": "Premise: James knows that Michael assumes that a man in a blue jacket leans on a post and talks on the phone while an old man carries yellow bags. Hypothesis: Michael assumes that a man in a blue jacket leans on a post and talks on the phone while an old man carries yellow bags.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "17": {
+      "input": "Premise: Charlotte remembers that David assumes that a man sits on his throne behind the drums. Hypothesis: David assumes that a man sits on his throne behind the drums.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "18": {
+      "input": "Premise: Isabella believes that Ava sees that three friends are talking. Hypothesis: Ava sees that three friends are talking.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "19": {
+      "input": "Premise: Robert suspects that James believes that people stand along a train track and take pictures. Hypothesis: Robert suspects that people stand along a train track and take pictures.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "20": {
+      "input": "Premise: Charlotte believes that William assumes that a man stands speaking to a crowd of sitting people, all wearing business attire. Hypothesis: Charlotte believes that a man stands speaking to a crowd of sitting people, all wearing business attire.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "21": {
+      "input": "Premise: Isabella knows that man walking down a brick sidewalk in a business suit reading a paper and smoking a cigar with a woman wearing sunglasses walking behind him to his left. Hypothesis: Isabella knows that there are people outside.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "22": {
+      "input": "Premise: Joseph suspects that John believes that three performers are on the stage floor in black lace costumes. Hypothesis: John believes that three performers are on the stage floor in black lace costumes.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "23": {
+      "input": "Premise: William learns that Charlotte thinks that a man is standing in front of a temple while wearing a red hat and red shirt. Hypothesis: Charlotte thinks that William learns that a man is standing in front of a temple while wearing a red hat and red shirt.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "24": {
+      "input": "Premise: Thomas remembers that Richard assumes that a couple is sitting down smiling, with the woman linking arms with the man. Hypothesis: Richard assumes that Thomas remembers that a couple is sitting down smiling, with the woman linking arms with the man.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "25": {
+      "input": "Premise: Richard thinks that Amelia understands that a group of young men in a gym take turns scoring in basketball. Hypothesis: Amelia understands that a group of young men in a gym take turns scoring in basketball.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "26": {
+      "input": "Premise: John recognizes that Amelia thinks that a woman in a black leather shirt trench-coat and black leather calf-high boots and carrying a colorful bag with a shoulder strap faces away from the camera with a yellow post visible just in front of her. Hypothesis: Amelia thinks that a woman in a black leather shirt trench-coat and black leather calf-high boots and carrying a colorful bag with a shoulder strap faces away from the camera with a yellow post visible just in front of her.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "27": {
+      "input": "Premise: Charlotte remembers that Evelyn thinks that two men are standing in a freshly razed field at the boundary of a forest, while a bulldozer sits idling nearby. Hypothesis: Evelyn thinks that two men are standing in a freshly razed field at the boundary of a forest, while a bulldozer sits idling nearby.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "28": {
+      "input": "Premise: Charlotte suspects that a man with a tan jacket with a full grocery bag is crossing the street. Hypothesis: Emma suspects that the man is wearing a jacket.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "29": {
+      "input": "Premise: Robert learns that Sophia suspects that a man wearing protective gear grinds down a large metal object. Hypothesis: Sophia suspects that a man wearing protective gear grinds down a large metal object.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "30": {
+      "input": "Premise: Amelia remembers that Robert believes that four human figures are backlit by a sunset. Hypothesis: Robert believes that four human figures are backlit by a sunset.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "31": {
+      "input": "Premise: Evelyn assumes that Sophia believes that in a snowy residential environment, a man with a brown jacket and gray mustache and beard places a hand on a felled log while another man in a blue shirt is blurry on the right side of the photo. Hypothesis: Sophia believes that in a snowy residential environment, a man with a brown jacket and gray mustache and beard places a hand on a felled log while another man in a blue shirt is blurry on the right side of the photo.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "32": {
+      "input": "Premise: Taylor assumes that Abigail believes that a man in a button up shirt with a black shirt underneath presents in front of a television. Hypothesis: Taylor assumes that a man in a button up shirt with a black shirt underneath presents in front of a television.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "33": {
+      "input": "Premise: Richard believes that Emma assumes that man in dark shirt, yellow shorts and yellow bandanna leaps to catch a white frisbee on a soccer court. Hypothesis: Richard believes that man in dark shirt, yellow shorts and yellow bandanna leaps to catch a white frisbee on a soccer court.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "34": {
+      "input": "Premise: Taylor sees that a person in blue is the only person currently throwing their ball at a bowling alley. Hypothesis: Thomas sees that a person is bowling.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "35": {
+      "input": "Premise: Michael thinks that Charles assumes that a little boy in a blue shirt is putting some sunglasses up to a window while a lady watches him. Hypothesis: Michael thinks that a little boy in a blue shirt is putting some sunglasses up to a window while a lady watches him.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "36": {
+      "input": "Premise: Taylor understands that John thinks that a skateboard is grinding on a curb with his skateboard. Hypothesis: John thinks that a skateboard is grinding on a curb with his skateboard.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "37": {
+      "input": "Premise: Isabella suspects that William assumes that the man in the black hat has his back to a theater sign. Hypothesis: William assumes that the man in the black hat has his back to a theater sign.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "38": {
+      "input": "Premise: Michael suspects that Charles assumes that a young boy gets his photo taken with Mr. and Mrs. Clause. Hypothesis: Michael suspects that a young boy gets his photo taken with Mr. and Mrs. Clause.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "39": {
+      "input": "Premise: Robert knows that a toddler sits on a stone wall surrounded by fallen leaves. Hypothesis: Richard knows that a little child sits quietly on a hand built rock wall in autumn.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "40": {
+      "input": "Premise: Isabella knows that a man is in front of a dryer in a laundromat with both hands reaching into a bin or basket. Hypothesis: Isabella knows that a man reaches into his laundry basket at the laundromat.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "41": {
+      "input": "Premise: Emma learns that a girl bounces in a bounce house. Hypothesis: Ava learns that a girl is bouncing around.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "42": {
+      "input": "Premise: Olivia thinks that Emma suspects that the person is reading a book. Hypothesis: Olivia thinks that the person is reading a book.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "43": {
+      "input": "Premise: Amelia understands that Charlotte believes that one child in black is walking down a hill covered in white snow while 2 children are on their knees. Hypothesis: Charlotte believes that Amelia understands that one child in black is walking down a hill covered in white snow while 2 children are on their knees.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "44": {
+      "input": "Premise: Olivia suspects that Emma suspects that a boy in a blue uniform is standing next to a boy in red and a boy in yellow and they are holding baseball gloves. Hypothesis: Olivia suspects that a boy in a blue uniform is standing next to a boy in red and a boy in yellow and they are holding baseball gloves.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "45": {
+      "input": "Premise: Joseph assumes that man jumping up in the air and splitting his legs with his mouth open. Hypothesis: Joseph assumes that a man is jumping.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "46": {
+      "input": "Premise: James recognizes that Thomas assumes that a man dressed as an angel balances a woman dressed as an angel on his thighs while she hands out papers to people passing on the sidewalk. Hypothesis: Thomas assumes that James recognizes that a man dressed as an angel balances a woman dressed as an angel on his thighs while she hands out papers to people passing on the sidewalk.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "47": {
+      "input": "Premise: James understands that Amelia thinks that several people are laying on the floor sleeping covered by blankets. Hypothesis: Amelia thinks that James understands that several people are laying on the floor sleeping covered by blankets.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "48": {
+      "input": "Premise: Michael assumes that naked children play on the muddy riverbank. Hypothesis: Sophia assumes that tHE RIVERBANK WAS PLAYED ON BY NUDITY OF KIDS.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "49": {
+      "input": "Premise: Olivia believes that Charlotte recognizes that a painter with a gray t-shirt and tatted arm sketches a mural with extreme precision and focus. Hypothesis: Olivia believes that a painter with a gray t-shirt and tatted arm sketches a mural with extreme precision and focus.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "50": {
+      "input": "Premise: John thinks that Charlotte understands that a soccer team is standing on the field waiting for their time to make a move. Hypothesis: John thinks that a soccer team is standing on the field waiting for their time to make a move.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "51": {
+      "input": "Premise: Olivia understands that Abigail suspects that a woman in a striped shirt is walking a horse across a street. Hypothesis: Abigail suspects that a woman in a striped shirt is walking a horse across a street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "52": {
+      "input": "Premise: William suspects that Ava thinks that a man interviews a boy in a gathering of people. Hypothesis: William suspects that a man interviews a boy in a gathering of people.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "53": {
+      "input": "Premise: John sees that Charles thinks that a wet black lab with a red collar is standing in the water. Hypothesis: Charles thinks that John sees that a wet black lab with a red collar is standing in the water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "54": {
+      "input": "Premise: Abigail assumes that Charlotte thinks that a woman in a green flowered dress is holding a container of yarn animals. Hypothesis: Abigail assumes that a woman in a green flowered dress is holding a container of yarn animals.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "55": {
+      "input": "Premise: Olivia thinks that David assumes that two casually-dressed men, one in a cowboy hat and one in a baseball cap, make their way through a crowd. Hypothesis: David assumes that two casually-dressed men, one in a cowboy hat and one in a baseball cap, make their way through a crowd.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "56": {
+      "input": "Premise: John suspects that Michael believes that a young boy wearing an orange jacket is sitting on a log in the fall. Hypothesis: John suspects that a young boy wearing an orange jacket is sitting on a log in the fall.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "57": {
+      "input": "Premise: William learns that David believes that men wearing life vests speed across a body of water in an orange boat. Hypothesis: David believes that men wearing life vests speed across a body of water in an orange boat.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "58": {
+      "input": "Premise: Charlotte suspects that Robert recognizes that a blond woman wearing a pearl bracelet is about to kiss a man wearing a white shirt. Hypothesis: Robert recognizes that a blond woman wearing a pearl bracelet is about to kiss a man wearing a white shirt.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "59": {
+      "input": "Premise: Joseph suspects that Charles recognizes that a father and his daughter are riding a lawn mover down a street while dressed in American colors. Hypothesis: Joseph suspects that a father and his daughter are riding a lawn mover down a street while dressed in American colors.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "60": {
+      "input": "Premise: Joseph assumes that Amelia understands that three military officials are battling a fire my a building. Hypothesis: Joseph assumes that three military officials are battling a fire my a building.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "61": {
+      "input": "Premise: Amelia knows that a child in a red coat waves a hand in the air while lying in snow beside a red plastic sled. Hypothesis: Isabella knows that a child is playing in the snow.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "62": {
+      "input": "Premise: Isabella believes that three people are walking on a beach. Hypothesis: Isabella believes that a few people are near the ocean.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "63": {
+      "input": "Premise: William recognizes that a lady, dressed in a costume, is posing with an axe in the middle of the woods. Hypothesis: Michael recognizes that a lady with an axe is posing in the middle of the woods.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "64": {
+      "input": "Premise: Abigail knows that a photographer is taking photos of a hockey game, but he is protecting himself from harm by wearing a helmet. Hypothesis: Abigail knows that a photographer is taking many photos of a hockey game.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "65": {
+      "input": "Premise: Thomas believes that Olivia suspects that the white dog runs across the snow. Hypothesis: Olivia suspects that the white dog runs across the snow.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "66": {
+      "input": "Premise: Robert knows that a young black man wearing a dark leather jacket and gloves is standing on a lit stage, looking down. Hypothesis: Richard knows that a black man is standing on stage.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "67": {
+      "input": "Premise: Taylor sees that David thinks that a young man appears bored in a restaurant. Hypothesis: David thinks that a young man appears bored in a restaurant.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "68": {
+      "input": "Premise: Michael understands that a man is rolling a suitcase in front of a bunch of red flowers. Hypothesis: Thomas understands that a man is standing in front of flowers.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "69": {
+      "input": "Premise: Richard thinks that Isabella thinks that five young indian girls dress in colorful dresses are holding hands and smiling forming a circle. Hypothesis: Isabella thinks that five young indian girls dress in colorful dresses are holding hands and smiling forming a circle.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "70": {
+      "input": "Premise: Olivia knows that a group of Amish people, men and women, standing at a fence overlooking a forest and river. Hypothesis: David knows that several people are standing outside near water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "71": {
+      "input": "Premise: Taylor sees that a young boy in a straw hat drinks out of a plastic pink cup. Hypothesis: Taylor sees that a young kid is drinking out of a cup.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "72": {
+      "input": "Premise: Charlotte recognizes that Richard suspects that two people are running in the grass by a hill. Hypothesis: Richard suspects that Charlotte recognizes that two people are running in the grass by a hill.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "73": {
+      "input": "Premise: Emma suspects that Charlotte understands that some children are playing soccer in front of a large wooden door. Hypothesis: Charlotte understands that some children are playing soccer in front of a large wooden door.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "74": {
+      "input": "Premise: Ava believes that James knows that a man wearing red sunglasses is carrying two cameras. Hypothesis: James knows that a man wearing red sunglasses is carrying two cameras.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "75": {
+      "input": "Premise: James suspects that Emma learns that a woman and little girl look into a display case. Hypothesis: Emma learns that a woman and little girl look into a display case.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "76": {
+      "input": "Premise: Thomas assumes that Ava learns that two women and a man are sitting down eating and drinking various items. Hypothesis: Thomas assumes that two women and a man are sitting down eating and drinking various items.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "77": {
+      "input": "Premise: David believes that Robert sees that a dog and a cow play together inside the fence. Hypothesis: Robert sees that a dog and a cow play together inside the fence.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "78": {
+      "input": "Premise: Michael understands that Richard thinks that a boy looks out the window at another boy who is spraying the window with water. Hypothesis: Richard thinks that Michael understands that a boy looks out the window at another boy who is spraying the window with water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "79": {
+      "input": "Premise: William suspects that Charlotte sees that a large black and white dog is licking a smaller white and black dog who is growling. Hypothesis: Charlotte sees that a large black and white dog is licking a smaller white and black dog who is growling.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "80": {
+      "input": "Premise: Charlotte believes that Amelia believes that a man is holding a microphone in front of his mouth. Hypothesis: Charlotte believes that a man is holding a microphone in front of his mouth.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "81": {
+      "input": "Premise: Thomas thinks that Olivia recognizes that a woman in a pink top is holding a glass bottle in one hand and a Stitch doll in the other. Hypothesis: Olivia recognizes that a woman in a pink top is holding a glass bottle in one hand and a Stitch doll in the other.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "82": {
+      "input": "Premise: Olivia understands that Richard suspects that a silhouette stands at the top of a bowling lane as the ball is about to impact the pins while neon lights race overhead. Hypothesis: Richard suspects that Olivia understands that a silhouette stands at the top of a bowling lane as the ball is about to impact the pins while neon lights race overhead.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "83": {
+      "input": "Premise: Abigail sees that young people and a kid are walking in the forest in a sunny day. Hypothesis: Abigail sees that young people and a kid are walking in the forest.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "84": {
+      "input": "Premise: Charlotte thinks that Michael thinks that a woman in black walks past a shop selling a t-shirt depicting a tattooed woman smoking a cigarette. Hypothesis: Charlotte thinks that a woman in black walks past a shop selling a t-shirt depicting a tattooed woman smoking a cigarette.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "85": {
+      "input": "Premise: Evelyn recognizes that a man is watching as a woman is reading a piece of paper. Hypothesis: Evelyn recognizes that a person watches someone.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "86": {
+      "input": "Premise: Olivia knows that a woman is walking her dog along a snowy ground. Hypothesis: Evelyn knows that a woman is with her dog outside.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "87": {
+      "input": "Premise: John thinks that Thomas knows that a woman in a scarf, laughing, being licked by a dog. Hypothesis: Thomas knows that a woman in a scarf, laughing, being licked by a dog.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "88": {
+      "input": "Premise: Joseph understands that Charlotte suspects that a young girl in a white t-shirt and a blue skirt wearing a light colored hat stands in a river next to a big rock. Hypothesis: Charlotte suspects that Joseph understands that a young girl in a white t-shirt and a blue skirt wearing a light colored hat stands in a river next to a big rock.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "89": {
+      "input": "Premise: Joseph thinks that John sees that a game similar to baseball is being played as a ball closes in on the player who is ready to strike. Hypothesis: Joseph thinks that a game similar to baseball is being played as a ball closes in on the player who is ready to strike.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "90": {
+      "input": "Premise: David believes that Evelyn assumes that a woman sits on a rug next to a shirtless boy who is looking in the direction of a checkers board that includes several pieces. Hypothesis: David believes that a woman sits on a rug next to a shirtless boy who is looking in the direction of a checkers board that includes several pieces.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "91": {
+      "input": "Premise: James sees that David assumes that an Asian woman is standing on a path with a basket on her head looking into a mirror she is holding in her hand. Hypothesis: David assumes that an Asian woman is standing on a path with a basket on her head looking into a mirror she is holding in her hand.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "92": {
+      "input": "Premise: James sees that Isabella assumes that person in yellow T-shirt is sleeping. Hypothesis: Isabella assumes that person in yellow T-shirt is sleeping.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "93": {
+      "input": "Premise: Charlotte believes that Sophia assumes that two people wearing green raincoats sit in blue bleachers that are otherwise empty. Hypothesis: Charlotte believes that two people wearing green raincoats sit in blue bleachers that are otherwise empty.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "94": {
+      "input": "Premise: Emma assumes that William suspects that several people wearing green shirts walk on the beach together. Hypothesis: Emma assumes that several people wearing green shirts walk on the beach together.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "95": {
+      "input": "Premise: Michael thinks that Abigail thinks that two young girls, one wearing a pink jacket and the other in a dark-colored jacket, are playing in the snow and having a snowball fight in a clearing outside of a wooded area. Hypothesis: Michael thinks that two young girls, one wearing a pink jacket and the other in a dark-colored jacket, are playing in the snow and having a snowball fight in a clearing outside of a wooded area.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "96": {
+      "input": "Premise: Sophia sees that Abigail thinks that a runner poses for a picture with friends in a parking lot. Hypothesis: Abigail thinks that a runner poses for a picture with friends in a parking lot.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "97": {
+      "input": "Premise: Thomas understands that three Asian men are running down a track holding hands while a large gathering of people watches them. Hypothesis: Charlotte understands that three men are holding hands.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "98": {
+      "input": "Premise: Ava suspects that Amelia assumes that a man in a black coat and hat and a woman in a blue coat with pink hat snowshoeing on the side of a road with a stoplight in the background. Hypothesis: Ava suspects that a man in a black coat and hat and a woman in a blue coat with pink hat snowshoeing on the side of a road with a stoplight in the background.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "99": {
+      "input": "Premise: Richard assumes that Ava remembers that a brown-haired woman in a blue shirt decorated with gold trimmings paints a picture of two windows. Hypothesis: Richard assumes that a brown-haired woman in a blue shirt decorated with gold trimmings paints a picture of two windows.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "100": {
+      "input": "Premise: Evelyn believes that Richard learns that a woman teaching a ballet class composed of small children holding colourful scarves. Hypothesis: Evelyn believes that a woman teaching a ballet class composed of small children holding colourful scarves.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "101": {
+      "input": "Premise: Isabella assumes that Charles suspects that two lacrosse players are running on the sports-field. Hypothesis: Isabella assumes that two lacrosse players are running on the sports-field.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "102": {
+      "input": "Premise: Amelia recognizes that a man and woman in formal attire are standing in a high grass meadow, posing for the photographer, and she has two of her fingers up on one hand behind his head. Hypothesis: Abigail recognizes that a couple are having a photoshoot.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "103": {
+      "input": "Premise: Sophia believes that Michael suspects that girl in black pants and an orange top jumping with one leg outstreached and foot pointed other in background dressed the same. Hypothesis: Michael suspects that girl in black pants and an orange top jumping with one leg outstreached and foot pointed other in background dressed the same.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "104": {
+      "input": "Premise: Isabella assumes that Thomas assumes that a dog is pulling a red sled across the snow. Hypothesis: Thomas assumes that a dog is pulling a red sled across the snow.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "105": {
+      "input": "Premise: Olivia suspects that a middle-aged man in a collard shirt is raising his forearms next to his face. Hypothesis: Evelyn suspects that a man raises his forearms.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "106": {
+      "input": "Premise: Robert suspects that a mechanic for a race car team is working on the wheels of a race car. Hypothesis: Robert suspects that a car is part of a race.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "107": {
+      "input": "Premise: John knows that Isabella suspects that a brown dog and black and white dog run along the green grass. Hypothesis: Isabella suspects that a brown dog and black and white dog run along the green grass.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "108": {
+      "input": "Premise: Sophia suspects that David learns that a dog with a purple leash is held by a woman wearing white shoes. Hypothesis: Sophia suspects that a dog with a purple leash is held by a woman wearing white shoes.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "109": {
+      "input": "Premise: Amelia remembers that a young girl in a red top is running through a grassy area with large buildings in the background. Hypothesis: Ava remembers that the young girl is outside.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "110": {
+      "input": "Premise: Sophia assumes that Charlotte believes that a woman with a blue shirt and colorful hair has just thrown the bowling ball. Hypothesis: Sophia assumes that a woman with a blue shirt and colorful hair has just thrown the bowling ball.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "111": {
+      "input": "Premise: Amelia thinks that Evelyn recognizes that a man with a large mustache watches the barber conduct his work through the mirror that faces him. Hypothesis: Amelia thinks that a man with a large mustache watches the barber conduct his work through the mirror that faces him.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "112": {
+      "input": "Premise: Richard thinks that John knows that oh yea these suckers cant catch me. Hypothesis: Richard thinks that oh yea these suckers cant catch me.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "113": {
+      "input": "Premise: Robert believes that Charles assumes that an Asian lady is holding a cup and sitting in front of a table covered in different foods. Hypothesis: Charles assumes that an Asian lady is holding a cup and sitting in front of a table covered in different foods.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "114": {
+      "input": "Premise: Olivia assumes that a road worker is holding a stop sign to direct traffic. Hypothesis: Olivia assumes that traffic is being directed by a road worker.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "115": {
+      "input": "Premise: Robert suspects that a man wearing dark jeans, an orange shirt, and an orange apron is next to a bunch of plants and flowers and a woman with a blue top. Hypothesis: Robert suspects that two people are next to each other.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "116": {
+      "input": "Premise: Emma understands that a small girl with short brown hair is pushing a pink scooter over grass with brown leaves with threes in the background. Hypothesis: James understands that the girl is outside.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "117": {
+      "input": "Premise: Emma recognizes that John suspects that a baby is eating aqua-colored cake very messily. Hypothesis: John suspects that Emma recognizes that a baby is eating aqua-colored cake very messily.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "118": {
+      "input": "Premise: Thomas assumes that Ava suspects that four children are dancing around a pole in a city street. Hypothesis: Ava suspects that four children are dancing around a pole in a city street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "119": {
+      "input": "Premise: Joseph thinks that Taylor recognizes that a girl in a white knit hat and winter gear rubs her tongue over her braces. Hypothesis: Joseph thinks that a girl in a white knit hat and winter gear rubs her tongue over her braces.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "120": {
+      "input": "Premise: Michael recognizes that William assumes that a young woman is ordering from a red food truck. Hypothesis: William assumes that a young woman is ordering from a red food truck.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "121": {
+      "input": "Premise: Sophia thinks that Charles thinks that a man wearing a black t-shirt that says \"Long Live the Dead\" pulls a shopping cart in the street near a NYC yellow taxi cab. Hypothesis: Sophia thinks that a man wearing a black t-shirt that says \"Long Live the Dead\" pulls a shopping cart in the street near a NYC yellow taxi cab.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "122": {
+      "input": "Premise: Robert believes that William believes that a singer wearing a leather jacket performs on stage with dramatic lighting behind him. Hypothesis: Robert believes that a singer wearing a leather jacket performs on stage with dramatic lighting behind him.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "123": {
+      "input": "Premise: Abigail suspects that Robert remembers that a well dressed elderly woman standing in front of a bus decorated with images of purple flowers. Hypothesis: Abigail suspects that a well dressed elderly woman standing in front of a bus decorated with images of purple flowers.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "124": {
+      "input": "Premise: William understands that Emma suspects that a brown and white dog swims in a backyard swimming pool. Hypothesis: Emma suspects that a brown and white dog swims in a backyard swimming pool.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "125": {
+      "input": "Premise: Richard knows that John believes that a woman in black walks down the street in front of a graffited wall. Hypothesis: John believes that a woman in black walks down the street in front of a graffited wall.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "126": {
+      "input": "Premise: Thomas knows that David suspects that a boy in a green shirt is sitting in an almost empty stadium. Hypothesis: David suspects that Thomas knows that a boy in a green shirt is sitting in an almost empty stadium.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "127": {
+      "input": "Premise: John assumes that Charles suspects that a man is holding a child on his shoulders. Hypothesis: Charles suspects that a man is holding a child on his shoulders.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "128": {
+      "input": "Premise: Ava recognizes that an old man in a pink polo looks through a telescope with a small child standing next to him while others stand with their telescopes in the background. Hypothesis: Ava recognizes that an old man in a pink polo looks through a telescope with a small child standing next to him.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "129": {
+      "input": "Premise: Thomas understands that John suspects that two construction workers are working in front of a wall which has a bunch of names carved into it. Hypothesis: John suspects that Thomas understands that two construction workers are working in front of a wall which has a bunch of names carved into it.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "130": {
+      "input": "Premise: John remembers that Emma suspects that it looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more. Hypothesis: Emma suspects that John remembers that it looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "131": {
+      "input": "Premise: Charles thinks that a female child in a white, long-sleeved shirt is kneeling on a couch, laughing as her hair is sticking up. Hypothesis: Charles thinks that a child laughs as her hair sticks up.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "132": {
+      "input": "Premise: John thinks that Charlotte believes that a man is holding on to a piece of rope, sitting in an inflatable boat, in front of several other larger boats. Hypothesis: John thinks that a man is holding on to a piece of rope, sitting in an inflatable boat, in front of several other larger boats.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "133": {
+      "input": "Premise: Taylor knows that Michael assumes that two people, one wearing an orange jersey and a white belt, and another wearing a blue jersey and a red belt are playing flag football. Hypothesis: Michael assumes that two people, one wearing an orange jersey and a white belt, and another wearing a blue jersey and a red belt are playing flag football.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "134": {
+      "input": "Premise: Michael suspects that Charles understands that two girls aboard an amusement park ride. Hypothesis: Charles understands that two girls aboard an amusement park ride.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "135": {
+      "input": "Premise: Olivia assumes that Abigail learns that a man is smiling at a woman in a white dress. Hypothesis: Olivia assumes that a man is smiling at a woman in a white dress.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "136": {
+      "input": "Premise: John assumes that Abigail sees that a woman wearing a black t-shirt and green capri pants walks in front of a giant clock. Hypothesis: John assumes that a woman wearing a black t-shirt and green capri pants walks in front of a giant clock.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "137": {
+      "input": "Premise: Olivia thinks that Ava thinks that a young man wearing a green shirt and a hat attempts a trick on a skateboard while riding it in a skate park next to a beach. Hypothesis: Ava thinks that a young man wearing a green shirt and a hat attempts a trick on a skateboard while riding it in a skate park next to a beach.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "138": {
+      "input": "Premise: Evelyn suspects that Emma sees that she is cooking food while wearing a dress. Hypothesis: Emma sees that she is cooking food while wearing a dress.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "139": {
+      "input": "Premise: William believes that a man in tribal dress is walking down the street while spectators are standing behind red and white barrier tape. Hypothesis: Thomas believes that a man walks down the street with other people around.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "140": {
+      "input": "Premise: Evelyn thinks that Olivia suspects that a shirtless man rock climbs. Hypothesis: Evelyn thinks that a shirtless man rock climbs.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "141": {
+      "input": "Premise: David suspects that Taylor understands that a woman with a white blanket over her head is holding a baby wrapped in a blue, pink, and yellow blanket. Hypothesis: Taylor understands that a woman with a white blanket over her head is holding a baby wrapped in a blue, pink, and yellow blanket.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "142": {
+      "input": "Premise: Thomas believes that four men are posing behind a cash register. Hypothesis: Ava believes that four men are posing.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "143": {
+      "input": "Premise: Michael assumes that Charles remembers that a young man dressed up with a yellow tie jumps against a wall and one foot is left against the wall to push away. Hypothesis: Michael assumes that a young man dressed up with a yellow tie jumps against a wall and one foot is left against the wall to push away.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "144": {
+      "input": "Premise: William believes that Charles assumes that two females kneeling and a man sting in a chair looking toward a man in robes on an altar. Hypothesis: Charles assumes that two females kneeling and a man sting in a chair looking toward a man in robes on an altar.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "145": {
+      "input": "Premise: James assumes that Isabella understands that a woman is taking a picture of a man. Hypothesis: Isabella understands that a woman is taking a picture of a man.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "146": {
+      "input": "Premise: Ava believes that a man, with a full face mask, sits on a sidewalk playing the guitar. Hypothesis: Ava believes that a man is wearing a mask.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "147": {
+      "input": "Premise: Ava believes that Charlotte believes that small dog in costume stands on hind legs to reach dangling flowers. Hypothesis: Charlotte believes that small dog in costume stands on hind legs to reach dangling flowers.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "148": {
+      "input": "Premise: Charlotte recognizes that James suspects that a man wearing shorts looks at his cellphone while a woman walks outside a small building. Hypothesis: James suspects that Charlotte recognizes that a man wearing shorts looks at his cellphone while a woman walks outside a small building.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "149": {
+      "input": "Premise: Charlotte thinks that Abigail believes that a group of people celebrate their asian culture. Hypothesis: Charlotte thinks that a group of people celebrate their asian culture.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "150": {
+      "input": "Premise: Isabella believes that Charlotte assumes that a group of kids play on a colorful structure. Hypothesis: Charlotte assumes that a group of kids play on a colorful structure.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "151": {
+      "input": "Premise: John believes that Taylor assumes that a bear-chested jungle native, with long hair, wearing a cloth bottom garment, is dangling in the air from a chute. Hypothesis: Taylor assumes that a bear-chested jungle native, with long hair, wearing a cloth bottom garment, is dangling in the air from a chute.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "152": {
+      "input": "Premise: Charles thinks that Abigail assumes that a girl in a costume is performing a dance as other girls in costumes watch. Hypothesis: Abigail assumes that a girl in a costume is performing a dance as other girls in costumes watch.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "153": {
+      "input": "Premise: James recognizes that William believes that scientists frantically research ways to finally eliminate male baldness. Hypothesis: William believes that James recognizes that scientists frantically research ways to finally eliminate male baldness.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "154": {
+      "input": "Premise: Thomas knows that a shirtless man with cropped hair smokes a cigarette and ties a plastic bag. Hypothesis: Amelia knows that the man is not wearing a shirt.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "155": {
+      "input": "Premise: William knows that David assumes that black and yellow teams are trying to get the basketball in the goal. Hypothesis: David assumes that black and yellow teams are trying to get the basketball in the goal.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "156": {
+      "input": "Premise: Michael assumes that Charlotte believes that people are sitting on a bench in front of buildings. Hypothesis: Michael assumes that people are sitting on a bench in front of buildings.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "157": {
+      "input": "Premise: Robert suspects that Taylor learns that a man wearing a gray shirt and pink wristband plays the drums. Hypothesis: Taylor learns that a man wearing a gray shirt and pink wristband plays the drums.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "158": {
+      "input": "Premise: Olivia suspects that a gymnast is seen defying gravity as she performs an impressive move several feet above the parallel bars. Hypothesis: Olivia suspects that the gymnast is a woman.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "159": {
+      "input": "Premise: Taylor suspects that a man walks with a cow down a dirt sidewalk. Hypothesis: Taylor suspects that a man walks with his cow.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "160": {
+      "input": "Premise: Isabella believes that David learns that four women carrying shoulder bags are walking down a city sidewalk. Hypothesis: David learns that four women carrying shoulder bags are walking down a city sidewalk.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "161": {
+      "input": "Premise: Charles believes that Charlotte remembers that a man is installing a roof. Hypothesis: Charles believes that a man is installing a roof.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "162": {
+      "input": "Premise: Joseph learns that Charlotte suspects that a man with a cowboy hat and a gentleman with sunglasses on his head are seated next to each other. Hypothesis: Charlotte suspects that a man with a cowboy hat and a gentleman with sunglasses on his head are seated next to each other.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "163": {
+      "input": "Premise: Olivia believes that Ava believes that the player in the white dribbles the ball, while the player in the orange tries to stop him. Hypothesis: Olivia believes that the player in the white dribbles the ball, while the player in the orange tries to stop him.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "164": {
+      "input": "Premise: Charles assumes that a white and black spotted dog is running through a grassy area. Hypothesis: Taylor assumes that a dog is outdoors.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "165": {
+      "input": "Premise: John remembers that Sophia believes that two men heavily immersed in a conversation worth having. Hypothesis: Sophia believes that two men heavily immersed in a conversation worth having.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "166": {
+      "input": "Premise: Charlotte believes that people, mainly women and 2 referees, are skating fiercely during a roller derby match. Hypothesis: Charlotte believes that there is a roller derby match involving women.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "167": {
+      "input": "Premise: Joseph suspects that Olivia thinks that a man in a red delivery truck is talking to someone is a black coat. Hypothesis: Olivia thinks that a man in a red delivery truck is talking to someone is a black coat.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "168": {
+      "input": "Premise: Charlotte remembers that Abigail believes that a male windsurfer surfing on some blue waves with his yellow surfboard and red and white sail it looks as though he is about to fall into the water because he is suspended in the air sideways. Hypothesis: Abigail believes that a male windsurfer surfing on some blue waves with his yellow surfboard and red and white sail it looks as though he is about to fall into the water because he is suspended in the air sideways.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "169": {
+      "input": "Premise: Taylor assumes that William assumes that a boy at the beach runs through the surf towards three other people who are already in the water. Hypothesis: William assumes that a boy at the beach runs through the surf towards three other people who are already in the water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "170": {
+      "input": "Premise: Taylor suspects that William thinks that two women drink coffee and chat while sitting on a blanket near a rocky shore. Hypothesis: Taylor suspects that two women drink coffee and chat while sitting on a blanket near a rocky shore.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "171": {
+      "input": "Premise: Amelia believes that Charlotte suspects that an elderly firefighter in an orange suit is holding a fire hose with water coming out. Hypothesis: Amelia believes that an elderly firefighter in an orange suit is holding a fire hose with water coming out.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "172": {
+      "input": "Premise: Richard thinks that Robert suspects that a young boy is taking American flags to place them where they will remind others of the sacrifices made by veterans. Hypothesis: Robert suspects that a young boy is taking American flags to place them where they will remind others of the sacrifices made by veterans.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "173": {
+      "input": "Premise: Ava suspects that Michael believes that an older woman is looking at herself in the mirror at a table with cosmetics. Hypothesis: Ava suspects that an older woman is looking at herself in the mirror at a table with cosmetics.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "174": {
+      "input": "Premise: Thomas believes that Taylor suspects that a large man is sitting in front of a fountain statue while talking on a phone. Hypothesis: Thomas believes that a large man is sitting in front of a fountain statue while talking on a phone.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "175": {
+      "input": "Premise: Sophia remembers that Amelia assumes that women sit on a beach as they watch men bring in a fishing net filled with fish in front of them. Hypothesis: Amelia assumes that Sophia remembers that women sit on a beach as they watch men bring in a fishing net filled with fish in front of them.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "176": {
+      "input": "Premise: Abigail suspects that David recognizes that a man dances with a woman in a white egyptian costume. Hypothesis: Abigail suspects that a man dances with a woman in a white egyptian costume.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "177": {
+      "input": "Premise: Taylor learns that two women are in a small kitchen, with a lit up portrait of Mr. T in the background. Hypothesis: Taylor learns that they are in the kitchen.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "178": {
+      "input": "Premise: Sophia suspects that William assumes that a woman in a white bridal dress and ruby red shoes, carrying a white umbrella, stands atop a platform while handing a brochure to a middle-aged female passerby. Hypothesis: William assumes that a woman in a white bridal dress and ruby red shoes, carrying a white umbrella, stands atop a platform while handing a brochure to a middle-aged female passerby.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "179": {
+      "input": "Premise: Abigail assumes that the tennis player spikes the tennis ball on the boundary line. Hypothesis: Abigail assumes that tennis player is playing tennis.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "180": {
+      "input": "Premise: Abigail learns that Michael suspects that young shirtless man and asian woman jump up from a shallow rock at the shore with boats moored in the background. Hypothesis: Michael suspects that Abigail learns that young shirtless man and asian woman jump up from a shallow rock at the shore with boats moored in the background.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "181": {
+      "input": "Premise: Richard suspects that John knows that a woman is lying on her stomach on a white pillow and crying. Hypothesis: Richard suspects that a woman is lying on her stomach on a white pillow and crying.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "182": {
+      "input": "Premise: Evelyn suspects that a balding, heavyset man and a dog are resting beside an ornate monument featuring a greenish statue of a man and a woman. Hypothesis: Evelyn suspects that there are both people and animals in this picture.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "183": {
+      "input": "Premise: Charles understands that Olivia believes that a woman with short blond-hair rises from a chair as another woman in a burgundy shirt laughs. Hypothesis: Olivia believes that a woman with short blond-hair rises from a chair as another woman in a burgundy shirt laughs.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "184": {
+      "input": "Premise: William thinks that Joseph knows that an old man holds up a sign. Hypothesis: William thinks that an old man holds up a sign.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "185": {
+      "input": "Premise: William thinks that people are standing next to a chain link fence. Hypothesis: Abigail thinks that the people are outside.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "186": {
+      "input": "Premise: Sophia assumes that Olivia thinks that an Indian woman is dancing with her partner. Hypothesis: Sophia assumes that an Indian woman is dancing with her partner.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "187": {
+      "input": "Premise: Ava recognizes that Thomas thinks that a man wearing a jacket is listening to headphones while walking down the sidewalk along a street. Hypothesis: Thomas thinks that a man wearing a jacket is listening to headphones while walking down the sidewalk along a street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "188": {
+      "input": "Premise: Evelyn sees that Thomas believes that a worker is on a cherry picker in a palm tree. Hypothesis: Thomas believes that Evelyn sees that a worker is on a cherry picker in a palm tree.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "189": {
+      "input": "Premise: John thinks that Olivia understands that a man wielding an electric razor is gleefully shaving away another man's hair. Hypothesis: John thinks that a man wielding an electric razor is gleefully shaving away another man's hair.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "190": {
+      "input": "Premise: Charles assumes that Evelyn understands that in front of a brick house with a straw roof and some figures, three children stand, two of them holding squares of blackboard. Hypothesis: Evelyn understands that in front of a brick house with a straw roof and some figures, three children stand, two of them holding squares of blackboard.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "191": {
+      "input": "Premise: Abigail assumes that William suspects that a small child is riding in a red wagon. Hypothesis: Abigail assumes that a small child is riding in a red wagon.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "192": {
+      "input": "Premise: Evelyn knows that Charlotte believes that a woman in a red jacket walks down the street in the rain. Hypothesis: Charlotte believes that Evelyn knows that a woman in a red jacket walks down the street in the rain.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "193": {
+      "input": "Premise: Sophia believes that Isabella learns that a woman standing in front of a wall holding a can of Bud Light with her shirt tied into a semi-halter. Hypothesis: Isabella learns that a woman standing in front of a wall holding a can of Bud Light with her shirt tied into a semi-halter.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "194": {
+      "input": "Premise: Taylor suspects that Michael remembers that a person is walking a bicycle down a city street. Hypothesis: Taylor suspects that a person is walking a bicycle down a city street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "195": {
+      "input": "Premise: Sophia believes that Isabella learns that a man in a white t-shirt is holding a pair of sunglasses. Hypothesis: Isabella learns that a man in a white t-shirt is holding a pair of sunglasses.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "196": {
+      "input": "Premise: Evelyn understands that James believes that a young boy sits outside in a grassy field with his back turned towards the viewer- he is holding a wooden toy that can be spun between your hands and launched into the air. Hypothesis: James believes that a young boy sits outside in a grassy field with his back turned towards the viewer- he is holding a wooden toy that can be spun between your hands and launched into the air.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "197": {
+      "input": "Premise: Isabella remembers that Olivia believes that two men are working together to empty the barrel of its contents. Hypothesis: Olivia believes that Isabella remembers that two men are working together to empty the barrel of its contents.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "198": {
+      "input": "Premise: Robert believes that there are many people in a large room with a lot of furniture with tags on them. Hypothesis: Charlotte believes that people are indoors.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "199": {
+      "input": "Premise: Olivia knows that Abigail believes that a woman with a red scarf, white shirt, and tan shorts is giving a shushing sign to the camera in front of shelves of books. Hypothesis: Abigail believes that a woman with a red scarf, white shirt, and tan shorts is giving a shushing sign to the camera in front of shelves of books.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "200": {
+      "input": "Premise: Robert believes that Amelia assumes that a young man in an orange shirt, maneuvers a skateboard at the top of a ramp. Hypothesis: Robert believes that a young man in an orange shirt, maneuvers a skateboard at the top of a ramp.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "201": {
+      "input": "Premise: Richard assumes that James assumes that a little boy is standing in front of a wedding party laughing. Hypothesis: Richard assumes that a little boy is standing in front of a wedding party laughing.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "202": {
+      "input": "Premise: Ava remembers that Evelyn thinks that a man in an orange jacket reaches under a busted up blue car on wooden supports. Hypothesis: Evelyn thinks that Ava remembers that a man in an orange jacket reaches under a busted up blue car on wooden supports.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "203": {
+      "input": "Premise: Richard understands that a man and a child are laughing at each other. Hypothesis: Joseph understands that two people are laughing.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "204": {
+      "input": "Premise: Emma assumes that Joseph believes that a man is wearing protective hair and face coverings. Hypothesis: Joseph believes that a man is wearing protective hair and face coverings.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "205": {
+      "input": "Premise: Charlotte assumes that James remembers that two men are seen talking, one man wears pink and another is sporting a t-shirt for summer school 60th anniversary. Hypothesis: Charlotte assumes that two men are seen talking, one man wears pink and another is sporting a t-shirt for summer school 60th anniversary.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "206": {
+      "input": "Premise: John thinks that Olivia suspects that people are riding their bikes down a road. Hypothesis: John thinks that people are riding their bikes down a road.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "207": {
+      "input": "Premise: James suspects that Taylor learns that the German shepherd runs happily in the park. Hypothesis: Taylor learns that the German shepherd runs happily in the park.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "208": {
+      "input": "Premise: Olivia believes that Joseph thinks that a woman with a cart of eggs walks in a market. Hypothesis: Olivia believes that a woman with a cart of eggs walks in a market.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "209": {
+      "input": "Premise: Michael believes that Abigail sees that a couple of females are talking to each other while one is flicking her cigarette. Hypothesis: Abigail sees that a couple of females are talking to each other while one is flicking her cigarette.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "210": {
+      "input": "Premise: Richard believes that Evelyn learns that a woman with a vest and red shirt is holding her hand up above a black and white dog that is jumping. Hypothesis: Richard believes that a woman with a vest and red shirt is holding her hand up above a black and white dog that is jumping.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "211": {
+      "input": "Premise: Michael suspects that Ava recognizes that a woman standing in front of a large tank at an aquarium turns around to look at the photographer. Hypothesis: Ava recognizes that a woman standing in front of a large tank at an aquarium turns around to look at the photographer.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "212": {
+      "input": "Premise: Michael thinks that Thomas recognizes that man in white sweater looks from his press box onto the pitch. Hypothesis: Michael thinks that man in white sweater looks from his press box onto the pitch.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "213": {
+      "input": "Premise: Michael recognizes that Robert thinks that a girl playfully kicks a guy in the face while another person makes faces. Hypothesis: Robert thinks that Michael recognizes that a girl playfully kicks a guy in the face while another person makes faces.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "214": {
+      "input": "Premise: Richard learns that Evelyn believes that a man and a woman are lying together on a grassy park field near a waterfront. Hypothesis: Evelyn believes that a man and a woman are lying together on a grassy park field near a waterfront.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "215": {
+      "input": "Premise: Sophia assumes that Emma understands that a man wearing blue jeans and a peach shirt is arguing with a woman with long gray hair, a red skirt and tan shirt. Hypothesis: Sophia assumes that a man wearing blue jeans and a peach shirt is arguing with a woman with long gray hair, a red skirt and tan shirt.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "216": {
+      "input": "Premise: Joseph believes that Robert suspects that a little boy punching out flashcards from the cardboard they came in. Hypothesis: Joseph believes that a little boy punching out flashcards from the cardboard they came in.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "217": {
+      "input": "Premise: Ava believes that Olivia thinks that the dog is in the snow in front of some trees. Hypothesis: Olivia thinks that the dog is in the snow in front of some trees.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "218": {
+      "input": "Premise: Joseph suspects that James knows that a woman in a hooded type coat is holding a golden colored axe. Hypothesis: Joseph suspects that a woman in a hooded type coat is holding a golden colored axe.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "219": {
+      "input": "Premise: Charlotte assumes that Robert assumes that the 3 dogs are cruising down the street. Hypothesis: Robert assumes that the 3 dogs are cruising down the street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "220": {
+      "input": "Premise: Robert thinks that Charlotte remembers that a young man, wearing a white shirt, prepares hotdogs on a small grill. Hypothesis: Robert thinks that a young man, wearing a white shirt, prepares hotdogs on a small grill.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "221": {
+      "input": "Premise: Emma suspects that Charlotte assumes that a man is holding a book standing in front of a chalkboard. Hypothesis: Charlotte assumes that a man is holding a book standing in front of a chalkboard.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "222": {
+      "input": "Premise: Evelyn suspects that Taylor assumes that a little kid in the middle of a debris field is kicking a soccer ball. Hypothesis: Taylor assumes that a little kid in the middle of a debris field is kicking a soccer ball.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "223": {
+      "input": "Premise: Abigail learns that a man on a skateboard performs a trick in the air against the backdrop of a bright blue sky. Hypothesis: Robert learns that a man is riding a skateboard.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "224": {
+      "input": "Premise: Evelyn believes that David believes that the festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city. Hypothesis: Evelyn believes that the festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "225": {
+      "input": "Premise: Ava remembers that a woman is holding her child while a man is reading something from a piece of paper and taking something from a bowl that a younger girl is holding in a park with a small lake in the background. Hypothesis: Emma remembers that there are people outside.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "226": {
+      "input": "Premise: Sophia thinks that a man has wrecked his racing bike in the dirt with five spectators behind a rope. Hypothesis: Sophia thinks that a man has met in an accident.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "227": {
+      "input": "Premise: Taylor assumes that John understands that a woman with a bag, talking on her cellphone, standing on the corner of the street, waiting to cross. Hypothesis: Taylor assumes that a woman with a bag, talking on her cellphone, standing on the corner of the street, waiting to cross.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "228": {
+      "input": "Premise: Taylor recognizes that James suspects that a woman in a blue apron is holding a container of ice cream. Hypothesis: James suspects that Taylor recognizes that a woman in a blue apron is holding a container of ice cream.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "229": {
+      "input": "Premise: Ava assumes that Robert believes that kid holding handles on two wheeled object. Hypothesis: Robert believes that kid holding handles on two wheeled object.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "230": {
+      "input": "Premise: William thinks that a middle-aged woman in a light brown trench coat and black boots walks on the sidewalk past a shop entrance. Hypothesis: James thinks that the middle-aged woman is outdoors.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "231": {
+      "input": "Premise: Amelia sees that Taylor thinks that a group of children looking at the contents of a slide through a microscope displayed on a computer screen. Hypothesis: Taylor thinks that Amelia sees that a group of children looking at the contents of a slide through a microscope displayed on a computer screen.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "232": {
+      "input": "Premise: Robert believes that Amelia assumes that a red Planet Hollywood bus carries many people including a man in an orange shirt and baseball cap, one woman wearing a purple shirt and another in a red shirt with her back to the camera. Hypothesis: Robert believes that a red Planet Hollywood bus carries many people including a man in an orange shirt and baseball cap, one woman wearing a purple shirt and another in a red shirt with her back to the camera.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "233": {
+      "input": "Premise: Robert sees that a group of swimmers jump into a pool. Hypothesis: Michael sees that a group of swimmers are jumping into water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "234": {
+      "input": "Premise: Joseph suspects that Charles believes that a white dog is running through the water at a beach. Hypothesis: Charles believes that a white dog is running through the water at a beach.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "235": {
+      "input": "Premise: Charles believes that Robert knows that a young Asian woman wearing a blue shirt and blue jeans sits on her bike, as a young boy, with his bike down, looks up. Hypothesis: Charles believes that a young Asian woman wearing a blue shirt and blue jeans sits on her bike, as a young boy, with his bike down, looks up.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "236": {
+      "input": "Premise: Ava suspects that Thomas assumes that the bears are facing each other with their mouths wide open. Hypothesis: Thomas assumes that the bears are facing each other with their mouths wide open.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "237": {
+      "input": "Premise: Abigail believes that Ava believes that a boy in a beige shirt is sleeping in a car. Hypothesis: Abigail believes that a boy in a beige shirt is sleeping in a car.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "238": {
+      "input": "Premise: Emma sees that Taylor assumes that two performers, one man playing a guitar, and one woman with a mic raised to her mouth are sitting on chairs performing. Hypothesis: Taylor assumes that two performers, one man playing a guitar, and one woman with a mic raised to her mouth are sitting on chairs performing.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "239": {
+      "input": "Premise: William understands that Robert thinks that man with an orange bandanna is playing the flute. Hypothesis: Robert thinks that William understands that man with an orange bandanna is playing the flute.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "240": {
+      "input": "Premise: Emma suspects that Thomas thinks that the black woman is laying out literature. Hypothesis: Emma suspects that the black woman is laying out literature.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "241": {
+      "input": "Premise: Thomas suspects that Emma sees that a woman in a long, dark coat looks through trashcans in Winter. Hypothesis: Emma sees that a woman in a long, dark coat looks through trashcans in Winter.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "242": {
+      "input": "Premise: Robert thinks that three sailboats with white sails are seen on a riverbank. Hypothesis: Olivia thinks that the boats are on the water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "243": {
+      "input": "Premise: Richard sees that a little baby wearing a blue outfit is grabbing some fruit. Hypothesis: Joseph sees that a little baby is wearing blue.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "244": {
+      "input": "Premise: Emma sees that David suspects that the people await to cross the street while walking the dog. Hypothesis: David suspects that Emma sees that the people await to cross the street while walking the dog.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "245": {
+      "input": "Premise: Michael suspects that a man, with a blue wrapping around his foot, is about to kick another man, with a red cloth hanging from his belt, in the head. Hypothesis: Michael suspects that a man is going to kick another man.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "246": {
+      "input": "Premise: Charlotte assumes that Charles learns that a bearded man, using a wooden pole, stirs bowl-like objects around in a large metal box filled with water. Hypothesis: Charlotte assumes that a bearded man, using a wooden pole, stirs bowl-like objects around in a large metal box filled with water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "247": {
+      "input": "Premise: Joseph sees that Sophia believes that a tall elder man is standing with his hand around another shorter elder man in the middle of the city. Hypothesis: Sophia believes that Joseph sees that a tall elder man is standing with his hand around another shorter elder man in the middle of the city.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "248": {
+      "input": "Premise: Abigail remembers that a woman with a stroller is passing a man walking a dog. Hypothesis: Charles remembers that there are people outside.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "249": {
+      "input": "Premise: Sophia sees that an adventurous man navigates through the jungle with a long stick. Hypothesis: Sophia sees that there is a person outside.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "250": {
+      "input": "Premise: Isabella believes that Amelia thinks that a young boy looks on as a man performs the guitar on the street while sitting on a bench. Hypothesis: Amelia thinks that a young boy looks on as a man performs the guitar on the street while sitting on a bench.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "251": {
+      "input": "Premise: Charlotte assumes that David learns that a large group of protesters are walking down the street with signs. Hypothesis: Charlotte assumes that a large group of protesters are walking down the street with signs.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "252": {
+      "input": "Premise: Taylor assumes that a man in a white and gray shirt looks on as a shirtless man with a mustache cleans fish on a pale green table. Hypothesis: Taylor assumes that the man watches the other clean a fish.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "253": {
+      "input": "Premise: Michael suspects that a man dressed in blue places mop inside a green bucket as he stands on a roof that overlooks a city. Hypothesis: Michael suspects that a man is holding a mop on a roof.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "254": {
+      "input": "Premise: Isabella thinks that Richard assumes that a boy and a girl stand in a median amongst Mike Huckabee signs. Hypothesis: Richard assumes that a boy and a girl stand in a median amongst Mike Huckabee signs.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "255": {
+      "input": "Premise: Ava understands that John assumes that it looks like the clown has fallen off the horse. Hypothesis: John assumes that Ava understands that it looks like the clown has fallen off the horse.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "256": {
+      "input": "Premise: James understands that Michael thinks that a man is wearing a neon yellow vest while leaning over a roof and another man is standing behind him. Hypothesis: Michael thinks that James understands that a man is wearing a neon yellow vest while leaning over a roof and another man is standing behind him.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "257": {
+      "input": "Premise: Taylor thinks that David suspects that six people in mid-evil style costumes wearing stilts of varying length pass by a group of onlookers. Hypothesis: Taylor thinks that six people in mid-evil style costumes wearing stilts of varying length pass by a group of onlookers.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "258": {
+      "input": "Premise: Richard thinks that a squirrel stands on its hind legs in the grass at the edge of a road. Hypothesis: Richard thinks that a squirrel is looking both ways before deciding whether to cross the street.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "259": {
+      "input": "Premise: Robert assumes that John understands that a child looks at a cactus garden. Hypothesis: John understands that a child looks at a cactus garden.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "260": {
+      "input": "Premise: Sophia believes that Amelia thinks that a patient is being worked on by doctors and nurses. Hypothesis: Amelia thinks that a patient is being worked on by doctors and nurses.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "261": {
+      "input": "Premise: William remembers that Thomas believes that a little boy with a red baseball cap is on a bus with boys with yellow baseball caps on. Hypothesis: Thomas believes that a little boy with a red baseball cap is on a bus with boys with yellow baseball caps on.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "262": {
+      "input": "Premise: Robert suspects that Sophia recognizes that in an apparent classroom setting, a young man in a blue t-shirt has a book on his knee while a woman dressed in black next to him leans in to point out something in the book. Hypothesis: Sophia recognizes that in an apparent classroom setting, a young man in a blue t-shirt has a book on his knee while a woman dressed in black next to him leans in to point out something in the book.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "263": {
+      "input": "Premise: Charles thinks that Abigail learns that a man is playing drums with a band. Hypothesis: Abigail learns that a man is playing drums with a band.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "264": {
+      "input": "Premise: Joseph assumes that David believes that three young men wearing backpacks, shorts, t-shirts, sandals and hats are standing together on a sandy surface with palm trees in the distance. Hypothesis: Joseph assumes that three young men wearing backpacks, shorts, t-shirts, sandals and hats are standing together on a sandy surface with palm trees in the distance.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "265": {
+      "input": "Premise: James recognizes that Robert believes that a group of people gather around a truck. Hypothesis: Robert believes that James recognizes that a group of people gather around a truck.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "266": {
+      "input": "Premise: Emma understands that Amelia thinks that a woman wearing a long black jacket and a brown hat is walking beside a park with a lot of blooming trees. Hypothesis: Amelia thinks that Emma understands that a woman wearing a long black jacket and a brown hat is walking beside a park with a lot of blooming trees.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "267": {
+      "input": "Premise: Michael suspects that Taylor sees that a woman in an American military uniform sits at a table and writes the words \"sad,\" \"depressed,\" and \"hatred\" on a large sheet of white paper. Hypothesis: Michael suspects that a woman in an American military uniform sits at a table and writes the words \"sad,\" \"depressed,\" and \"hatred\" on a large sheet of white paper.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "268": {
+      "input": "Premise: Thomas sees that a man wearing a brightly green camouflage patterned denim jacket and boots walks by a building labeled Lottery Ticket Centre. Hypothesis: Joseph sees that a man is near a building labeled Lottery Ticket Centre.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "269": {
+      "input": "Premise: Thomas remembers that a woman holding bags behind plantains. Hypothesis: Abigail remembers that a lady is holding an object to contain items while she is behind fruit.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "270": {
+      "input": "Premise: Isabella thinks that Amelia understands that men play hockey. Hypothesis: Isabella thinks that men play hockey.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "271": {
+      "input": "Premise: Evelyn believes that Michael understands that a child stuck up in a tree. Hypothesis: Michael understands that a child stuck up in a tree.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "272": {
+      "input": "Premise: Michael learns that William believes that the man is taking a picture of the beach. Hypothesis: William believes that Michael learns that the man is taking a picture of the beach.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "273": {
+      "input": "Premise: David assumes that William believes that a woman with a black and white dress on is carrying a green plastic laundry basket in front of an apartment building. Hypothesis: David assumes that a woman with a black and white dress on is carrying a green plastic laundry basket in front of an apartment building.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "274": {
+      "input": "Premise: Michael believes that John remembers that a woman in a gray sweatshirt is sitting on the floor with her small dog that is wrapped in a blanket. Hypothesis: John remembers that a woman in a gray sweatshirt is sitting on the floor with her small dog that is wrapped in a blanket.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "275": {
+      "input": "Premise: Olivia sees that Taylor believes that a person obscured in shadow in a gymnasium. Hypothesis: Taylor believes that Olivia sees that a person obscured in shadow in a gymnasium.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "276": {
+      "input": "Premise: Sophia suspects that Amelia sees that a person lies in a grassy area near a building. Hypothesis: Amelia sees that a person lies in a grassy area near a building.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "277": {
+      "input": "Premise: Taylor understands that William thinks that this person in a yellow kayak is riding the rapids. Hypothesis: William thinks that Taylor understands that this person in a yellow kayak is riding the rapids.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "278": {
+      "input": "Premise: John thinks that a man with white hair wearing a gray suit speaks into a microphone with a metal jug sitting in front of him. Hypothesis: Isabella thinks that a man is speaking.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "279": {
+      "input": "Premise: Emma recognizes that Joseph assumes that a woman happy about something. Hypothesis: Joseph assumes that Emma recognizes that a woman happy about something.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "280": {
+      "input": "Premise: Joseph assumes that Charles assumes that batter hits a baseball. Hypothesis: Charles assumes that batter hits a baseball.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "281": {
+      "input": "Premise: William learns that Isabella believes that trays of freshly-baked pretzels are being loaded onto a delivery truck. Hypothesis: Isabella believes that trays of freshly-baked pretzels are being loaded onto a delivery truck.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "282": {
+      "input": "Premise: Ava suspects that Thomas believes that a man wearing a business suit holds up a drink as the other laughs. Hypothesis: Ava suspects that a man wearing a business suit holds up a drink as the other laughs.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "283": {
+      "input": "Premise: Isabella knows that a man wearing a black jacket stands next to a body of water. Hypothesis: Amelia knows that a person is outside near some water.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "284": {
+      "input": "Premise: David believes that Taylor sees that a man wearing white turns to hit a yellow tennis ball. Hypothesis: Taylor sees that a man wearing white turns to hit a yellow tennis ball.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "285": {
+      "input": "Premise: Isabella knows that three people are sitting at a small table near a screen with the words, \"DEMOS, The Business of Care.\". Hypothesis: Isabella knows that a trio of humans is sitting.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "286": {
+      "input": "Premise: Abigail suspects that William learns that a young boy wearing a red shirt runs along a gravel road. Hypothesis: William learns that a young boy wearing a red shirt runs along a gravel road.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "287": {
+      "input": "Premise: Abigail sees that a man wearing blue pants, a white helmet, and a green-striped shirt is shown on skis in midair, against a blue sky with a single puffy cloud. Hypothesis: Abigail sees that the sky is blue with a single puffy cloud.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "288": {
+      "input": "Premise: John believes that Charles remembers that a man and two women are walking down a wooded path, the man is pushing a young child in a three wheel carriage. Hypothesis: John believes that a man and two women are walking down a wooded path, the man is pushing a young child in a three wheel carriage.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "289": {
+      "input": "Premise: Evelyn believes that John believes that an african man is being dragged though wet mud by two cows whilst other people watch. Hypothesis: John believes that an african man is being dragged though wet mud by two cows whilst other people watch.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "290": {
+      "input": "Premise: Evelyn believes that Abigail believes that three people in uniform are outdoors and are observing a scene which is out of the picture. Hypothesis: Evelyn believes that three people in uniform are outdoors and are observing a scene which is out of the picture.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "291": {
+      "input": "Premise: Richard believes that Amelia suspects that people are sitting at tables. Hypothesis: Amelia suspects that people are sitting at tables.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "292": {
+      "input": "Premise: William knows that the man is wearing an orange and black polo shirt and is kneeling with his lunch box in one hand while holding a banana in his other hand. Hypothesis: Evelyn knows that a man is eating lunch.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "293": {
+      "input": "Premise: David thinks that a baby girl and little boy are standing next to a guitar and a drum. Hypothesis: Charlotte thinks that the girl is near an instrument.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "294": {
+      "input": "Premise: Amelia learns that a man wearing and Army shirt is on the ground in a push-up position, while a man in uniform squats beside him. Hypothesis: Sophia learns that there is a shirt.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "295": {
+      "input": "Premise: Olivia believes that Evelyn assumes that an Asian woman dances with long ribbons, she is mid jump with her legs pointed to the right and the red ribbons flowing on either side of her. Hypothesis: Olivia believes that an Asian woman dances with long ribbons, she is mid jump with her legs pointed to the right and the red ribbons flowing on either side of her.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "296": {
+      "input": "Premise: David believes that James understands that the rhythmic gymnast completes her floor exercise at the competition. Hypothesis: David believes that the rhythmic gymnast completes her floor exercise at the competition.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "A. entailment",
+        "entailment"
+      ]
+    },
+    "297": {
+      "input": "Premise: Richard assumes that William believes that an elderly man is smiling while sitting in front of a row of soda cans. Hypothesis: Richard assumes that an elderly man is smiling while sitting in front of a row of soda cans.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "298": {
+      "input": "Premise: Sophia assumes that Charles thinks that a guy in a blue shirt chases a guy in an orange shirt during a game of flag football. Hypothesis: Charles thinks that a guy in a blue shirt chases a guy in an orange shirt during a game of flag football.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "299": {
+      "input": "Premise: Joseph assumes that Isabella believes that a dog is walking down steps. Hypothesis: Isabella believes that a dog is walking down steps.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    },
+    "300": {
+      "input": "Premise: Charles thinks that Richard believes that three dogs run through the grass. Hypothesis: Richard believes that three dogs run through the grass.\nChoices:\nA. entailment\nB. non-entailment",
+      "output": [
+        "B. non-entailment",
+        "non-entailment"
+      ]
+    }
+  }
+}

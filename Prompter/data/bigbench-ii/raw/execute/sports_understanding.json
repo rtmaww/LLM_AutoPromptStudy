@@ -1,0 +1,2108 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Determine whether an artificially constructed sentence relating to sports is plausible or implausible",
+  "examples": {
+    "1": {
+      "input": "Gerard Pique watched the pitch go by in the National League Championship Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "2": {
+      "input": "Ronald Acuna Jr. pitched a complete game in the World Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "3": {
+      "input": "Luke Voit watched the pitch go by in the National League Championship Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "4": {
+      "input": "Franmil Reyes was caught in a rundown\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "5": {
+      "input": "Jerry Jeudy caught the back shoulder fade\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "6": {
+      "input": "Joe Burrow caught the back shoulder fade in the Superbowl\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "7": {
+      "input": "Diego Forlan hit the back shoulder fade in the Superbowl\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "8": {
+      "input": "Marcus Smart took a heat check three\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "9": {
+      "input": "Zach LaVine\u00a0 did a maradona on the defender\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "10": {
+      "input": "Marouane Fellaini scored a freekick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "11": {
+      "input": "Edinson Cavani hit nothing but net\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "12": {
+      "input": "Michael Porter Jr. called for the screen\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "13": {
+      "input": "Fernandinho took an elbow jumper\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "14": {
+      "input": "Pepe converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "15": {
+      "input": "Trae Young got into the endzone\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "16": {
+      "input": "Klaas Jan Huntelaar shot the puck\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "17": {
+      "input": "Eden Hazard got a base hit\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "18": {
+      "input": "Edinson Cavani skated behind the net\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "19": {
+      "input": "Bastian Schweinsteiger scored in added time\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "20": {
+      "input": "Chris Boucher was called for the goal tend\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "21": {
+      "input": "Nick Castellanos scored in extra time\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "22": {
+      "input": "Trevor Bauer stepped on first base\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "23": {
+      "input": "Aaron Nola scored a header goal\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "24": {
+      "input": "Terry Rozier\u00a0 shot a free throw\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "25": {
+      "input": "Julio Jones was caught offsides\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "26": {
+      "input": "Brad Hand hit a double\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "27": {
+      "input": "Will Fuller caught the back shoulder fade in the NFC championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "28": {
+      "input": "Brady Tkachuk was called for slashing\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "29": {
+      "input": "David Villa earned a red card in the World Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "30": {
+      "input": "Jaren Jackson Jr. eurostepped to the basket in the NBA Championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "31": {
+      "input": "Rhys Hoskins hit a double in the American League Championship Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "32": {
+      "input": "Teddy Bridgewater scored on the power play\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "33": {
+      "input": "Alex Pietrangelo shot the puck in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "34": {
+      "input": "Khyri Thomas\u00a0 crossed the blue line\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "35": {
+      "input": "Devin Booker shot a free throw in the NBA Championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "36": {
+      "input": "Clint Capela got into the endzone\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "37": {
+      "input": "Gerrit Cole committed a handball in the European Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "38": {
+      "input": "Kenta Maeda caught the screen pass\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "39": {
+      "input": "Tim Anderson went in studs up in the European Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "40": {
+      "input": "Toni Kroos converted the first down in the AFC divisional round\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "41": {
+      "input": "Golden Tate was flagged on the play in the NFC championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "42": {
+      "input": "Javi Martinez comitted a three second violation\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "43": {
+      "input": "T.J. McConnell committed a blocking foul in the Western Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "44": {
+      "input": "Tuukka Rask hit a double\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "45": {
+      "input": "Jack Eichel dunked the ball\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "46": {
+      "input": "Alex Pietrangelo was called for slashing in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "47": {
+      "input": "Amari Cooper headed back to the dugout\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "48": {
+      "input": "Jarrett Allen fumbled the ball\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "49": {
+      "input": "Ryan Tannehill scored a touchdown\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "50": {
+      "input": "Zach Plesac was perfect from the line\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "51": {
+      "input": "Ben Simmons set the hard screen in the Western Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "52": {
+      "input": "Stephen Strasburg hit a triple\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "53": {
+      "input": "Domantas Sabonis went for it on fourth down in the NFC divisional round\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "54": {
+      "input": "Kyrie Irving scored a reverse dunk\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "55": {
+      "input": "Frederik Andersen converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "56": {
+      "input": "Gerrit Cole set the hard screen\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "57": {
+      "input": "Wesley Sneijder hit the wheel route\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "58": {
+      "input": "Mikal Bridges backhanded a shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "59": {
+      "input": "Brendan Gallagher spent time in the penalty box in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "60": {
+      "input": "Kris Letang lost control of the puck\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "61": {
+      "input": "Zack Greinke struck out\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "62": {
+      "input": "Terry McLaurin took a long two\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "63": {
+      "input": "Sean Monahan scored in the third period\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "64": {
+      "input": "Jarrett Allen pitched a complete game in the National League Championship Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "65": {
+      "input": "Connor McDavid wristed a shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "66": {
+      "input": "Chris Godwin converted the first down in the AFC divisional round\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "67": {
+      "input": "Nerlens Noel was out at home\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "68": {
+      "input": "Javi Martinez earned a red card\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "69": {
+      "input": "Xander Bogaerts shot the puck\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "70": {
+      "input": "Tuukka Rask crossed the blue line\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "71": {
+      "input": "Connor McDavid threw a touchdown in the NFC divisional round\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "72": {
+      "input": "Carson Wentz caught the screen pass\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "73": {
+      "input": "Brent Burns drove into the paint\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "74": {
+      "input": "Jarrett Allen got on base\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "75": {
+      "input": "Pierre-Luc Dubois scored in the shootout\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "76": {
+      "input": "Hyun Jin Ryu beat the shot clock\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "77": {
+      "input": "Juan Soto shot from beyond the arc\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "78": {
+      "input": "Sergio Ramos hit nothing but net\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "79": {
+      "input": "Yaya Toure scored a freekick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "80": {
+      "input": "Jordan Binnington got a base hit\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "81": {
+      "input": "Giorgio Chiellini committed a handball in the FA Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "82": {
+      "input": "Evan Fournier got into the endzone\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "83": {
+      "input": "Darijo Srna earned a red card\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "84": {
+      "input": "Jayson Tatum was caught offsides in the Champions Leage Semifinal\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "85": {
+      "input": "Nikola Jokic threw a touchdown in the AFC championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "86": {
+      "input": "Tyler Glasnow threw to first base\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "87": {
+      "input": "Calvin Ridley skated behind the net\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "88": {
+      "input": "Luka Doncic\u00a0 committed a three second violation\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "89": {
+      "input": "Jonas Valanciunas beat the buzzer\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "90": {
+      "input": "Jonathan Huberdeau fumbled the ball\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "91": {
+      "input": "Neymar went for it on fourth down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "92": {
+      "input": "Evander Kane threw a touchdown\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "93": {
+      "input": "Connor McDavid scored a penalty kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "94": {
+      "input": "Mapou Yanga-M'Biwa performed a slide tackle\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "95": {
+      "input": "Andrea Pirlo went five hole\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "96": {
+      "input": "Arjen Robben earned a direct kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "97": {
+      "input": "James Harden backhanded a shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "98": {
+      "input": "Joao Moutinho caught the screen pass in the NFC championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "99": {
+      "input": "Jamal Murray went five hole\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "100": {
+      "input": "Domantas Sabonis ran out of bounds\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "101": {
+      "input": "Frederik Andersen crossed the blue line in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "102": {
+      "input": "Andres Iniesta was called for icing in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "103": {
+      "input": "Mike Trout hit a walkoff homer\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "104": {
+      "input": "David Luiz earned a direct kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "105": {
+      "input": "Chris Kreider got on the end of a through ball\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "106": {
+      "input": "Domantas Sabonis gained five yards in the AFC championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "107": {
+      "input": "Klaas Jan Huntelaar caught the back shoulder fade\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "108": {
+      "input": "Kyle Palmieri did a double stepover\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "109": {
+      "input": "Teddy Bridgewater caught the back shoulder fade\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "110": {
+      "input": "Kailer Yamamoto performed a slide tackle in the European Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "111": {
+      "input": "Michael Thomas killed the powerplay in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "112": {
+      "input": "Javier Zanetti earned a direct kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "113": {
+      "input": "Patrice Bergeron converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "114": {
+      "input": "Ryan O'Reilly wristed a shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "115": {
+      "input": "Stephen Curry scored a reverse layup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "116": {
+      "input": "Nazem Kadri took a charge in the NBA Championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "117": {
+      "input": "Leon Draisaitl shot the puck\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "118": {
+      "input": "Sergio Busquets got on base\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "119": {
+      "input": "Deshaun Watson was called for icing\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "120": {
+      "input": "Petr Cech bricked the three pointer\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "121": {
+      "input": "Mitchell Marner nutmegged the defender\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "122": {
+      "input": "Donovan Mitchell fumbled the ball in the AFC championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "123": {
+      "input": "Juan Mata scored a bicycle kick in the Champions League Final\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "124": {
+      "input": "Will Fuller earned an indirect kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "125": {
+      "input": "Brandin Cooks caught the screen pass\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "126": {
+      "input": "George Springer committed a blocking foul\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "127": {
+      "input": "Ketel Marte got into the endzone\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "128": {
+      "input": "Ryan Nugent-Hopkins spent time in the penalty box\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "129": {
+      "input": "Fernandinho converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "130": {
+      "input": "Brad Marchand scored the easy layup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "131": {
+      "input": "Dougie Hamilton hit the buzzer beater\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "132": {
+      "input": "John Tavares earned a trip to the penalty box in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "133": {
+      "input": "Didier Drogba got into the endzone\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "134": {
+      "input": "Joe Hart went for it on fourth down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "135": {
+      "input": "Radamel Falcao airballed the shot in the Eastern Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "136": {
+      "input": "Baker Mayfield hit nothing but net\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "137": {
+      "input": "Luka Doncic\u00a0 scored a reverse layup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "138": {
+      "input": "Didier Drogba gained five yards\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "139": {
+      "input": "T.Y. Hilton threw a touchdown in the AFC divisional round\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "140": {
+      "input": "Chris Boucher committed a three second violation\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "141": {
+      "input": "Cavan Biggio hit a walkoff homer\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "142": {
+      "input": "Cooper Kupp scored in the third period in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "143": {
+      "input": "Wesley Sneijder got on base in the American League Championship Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "144": {
+      "input": "Keenan Allen beat the buzzer in the Western Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "145": {
+      "input": "Miro Heiskanen earned a trip to the penalty box\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "146": {
+      "input": "Ryan O'Reilly drove into the paint\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "147": {
+      "input": "Victor Wanyama took a backhand shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "148": {
+      "input": "Kyle Connor eurostepped to the basket in the Western Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "149": {
+      "input": "Jimmy Garoppolo scored in the shootout in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "150": {
+      "input": "Jacob Markstrom entered the attacking zone in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "151": {
+      "input": "Calvin Ridley ran out of bounds in the NFC divisional round\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "152": {
+      "input": "Robert Woods converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "153": {
+      "input": "Adam Thielen gained five yards\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "154": {
+      "input": "Willian killed the powerplay\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "155": {
+      "input": "Mitchell Trubisky caught the screen pass\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "156": {
+      "input": "De'Aaron Fox crossed the blue line\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "157": {
+      "input": "Myles Turner committed a blocking foul\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "158": {
+      "input": "Eugenio Suarez watched the pitch go by\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "159": {
+      "input": "Amari Cooper scored a penalty kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "160": {
+      "input": "Robert Lewandowski scored a reverse layup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "161": {
+      "input": "Daniel Jones hit the wheel route\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "162": {
+      "input": "Miles Bridges worked a full count\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "163": {
+      "input": "Mark Stone took to the ice\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "164": {
+      "input": "Darcy Kuemper scored on the power play\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "165": {
+      "input": "Malik Beasley\u00a0 drove into the restricted area\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "166": {
+      "input": "Jayson Tatum nutmegged the defender\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "167": {
+      "input": "Mike Evans scored a touchdown in the AFC divisional round\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "168": {
+      "input": "Brandon Woodruff set the hard screen in the Eastern Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "169": {
+      "input": "Jose Ramirez hit into a double play in the National League Championship Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "170": {
+      "input": "Wayne Rooney watched the pitch go by\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "171": {
+      "input": "Jonathan Toews scored a bicycle kick in the FA Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "172": {
+      "input": "Delon Wright took a left footed shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "173": {
+      "input": "Max Pacioretty spent time in the penalty box\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "174": {
+      "input": "Tom Wilson pitched a shutout\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "175": {
+      "input": "Kyle Anderson skated backwards\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "176": {
+      "input": "Donovan Mitchell took a turnaround jumper\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "177": {
+      "input": "Javier Mascherano took a left footed shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "178": {
+      "input": "Cam Newton converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "179": {
+      "input": "Ryan Nugent-Hopkins killed the powerplay\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "180": {
+      "input": "Gardner Minshew was out at second\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "181": {
+      "input": "Zach LaVine\u00a0 airballed the shot in the Western Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "182": {
+      "input": "Michael Porter Jr. was out at home\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "183": {
+      "input": "Daniel Jones took a left footed shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "184": {
+      "input": "James Karinchak worked a full count\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "185": {
+      "input": "Allen Robinson gained five yards\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "186": {
+      "input": "Dejounte Murray hit the back of the rim\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "187": {
+      "input": "Carlos Tevez converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "188": {
+      "input": "Jamison Crowder drew a flag on the play\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "189": {
+      "input": "Jacob Markstrom went in studs up\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "190": {
+      "input": "Trae Young launched a triple\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "191": {
+      "input": "Sam Darnold struck out\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "192": {
+      "input": "Francisco Lindor hit a single\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "193": {
+      "input": "Dejounte Murray took a side-step three\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "194": {
+      "input": "Oscar took the snap\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "195": {
+      "input": "Philip Rivers hit a triple\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "196": {
+      "input": "Carles Puyol earned a direct kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "197": {
+      "input": "Jack Flaherty hit a walkoff homer\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "198": {
+      "input": "Juan Soto spent time in the penalty box\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "199": {
+      "input": "Javier Zanetti watched the pitch go by in the National League Championship Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "200": {
+      "input": "Nerlens Noel went for it on fourth down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "201": {
+      "input": "J.T. Miller took a three\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "202": {
+      "input": "Pete Alonso hit a triple in the World Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "203": {
+      "input": "Josh Allen caught the screen pass\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "204": {
+      "input": "Taylor Hall scored in the shootout\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "205": {
+      "input": "Sonny Gray was out at second\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "206": {
+      "input": "Tyler Lockett took the snap in the AFC championship\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "207": {
+      "input": "Mario Balotelli took a left footed shot in the Champions League Final\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "208": {
+      "input": "Paulinho earned an indirect kick in the FA Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "209": {
+      "input": "John Carlson fumbled the ball\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "210": {
+      "input": "De'Aaron Fox airballed the shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "211": {
+      "input": "Hulk got on base\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "212": {
+      "input": "Luis Suarez performed a give and go\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "213": {
+      "input": "Nick Castellanos hit the wheel route\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "214": {
+      "input": "Juan Soto took ball four\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "215": {
+      "input": "Derek Carr performed a give and go\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "216": {
+      "input": "Vladimir Guerrero Jr. walked to first base\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "217": {
+      "input": "Diontae Johnson went for it on fourth down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "218": {
+      "input": "Mesut Ozil wristed a shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "219": {
+      "input": "Ben Simmons called for the screen\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "220": {
+      "input": "Klaas Jan Huntelaar shot with the left foot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "221": {
+      "input": "Nicklas Backstrom earned a trip to the penalty box\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "222": {
+      "input": "Frederik Andersen took a three\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "223": {
+      "input": "Kwadwo Asamoah was flagged on the play\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "224": {
+      "input": "Marcell Ozuna shot from the six yard line\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "225": {
+      "input": "Cooper Kupp launched the half court shot in the Western Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "226": {
+      "input": "Juan Mata got on the end of a through ball\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "227": {
+      "input": "Christian Eriksen scored in extra time\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "228": {
+      "input": "Jesus Luzardo hit a double\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "229": {
+      "input": "Chris Paul\u00a0 ran out of bounds\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "230": {
+      "input": "Brandon Woodruff walked to first base in the American League Championship Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "231": {
+      "input": "Marcell Ozuna took a backhand shot in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "232": {
+      "input": "Max Scherzer scored in extra time in the World Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "233": {
+      "input": "Jacob Markstrom scored in the shootout in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "234": {
+      "input": "DeVante Parker was called for icing\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "235": {
+      "input": "Eden Hazard airballed the shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "236": {
+      "input": "Bastian Schweinsteiger did a double stepover\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "237": {
+      "input": "Gardner Minshew was safe at home\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "238": {
+      "input": "Corbin Burnes scored in the shootout\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "239": {
+      "input": "Leon Draisaitl converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "240": {
+      "input": "Moussa Dembele gained five yards\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "241": {
+      "input": "Pedro scored a corner kick in the European Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "242": {
+      "input": "Max Pacioretty skated backwards\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "243": {
+      "input": "Nick Castellanos hit nothing but net\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "244": {
+      "input": "Derrick White backhanded a shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "245": {
+      "input": "Morgan Rielly swung to protect the runner\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "246": {
+      "input": "Freddie Freeman scored a bicycle kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "247": {
+      "input": "Kyle Tucker took a left footed shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "248": {
+      "input": "Mathieu Valbuena scored a windmill dunk in the Western Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "249": {
+      "input": "Darius Garland\u00a0 shot from beyond the arc\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "250": {
+      "input": "Mecole Hardman fumbled the ball\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "251": {
+      "input": "Mason Plumlee did a maradona on the defender\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "252": {
+      "input": "Karl-Anthony Towns committed a blocking foul\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "253": {
+      "input": "Alex Pietrangelo hit the screen pass in the NFC divisional round\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "254": {
+      "input": "Zach LaVine\u00a0 was called for slashing\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "255": {
+      "input": "Javier Baez struck out in the World Series\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "256": {
+      "input": "Fred VanVleet scored a freekick in the Champions League Final\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "257": {
+      "input": "Mario Balotelli was out at second\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "258": {
+      "input": "Juan Soto scored in the third period\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "259": {
+      "input": "Gareth Bale stepped on first base\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "260": {
+      "input": "Anders Lee went in studs up in the Champions League Final\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "261": {
+      "input": "Fred VanVleet was called for the goal tend\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "262": {
+      "input": "Brayden Schenn scored a corner kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "263": {
+      "input": "Kendrick Nunn took a charge\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "264": {
+      "input": "Anders Lee shot the puck\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "265": {
+      "input": "Tom Wilson scored a penalty kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "266": {
+      "input": "Zach LaVine\u00a0 swung to protect the runner\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "267": {
+      "input": "Blake Wheeler was called for icing\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "268": {
+      "input": "Miro Heiskanen took to the ice in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "269": {
+      "input": "Robert Woods hit a triple\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "270": {
+      "input": "Zach LaVine\u00a0 watched the pitch go by\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "271": {
+      "input": "Adam Thielen changed direction in the backfield\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "272": {
+      "input": "Caris LeVert scored a corner kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "273": {
+      "input": "Zach Plesac did a double stepover\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "274": {
+      "input": "Mitchell Trubisky changed direction in the backfield\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "275": {
+      "input": "Xavi took a throw in\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "276": {
+      "input": "Nick Foles changed direction in the backfield\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "277": {
+      "input": "Anthony Davis scored the easy layup in the Western Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "278": {
+      "input": "Marcell Ozuna hit a single\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "279": {
+      "input": "Deandre Ayton hit the back shoulder fade in the Superbowl\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "280": {
+      "input": "Ashley Cole was caught offsides\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "281": {
+      "input": "Carlos Correa struck out the side\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "282": {
+      "input": "Mark Scheifele skated backwards\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "283": {
+      "input": "Andres Iniesta performed a give and go\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "284": {
+      "input": "Jonathan Marchessault scored on the power play in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "285": {
+      "input": "Fernando Tatis Jr. walked on ball four\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "286": {
+      "input": "Courtland Sutton hit a triple\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "287": {
+      "input": "Radamel Falcao earned an indirect kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "288": {
+      "input": "Kevin Durant walked to first base\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "289": {
+      "input": "Marco Reus backhanded a shot\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "290": {
+      "input": "Jose Altuve was out at first\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "291": {
+      "input": "Mikal Bridges got into the endzone\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "292": {
+      "input": "Kailer Yamamoto caught the back shoulder fade\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "293": {
+      "input": "Keenan Allen was called for slashing in the Stanley Cup\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "294": {
+      "input": "Deandre Ayton was perfect from the line in the Eastern Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "295": {
+      "input": "Aaron Nola converted the first down\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "296": {
+      "input": "Damian Lillard called for the screen in the Eastern Conference Finals\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "297": {
+      "input": "Chris Boucher comitted a three second violation\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "298": {
+      "input": "Seth Jones earned a trip to the penalty box\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "A. plausible",
+        "plausible"
+      ]
+    },
+    "299": {
+      "input": "Gleyber Torres scored a bicycle kick\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    },
+    "300": {
+      "input": "Marouane Fellaini struck out\nChoices:\nA. plausible\nB. implausible",
+      "output": [
+        "B. implausible",
+        "implausible"
+      ]
+    }
+  }
+}

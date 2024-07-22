@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Determine which of two sentences is sarcastic",
+  "examples": {
+    "1": {
+      "input": "(a) You can still achieve the American Dream after working at Walmart. (b) You can still achieve the American Dream of working at Walmart.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "2": {
+      "input": "(a) We should start a petition to ban breathing. (b) We should start a petition to ban vaping.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "3": {
+      "input": "(a) Anyone can be successful without having inherited all their money first. (b) Nobody can be successful without having inherited all their money first.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "4": {
+      "input": "(a) I personally don't believe the 7 time felon that just got done murdering a random woman wouldn't lie. (b) I personally don't believe the 7 time felon that just got done murdering a random woman would lie.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "5": {
+      "input": "(a) Yeah, let's crucify this nonprofit for making money, they shouldn't be doing that. (b) Yeah, let's crucify this company for making money, they shouldn't be doing that.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "6": {
+      "input": "(a) Protein supplements are way more expensive than $1 breakfast gruel. (b) Protein supplements are way more expensive than $1 breakfast burritos.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "7": {
+      "input": "(a) He doesn't want high risk investment? He should put it all on bitcoin! (b) He doesn't want low risk investment? He should put it all on bitcoin!\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "8": {
+      "input": "(a) One of my least-favorite things to do working was taking out and smelling the trash. (b) One of my favorite things to do working was taking out and smelling the trash.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "9": {
+      "input": "(a) Yeah, I've noticed he's been drinking every day recently, what a great transformation (b) Yeah, I've noticed he's been exercising every day recently, what a great transformation\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "10": {
+      "input": "(a) Hmm, stifling of free speech and political opinions . . . I've seen that before. (b) Hmm, stifling of free speech and political opinions . . . never seen that before.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "11": {
+      "input": "(a) You didn't realize that bikes are a stationary object? (b) You didn't realize that bikes aren't a stationary object?\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "12": {
+      "input": "(a) Having massive watermarks over videos really enhances the experience...  (b) Having massive watermarks over videos really worsens the experience... \nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "13": {
+      "input": "(a) Yes, because having interests and actively researching them is a huge waste. (b) Yes, because having interests and actively researching them is a huge deal.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "14": {
+      "input": "(a) I'll just bring my keyboard and mouse to the computer and plug it all in. (b) I'll just bring my keyboard and mouse to the bus and plug it all in.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "15": {
+      "input": "(a) Concrete plates. Very beautiful. (b) Stained-glass plates. Very beautiful\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "16": {
+      "input": "(a) Everyone knows salt is the highlight of gourmet sophistication. (b) Everyone knows caviar is the highlight of gourmet sophistication.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "17": {
+      "input": "(a) I'm just 800 points from 1k, this is easy (b) I'm just 8 points from 1k, this is easy\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "18": {
+      "input": "(a) Never had as much fun in my life as when the cops found my backpack of weed in my car trunk. (b) Never had as much anxiety in my life when the cops found my backpack of weed in my car trunk.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "19": {
+      "input": "(a) Obviously monolithic services are the best solution for everyone, because of the webscale.  (b) Obviously microservices are the best solution for everyone, because of the webscale. \nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "20": {
+      "input": "(a) Stop putting people in neat little compartments to protect your view point \u2014\u00a0good idea. (b) Keep putting people in neat little compartments to protect your view point \u2014\u00a0good idea.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "21": {
+      "input": "(a) Bought the stock at $10.50 and sold at $100. Such profits being made. (b) Bought the stock at $1050 and sold at $100. Such profits being made.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "22": {
+      "input": "(a) What a poor guy, years of work and he only got a $50,000 scholarship. (b) What a poor guy, years of work and he only got a $50 scholarship.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "23": {
+      "input": "(a) It's not our job to fund education! It should be the government paying the maintenance to keep schools open. (b) It's not our job to fund education! It should be the kids paying the maintenance to keep schools open.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "24": {
+      "input": "(a) Yeah i dont know where people get the audacity to think they can protest against a major corporation. (b) Yeah I don't know where people get the audacity to think they can riot against a major corporation.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "25": {
+      "input": "(a) Showing up for work everyday helps makes you a great lawmaker. (b) Showing up for work everyday alone makes you a great lawmaker.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "26": {
+      "input": "(a) Impossible, as there's no one on the internet. (b) Impossible, as there's no one on the Moon.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "27": {
+      "input": "(a) Try having your landscape fill the entirety of the photo. That'd look good. (b) Try having your face fill the entirety of the photo. That'd look good.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "28": {
+      "input": "(a) Right, because everyone buys insurance based on the possibility of a riot. (b) Right, because everyone buys insurance based on the possibility of an accident.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "29": {
+      "input": "(a) So he's planning to continue leaving useless space junk in orbit literally just because he can. What a horrible person  (b) So he's planning to continue leaving useless space junk in orbit literally just because he can. What a brilliant person\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "30": {
+      "input": "(a) I'm spoiled by my instant access to entertainment and information. (b) I'm oppressed by my instant access to entertainment and information.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "31": {
+      "input": "(a) I earn money for winning? Sign me up! (b) I lose money for winning? Sign me up!\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "32": {
+      "input": "(a) Ah yes, late night vote on a bill written behind closed doors by one party. How undemocratic. (b) Ah yes, late night vote on a bill written behind closed doors by one party. How democratic.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "33": {
+      "input": "(a) They're losing to a team with a terrible record. I for one am shocked  (b) They're losing to a team with a winning record. I for one am shocked \nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "34": {
+      "input": "(a) Without the river there's no water and no electricity. Blocking it is such a smart move! (b) Without the river there's no water and no electricity. Blocking it is such a terrible move!\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "35": {
+      "input": "(a) Calling a whole electorate 'morons' because they don't share the same political beliefs as you is a terrible way to win them over. (b) Calling a whole electorate 'morons' because they don't share the same political beliefs as you is a great way to win them over.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "36": {
+      "input": "(a) Remember, his Batman score isn't the only Batman theme.  (b) Remember, his Batman score is the only Batman theme. \nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "37": {
+      "input": "(a) ARE U INSANE SAYIN U LIKE THIS SYSTEM HERE ??? Have my up vote for being rational (b) ARE U INSANE SAYIN U LIKE THIS SYSTEM HERE ??? Have my down vote for being rational\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "38": {
+      "input": "(a) Yeah, I'm sure you'd be so much happier if we never did anything for anyone ever (b) Yeah, I'm sure you'd be so much lonelier if we never did anything for anyone ever\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "39": {
+      "input": "(a) It's cultural celebration at its finest! (b) It's cultural appropriation at its finest!\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "40": {
+      "input": "(a) Yes, the game is over after the second half. (b) Yes, the game is over after the first half.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "41": {
+      "input": "(a) If I associate something bad witih it, then my depression will never let me forget it. Weirdest memorization plan ever. (b) If I associate something bad witih it, then my depression will never let me forget it. Best memorization plan ever.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "42": {
+      "input": "(a) SCIENCE CAUSES VACCINES! (b) EVOLUTION CAUSES VACCINES!\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "43": {
+      "input": "(a) So impressive winning cups in a league with 2 teams (b) So impressive winning cups in a league with 60 teams\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "44": {
+      "input": "(a) Have you tried not being poor? It is much easier  (b) Have you tried not being rude? It is much easier \nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "45": {
+      "input": "(a) The two minute wait in line is too long for me, I think i'll just leave (b) The two hour wait in line is too long for me, I think i'll just leave\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "46": {
+      "input": "(a) But that could never happen in reality where software never malfunctions. (b) But that could never happen in reality where software often malfunctions.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "47": {
+      "input": "(a) Every package I get from Amazon is 2 to 3 days late, busted up, doesn't work right, and sometimes not even what I ordered. So disappointed I pay for free shipping with Prime. (b) Every package I get from Amazon is 2 to 3 days late, busted up, doesn't work right, and sometimes not even what I ordered. So happy I pay for free shipping with Prime.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "48": {
+      "input": "(a) Yeah, the amount of injuries on the squad and lack of consistent O-line play had everything to do with this. (b) Yeah, the amount of injuries on the squad and lack of consistent O-line play had nothing to do with this.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "49": {
+      "input": "(a) He's such terrible relationship material when he's drunk. (b) He's such great relationship material when he's drunk.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "50": {
+      "input": "(a) Better not buy any technology ever because in a few years something better will be released!! (b) Better not buy any exorbitant technology ever because in a few years something better will be released!!\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    }
+  },
+  "num_examples": 60
+}

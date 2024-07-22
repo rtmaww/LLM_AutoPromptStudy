@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Solve Rosetta Stone-style linguistics puzzles",
+  "examples": {
+    "1": {
+      "input": "Other: carape waqeme pedetudi siqedi yi waqe rekefe yufa nupexe kuhome ninotudi delidi English: the excellent crow that disliked the short frogs will hit big dogs\nOther: kuho walitu ruxa mumuxeho yi waqe mamutu zuja nupepeho waqeme reketudi delidi English: the slow birds that fast people will touch hit the big crows\nOther: carapeho waqeme rekefedi yibidi yi kuho ninotu ruxa dulepeho waqeme lidefedi delidi English: fast dogs that disliked the small crow saw the big child\nOther: waqe ninofe deli vojoxe waqeme pedefedi yufadi English: the big dog will slap the excellent frog\nOther: kuho lidetu yibi nupexiho waqeme mamufedi zujadi English: small children hit the slow bird\nOther: waqe reketu deli mumuxeho kuhome rekefedi yibidi English: ",
+      "output": [
+        "the big crows will touch a small crow"
+      ]
+    },
+    "2": {
+      "input": "English: big dolphins that fast monkeys touch wanted excellent children Other: vadijiqa loneqa hulomu fejohote jo telujiqa huwiqa hulomu xexusite ladojide sicode hulonu\nEnglish: the fast child that a excellent person remembered slaps the big dolphin that will praise a tall bird Other: zaziriqa sicoqa hulomu xupasi jo ladoriqa loneqa balamu jawuho woheye dezaride yobade hulonu jo teluride huwide balanu\nEnglish: the slow monkey touched excellent children Other: vadiriqa coliqa balamu fejosi ladojide sicode hulonu\nEnglish: a fast crow touches a slow monkey Other: cojoriqa loneqa hulomu fejoho vadiride colide hulonu\nEnglish: fast dolphins that like the fabulous bird praise the slow monkey Other: zegohote dezaride somide balanu jo telujiqa loneqa hulomu wohehote vadiride colide balanu\nEnglish: a excellent monkey likes a tall monkey Other: ",
+      "output": [
+        "vadiriqa sicoqa hulomu zegoho vadiride yobade hulonu"
+      ]
+    },
+    "3": {
+      "input": "Other: gurila cakeci vavipozo robupozo cake kegazo manizo English: a fast frog saw a short person\nOther: guritidi sifoci lebipozo manipozo cake siwohu robuhu English: short dogs see the fast dolphin\nOther: gugidi sifoci lebipohu nocupohu la guritide sifo kegahu robuhu sifo tihozo fixozo la munode sifoci vavipozo manipozo English: the tall cat that will remember the fast person hits the slow dolphins that the short frogs will see\nOther: dayala cakeci siwopohu nocupohu la gugitila sifo lebihu robuhu cake tihozo manizo English: a fast cat disliked slow dogs that the short dolphins hit\nOther: mipola sifoci siwopozo nocupozo cake vavizo robuzo English: a short person wanted the slow dog\nOther: gugide sifoci tihopozo nocupozo sifo tihozo nocuzo English: ",
+      "output": [
+        "the slow cat will hit the slow cat"
+      ]
+    },
+    "4": {
+      "input": "Other: jupoha tidiha vumine jupocuha peholeha kuyecine qi delesa muhusa jinobo secewibe tedowize English: a excellent frog dislikes a tall person that the fast monkeys remember\nOther: jupoha visoha vosune delecuha duteleha quyacine sisawize English: a fabulous dog hits the slow crow\nOther: delesa dutesa vosubo qi delecuha vuyileha kuwecine secexabe jupocusa visolesa quyacibo sewayabe English: the fabulous crows that will remember the small dolphin slapped slow dogs\nOther: deleha vuyiha kuyene delecuha tidileha vumicine seceyaze English: the tall dolphin remembered the excellent frog\nOther: juposa tidisa quyabo qi jupocusa visolesa jinocibo sewaxabe delecuha duteleha kuyecine secewibe English: slow frogs that will slap fast dogs remember the tall crow\nOther: jupoha tidiha vumine jupocusa dutelesa jinocibo qi deleha vuyiha vosune secewize secexaze English: ",
+      "output": [
+        "a excellent frog will remember fast crows that the fabulous dolphin remembers"
+      ]
+    },
+    "5": {
+      "input": "English: short people hit excellent dogs Other: fohunawe bejonowe tanuno sicifoxu fohukiwe vebuyiwe peroyi\nEnglish: the excellent people that slow dogs saw remembered the fabulous cat that will hit the short frog Other: fohunawe vebunowe huqono vusutuxu ho sevanawe bejonowe perono hepatuxu sicika sevakifi tezeyifi tanuyi ho sevakifi qizoyifi diwayi\nEnglish: slow cats will want the short frogs Other: fohunawe qizonowe huqono ruxukaxu sevakiwe tezeyiwe tanuyi\nEnglish: the big cat that remembers the fabulous person slaps slow frogs Other: hepafo sevakifi bejoyifi diwayi ho sevanafi qizonofi gedono vubefo fohukiwe tezeyiwe huqoyi\nEnglish: the short crows want small cats Other: sevanawe hesinowe tanuno ruxufoxu fohukiwe qizoyiwe tiyoyi\nEnglish: slow dogs that will remember the slow people hit short crows that want short cats Other: ",
+      "output": [
+        "hepakaxu sevakiwe bejoyiwe huqoyi ho fohunawe vebunowe huqono sicifoxu ruxufoxu fohukiwe qizoyiwe tanuyi ho fohukiwe hesiyiwe tanuyi"
+      ]
+    },
+    "6": {
+      "input": "English: the fabulous people will hit tall birds Other: xononijo zaqafi lisufijo qukituli bococejo xovuha rakehajo\nEnglish: the big frog will hit short birds Other: xononike xulofi savafike qukitu bococejo nocoha rakehajo\nEnglish: fast dogs that a slow dolphin praised will like a short crow that hits tall people Other: boconijo puwufi hijofijo fe boconike xorifi fazifike lahame lacetuli bococeke nocoha jojohake fe qukite bococejo xovuha lisuhajo\nEnglish: slow dolphins that the fast people will want will like a fabulous dog Other: boconijo xorifi fazifijo fe xononijo puwufi lisufijo tazatuli lacetuli bococeke zaqaha hijohake\nEnglish: short birds that remembered a tall dog hit the big person Other: boconijo nocofi rakefijo fe novemeli bococeke xovuha hijohake qukimeli xonoceke xuloha lisuhake\nEnglish: the fast people will hit the short people that praised big dolphins Other: ",
+      "output": [
+        "xononijo puwufi lisufijo qukituli xonocejo nocoha lisuhajo fe lahameli bococejo xuloha fazihajo"
+      ]
+    },
+    "7": {
+      "input": "Other: riku sesovu hafovu wu xoyoxe vugopuvu dupepuvu rafigeci rikuxe zibupulu noyipulu maligeci English: short frogs that will dislike the slow dogs will like a fast dolphin\nOther: riku vugovu noyivu xoyoxe sesopulu dupepulu rafigemi English: slow dolphins dislike the short dog\nOther: riku zibuvu noyivu xoyoxe vugopuvu tasapuvu wu riku sesolu dujalu bofoze volegeci English: fast dolphins will slap the slow monkeys that a short bird touched\nOther: riku zibulu tasalu rikuxe wolipulu noyipulu voleze English: a fast monkey slapped a excellent dolphin\nOther: xoyo wolilu dupelu wu riku nubelu dujalu malici xoyoxe sesopulu juvapulu wu riku vugovu tasavu volegeci rafimi English: the excellent dog that a small bird will like dislikes the short person that slow monkeys will slap\nOther: riku vugovu noyivu xoyoxe zibupulu dupepulu maligeci English: ",
+      "output": [
+        "slow dolphins will like the fast dog"
+      ]
+    },
+    "8": {
+      "input": "English: the short cats that remembered fabulous birds will like a small dog that a slow frog praises Other: rurovi ruqevi vowuco yi wajuvini jixivini yazucoye kiqumocu fahaqeni zomoqeni yazuzoye yi jumiqe ficoqe yazuzo xusovo rujepicu\nEnglish: small frogs that will like the big bird remember the slow person that touches the short child Other: jumivi zomovi yazuco yi wajuqeni quruqeni vowuzoye rujepicu puweqeni ficoqeni vowuzoye yi veboqeni ruqeqeni vowuzoye hogevo kiquvocu\nEnglish: a fabulous frog that touches the big cat will like the slow child that the small birds will praise Other: jumiqe jixiqe yazuzo yi ruroqeni quruqeni vowuzoye hogevo veboqeni ficoqeni vowuzoye yi wajuvi zomovi vowuco xusopicu rujepi\nEnglish: a slow person will hit the short frog Other: puweqe ficoqe yazuzo jumiqeni ruqeqeni vowuzoye cugupi\nEnglish: small cats remembered a big frog Other: rurovi zomovi yazuco jumiqeni quruqeni yazuzoye kiqumocu\nEnglish: the small cats will remember the small frog Other: ",
+      "output": [
+        "rurovi zomovi vowuco jumiqeni zomoqeni vowuzoye kiqupicu"
+      ]
+    },
+    "9": {
+      "input": "Other: lazija cusevu penuvu kejuvu zu dixozi cusezewo lucarawo xafiwo nefuzewo varerawo foxawo English: a small bird that touches excellent crows will praise the fast monkeys\nOther: sidipiji cusewo xebowo kejuwo nefuzevu lucaravu xafivu zu jahaji cusezevu kukaravu hodivu English: small frogs slapped the excellent crow that saw a big person\nOther: jahazi nefuvu tafivu xafivu nefuzewo varerawo katiwo zu yilupija cusezevu penuravu foxavu English: the excellent cat sees the short monkeys that will like a fast bird\nOther: sidipiji cusewo kukawo kejuwo zu dixopizi nefuzevu xeboravu xafivu nefuzevu lucaravu timavu zu laziji nefuzevu penuravu hodivu English: small people that touch the excellent frog slapped the fabulous crow that praised the big bird\nOther: dixozi nefuvu tafivu xafivu zu sidipija nefuwo kukawo hodiwo cusezevu penuravu kejuvu English: the excellent cat that the big people will slap touches a small bird\nOther: dixopiji nefuwo varewo hodiwo cusezevu kukaravu kativu English: ",
+      "output": [
+        "the big monkeys touched a short person"
+      ]
+    },
+    "10": {
+      "input": "English: the short cat liked a tall monkey that slow crows touched Other: dana hanana quci yesa vayuco mami huqasegi vo yesace comunasa necu suqugi\nEnglish: the fast cat hits the short monkeys Other: dana hanana bani danace comucosa quci hosefa\nEnglish: the tall cats that excellent frogs will touch will like the fast monkeys Other: yesa cayuco habo huqasevi vo dana hanaco necu danace comucosa bani suqusevi\nEnglish: excellent children that will praise the fabulous crows hit a tall frog that the short bird will touch Other: danace vayucosa dubu gojosevi vo yesa rahico habo dana lifina quci huqavi vo yesace cayunasa necu hosesegi\nEnglish: the fast monkey praises fabulous birds Other: dana comuna bani yesace lificosa dubu gojofa\nEnglish: fast birds will hit fabulous frogs that the tall children liked Other: ",
+      "output": [
+        "yesa lifico bani dana rahico necu suqusegi vo yesace cayucosa dubu hosesevi"
+      ]
+    },
+    "11": {
+      "input": "English: a fast dolphin that a excellent monkey likes remembers the small frog that a tall cat slapped Other: galipu hoca miru wocidu mu gulipu hofu miru norudu ketipu cisa miru xuyuzi mu dayupu vasa quvo\nEnglish: the fast crows like excellent frogs that remember the tall dolphins Other: bahiho hofu quvo wociduhi noruduhi guliho cisa quvo mu dayuho hoca miru\nEnglish: a slow cat saw the big frogs Other: ketipu yoqo miru dukozi dayuho xupa quvo\nEnglish: the excellent cat sees fast dolphins that will like slow monkeys Other: ketipu hoca quvo dukodu wocicehi galiho yoqo miru mu guliho hofu miru\nEnglish: the excellent crows remember the small frog Other: bahiho hoca quvo noruduhi dayupu vasa quvo\nEnglish: fast frogs remembered fast frogs that the excellent dolphin remembered Other: ",
+      "output": [
+        "dayuho hofu miru noruzihi gulipu hoca quvo noruzi mu dayuho hofu miru"
+      ]
+    },
+    "12": {
+      "input": "English: fast dolphins that will dislike the excellent bird wanted big cats Other: teluneko fujoqi fuquvu yegu ya qilupi qicuda leta falunogi qilupi qicude sito\nEnglish: a excellent person hits the slow crows Other: fulupi fubizo yegu cavaje qijoqi qitaxi coko\nEnglish: the fast cat will touch a short dolphin Other: fujoqi fucude leta tedele fulupi fucuda xuzu\nEnglish: the tall cat will want a big crow that the excellent dolphins hit Other: fujoqi fucude qira tenogi qijoqi qicuda yegu caluvaje ya fulupi futaxi sito\nEnglish: a short cat that will hit a big crow will touch excellent frogs Other: tevaje fulupi futaxi sito ya fulupi fucude xuzu tedele qilupi qibuyu yegu\nEnglish: tall cats hit the fast crow Other: ",
+      "output": [
+        "qilupi qicude qira faluvaje fujoqi futaxi leta"
+      ]
+    },
+    "13": {
+      "input": "English: excellent cats will dislike the fabulous dog Other: rujeqube tuxuqiho bimo qebamufe tutikuwe regumoxe hoya\nEnglish: the tall dolphin will hit fabulous people that a fast frog slaps Other: tutiquwe recuziho yevu baceqi rujequwe rewiweho ziya lehade fe rujekube tuhohixe hoya\nEnglish: a fast dog remembers the small dolphins Other: rujequwe regumoho ziya lejasu tutikube tucuzixe nepu\nEnglish: the small frog that the fabulous cat hits disliked the fast person Other: tutiquwe rexuqiho hoya leceqi fe tutiquwe rewiweho nepu vamufe tutikuwe rehohixe ziya\nEnglish: the small dolphin that remembers the excellent person praised a slow dog that the fast bird will dislike Other: lejasu tutikuwe rehohixe bimo fe tutiquwe recuziho nepu vadicu tutiquwe rebedoho ziya bamufe fe rujekuwe regumoxe xoro\nEnglish: the fabulous dolphin that the excellent dolphin will dislike will hit the tall cat Other: ",
+      "output": [
+        "tutiquwe recuziho bimo bamufe fe tutiquwe recuziho hoya baceqi tutikuwe rexuqixe yevu"
+      ]
+    },
+    "14": {
+      "input": "Other: johe turuyi medu qiguvuyu xiva puguyi tafi English: the short birds praise big dolphins\nOther: johe vipuwu medu sebogu yi xiva turuyi tafi nazivuyu xiva gukuwu hiti English: big birds that the short dog will slap like a tall crow\nOther: johe turuwu vubo qigugu johe yepoyi hiti English: the fast bird will praise the tall children\nOther: dasevuti xiva gukuyi hiti yi johe turuyi tafi seyuvuti johe yepowu sugu English: the big birds that disliked tall crows wanted the excellent child\nOther: xiva turuyi medu seyuvugu yi johe gukuwu hiti xetigu johe vipuwu tafi English: the tall crow that short birds will want will see the big dog\nOther: johe turuwu medu qigugu johe gukuwu sugu daseyu yi xiva vipuwu vubo English: ",
+      "output": [
+        "the short bird will praise a fast dog that the excellent crow dislikes"
+      ]
+    },
+    "15": {
+      "input": "English: the fabulous birds liked big dolphins Other: fuyu dojive rumuve wibinu luweve guveveje qokoqesu\nEnglish: the fabulous person touches excellent monkeys that a big dog will see Other: fuyu dojile nacole wibinu budive gihiveje fe wibi luwele mubale lecaba yuzitu\nEnglish: big frogs see small people that touched the fabulous dogs Other: wibi luweve nihive wibinu zoluve nacoveje fe fuyunu dojive mubaveje yuziqesu lecaqetu\nEnglish: the tall monkeys that the small frog sees hit the fabulous dogs that the big dolphin will like Other: fuyu quseve gihive fe fuyu zolule nihile lecatu fuyunu dojive mubaveje fe fuyu luwele guvele qokoba ziguqesu\nEnglish: a big person will remember a excellent monkey Other: wibi luwele nacole wibinu budile gihileje xubiba\nEnglish: a big monkey that the big monkey saw will touch the excellent person Other: ",
+      "output": [
+        "wibi luwele gihile fe fuyu luwele gihile lecasu fuyunu budile nacoleje yuziba"
+      ]
+    },
+    "16": {
+      "input": "English: slow dogs that the tall child will touch will slap the small crows Other: xoxa xeziqo yoja zopoco vu zuto yuluzi memu xoxapi sohozici hohubo guzaleco\nEnglish: the fast crows praise tall birds that the fabulous monkey will hit Other: xoxa sohozi cigo xoxa yapuqo dawu setoco vu zutopi dekezici yojabo vayulegi\nEnglish: the fabulous birds hit the fast monkeys that wanted small children Other: xoxa dekezi dawu zutopi xezizici hohubo goheletu vu xoxapi yapuzici cigobo setolegi\nEnglish: a big dog will praise the slow monkey Other: zuto yuluqo fawu xoxapi yapuqoci memubo vayuco\nEnglish: the fast monkey hit the slow bird Other: xoxa yapuqo cigo xoxapi dekeqoci memubo setotu\nEnglish: the small dogs that hit the fast monkeys will hit fabulous birds Other: ",
+      "output": [
+        "xoxapi yapuzici cigobo setoletu vu xoxa yuluzi hohu zutopi dekezici dawubo setoleco"
+      ]
+    },
+    "17": {
+      "input": "English: a excellent bird that the slow person praised will want the short monkeys that remember the fast frogs Other: bekajo xaqapi yewomi jukumi jiqomi fu felomi xonami kaqomi mopababu yewote lequte nixite fu yewote tiqote leqote\nEnglish: the tall person praises short dogs that want slow birds Other: xaqabu yewomi jukumi howami bekababu felote xonate jiqote fu felote fumite leqote\nEnglish: tall frogs remembered the fast dogs Other: mopabapi felote lequte howate yewote fumite nixite\nEnglish: the fabulous frog praises the slow bird that the tall person likes Other: xaqabu yewomi lequmi kayami kafubu yewomi jukumi howami fu yewomi xonami jiqomi\nEnglish: a fabulous bird will like the tall people Other: kafujo felomi xonami kayami yewote jukute howate\nEnglish: the fast people praise the tall dog Other: ",
+      "output": [
+        "xaqababu yewote jukute nixite yewomi fumimi howami"
+      ]
+    },
+    "18": {
+      "input": "Other: loweyuti rerilati cawala yetosime bilacati yiqequti halequ je loweyunu xopelanu dorola wozuto English: the excellent birds see small monkeys that the fabulous person disliked\nOther: loweyuti yiqelati halela je wozusito bilacati widiquti cawaqu yetosima lowecanu ciyiqunu witiqu English: the small monkeys that disliked excellent frogs will see the big cat\nOther: loweyunu hikalanu xisula je loweyunu ciyilanu payola yetoto yalema bilacanu widiqunu cawaqu English: the tall dolphin that the fast cat saw will remember a excellent frog\nOther: bilayunu yiqelanu dorola nibume lowecati xopequti xisuqu English: a fabulous monkey touches the tall people\nOther: bilayunu rerilanu xisula poxeto lowecanu widiqunu halequ je loweyunu xopelanu witila yaleme English: a tall bird praised the small frog that the big person remembers\nOther: bilayunu hikalanu halela poxema bilacanu ciyiqunu xisuqu English: ",
+      "output": [
+        "a small dolphin will praise a tall cat"
+      ]
+    },
+    "19": {
+      "input": "English: small frogs that the big people saw hit the tall bird Other: dume zoji vokoxe wugufevi ni sosa ciwo nirixe puyibuvi dume wata puheme\nEnglish: fabulous cats that touched the short frog want the small crows that a tall child hit Other: monefevi dume xoqu nirime ni sosa rova qizaxe vixebuvi sosa wata xawome puyife ni dume ciwo hiwexe\nEnglish: the big people touch a fabulous child Other: dume zoji vokoxe monebuvi sosa rova xawome\nEnglish: a small crow that saw the fabulous frog will slap a tall person that excellent cats liked Other: wugufe dume rova nirime ni sosa ciwo hiweme jaxega sosa kupu qizaxe yutafevi ni sosa wata vokome\nEnglish: a fabulous bird likes the excellent cats Other: sosa rova puheme yutabu dume kupu qizaxe\nEnglish: the tall people saw a tall frog Other: ",
+      "output": [
+        "dume wata vokoxe wugufevi sosa wata nirime"
+      ]
+    },
+    "20": {
+      "input": "English: a excellent cat that will slap the big frog will want the small people Other: xemawu poguwele cibi yo wazoge larahole sebe havoko wazoge xujehoca hohe tobiko\nEnglish: fast people remember the big frogs Other: xemawu xujeweca sibu wazoge larahoca sebe borufabi\nEnglish: small dolphins disliked a fast crow Other: xemawu doriweca hohe xemage mezuhole sibu fiqefaje\nEnglish: the big people will want a fast crow that will touch small frogs Other: wazowu xujeweca sebe xemage mezuhole sibu yo xemage larahoca hohe zeceko tobifako\nEnglish: a short frog disliked small cats that slapped the big dolphin Other: xemawu larawele lopo xemage poguhoca hohe yo wazoge dorihole sebe havofaje fiqeje\nEnglish: the big frogs that big people will remember will want short cats Other: ",
+      "output": [
+        "wazowu laraweca sebe yo xemawu xujeweca sebe borufako xemage poguhoca lopo tobifako"
+      ]
+    },
+    "21": {
+      "input": "Other: wezuxomi cuguxome nifixome qo melovomi yovevome paqevome tipeso kacojuso wezuxoge lokoxone wavuxone English: the big people that a short monkey remembers like the fast dolphins\nOther: meloxomi honexome wavuxome tipejuso melovoge yedovone tewavone English: small dolphins remember a fabulous child\nOther: meloxomi rufixome paqexome qo wubojuma wezuvoge yedovone nifivone govojuma meloxoge cuguxone tewaxone English: excellent monkeys that hit the fabulous person praised big children\nOther: wezuvomi yedovome nifivome qo kacoso wezuvoge yovevone paqevone govoma melovoge cuguvone gosevone qo wezuvomi lokovome jibovome wuboki English: the fabulous person that likes the short monkey praised a big cat that the fast crow will hit\nOther: melovomi honevome paqevome siqoki wezuvoge yedovone tewavone English: a small monkey will slap the fabulous child\nOther: meloxomi cuguxome jiboxome wubojuma wezuxoge yovexone wavuxone English: ",
+      "output": [
+        "big crows hit the short dolphins"
+      ]
+    },
+    "22": {
+      "input": "Other: vuvavuji vuvukedi citihaqe vuvavuqi vubagiha ciyekaqu nujufeca English: the short cats hit the fast children\nOther: vuvavuji vunutudi cinaceqe vujizeqi vuvukeha cihiwuqu numufeca English: the big frogs hit small cats\nOther: qavavuji qasafedi tatihaqe vujizeqi vugohaha cinacequ xoviwe English: the short monkey will remember big crows\nOther: qajizeji qabagidi taqayoqe vuvavuqi vuwutuha cihiwuqu xovoxu English: a fabulous child will see the small people\nOther: qajizeji qawutudi tatihaqe vujizeqi vubagiha ciyekaqu muzuqa English: a short person praises fast children\nOther: vuvavuji vubagidi ciqayoqe qavavuqi qanutuha tatihaqu numufeca English: ",
+      "output": [
+        "the fabulous children hit the short frog"
+      ]
+    },
+    "23": {
+      "input": "Other: xoju jafu metuto bahacaya xu haje soli zinuro gesoca hajeba vaju vefixero English: a tall frog that the big birds liked disliked a fast dolphin\nOther: haje vaju yimato mayamoya gesoca hajeba jafu qajuxero xu xojuba soli zinuxero English: fast dogs will remember the tall frog that disliked a big cat\nOther: mayaca hajeba vaju vefixero xu haje nigo zinuro yelomo xojuba jafu yimaxero English: a excellent frog that remembered a fast dolphin will touch the big dog\nOther: xoju hama zinuro kocimo xu haje jafu yimato yeloyiya xoju soli kayato bahamoya xu hajeba vaju vefixero English: big dogs that the small frog will see touch a fast dolphin that the tall monkeys will like\nOther: haje vaju kayaro mayamo xojuba nigo vefixeto English: a fast monkey will remember the excellent dolphins\nOther: xoju jafu zinuro bahamo hajeba soli yimaxero English: ",
+      "output": [
+        "the big frog will like a tall dog"
+      ]
+    },
+    "24": {
+      "input": "Other: setage pucujode hocojodu hutuyi di pucujopa pexojozu pitoyi jogaze gobuzide rebozidu nocequ English: the small bird that hits the short child wanted big dogs\nOther: gobujopa pexojozu hutuyi tafuvo gobujode tutajodu vinayi English: a short bird will slap a slow frog\nOther: gobuzipa tutazizu dajiqu wuyowaze pucuzipa jepuzizu vinaqu jogawavo di pucuzide rutazidu jebaqu English: tall frogs saw the excellent cats that the slow crows will want\nOther: pucuzipa pexozizu dajiqu wuyowaze pucujode jepujodu pitoyi English: the tall birds saw the small crow\nOther: gobujopa pexojozu jebayi tafuge di pucuzipa tutazizu pitoqu setawavo gobujode hocojodu hutuyi English: the small frogs that a excellent bird slaps will hit a short child\nOther: gobujopa hocojozu pitoyi setavo di gobujopa jepujozu vinayi setaze gobujopa pexojozu hutuyi tafuvo di gobuzide tutazidu hutuqu English: ",
+      "output": [
+        "a slow crow that a small child will hit hit short frogs that a short bird will slap"
+      ]
+    },
+    "25": {
+      "input": "English: short people that excellent dogs will slap will dislike fast frogs Other: lege niwe miguxe sagezeja mi lege wide miyexe sagelalu lege piwu mixehe\nEnglish: the slow monkey praises a short cat Other: gaza lepi loluda kulaqe lege wide loteza\nEnglish: slow frogs will praise a fabulous dog Other: lege lepi mixehe sagelaqe lege dige loguxe\nEnglish: a fast crow that will want slow frogs disliked excellent people Other: sabuta lege lepi mixehe mi lege piwu lotafi vulalu lege niwe miyexe\nEnglish: the short dog slapped the fabulous monkey Other: gaza wide loguxe vuzeja gaza dige loluda\nEnglish: the slow dogs will want short dogs Other: ",
+      "output": [
+        "gaza lepi miguxe sagebuta lege wide miguxe"
+      ]
+    },
+    "26": {
+      "input": "Other: razida kori tama yucasifo dosefo tamala legaqo English: the excellent bird remembers the tall dogs\nOther: fafusi zise tama kakisi kori tama legamoka ke yucadafo dosefo tamala yiremone English: the short dolphins will touch the tall dog that the excellent cats remembered\nOther: kakida kori nonu zicone ke razida dose nonu daxudafo zuvofo nonula pozone English: a tall bird that a excellent cat will slap will like a small frog\nOther: yucada kori tama nevudafo sabefo nonula yireqo English: the excellent dog touches a big child\nOther: fafudafo sabefo tamala qubune ke yucada zuvo nonu kakidafo dosefo tamala yireka English: a small dog that will see the big dolphin touched the tall cat\nOther: razida kori tama yireka ke kakida kori nonu fafudafo sabefo nonula legane English: ",
+      "output": [
+        "a excellent cat that the excellent bird touched will remember a big dolphin"
+      ]
+    },
+    "27": {
+      "input": "Other: kiduxi jazime hufusume monozu so kiduxi pesime yoyename cokiji jusomu xinosumu jafezu so kiduji hihamu cizisumu munubuto English: the short cats that the fabulous dolphin slaps disliked the slow monkey that sees a small crow\nOther: cokixi gumume xinoname cokiji kozemu mikinamu filezuto English: big crows praise tall dogs\nOther: cokixi pesime cizisume qanalu so cokixi jusome hufuname kiduji hihamu laranamu jafelu so cokiji kozemu mikisumu munuluto English: small dolphins that a short monkey will touch will dislike a tall dog that will see the slow people\nOther: cokiji pesimu laranamu monobu so kiduxi jazime hufusume cokiji kozemu yoyesumu filezu so cokiji hihamu cizisumu jafezu English: the fabulous dolphin that slapped short people sees a slow monkey that praises a tall cat\nOther: kiduxi jazime xinosume cokiji hihamu cizisumu filelu English: the fabulous crow will praise a slow monkey\nOther: kiduxi hihame cizisume kiduji pesimu hufusumu filebu English: ",
+      "output": [
+        "the slow monkey praised the short dolphin"
+      ]
+    },
+    "28": {
+      "input": "English: the short cat remembers the excellent bird Other: zeca peqadi liwe zecamu peviboni zufiki huhulo\nEnglish: tall birds will hit the big monkey Other: piye fevibo miru zecamu pekujani foseki geqoziqe\nEnglish: a slow monkey remembers a excellent dog Other: piye pekuja kato piyemu pejaxini zufiki huhulo\nEnglish: the tall cats touch the big dog that slaps short crows Other: zeca feqadi miru piyemu feleponi liweki hutoya he zecamu pejaxini foseki huqozapa\nEnglish: a tall dog will touch the fast birds that remembered the big people Other: piye pejaxi miru zecamu fexagini foseki cuqohulo he zecamu feviboni tewaki gezapa\nEnglish: the big cat that remembers a tall cat remembers the big bird Other: ",
+      "output": [
+        "piyemu peqadini miruki huhulo he zeca peqadi fose zecamu peviboni foseki huhulo"
+      ]
+    },
+    "29": {
+      "input": "English: the tall child wanted the slow frog Other: fosalu poholu cayelu tiboja fosaluda cejulude remalude\nEnglish: the excellent cat will hit a big child Other: fosalu lepolu quhalu zomilo lokoluda qurolude cayelude\nEnglish: the tall frogs will remember the excellent people that slow dogs hit Other: fosabu pohobu remabu pomeloyi lokobu cejubu jacabu zomikeyi ba fosabuda lepobude xocabude\nEnglish: a slow dog liked a excellent dolphin Other: lokolu cejulu jacalu pawaja lokoluda lepolude nefelude\nEnglish: a big dog disliked the excellent child Other: lokolu qurolu jacalu yohuja fosaluda lepolude cayelude\nEnglish: a excellent child will dislike the slow dog Other: ",
+      "output": [
+        "lokolu lepolu cayelu yohulo fosaluda cejulude jacalude"
+      ]
+    },
+    "30": {
+      "input": "English: excellent cats hit the fast dog Other: hube pezi fofaya dewawoqa xuyoju hava dofoxota\nEnglish: tall children that the slow crow hit praised the big dogs that slap the fabulous bird Other: xuyo dile noboxo dewavi ja hube puju ravaya gabowovi dasawoqa xuyoju hize yacoxota ja xuyoju reje dofoyata\nEnglish: a slow crow praises fast birds Other: hube dile noboxo gaboqa hubeju hava yacoyata\nEnglish: slow birds hit the fast cats Other: hube dile yacoya dewawoqa xuyoju hava fofayata\nEnglish: a fabulous frog remembered the excellent cat Other: hube hize qurixo semavi xuyoju pezi fofaxota\nEnglish: a excellent cat praised the slow children Other: ",
+      "output": [
+        "hube pezi fofaxo gabovi xuyoju dile ravayata"
+      ]
+    },
+    "31": {
+      "input": "English: a big dog that the small person wants praised a tall frog Other: zequgo fegago wetugo so jufogo kupago pawogo wiloda lusasigo capugo wetujigo piveva\nEnglish: the slow person that the tall cat remembered will hit a big dolphin Other: jufogo befigo pawogo so cutago capugo pawogo yapeva dewosigo fegago wetujigo qixaxa\nEnglish: excellent cats that the small dog remembers will hit the slow bird Other: cutano setono wetuno so zequgo kupago pawogo yapeda kivesigo befigo pawojigo qixawixa\nEnglish: a fast person remembers the small cats that slap a tall frog Other: jufogo yuyago wetugo cutasino kupano pawojino so lusasigo capugo wetujigo nihuwida yapeda\nEnglish: tall people will see fast frogs that the small birds praised Other: jufono capuno wetuno lusasino yuyano wetujino so kiveno kupano pawono pivewiva siriwixa\nEnglish: excellent dolphins hit fast people that the fast cat remembered Other: ",
+      "output": [
+        "dewono setono wetuno jufosino yuyano wetujino so cutago yuyago pawogo yapeva qixawiva"
+      ]
+    },
+    "32": {
+      "input": "Other: zahogusi qova jiquho ta judiguhu lopo jiquno kenasolo kabotihu masu xebano ta gavutisi zacu xebaho moliqu wixaqulo English: big crows that will remember small monkeys dislike the slow frog that the fast person wants\nOther: juditisi qova xebaho zahoguhu lopo jiquno hoboso English: the big monkey will like small crows\nOther: kabogusi zacu jiquho ta gavuguhu qova jiquno rejufolo vafuguhu lopo jiquno wixaqulo English: fast frogs that touched big people dislike small cats\nOther: vafugusi xone xebaho ta dovotisi zofu xebaho rejuso kaboguhu lopo jiquno vicuqulo English: the excellent cats that the fabulous dolphin will touch praise small frogs\nOther: dovotisi xone xebaho kabotihu zacu jiquno ta judigusi masu jiquho rejuqulo hoboso English: the excellent dolphin will like a fast frog that slow monkeys touch\nOther: vafugusi zofu xebaho gavutihu masu xebano ta kabotisi lopo xebaho vicuqu rejuqulo English: ",
+      "output": [
+        "the fabulous cats touch the slow person that the small frog praises"
+      ]
+    },
+    "33": {
+      "input": "English: the fast cats dislike small dogs that touched tall monkeys Other: socudago gopogo geridafe gakadafi buvifi jimodala pu feqadafi haxifi jimodala narulepu honulefo\nEnglish: fabulous dogs hit the small people that the fast dolphin touched Other: gakadago xejogo jimodafe zotedafi buvifi geridala pu dozokego gopogo gerikefe narupu cutolefo\nEnglish: the fast dog will hit big monkeys Other: gakakego gopogo gerikefe feqadafi recifi jimodala cutowi\nEnglish: small cats that will hit excellent birds touched the fast people that dislike a big dolphin Other: socudago buvigo jimodafe pu vuyodafi fomufi jimodala cutolewi zotedafi gopofi geridala pu dozokefi recifi jimokela honulefo narulepu\nEnglish: a fast dog dislikes the big bird Other: gakakego gopogo jimokefe vuyokefi recifi gerikela honufo\nEnglish: a fast dog that disliked the small monkeys touched big monkeys that fast people touch Other: ",
+      "output": [
+        "gakakego gopogo jimokefe pu feqadafi buvifi geridala honupu feqadafi recifi jimodala pu zotedago gopogo jimodafe narulefo narupu"
+      ]
+    },
+    "34": {
+      "input": "English: a excellent cat likes the tall child that disliked slow birds Other: yosi du modo tolisu yosi yi mimu ricaji dubuve lo lazu du cigu gumasu turidi\nEnglish: the excellent monkey disliked the tall cats Other: lazu du modo rofusu lazu yi cigu toliji dubuve\nEnglish: the fast monkey will like excellent birds that disliked the small children Other: lazu du bodu rofusu lazu yi xuho gumaji dubuveqa lo yosi yi modo ricaji turihe\nEnglish: the slow monkey wanted small cats Other: lazu du mimu rofusu yosi yi xuho toliji salove\nEnglish: tall children praised the fast birds that wanted excellent dolphins Other: yosi yi cigu gumaji yosi yi modo rusuji saloveqa lo lazu yi bodu ricaji tevaveqa\nEnglish: the slow cat wanted the slow monkeys Other: ",
+      "output": [
+        "lazu du mimu tolisu lazu yi mimu rofuji salove"
+      ]
+    },
+    "35": {
+      "input": "Other: lugililu mupogo yexe halo murewogo kidiwo haloti English: a small child praises a big dog\nOther: dutililu wefipolu pusuwohu tehuwo haloti fu puligo cige halo tehawulu juvowogo gihiwo haloti fu murewogo yexewo haloti English: a tall cat that remembered short birds hits a small dog that will want a fast monkey\nOther: lugipolu murego gihi bisa puliwogo yexewo bisati English: the fast dog praised the small cat\nOther: lugililu pusugo gihi bisa puliwogo yexewo bisati English: the fast bird praises the small cat\nOther: dutipopa tehalilu pusugo pehe halo fu dozihu gihi bisa mupowohu cigewo bisati English: the fast crows that a fabulous bird wants hit the tall children\nOther: dutipolu puligo gihi bisa murewohu cigewo haloti English: ",
+      "output": [
+        "the fast cat hit tall dogs"
+      ]
+    },
+    "36": {
+      "input": "Other: daximuno tafito vehefaru yobufa da damafu zogotuqa citetu rucomuno tafito dozofaru cayafa English: fast frogs that praised the big bird disliked the small person\nOther: tafifu dozotuqa cayatu rucoyuno damato zogoturu citetu English: the small people dislike fast frogs\nOther: tafifu dozotuqa neyitu jeweyuno da damafu vehetuqa tukotu lumomuno tafifu zogotuqa yobutu daximuno da tafito caqifaru cayafa English: slow birds that the fabulous people like touched the small child that the big frogs praised\nOther: tafifu rusefaqa citefa rucoyuti tafito dozofaru cayafa English: the fast monkey dislikes the small person\nOther: damafu caqifaqa citefa rucorati tafito dozofaru cagifa English: a fast child will dislike the tall person\nOther: jewemuno tafito zogofaru yobufa da tafifu dozotuqa citetu rucomuno daximuno tafito vehefaru citefa da tafito zogoturu citetu English: ",
+      "output": [
+        "the fast people that liked the big frog disliked the fast frogs that praised the fast bird"
+      ]
+    },
+    "37": {
+      "input": "Other: jinuzi gamega tejega zewafenu fececivi gukavi huwaxume English: the big crow touches small people\nOther: jinuzi lariga waguga jinufezi bodeciga gukaga huwaxume English: the fast cat touches the small frog\nOther: jinuzi fecega lomuga zewafenu laricivi gukavi haxoxume de jinufezi zohaciga loduga telaxupo English: the excellent person will want the short dog that remembers small cats\nOther: zewazi bodega loduga zewafenu fececivi gukavi yeyuxupo English: a short frog will praise small people\nOther: zewanu fecevi soduvi zewafezi bodeciga loduga huwamame English: tall people touch a short frog\nOther: zewanu bodevi gukavi jinufezi fececiga loduga huwamame de jinufenu bodecivi gukavi telamame English: ",
+      "output": [
+        "small frogs want the small frogs that touch the short person"
+      ]
+    },
+    "38": {
+      "input": "Other: kelimo soxeju baka qimahe kelimodo yuyujufa rila English: the tall monkey will praise the fabulous cat\nOther: coseco lazisu rila lenulosa cosemodo soxejufa yiye ha fezihe kelicodo babisufa xewe English: fabulous crows remembered a small monkey that will dislike the excellent birds\nOther: kelico yuyusu xewe qimalosa kelimodo cetijufa didi English: the excellent cats praised the big child\nOther: kelimo nikaju yiye fezisa cosecodo soxesufa rila English: the small dog disliked fabulous monkeys\nOther: kelico cetisu yiye fezilosa cosemodo soxejufa baka English: the small children disliked a tall monkey\nOther: kelimo soxeju xewe ha qimahe kelimodo soxejufa rila fezihe kelicodo lazisufa baka English: ",
+      "output": [
+        "the excellent monkey that will praise the fabulous monkey will dislike the tall crows"
+      ]
+    },
+    "39": {
+      "input": "English: fabulous crows that the short dolphin will praise will like a tall dog that a small cat remembered Other: pamotilo yaxeta suno quhohi ka paxaqi cimoja jase nokevu cirejape tewipe quhovube ka rakiye cidosi xaya quhovu\nEnglish: a small dolphin hits big dogs that a slow crow will like Other: vehupa cimoja xaya quhovu yarejape lafupe quhohibe ka patilo cixeta dipi quhovu\nEnglish: the tall dolphins that the small monkey will want touched slow cats that will remember a big crow Other: ramohide yamoja tewi nokehi ka pajabi cirezu xaya nokevu yadosipe dipipe quhohibe ka pamokiye cixetape lafupe quhovube\nEnglish: tall monkeys that will remember fabulous cats wanted the slow crow Other: ramojabi yarezu tewi quhohi ka pamokiye yadosipe sunope quhohibe cixetape dipipe nokevube\nEnglish: the big crow remembered the tall dolphins that praise short monkeys Other: rakiye cixeta lafu nokevu yamojape tewipe nokehibe ka vemoxaqi yarezupe jasepe quhohibe\nEnglish: the big monkey will remember fabulous monkeys Other: ",
+      "output": [
+        "pakiye cirezu lafu nokevu yarezupe sunope quhohibe"
+      ]
+    },
+    "40": {
+      "input": "Other: goyuxi goqile goluxu fudodoci furugo fugafoqo patuqa English: the short bird praised big dolphins\nOther: govuma gojila gogafo fuyuxici fuboja fuluxuqo panoxu English: a small person slapped the fast birds\nOther: gotawo gocica gogafo gododoci gogiye gogafoqo panoxu English: a fabulous cat slapped a excellent dolphin\nOther: goyuxi gorugo goluxu gotawoci gocica gogafoqo qu fuvuma fujila fuluxu jedevaji gelugi English: the big bird wants a fabulous cat that the small people will dislike\nOther: goqopo gorugo goluxu qu goyuxi goqile goluxu delugi govumaci gocica goluxuqo detuqa English: the big crow that the short bird will want will praise the fabulous person\nOther: fudodo fucica fuluxu qu goyuxici gojila gogafoqo jepalugi fuyuxici fuboja fuluxuqo jedevaji English: ",
+      "output": [
+        "the fabulous dolphins that wanted a small bird will dislike the fast birds"
+      ]
+    },
+    "41": {
+      "input": "Other: kojo yovufe yofali weho yoroya yonedi tisujore English: the big cats see short dogs\nOther: kojo yovufe yojeli weho yobage yohudu vasuliji English: the tall cats slapped fabulous crows\nOther: weho yodoce yonedi tisuyosa vi weho zebage zehudu kojo yoduri yofali vapuqo English: a fabulous crow that short dolphins hit touched the big monkeys\nOther: kojo yoroya yohudu kojo zedoce zekeme tisuliji English: the fabulous dogs slap the excellent dolphin\nOther: weho zebage zehudu kojo zedoce zexiva vaxelu English: a fabulous crow liked the slow dolphin\nOther: kojo yovufe yofali weho zedoce zefali vajore vi weho zeroya zenedi tisuliji English: ",
+      "output": [
+        "the big cats slap a short dog that saw a big dolphin"
+      ]
+    },
+    "42": {
+      "input": "Other: pexa popozo tuzazo vozuki ta hofu laluqe fajuqe gobokimo jarenemo hofu tipuzo makizo ta hofu weluqe fuqaqe English: the short cats that a tall monkey will remember will touch the fast dogs that want the big crow\nOther: jareki pexa yujozo besuzo ta pexa popozo fuqazo goboki pexa tipuqe fajuqe kifenemo ta pexa laluqe makiqe English: a tall dog that will want a excellent person will touch short crows that big cats see\nOther: pexa laluqe fajuqe vozunemo ta hofu biqazo makizo jarene goboki pexa tipuzo fuqazo ta pexa weluzo fupizo English: the small crow that short cats remember wants a fast frog that will touch a big dog\nOther: hofu laluzo besuzo kifeki jarelomo pexa biqazo fuqazo ta hofu yujoqe makiqe English: the short person will see the excellent crows that wanted a small dog\nOther: pexa yujoqe besuqe vozukimo kifeki hofu tipuqe fajuqe ta pexa weluzo tuzazo English: excellent people will remember a fast monkey that will see the big cats\nOther: pexa weluzo makizo jareki kifeki hofu yujozo makizo ta hofu laluzo fajuzo English: ",
+      "output": [
+        "a fast crow will want the short cat that will see the excellent crow"
+      ]
+    },
+    "43": {
+      "input": "Other: hesetu jakutu veme heseha hasiha kabe yegece English: the short monkey will dislike the fast children\nOther: hesetu hasitu nele heseha pagiha seho toquki English: the small child hit the tall cats\nOther: hesetu vafotu seho heseha zacaha kabe wibiki English: the tall frog saw the fast people\nOther: heseha jakuha kabe revoha pagiha nepu wibifoho English: the fast monkeys see excellent cats\nOther: revotu zacatu seho xa heseha jakuha gera dosafoki hesetu hicatu nele yegeki English: a tall person that the slow monkeys touched disliked the small crow\nOther: revotu pagitu seho xa heseha jakuha seho toqufoki hesetu hasitu veme wibiki English: ",
+      "output": [
+        "a tall cat that the tall monkeys hit saw the short child"
+      ]
+    },
+    "44": {
+      "input": "Other: vulijilo wujojilo fodeme he birereho fozakilo hupokilo fodeha he English: short crows will praise fast monkeys\nOther: bakajixi becojixi fodeme fi zitisa fozakilo kelukilo yomoha he English: a slow dog likes the fabulous monkeys\nOther: raxejixi hupojixi fodeme fi zitisa bakakilo becokilo yomoha he English: a fast person likes the slow dogs\nOther: xivirera bakakilo becokilo yomoha he wu fozajilo jubijilo yomome he veporera sozijilo gesujilo fodeme he zitirera wu vulikixi kelukixi fodeha fi English: the small monkeys that wanted the slow dogs hit a fabulous crow that big birds liked\nOther: raxejixi jubijixi yomome fi bireho zitirera bakakixi kelukixi fodeha fi wu sozikilo gesukilo fodeha he English: the small person will praise big birds that liked a fabulous dog\nOther: sozijilo becojilo fodeme he bireresa bakakixi kelukixi fodeha fi English: ",
+      "output": [
+        "slow birds praise a fabulous dog"
+      ]
+    },
+    "45": {
+      "input": "English: a fabulous monkey wanted a small crow Other: neqewo gayeta zavewo wixusa neqewozu meqata tubawode\nEnglish: the fabulous dolphins that hit big people will touch the slow frogs Other: henasawe neqemizu womeha nafimide so valami gayeha mudemi momepowe valamizu laquha cezemide\nEnglish: excellent monkeys will remember the fabulous dolphins that hit the slow people Other: neqemi yuwuha zavemi soqupowe henagewe valamizu laquha nafimide so valamizu gayeha mudemide\nEnglish: short monkeys wanted the slow dogs that the fabulous crows remembered Other: neqemi niyiha zavemi wixusawe valami gayeha tubami soqusawe so valamizu laquha hemimide\nEnglish: the slow monkey will touch the fabulous dog that wanted big frogs Other: valawo laquta zavewo momepo wixusa neqemizu womeha cezemide so valawozu gayeta hemiwode\nEnglish: the slow dolphins hit a fabulous crow that will remember the slow frogs Other: ",
+      "output": [
+        "valami laquha mudemi henagewe soqupo valamizu laquha cezemide so neqewozu gayeta tubawode"
+      ]
+    },
+    "46": {
+      "input": "English: a fast dog dislikes slow people Other: gubo nohi wodobo bequje gubo tujo torosa\nEnglish: the excellent dog that will want the fast children will slap a fabulous bird that will like the small dolphin Other: mefula viqi nohi tosegu ri viqi xopu wodobo mecesa menexe viqi nare wotefe ri gubo tuva wonepu\nEnglish: the small cat remembered a excellent dolphin Other: viqi nare woruqi fuvoga gubo xopu wotefe\nEnglish: the excellent dog that will slap the tall cat wanted a slow bird that a fast child dislikes Other: mecesa viqi somu woruqi ri viqi xopu wodobo fufula gubo nohi wosegu bequje ri gubo tujo wonepu\nEnglish: a slow person will want the small dogs Other: gubo tujo worosa mefula viqi nare todobo\nEnglish: a excellent person that a slow dolphin likes wants the excellent dog Other: ",
+      "output": [
+        "gubo tujo wotefe benexe ri gubo xopu worosa befula viqi xopu wodobo"
+      ]
+    },
+    "47": {
+      "input": "English: a excellent cat wants a tall dog Other: coxexu kura tipofu ducecu coxexuto puxima vasafuma\nEnglish: the excellent dolphin that the small cats liked praised the tall bird Other: vomovi jako tipoce kohoxita wu vomoxu kura gonofu fujota vomoxuto puxima nopafuma\nEnglish: the fast crows that the small cats will like will dislike the big birds that the excellent people praise Other: vomovi jako tipoce kohoxiji wu vomovi nanu simece muxexiji vomovi kura nerace fujoxicu wu vomovito migema nopacema\nEnglish: the big crows that a tall dolphin liked will praise the fabulous dogs Other: coxexu puxi gonofu kohota wu vomovi mige simece fujoxiji vomovito hutoma vasacema\nEnglish: the big dolphins will dislike the excellent birds Other: vomovi mige gonoce muxexiji vomovito kurama nopacema\nEnglish: the excellent bird that wants tall cats will like the excellent bird Other: ",
+      "output": [
+        "ducecu coxevito puxima tipocema wu vomoxu kura nopafu kohoji vomoxuto kurama nopafuma"
+      ]
+    },
+    "48": {
+      "input": "English: the slow crow that the excellent cat wants will see a fabulous dog that a short monkey remembered Other: niyacu sexi xoyuva qaveva pa welole sexi ficeva miqeva vayapi famevagu xumuva pa koqaqa vaya masova tevava\nEnglish: the fabulous cats that touch a slow dog hit small people that the excellent frog remembered Other: fakiqajo sexi ficezu xumuzu pa kamelejo vayapi famevagu qaveva vayapi qijezugu dotazu pa koqaqa sexi laxiva miqeva\nEnglish: a fast monkey remembered a excellent dog Other: koqaqa vaya masova gelova vayapi famevagu miqeva\nEnglish: the fast frogs see the short crow Other: niyalejo sexi laxizu gelozu sexipi xoyuvagu tevava\nEnglish: short people will touch the slow dogs Other: kamecujo vaya qijezu tevazu sexipi famezugu qavezu\nEnglish: the fabulous crow wanted the fabulous monkey Other: ",
+      "output": [
+        "weloqa sexi xoyuva xumuva sexipi masovagu xumuva"
+      ]
+    },
+    "49": {
+      "input": "Other: fumi fava cotefa pitoluju fumije pami pafezafa English: tall frogs will see fast birds\nOther: nuxo fava pafeke sojuwa nuxoje gife xuqazafa English: the tall bird remembers the small monkeys\nOther: fumi xuxo pafeke pitolu fumije lude cotezake jo fumi saju teveke qaqawa English: a big bird will see a short frog that a fabulous crow touches\nOther: fumi gife varake zuqawa nuxoje pami xuqazafa English: a small dog praises the fast monkeys\nOther: fumi gife vitafa jo nuxo pami varafa yodiwaju kanuvuju nuxoje xuxo pafezafa jo qaqavuju nuxoje lude tevezake English: small dolphins that the fast dogs like wanted the big birds that touched the short crow\nOther: fumi pami xuqafa jo yodiwaju nuxoje fava pafezake kanuvuju nuxoje lude varazafa jo fumi fava tevefa qaqawaju English: ",
+      "output": [
+        "fast monkeys that like the tall bird wanted the short dogs that tall crows touch"
+      ]
+    },
+    "50": {
+      "input": "Other: finizo gacate dezute finisolo likitoqo nukeqo ha finisolo biputoqo tuluqo varabixe yotepeya English: small children will slap a excellent bird that hit a slow monkey\nOther: finizo bixate yoqete ha jimesozo micotote tulute lahipexe jimesozo gacatote dezute rujepexe English: fabulous people that liked the slow frogs saw the small children\nOther: finilo bipuqo tuluqo jimesozo micotote qawete rujebiya English: a slow monkey will see the short frogs\nOther: finizo yamate nukete finisolo gacatoqo rovuqo yotepexe English: excellent dogs slapped a tall child\nOther: jimelo bixaqo tuluqo jimesolo yamatoqo dezuqo rujebixe English: the slow person saw the small dog\nOther: jimezo yamate tulute jimesozo gacatote nukete lahipeya English: ",
+      "output": [
+        "the slow dogs will like the excellent children"
+      ]
+    }
+  }
+}

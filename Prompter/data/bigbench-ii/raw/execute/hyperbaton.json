@@ -1,0 +1,2108 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Order adjectives correctly in English sentences",
+  "examples": {
+    "1": {
+      "input": "a \" black silver driving Japanese small shoe \" b \" small black Japanese silver driving shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "2": {
+      "input": "a \" normal-size archaic green Congolese steel shoe \" b \" steel Congolese archaic green normal-size shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "3": {
+      "input": "a \" wonderful typing Nigerian sock \" b \" wonderful Nigerian typing sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "4": {
+      "input": "a \" terrible massive rectangular Bangladeshi surfboard \" b \" massive Bangladeshi rectangular terrible surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "5": {
+      "input": "a \" massive purple whittling rectangular Filipino shoe \" b \" massive rectangular purple Filipino whittling shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "6": {
+      "input": "a \" circular brown old-fashioned hiking dog \" b \" old-fashioned circular brown hiking dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "7": {
+      "input": "a \" ridiculous massive fiberglass spherical sock \" b \" ridiculous massive spherical fiberglass sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "8": {
+      "input": "a \" terrible large archaic silver snorkeling surfboard \" b \" silver large snorkeling archaic terrible surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "9": {
+      "input": "a \" enormous spherical walking dog \" b \" walking enormous spherical dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "10": {
+      "input": "a \" Indonesian steel spherical small ancient shoe \" b \" small ancient spherical Indonesian steel shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "11": {
+      "input": "a \" eating terrible little orange ancient motorcycle \" b \" terrible little ancient orange eating motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "12": {
+      "input": "a \" enormous square blue wood driving dog \" b \" wood driving blue enormous square dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "13": {
+      "input": "a \" iron terrible Pakistani prismlike motorcycle \" b \" terrible prismlike Pakistani iron motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "14": {
+      "input": "a \" eating orange archaic wool surfboard \" b \" archaic orange wool eating surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "15": {
+      "input": "a \" yellow old rectangular ship \" b \" old rectangular yellow ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "16": {
+      "input": "a \" huge brand-new brown Filipino driving motorcycle \" b \" brown huge brand-new driving Filipino motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "17": {
+      "input": "a \" ridiculous pink rubber ancient circular typing match \" b \" ridiculous ancient circular pink rubber typing match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "18": {
+      "input": "a \" terrible pink Egyptian cloth sweater \" b \" cloth terrible Egyptian pink sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "19": {
+      "input": "a \" square glass silly little exercise car \" b \" silly little square glass exercise car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "20": {
+      "input": "a \" prismlike Chinese iron ship \" b \" iron Chinese prismlike ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "21": {
+      "input": "a \" obnoxious archaic prismlike Indonesian snorkeling motorcycle \" b \" snorkeling Indonesian archaic prismlike obnoxious motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "22": {
+      "input": "a \" ancient walking sweater \" b \" walking ancient sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "23": {
+      "input": "a \" green medium-size triangular old-fashioned motorcycle \" b \" medium-size old-fashioned triangular green motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "24": {
+      "input": "a \" Egyptian pink wonderful lead old sweater \" b \" wonderful old pink Egyptian lead sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "25": {
+      "input": "a \" midsize orange Ethiopian eating baby \" b \" orange Ethiopian midsize eating baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "26": {
+      "input": "a \" plastic silly circular smoking midsize sweater \" b \" silly midsize circular plastic smoking sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "27": {
+      "input": "a \" eating mysterious car \" b \" mysterious eating car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "28": {
+      "input": "a \" huge Nigerian paper typing sweater \" b \" paper typing Nigerian huge sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "29": {
+      "input": "a \" whittling triangular match \" b \" triangular whittling match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "30": {
+      "input": "a \" big old-fashioned pink German lead sweater \" b \" lead big pink German old-fashioned sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "31": {
+      "input": "a \" good big square brown iron typing computer \" b \" square brown iron typing big good computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "32": {
+      "input": "a \" red Vietnamese chair \" b \" Vietnamese red chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "33": {
+      "input": "a \" exercise old-fashioned German brown cat \" b \" old-fashioned brown German exercise cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "34": {
+      "input": "a \" German blue old-fashioned lovely knife \" b \" lovely old-fashioned blue German knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "35": {
+      "input": "a \" whittling brand-new massive steel black car \" b \" massive brand-new black steel whittling car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "36": {
+      "input": "a \" silly large brand-new computer \" b \" large brand-new silly computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "37": {
+      "input": "a \" fiberglass grey archaic monkey \" b \" archaic grey fiberglass monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "38": {
+      "input": "a \" enormous silver surfboard \" b \" silver enormous surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "39": {
+      "input": "a \" obnoxious brand-new glass match \" b \" brand-new obnoxious glass match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "40": {
+      "input": "a \" eating big shoe \" b \" big eating shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "41": {
+      "input": "a \" square snorkeling silly car \" b \" silly square snorkeling car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "42": {
+      "input": "a \" walking purple terrible large archaic chair \" b \" terrible large archaic purple walking chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "43": {
+      "input": "a \" rectangular midsize mysterious fiberglass exercise dog \" b \" mysterious midsize rectangular fiberglass exercise dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "44": {
+      "input": "a \" German glass exercise brown ship \" b \" brown German glass exercise ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "45": {
+      "input": "a \" repulsive new prismlike knife \" b \" new prismlike repulsive knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "46": {
+      "input": "a \" Egyptian nice new tiny sock \" b \" nice tiny new Egyptian sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "47": {
+      "input": "a \" rectangular iron ship \" b \" iron rectangular ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "48": {
+      "input": "a \" massive archaic white hiking baby \" b \" archaic white hiking massive baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "49": {
+      "input": "a \" huge old-fashioned rectangular Bangladeshi motorcycle \" b \" rectangular old-fashioned huge Bangladeshi motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "50": {
+      "input": "a \" normal-size new shoe \" b \" new normal-size shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "51": {
+      "input": "a \" whittling rubber wonderful old massive surfboard \" b \" wonderful massive old rubber whittling surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "52": {
+      "input": "a \" medium-size old-fashioned square blue typing chair \" b \" square medium-size old-fashioned blue typing chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "53": {
+      "input": "a \" huge wood snorkeling sweater \" b \" snorkeling huge wood sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "54": {
+      "input": "a \" cardboard grey rectangular Thai motorcycle \" b \" rectangular grey Thai cardboard motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "55": {
+      "input": "a \" ridiculous tiny brand-new Pakistani leather dog \" b \" tiny ridiculous brand-new leather Pakistani dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "56": {
+      "input": "a \" good ancient gray drinking car \" b \" gray good ancient drinking car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "57": {
+      "input": "a \" circular Filipino obnoxious big monkey \" b \" obnoxious big circular Filipino monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "58": {
+      "input": "a \" awful midsize old triangular yellow German rubber knife \" b \" old triangular yellow awful midsize German rubber knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "59": {
+      "input": "a \" normal-size ancient purple Egyptian drinking motorcycle \" b \" normal-size purple Egyptian ancient drinking motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "60": {
+      "input": "a \" red driving Turkish small chair \" b \" small red Turkish driving chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "61": {
+      "input": "a \" big ancient circular Nigerian ship \" b \" Nigerian ancient circular big ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "62": {
+      "input": "a \" archaic prismlike Indian cardboard hiking knife \" b \" archaic hiking cardboard prismlike Indian knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "63": {
+      "input": "a \" tiny Iranian leather cat \" b \" tiny leather Iranian cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "64": {
+      "input": "a \" pyramidal Ethiopian medium-size chair \" b \" medium-size pyramidal Ethiopian chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "65": {
+      "input": "a \" normal-size old-fashioned square purple exercise car \" b \" exercise old-fashioned square purple normal-size car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "66": {
+      "input": "a \" mysterious orange drinking match \" b \" orange drinking mysterious match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "67": {
+      "input": "a \" rectangular old-fashioned Nigerian big dog \" b \" big old-fashioned rectangular Nigerian dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "68": {
+      "input": "a \" red repulsive spherical large snorkeling monkey \" b \" repulsive large spherical red snorkeling monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "69": {
+      "input": "a \" brand-new big dog \" b \" big brand-new dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "70": {
+      "input": "a \" old-fashioned square typing large iron surfboard \" b \" large old-fashioned square iron typing surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "71": {
+      "input": "a \" midsize old grey Congolese motorcycle \" b \" old midsize grey Congolese motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "72": {
+      "input": "a \" lovely normal-size old red American fiberglass driving sock \" b \" American lovely red fiberglass normal-size old driving sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "73": {
+      "input": "a \" circular fiberglass Filipino medium-size match \" b \" medium-size circular Filipino fiberglass match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "74": {
+      "input": "a \" ridiculous massive square Vietnamese whittling chair \" b \" massive ridiculous whittling Vietnamese square chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "75": {
+      "input": "a \" circular new snorkeling wonderful lead dog \" b \" wonderful new circular lead snorkeling dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "76": {
+      "input": "a \" large new pyramidal Ethiopian walking motorcycle \" b \" walking Ethiopian pyramidal large new motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "77": {
+      "input": "a \" archaic Turkish whittling gold rectangular terrible tiny yellow sock \" b \" terrible tiny archaic rectangular yellow Turkish gold whittling sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "78": {
+      "input": "a \" new rectangular Vietnamese fiberglass cat \" b \" Vietnamese new rectangular fiberglass cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "79": {
+      "input": "a \" archaic prismlike Thai exercise small orange wool sweater \" b \" small archaic prismlike orange Thai wool exercise sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "80": {
+      "input": "a \" mysterious old hiking knife \" b \" mysterious hiking old knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "81": {
+      "input": "a \" massive nice driving brand-new iron pink sock \" b \" nice massive brand-new pink iron driving sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "82": {
+      "input": "a \" massive old-fashioned circular white Thai gold eating shoe \" b \" old-fashioned massive Thai white circular eating gold shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "83": {
+      "input": "a \" nice circular purple Iranian ship \" b \" nice circular Iranian purple ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "84": {
+      "input": "a \" lovely huge ancient pyramidal red fiberglass match \" b \" red lovely ancient fiberglass huge pyramidal match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "85": {
+      "input": "a \" old purple Vietnamese glass snorkeling chair \" b \" glass purple old snorkeling Vietnamese chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "86": {
+      "input": "a \" nice Indian silver match \" b \" silver Indian nice match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "87": {
+      "input": "a \" ridiculous big rectangular white steel monkey \" b \" white steel rectangular ridiculous big monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "88": {
+      "input": "a \" drinking new American computer \" b \" new American drinking computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "89": {
+      "input": "a \" Chinese black square little driving match \" b \" little square black Chinese driving match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "90": {
+      "input": "a \" spherical Russian huge match \" b \" huge spherical Russian match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "91": {
+      "input": "a \" little old silver whittling motorcycle \" b \" silver old little whittling motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "92": {
+      "input": "a \" archaic orange Indian rubber ship \" b \" archaic Indian orange rubber ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "93": {
+      "input": "a \" repulsive Iranian wood ancient dog \" b \" repulsive ancient Iranian wood dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "94": {
+      "input": "a \" typing ancient chair \" b \" ancient typing chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "95": {
+      "input": "a \" wool little drinking Filipino circular match \" b \" little circular Filipino wool drinking match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "96": {
+      "input": "a \" wool archaic smoking big white motorcycle \" b \" big archaic white wool smoking motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "97": {
+      "input": "a \" repulsive brand-new yellow baby \" b \" repulsive yellow brand-new baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "98": {
+      "input": "a \" plastic grey tiny circular smoking cat \" b \" tiny circular grey plastic smoking cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "99": {
+      "input": "a \" wood exercise red silly Vietnamese prismlike shoe \" b \" silly prismlike red Vietnamese wood exercise shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "100": {
+      "input": "a \" Japanese walking wonderful cat \" b \" wonderful Japanese walking cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "101": {
+      "input": "a \" wonderful gold black Russian sweater \" b \" wonderful black Russian gold sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "102": {
+      "input": "a \" rectangular Turkish cat \" b \" Turkish rectangular cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "103": {
+      "input": "a \" old square pink steel match \" b \" pink square old steel match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "104": {
+      "input": "a \" obnoxious old green Japanese match \" b \" green Japanese obnoxious old match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "105": {
+      "input": "a \" ancient red Indonesian wood typing monkey \" b \" ancient Indonesian wood typing red monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "106": {
+      "input": "a \" brand-new ridiculous cardboard exercise computer \" b \" ridiculous brand-new cardboard exercise computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "107": {
+      "input": "a \" triangular good pink cat \" b \" good triangular pink cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "108": {
+      "input": "a \" archaic prismlike white Chinese exercise match \" b \" prismlike white exercise archaic Chinese match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "109": {
+      "input": "a \" obnoxious tan motorcycle \" b \" tan obnoxious motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "110": {
+      "input": "a \" repulsive brown glass monkey \" b \" brown repulsive glass monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "111": {
+      "input": "a \" spherical tan Indian large drinking nice dog \" b \" nice large spherical tan Indian drinking dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "112": {
+      "input": "a \" archaic massive pyramidal ridiculous iron exercise motorcycle \" b \" ridiculous massive archaic pyramidal iron exercise motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "113": {
+      "input": "a \" whittling spherical motorcycle \" b \" spherical whittling motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "114": {
+      "input": "a \" awful archaic pink Indian smoking ship \" b \" pink archaic awful smoking Indian ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "115": {
+      "input": "a \" massive orange cloth cat \" b \" orange massive cloth cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "116": {
+      "input": "a \" mysterious big new triangular brown cloth computer \" b \" big mysterious new triangular brown cloth computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "117": {
+      "input": "a \" pyramidal snorkeling ancient dog \" b \" ancient pyramidal snorkeling dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "118": {
+      "input": "a \" tiny pink Congolese cardboard baby \" b \" Congolese pink tiny cardboard baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "119": {
+      "input": "a \" grey Egyptian snorkeling knife \" b \" Egyptian grey snorkeling knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "120": {
+      "input": "a \" massive spherical wonderful yellow lead computer \" b \" wonderful massive spherical yellow lead computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "121": {
+      "input": "a \" archaic Chinese terrible cloth eating circular knife \" b \" terrible archaic circular Chinese cloth eating knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "122": {
+      "input": "a \" cloth American small yellow typing circular lovely sock \" b \" lovely small circular yellow American cloth typing sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "123": {
+      "input": "a \" obnoxious typing tan plastic sweater \" b \" obnoxious tan plastic typing sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "124": {
+      "input": "a \" tiny new yellow walking computer \" b \" walking new tiny yellow computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "125": {
+      "input": "a \" lead grey driving triangular little Congolese good car \" b \" good little triangular grey Congolese lead driving car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "126": {
+      "input": "a \" blue whittling old-fashioned circular repulsive chair \" b \" repulsive old-fashioned circular blue whittling chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "127": {
+      "input": "a \" square green baby \" b \" green square baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "128": {
+      "input": "a \" big archaic Iranian sweater \" b \" archaic Iranian big sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "129": {
+      "input": "a \" terrible German plastic smoking knife \" b \" German plastic terrible smoking knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "130": {
+      "input": "a \" fiberglass Pakistani eating grey little ridiculous dog \" b \" ridiculous little grey Pakistani fiberglass eating dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "131": {
+      "input": "a \" old-fashioned triangular silver sweater \" b \" silver triangular old-fashioned sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "132": {
+      "input": "a \" enormous Congolese archaic car \" b \" enormous archaic Congolese car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "133": {
+      "input": "a \" repulsive square Pakistani leather baby \" b \" square leather Pakistani repulsive baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "134": {
+      "input": "a \" typing small circular computer \" b \" small circular typing computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "135": {
+      "input": "a \" spherical walking wonderful gray enormous old-fashioned baby \" b \" wonderful enormous old-fashioned spherical gray walking baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "136": {
+      "input": "a \" enormous silly cardboard Iranian dog \" b \" silly enormous Iranian cardboard dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "137": {
+      "input": "a \" tan old smoking wonderful Congolese huge computer \" b \" wonderful huge old tan Congolese smoking computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "138": {
+      "input": "a \" square plastic green archaic large ship \" b \" large archaic square green plastic ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "139": {
+      "input": "a \" brand-new pink circular wonderful motorcycle \" b \" wonderful brand-new circular pink motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "140": {
+      "input": "a \" mysterious small old-fashioned spherical black wool driving match \" b \" black mysterious spherical wool small driving old-fashioned match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "141": {
+      "input": "a \" paper old eating monkey \" b \" old paper eating monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "142": {
+      "input": "a \" old-fashioned good spherical midsize hiking shoe \" b \" good midsize old-fashioned spherical hiking shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "143": {
+      "input": "a \" brand-new Filipino sock \" b \" Filipino brand-new sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "144": {
+      "input": "a \" awful midsize square Bangladeshi surfboard \" b \" square midsize Bangladeshi awful surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "145": {
+      "input": "a \" tan rectangular dog \" b \" rectangular tan dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "146": {
+      "input": "a \" good medium-size brand-new prismlike walking computer \" b \" prismlike walking good medium-size brand-new computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "147": {
+      "input": "a \" archaic hiking paper terrible Filipino match \" b \" terrible archaic Filipino paper hiking match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "148": {
+      "input": "a \" enormous archaic yellow American cloth cat \" b \" cloth American yellow archaic enormous cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "149": {
+      "input": "a \" driving little old-fashioned sock \" b \" little old-fashioned driving sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "150": {
+      "input": "a \" exercise brand-new mysterious German plastic shoe \" b \" mysterious brand-new German plastic exercise shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "151": {
+      "input": "a \" big ridiculous hiking Vietnamese brand-new computer \" b \" ridiculous big brand-new Vietnamese hiking computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "152": {
+      "input": "a \" good spherical ancient steel red knife \" b \" good ancient spherical red steel knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "153": {
+      "input": "a \" lead whittling ancient shoe \" b \" ancient lead whittling shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "154": {
+      "input": "a \" glass gray lovely Egyptian cat \" b \" lovely gray Egyptian glass cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "155": {
+      "input": "a \" prismlike awful German old-fashioned eating normal-size lead computer \" b \" awful normal-size old-fashioned prismlike German lead eating computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "156": {
+      "input": "a \" lovely midsize old-fashioned gold exercise ship \" b \" lovely gold exercise old-fashioned midsize ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "157": {
+      "input": "a \" obnoxious big circular Russian leather monkey \" b \" leather Russian circular obnoxious big monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "158": {
+      "input": "a \" big purple pyramidal old-fashioned monkey \" b \" big old-fashioned pyramidal purple monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "159": {
+      "input": "a \" spherical paper green match \" b \" spherical green paper match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "160": {
+      "input": "a \" new wonderful huge baby \" b \" wonderful huge new baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "161": {
+      "input": "a \" terrible brand-new triangular monkey \" b \" triangular brand-new terrible monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "162": {
+      "input": "a \" nice square blue Pakistani cardboard smoking cat \" b \" blue smoking nice Pakistani square cardboard cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "163": {
+      "input": "a \" obnoxious ancient red Thai match \" b \" red ancient Thai obnoxious match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "164": {
+      "input": "a \" grey Iranian rubber monkey \" b \" Iranian grey rubber monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "165": {
+      "input": "a \" repulsive Iranian match \" b \" Iranian repulsive match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "166": {
+      "input": "a \" awful square new monkey \" b \" awful new square monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "167": {
+      "input": "a \" black snorkeling new Egyptian sweater \" b \" new black Egyptian snorkeling sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "168": {
+      "input": "a \" new spherical driving midsize ship \" b \" midsize new spherical driving ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "169": {
+      "input": "a \" ridiculous archaic square smoking motorcycle \" b \" square smoking archaic ridiculous motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "170": {
+      "input": "a \" midsize Thai driving surfboard \" b \" Thai midsize driving surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "171": {
+      "input": "a \" leather new Russian nice huge monkey \" b \" nice huge new Russian leather monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "172": {
+      "input": "a \" spherical normal-size Congolese new shoe \" b \" normal-size new spherical Congolese shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "173": {
+      "input": "a \" normal-size ancient German sweater \" b \" German normal-size ancient sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "174": {
+      "input": "a \" spherical mysterious ancient normal-size sock \" b \" mysterious normal-size ancient spherical sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "175": {
+      "input": "a \" gold red circular Pakistani dog \" b \" circular red Pakistani gold dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "176": {
+      "input": "a \" rubber German tiny triangular baby \" b \" tiny triangular German rubber baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "177": {
+      "input": "a \" awful huge lead ship \" b \" huge awful lead ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "178": {
+      "input": "a \" mysterious spherical Indian driving match \" b \" driving mysterious spherical Indian match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "179": {
+      "input": "a \" old tan Turkish rubber smoking cat \" b \" rubber smoking Turkish old tan cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "180": {
+      "input": "a \" rectangular good knife \" b \" good rectangular knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "181": {
+      "input": "a \" old circular pink dog \" b \" pink old circular dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "182": {
+      "input": "a \" Iranian wonderful circular massive brown dog \" b \" wonderful massive circular brown Iranian dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "183": {
+      "input": "a \" ancient circular walking lead car \" b \" ancient circular lead walking car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "184": {
+      "input": "a \" brand-new Egyptian nice knife \" b \" nice brand-new Egyptian knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "185": {
+      "input": "a \" terrible large triangular Nigerian drinking chair \" b \" terrible drinking large Nigerian triangular chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "186": {
+      "input": "a \" Indonesian old-fashioned brown steel cat \" b \" old-fashioned brown Indonesian steel cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "187": {
+      "input": "a \" medium-size Vietnamese brand-new spherical wonderful purple surfboard \" b \" wonderful medium-size brand-new spherical purple Vietnamese surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "188": {
+      "input": "a \" little circular whittling ship \" b \" whittling little circular ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "189": {
+      "input": "a \" German driving new monkey \" b \" new German driving monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "190": {
+      "input": "a \" midsize eating pyramidal leather Japanese monkey \" b \" midsize pyramidal Japanese leather eating monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "191": {
+      "input": "a \" good driving Japanese leather pyramidal cat \" b \" good pyramidal Japanese leather driving cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "192": {
+      "input": "a \" exercise ridiculous green motorcycle \" b \" ridiculous green exercise motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "193": {
+      "input": "a \" small triangular Brazilian rubber motorcycle \" b \" rubber Brazilian triangular small motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "194": {
+      "input": "a \" wonderful ancient triangular computer \" b \" ancient triangular wonderful computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "195": {
+      "input": "a \" nice old pyramidal medium-size leather computer \" b \" nice medium-size old pyramidal leather computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "196": {
+      "input": "a \" nice enormous prismlike grey Nigerian fiberglass walking monkey \" b \" grey nice Nigerian fiberglass walking prismlike enormous monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "197": {
+      "input": "a \" awful old-fashioned triangular brown Chinese smoking sweater \" b \" triangular brown smoking old-fashioned Chinese awful sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "198": {
+      "input": "a \" nice glass orange baby \" b \" nice orange glass baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "199": {
+      "input": "a \" rectangular Japanese brand-new computer \" b \" brand-new rectangular Japanese computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "200": {
+      "input": "a \" nice huge old square Vietnamese surfboard \" b \" Vietnamese old nice huge square surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "201": {
+      "input": "a \" terrible hiking tiny rectangular sweater \" b \" terrible tiny rectangular hiking sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "202": {
+      "input": "a \" ridiculous little ancient triangular steel typing match \" b \" typing triangular little steel ridiculous ancient match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "203": {
+      "input": "a \" silly cardboard eating dog \" b \" eating silly cardboard dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "204": {
+      "input": "a \" huge hiking cloth new sock \" b \" huge new cloth hiking sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "205": {
+      "input": "a \" lovely little square Brazilian plastic smoking ship \" b \" plastic little lovely smoking square Brazilian ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "206": {
+      "input": "a \" archaic gray Congolese gold hiking monkey \" b \" gold Congolese archaic hiking gray monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "207": {
+      "input": "a \" cardboard black ancient dog \" b \" ancient black cardboard dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "208": {
+      "input": "a \" circular new car \" b \" new circular car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "209": {
+      "input": "a \" terrible little old walking surfboard \" b \" terrible walking old little surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "210": {
+      "input": "a \" ancient grey prismlike little mysterious motorcycle \" b \" mysterious little ancient prismlike grey motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "211": {
+      "input": "a \" tan triangular big steel knife \" b \" big triangular tan steel knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "212": {
+      "input": "a \" glass driving rectangular dog \" b \" rectangular glass driving dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "213": {
+      "input": "a \" massive spherical brown wool driving sock \" b \" massive brown driving spherical wool sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "214": {
+      "input": "a \" big old-fashioned driving dog \" b \" driving big old-fashioned dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "215": {
+      "input": "a \" triangular large yellow cloth motorcycle \" b \" large triangular yellow cloth motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "216": {
+      "input": "a \" archaic Turkish knife \" b \" Turkish archaic knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "217": {
+      "input": "a \" large old square lead computer \" b \" lead large old square computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "218": {
+      "input": "a \" red exercise knife \" b \" exercise red knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "219": {
+      "input": "a \" yellow drinking Iranian sock \" b \" yellow Iranian drinking sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "220": {
+      "input": "a \" nice massive pyramidal white Vietnamese wood eating car \" b \" pyramidal eating white Vietnamese wood massive nice car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "221": {
+      "input": "a \" archaic triangular black walking surfboard \" b \" walking triangular black archaic surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "222": {
+      "input": "a \" grey pyramidal monkey \" b \" pyramidal grey monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "223": {
+      "input": "a \" new spherical brown Russian car \" b \" brown Russian new spherical car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "224": {
+      "input": "a \" old Russian silver whittling match \" b \" silver old whittling Russian match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "225": {
+      "input": "a \" mysterious little new red Mexican gold driving computer \" b \" Mexican mysterious gold red new little driving computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "226": {
+      "input": "a \" midsize plastic rectangular surfboard \" b \" midsize rectangular plastic surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "227": {
+      "input": "a \" large old red German knife \" b \" German old red large knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "228": {
+      "input": "a \" circular lead wonderful Congolese computer \" b \" wonderful circular Congolese lead computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "229": {
+      "input": "a \" ancient pyramidal driving sweater \" b \" pyramidal ancient driving sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "230": {
+      "input": "a \" nice tiny ancient spherical grey plastic dog \" b \" tiny ancient nice plastic spherical grey dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "231": {
+      "input": "a \" Chinese lovely prismlike midsize archaic plastic surfboard \" b \" lovely midsize archaic prismlike Chinese plastic surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "232": {
+      "input": "a \" large blue eating old-fashioned knife \" b \" large old-fashioned blue eating knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "233": {
+      "input": "a \" nice plastic smoking baby \" b \" smoking nice plastic baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "234": {
+      "input": "a \" square driving tiny brand-new Thai chair \" b \" tiny brand-new square Thai driving chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "235": {
+      "input": "a \" drinking brand-new Nigerian massive repulsive sock \" b \" repulsive massive brand-new Nigerian drinking sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "236": {
+      "input": "a \" cardboard Thai spherical cat \" b \" spherical Thai cardboard cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "237": {
+      "input": "a \" awful ancient baby \" b \" ancient awful baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "238": {
+      "input": "a \" blue Chinese normal-size pyramidal dog \" b \" normal-size pyramidal blue Chinese dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "239": {
+      "input": "a \" brand-new spherical orange leather chair \" b \" spherical leather brand-new orange chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "240": {
+      "input": "a \" black enormous wool match \" b \" enormous black wool match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "241": {
+      "input": "a \" tiny prismlike archaic fiberglass red smoking computer \" b \" tiny archaic prismlike red fiberglass smoking computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "242": {
+      "input": "a \" obnoxious old-fashioned rectangular grey whittling computer \" b \" grey obnoxious rectangular old-fashioned whittling computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "243": {
+      "input": "a \" cardboard yellow cat \" b \" yellow cardboard cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "244": {
+      "input": "a \" gray typing old-fashioned good shoe \" b \" good old-fashioned gray typing shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "245": {
+      "input": "a \" ridiculous massive red glass smoking sweater \" b \" smoking red massive ridiculous glass sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "246": {
+      "input": "a \" eating obnoxious brand-new match \" b \" obnoxious brand-new eating match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "247": {
+      "input": "a \" purple square match \" b \" square purple match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "248": {
+      "input": "a \" awful triangular purple Turkish monkey \" b \" Turkish triangular purple awful monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "249": {
+      "input": "a \" hiking wool huge tan prismlike ship \" b \" huge prismlike tan wool hiking ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "250": {
+      "input": "a \" repulsive old-fashioned fiberglass walking ship \" b \" fiberglass old-fashioned repulsive walking ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "251": {
+      "input": "a \" medium-size typing pyramidal cloth chair \" b \" medium-size pyramidal cloth typing chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "252": {
+      "input": "a \" new medium-size Bangladeshi lead dog \" b \" medium-size new Bangladeshi lead dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "253": {
+      "input": "a \" yellow wool hiking shoe \" b \" yellow hiking wool shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "254": {
+      "input": "a \" old pyramidal Russian tan terrible knife \" b \" terrible old pyramidal tan Russian knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "255": {
+      "input": "a \" normal-size smoking gray chair \" b \" normal-size gray smoking chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "256": {
+      "input": "a \" terrible orange gold whittling car \" b \" whittling terrible gold orange car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "257": {
+      "input": "a \" massive Turkish terrible purple prismlike sock \" b \" terrible massive prismlike purple Turkish sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "258": {
+      "input": "a \" cloth old-fashioned tiny yellow sweater \" b \" tiny old-fashioned yellow cloth sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "259": {
+      "input": "a \" pink old massive knife \" b \" massive old pink knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "260": {
+      "input": "a \" driving circular green small lovely chair \" b \" lovely small circular green driving chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "261": {
+      "input": "a \" archaic awful match \" b \" awful archaic match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "262": {
+      "input": "a \" good prismlike Chinese whittling motorcycle \" b \" prismlike whittling Chinese good motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "263": {
+      "input": "a \" archaic square wool driving motorcycle \" b \" wool archaic driving square motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "264": {
+      "input": "a \" small Filipino new computer \" b \" small new Filipino computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "265": {
+      "input": "a \" obnoxious red ancient leather Indian typing match \" b \" obnoxious ancient red Indian leather typing match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "266": {
+      "input": "a \" exercise wood little circular black lovely baby \" b \" lovely little circular black wood exercise baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "267": {
+      "input": "a \" awful old triangular gray cardboard sock \" b \" cardboard triangular old gray awful sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "268": {
+      "input": "a \" ancient rectangular brown wool smoking motorcycle \" b \" brown ancient rectangular smoking wool motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "269": {
+      "input": "a \" snorkeling triangular monkey \" b \" triangular snorkeling monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "270": {
+      "input": "a \" repulsive old-fashioned Vietnamese smoking surfboard \" b \" smoking repulsive Vietnamese old-fashioned surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "271": {
+      "input": "a \" rectangular brown Indonesian eating computer \" b \" Indonesian brown rectangular eating computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "272": {
+      "input": "a \" driving glass massive Chinese ship \" b \" massive Chinese glass driving ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "273": {
+      "input": "a \" ancient nice rectangular sock \" b \" nice ancient rectangular sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "274": {
+      "input": "a \" exercise ancient silly circular brown match \" b \" silly ancient circular brown exercise match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "275": {
+      "input": "a \" tiny square blue surfboard \" b \" square blue tiny surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "276": {
+      "input": "a \" smoking terrible German tan knife \" b \" terrible tan German smoking knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "277": {
+      "input": "a \" grey old-fashioned cloth prismlike drinking match \" b \" old-fashioned prismlike grey cloth drinking match \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "278": {
+      "input": "a \" midsize spherical yellow hiking dog \" b \" hiking yellow spherical midsize dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "279": {
+      "input": "a \" archaic rectangular grey American ship \" b \" grey archaic American rectangular ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "280": {
+      "input": "a \" Turkish mysterious pyramidal knife \" b \" mysterious pyramidal Turkish knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "281": {
+      "input": "a \" mysterious black Mexican baby \" b \" black Mexican mysterious baby \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "282": {
+      "input": "a \" medium-size spherical Filipino paper shoe \" b \" medium-size spherical paper Filipino shoe \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "283": {
+      "input": "a \" wonderful big old spherical Filipino sweater \" b \" wonderful big spherical old Filipino sweater \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "284": {
+      "input": "a \" silver tan brand-new motorcycle \" b \" brand-new tan silver motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "285": {
+      "input": "a \" nice old pyramidal Indonesian gold whittling chair \" b \" pyramidal nice whittling Indonesian old gold chair \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "286": {
+      "input": "a \" Brazilian snorkeling black repulsive little computer \" b \" repulsive little black Brazilian snorkeling computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "287": {
+      "input": "a \" wonderful large archaic Brazilian motorcycle \" b \" wonderful archaic Brazilian large motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "288": {
+      "input": "a \" repulsive circular white fiberglass cat \" b \" fiberglass circular repulsive white cat \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "289": {
+      "input": "a \" Japanese spherical medium-size sock \" b \" medium-size spherical Japanese sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "290": {
+      "input": "a \" old-fashioned wool brown wonderful huge motorcycle \" b \" wonderful huge old-fashioned brown wool motorcycle \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "291": {
+      "input": "a \" hiking Bangladeshi sock \" b \" Bangladeshi hiking sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "292": {
+      "input": "a \" brand-new glass German surfboard \" b \" brand-new German glass surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "293": {
+      "input": "a \" nice triangular snorkeling knife \" b \" snorkeling nice triangular knife \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "294": {
+      "input": "a \" repulsive silver ship \" b \" silver repulsive ship \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "295": {
+      "input": "a \" Chinese awful drinking yellow prismlike ancient huge sock \" b \" awful huge ancient prismlike yellow Chinese drinking sock \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "296": {
+      "input": "a \" tiny archaic square Indonesian monkey \" b \" archaic Indonesian square tiny monkey \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "297": {
+      "input": "a \" square gray ancient Indian glass dog \" b \" ancient square gray Indian glass dog \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "298": {
+      "input": "a \" big new prismlike black wood driving surfboard \" b \" prismlike wood driving black big new surfboard \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "A. a",
+        "a"
+      ]
+    },
+    "299": {
+      "input": "a \" walking plastic Turkish rectangular computer \" b \" rectangular Turkish plastic walking computer \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    },
+    "300": {
+      "input": "a \" mysterious cardboard ancient rectangular car \" b \" mysterious ancient rectangular cardboard car \" ?\nChoices:\nA. a\nB. b",
+      "output": [
+        "B. b",
+        "b"
+      ]
+    }
+  }
+}

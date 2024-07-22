@@ -1,0 +1,2108 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Select the humorous edit that 'ruins' the input movie or musical artist name",
+  "examples": {
+    "1": {
+      "input": "raging bull\nChoices:\nA. raging bulls\nB. rating bull\nC. ragingzbull\nD. raging dull",
+      "output": [
+        "D. raging dull",
+        "raging dull"
+      ]
+    },
+    "2": {
+      "input": "diana ross and the supremes\nChoices:\nA. diana ross nand the supremes\nB. diana dross and the supremes\nC. diana ross and pthe supremes\nD. diana rosts and the supremes",
+      "output": [
+        "B. diana dross and the supremes",
+        "diana dross and the supremes"
+      ]
+    },
+    "3": {
+      "input": "the rolling stones\nChoices:\nA. the rollizg stones\nB. thq rolling stones\nC. the folling stones\nD. the rolling scones",
+      "output": [
+        "D. the rolling scones",
+        "the rolling scones"
+      ]
+    },
+    "4": {
+      "input": "the gap band\nChoices:\nA. the lap band\nB. thwe gap band\nC. thn gap band\nD. the gap bannd",
+      "output": [
+        "A. the lap band",
+        "the lap band"
+      ]
+    },
+    "5": {
+      "input": "the rolling stones\nChoices:\nA. the rolling sntones\nB. the rolling stobes\nC. the rolling stonfes\nD. the lolling stones",
+      "output": [
+        "D. the lolling stones",
+        "the lolling stones"
+      ]
+    },
+    "6": {
+      "input": "star wars\nChoices:\nA. stare wars\nB. stariwars\nC. stars wars\nD. star was",
+      "output": [
+        "A. stare wars",
+        "stare wars"
+      ]
+    },
+    "7": {
+      "input": "in search of a midnight kiss\nChoices:\nA. in search of a midnibht kiss\nB. in secarch of a midnight kiss\nC. in search of a midnight piss\nD. in seavrch of a midnight kiss",
+      "output": [
+        "C. in search of a midnight piss",
+        "in search of a midnight piss"
+      ]
+    },
+    "8": {
+      "input": "arcade fire\nChoices:\nA. arcades fire\nB. arcade fir\nC. arcane fire\nD. arcadenfire",
+      "output": [
+        "C. arcane fire",
+        "arcane fire"
+      ]
+    },
+    "9": {
+      "input": "the police\nChoices:\nA. tpe police\nB. thy police\nC. toe police\nD. thezpolice",
+      "output": [
+        "B. thy police",
+        "thy police"
+      ]
+    },
+    "10": {
+      "input": "state champs\nChoices:\nA. state champ\nB. statek champs\nC. state cqhamps\nD. state chumps",
+      "output": [
+        "D. state chumps",
+        "state chumps"
+      ]
+    },
+    "11": {
+      "input": "moonlight\nChoices:\nA. moonligrht\nB. moonlzght\nC. moonlights\nD. goonlight",
+      "output": [
+        "D. goonlight",
+        "goonlight"
+      ]
+    },
+    "12": {
+      "input": "purple rain\nChoices:\nA. puarple rain\nB. purple vain\nC. purple raiyn\nD. purplejrain",
+      "output": [
+        "B. purple vain",
+        "purple vain"
+      ]
+    },
+    "13": {
+      "input": "the rolling stones\nChoices:\nA. the rolling scones\nB. the rolling stone\nC. the tolling stones\nD. the rollizng stones",
+      "output": [
+        "A. the rolling scones",
+        "the rolling scones"
+      ]
+    },
+    "14": {
+      "input": "i spit on your grave\nChoices:\nA. i spit on your erave\nB. i spit on your brave\nC. i skit on your grave\nD. i spit on your gravy",
+      "output": [
+        "D. i spit on your gravy",
+        "i spit on your gravy"
+      ]
+    },
+    "15": {
+      "input": "the three stooges\nChoices:\nA. the three stmooges\nB. the three snooges\nC. the three suooges\nD. the three stodges",
+      "output": [
+        "D. the three stodges",
+        "the three stodges"
+      ]
+    },
+    "16": {
+      "input": "dracula has risen from the grave\nChoices:\nA. dracula has risen from the graves\nB. dracula has risen frof the grave\nC. dracula has risehn from the grave\nD. dracula has risen from the gravy",
+      "output": [
+        "D. dracula has risen from the gravy",
+        "dracula has risen from the gravy"
+      ]
+    },
+    "17": {
+      "input": "dracula has risen from the grave\nChoices:\nA. dracula has risen from the grate\nB. dracula vas risen from the grave\nC. dcacula has risen from the grave\nD. dracula has risenp from the grave",
+      "output": [
+        "A. dracula has risen from the grate",
+        "dracula has risen from the grate"
+      ]
+    },
+    "18": {
+      "input": "bon iver\nChoices:\nA. bon liver\nB. bion iver\nC. ban iver\nD. bon ivee",
+      "output": [
+        "A. bon liver",
+        "bon liver"
+      ]
+    },
+    "19": {
+      "input": "first cow\nChoices:\nA. first cows\nB. first crow\nC. first co\nD. firsts cow",
+      "output": [
+        "B. first crow",
+        "first crow"
+      ]
+    },
+    "20": {
+      "input": "frankie goes to hollywood\nChoices:\nA. frankie goes to lollywood\nB. frankie goes to bollywood\nC. frankie goes to heollywood\nD. franuie goes to hollywood",
+      "output": [
+        "B. frankie goes to bollywood",
+        "frankie goes to bollywood"
+      ]
+    },
+    "21": {
+      "input": "the terminator\nChoices:\nA. the germinator\nB. the terminators\nC. the pterminator\nD. the tebrminator",
+      "output": [
+        "A. the germinator",
+        "the germinator"
+      ]
+    },
+    "22": {
+      "input": "the green mile\nChoices:\nA. the green mole\nB. thle green mile\nC. the green mixle\nD. the green midle",
+      "output": [
+        "A. the green mole",
+        "the green mole"
+      ]
+    },
+    "23": {
+      "input": "three dog night\nChoices:\nA. three dog tight\nB. three dogt night\nC. three dog fight\nD. tehree dog night",
+      "output": [
+        "C. three dog fight",
+        "three dog fight"
+      ]
+    },
+    "24": {
+      "input": "bad brains\nChoices:\nA. bad brabins\nB. bad brauns\nC. bad bramins\nD. bed brains",
+      "output": [
+        "D. bed brains",
+        "bed brains"
+      ]
+    },
+    "25": {
+      "input": "blade runner\nChoices:\nA. brlade runner\nB. blate runner\nC. jblade runner\nD. blade rknner",
+      "output": [
+        "B. blate runner",
+        "blate runner"
+      ]
+    },
+    "26": {
+      "input": "foo fighters\nChoices:\nA. foo fwighters\nB. foo fighter\nC. foo fixhters\nD. food fighters",
+      "output": [
+        "D. food fighters",
+        "food fighters"
+      ]
+    },
+    "27": {
+      "input": "notting hill\nChoices:\nA. notting hills\nB. nothing hill\nC. nottirg hill\nD. notting hill",
+      "output": [
+        "B. nothing hill",
+        "nothing hill"
+      ]
+    },
+    "28": {
+      "input": "the godfather\nChoices:\nA. the codfather\nB. tee godfather\nC. the godqfather\nD. thue godfather",
+      "output": [
+        "A. the codfather",
+        "the codfather"
+      ]
+    },
+    "29": {
+      "input": "jay and silent bob strike back\nChoices:\nA. jay and sizent bob strike back\nB. jay and silent rob strike back\nC. jagy and silent bob strike back\nD. jay and silent bob strike bach",
+      "output": [
+        "D. jay and silent bob strike bach",
+        "jay and silent bob strike bach"
+      ]
+    },
+    "30": {
+      "input": "dirty harry\nChoices:\nA. dirty kharry\nB. dirty hairy\nC. dirtyo harry\nD. dirtyzharry",
+      "output": [
+        "B. dirty hairy",
+        "dirty hairy"
+      ]
+    },
+    "31": {
+      "input": "whitney houston\nChoices:\nA. whiney houston\nB. whitney housbon\nC. whitneyx houston\nD. whitney homston",
+      "output": [
+        "A. whiney houston",
+        "whiney houston"
+      ]
+    },
+    "32": {
+      "input": "mad max: fury road\nChoices:\nA. mad max: fury toad\nB. madzmax: fury road\nC. mad max: fury rwoad\nD. mad maxb: fury road",
+      "output": [
+        "A. mad max: fury toad",
+        "mad max: fury toad"
+      ]
+    },
+    "33": {
+      "input": "herman's hermits\nChoices:\nA. hwrman's hermits\nB. hermjn's hermits\nC. herman's hermtts\nD. herman's permits",
+      "output": [
+        "D. herman's permits",
+        "herman's permits"
+      ]
+    },
+    "34": {
+      "input": "city hall\nChoices:\nA. citys hall\nB. city halls\nC. city hell\nD. bity hall",
+      "output": [
+        "C. city hell",
+        "city hell"
+      ]
+    },
+    "35": {
+      "input": "citizen kane\nChoices:\nA. citizen kale\nB. citizey kane\nC. citsizen kane\nD. citizen kahne",
+      "output": [
+        "A. citizen kale",
+        "citizen kale"
+      ]
+    },
+    "36": {
+      "input": "live and let die\nChoices:\nA. liee and let die\nB. live and let diet\nC. eive and let die\nD. live and let dzie",
+      "output": [
+        "B. live and let diet",
+        "live and let diet"
+      ]
+    },
+    "37": {
+      "input": "thunder road\nChoices:\nA. thunder koad\nB. thunder toad\nC. thuider road\nD. thunder iroad",
+      "output": [
+        "B. thunder toad",
+        "thunder toad"
+      ]
+    },
+    "38": {
+      "input": "the sisters of mercy\nChoices:\nA. the sisters of percy\nB. tmhe sisters of mercy\nC. the sisters of meurcy\nD. the sisters ozf mercy",
+      "output": [
+        "A. the sisters of percy",
+        "the sisters of percy"
+      ]
+    },
+    "39": {
+      "input": "the police\nChoices:\nA. thn police\nB. the poplice\nC. the polite\nD. the povlice",
+      "output": [
+        "C. the polite",
+        "the polite"
+      ]
+    },
+    "40": {
+      "input": "paint your wagon\nChoices:\nA. pajint your wagon\nB. paint your wagons\nC. taint your wagon\nD. paint youbr wagon",
+      "output": [
+        "C. taint your wagon",
+        "taint your wagon"
+      ]
+    },
+    "41": {
+      "input": "die another day\nChoices:\nA. vie another day\nB. die another iday\nC. dive another day\nD. pie another day",
+      "output": [
+        "D. pie another day",
+        "pie another day"
+      ]
+    },
+    "42": {
+      "input": "life of brian\nChoices:\nA. litfe of brian\nB. life oi brian\nC. life f brian\nD. lift of brian",
+      "output": [
+        "D. lift of brian",
+        "lift of brian"
+      ]
+    },
+    "43": {
+      "input": "gold finger\nChoices:\nA. pold finger\nB. golt finger\nC. gohd finger\nD. mold finger",
+      "output": [
+        "D. mold finger",
+        "mold finger"
+      ]
+    },
+    "44": {
+      "input": "guns n' roses\nChoices:\nA. guns mn' roses\nB. gums n' roses\nC. guns o' roses\nD. guns nd roses",
+      "output": [
+        "B. gums n' roses",
+        "gums n' roses"
+      ]
+    },
+    "45": {
+      "input": "a matter of life and death\nChoices:\nA. a matter of life nnd death\nB. aumatter of life and death\nC. a matter of wife and death\nD. a matter zof life and death",
+      "output": [
+        "C. a matter of wife and death",
+        "a matter of wife and death"
+      ]
+    },
+    "46": {
+      "input": "cocktails\nChoices:\nA. mocktails\nB. eocktails\nC. cocktail\nD. cocktailq",
+      "output": [
+        "A. mocktails",
+        "mocktails"
+      ]
+    },
+    "47": {
+      "input": "the band\nChoices:\nA. the bland\nB. khe band\nC. the banmd\nD. the bend",
+      "output": [
+        "A. the bland",
+        "the bland"
+      ]
+    },
+    "48": {
+      "input": "whitesnake\nChoices:\nA. whitesnape\nB. whitesnapke\nC. whitesnuake\nD. mwhitesnake",
+      "output": [
+        "A. whitesnape",
+        "whitesnape"
+      ]
+    },
+    "49": {
+      "input": "the beach boys\nChoices:\nA. the benach boys\nB. the beach boym\nC. the beach toys\nD. the beacb boys",
+      "output": [
+        "C. the beach toys",
+        "the beach toys"
+      ]
+    },
+    "50": {
+      "input": "the rolling stones\nChoices:\nA. the rolling stone\nB. twe rolling stones\nC. the roiling stones\nD. the rollwng stones",
+      "output": [
+        "C. the roiling stones",
+        "the roiling stones"
+      ]
+    },
+    "51": {
+      "input": "dead man walking\nChoices:\nA. dead man talking\nB. dead men walking\nC. dead man walkinbg\nD. dead man jwalking",
+      "output": [
+        "A. dead man talking",
+        "dead man talking"
+      ]
+    },
+    "52": {
+      "input": "the boat that rocked\nChoices:\nA. the goat that rocked\nB. thge boat that rocked\nC. the boat that rocvked\nD. the boat that rockegd",
+      "output": [
+        "A. the goat that rocked",
+        "the goat that rocked"
+      ]
+    },
+    "53": {
+      "input": "back to the future\nChoices:\nA. back to nthe future\nB. back to the iuture\nC. back to the fmture\nD. bark to the future",
+      "output": [
+        "D. bark to the future",
+        "bark to the future"
+      ]
+    },
+    "54": {
+      "input": "gone with the wind\nChoices:\nA. gowne with the wind\nB. gone with the wand\nC. gone with the wing\nD. gone witth the wind",
+      "output": [
+        "B. gone with the wand",
+        "gone with the wand"
+      ]
+    },
+    "55": {
+      "input": "die another day\nChoices:\nA. die anothpr day\nB. diet another day\nC. dies another day\nD. die another ay",
+      "output": [
+        "B. diet another day",
+        "diet another day"
+      ]
+    },
+    "56": {
+      "input": "a view to a kill\nChoices:\nA. a view to a krill\nB. a view to a kiwll\nC. a view to akkill\nD. a view zto a kill",
+      "output": [
+        "A. a view to a krill",
+        "a view to a krill"
+      ]
+    },
+    "57": {
+      "input": "rocky\nChoices:\nA. ricky\nB. rotky\nC. tocky\nD. crocky",
+      "output": [
+        "A. ricky",
+        "ricky"
+      ]
+    },
+    "58": {
+      "input": "the longest day\nChoices:\nA. the long est day\nB. the longest sday\nC. the longest days\nD. the longesb day",
+      "output": [
+        "A. the long est day",
+        "the long est day"
+      ]
+    },
+    "59": {
+      "input": "the rolling stones\nChoices:\nA. the rolling stones\nB. the rtlling stones\nC. the rolling scones\nD. the polling stones",
+      "output": [
+        "C. the rolling scones",
+        "the rolling scones"
+      ]
+    },
+    "60": {
+      "input": "boyz 2 men\nChoices:\nA. boyz 2 mewn\nB. boyz 2 ben\nC. toyz 2 men\nD. boiz 2 men",
+      "output": [
+        "C. toyz 2 men",
+        "toyz 2 men"
+      ]
+    },
+    "61": {
+      "input": "captain beefheart\nChoices:\nA. captaix beefheart\nB. captyain beefheart\nC. captain beerheart\nD. captain beefhekart",
+      "output": [
+        "C. captain beerheart",
+        "captain beerheart"
+      ]
+    },
+    "62": {
+      "input": "reservoir dogs\nChoices:\nA. reservoir dofgs\nB. resxervoir dogs\nC. reservoir fogs\nD. reservzoir dogs",
+      "output": [
+        "C. reservoir fogs",
+        "reservoir fogs"
+      ]
+    },
+    "63": {
+      "input": "jurassic park\nChoices:\nA. jurassic parks\nB. jurassic mark\nC. jurassic prk\nD. jurhassic park",
+      "output": [
+        "B. jurassic mark",
+        "jurassic mark"
+      ]
+    },
+    "64": {
+      "input": "50 cent\nChoices:\nA. 50 scent\nB. 5d cent\nC. 50q cent\nD. 50 ecent",
+      "output": [
+        "A. 50 scent",
+        "50 scent"
+      ]
+    },
+    "65": {
+      "input": "sex pistols\nChoices:\nA. sexqpistols\nB. sax pistols\nC. sex pistwls\nD. sex pistons",
+      "output": [
+        "D. sex pistons",
+        "sex pistons"
+      ]
+    },
+    "66": {
+      "input": "pink floyd\nChoices:\nA. pinkffloyd\nB. pijk floyd\nC. wink floyd\nD. punk floyd",
+      "output": [
+        "D. punk floyd",
+        "punk floyd"
+      ]
+    },
+    "67": {
+      "input": "the right stuff\nChoices:\nA. othe right stuff\nB. tve right stuff\nC. thewright stuff\nD. the right snuff",
+      "output": [
+        "D. the right snuff",
+        "the right snuff"
+      ]
+    },
+    "68": {
+      "input": "finding dory\nChoices:\nA. ofinding dory\nB. finding tory\nC. finding dorp\nD. finding bdory",
+      "output": [
+        "B. finding tory",
+        "finding tory"
+      ]
+    },
+    "69": {
+      "input": "the moody blues\nChoices:\nA. the moody bloes\nB. the moody blueb\nC. the woody blues\nD. the moodyy blues",
+      "output": [
+        "C. the woody blues",
+        "the woody blues"
+      ]
+    },
+    "70": {
+      "input": "the hope\nChoices:\nA. tzhe hope\nB. the hogpe\nC. the hodpe\nD. the hose",
+      "output": [
+        "D. the hose",
+        "the hose"
+      ]
+    },
+    "71": {
+      "input": "ultravox\nChoices:\nA. ultrdavox\nB. gultravox\nC. ultrapox\nD. ucltravox",
+      "output": [
+        "C. ultrapox",
+        "ultrapox"
+      ]
+    },
+    "72": {
+      "input": "news of the world\nChoices:\nA. new of the world\nB. news of thte world\nC. newt of the world\nD. news ofwthe world",
+      "output": [
+        "C. newt of the world",
+        "newt of the world"
+      ]
+    },
+    "73": {
+      "input": "beauty and the beast\nChoices:\nA. beauty and the beasb\nB. beauty and the blast\nC. beauty and the beakt\nD. beauty and the yeast",
+      "output": [
+        "D. beauty and the yeast",
+        "beauty and the yeast"
+      ]
+    },
+    "74": {
+      "input": "guns n' roses\nChoices:\nA. gunh n' roses\nB. guns n' ropes\nC. guns n'z roses\nD. guns n' hoses",
+      "output": [
+        "D. guns n' hoses",
+        "guns n' hoses"
+      ]
+    },
+    "75": {
+      "input": "the cult\nChoices:\nA. the colt\nB. dthe cult\nC. the cut\nD. hhe cult",
+      "output": [
+        "A. the colt",
+        "the colt"
+      ]
+    },
+    "76": {
+      "input": "one night in miami\nChoices:\nA. ones night in miami\nB. one night tin miami\nC. one knight in miami\nD. one nights in miami",
+      "output": [
+        "C. one knight in miami",
+        "one knight in miami"
+      ]
+    },
+    "77": {
+      "input": "run dmc\nChoices:\nA. runxdmc\nB. rqn dmc\nC. run dac\nD. run dnc",
+      "output": [
+        "D. run dnc",
+        "run dnc"
+      ]
+    },
+    "78": {
+      "input": "man on fire\nChoices:\nA. man on file\nB. man in fire\nC. man on qire\nD. man on fre",
+      "output": [
+        "B. man in fire",
+        "man in fire"
+      ]
+    },
+    "79": {
+      "input": "u2\nChoices:\nA. um\nB. u2\nC. u\nD. uc",
+      "output": [
+        "A. um",
+        "um"
+      ]
+    },
+    "80": {
+      "input": "the fast and the furious\nChoices:\nA. the fart and the furious\nB. the fast aed the furious\nC. the fasts and the furious\nD. the fat and the furious",
+      "output": [
+        "A. the fart and the furious",
+        "the fart and the furious"
+      ]
+    },
+    "81": {
+      "input": "hank williams\nChoices:\nA. hank willianms\nB. hank williyams\nC. dank williams\nD. hanqk williams",
+      "output": [
+        "C. dank williams",
+        "dank williams"
+      ]
+    },
+    "82": {
+      "input": "the beastie boys\nChoices:\nA. the beastuie boys\nB. the bestie boys\nC. the beasdie boys\nD. thet beastie boys",
+      "output": [
+        "B. the bestie boys",
+        "the bestie boys"
+      ]
+    },
+    "83": {
+      "input": "blue\nChoices:\nA. blfue\nB. glue\nC. lue\nD. bvlue",
+      "output": [
+        "B. glue",
+        "glue"
+      ]
+    },
+    "84": {
+      "input": "the godfather\nChoices:\nA. the godfathers\nB. uthe godfather\nC. the gondfather\nD. the bodfather",
+      "output": [
+        "D. the bodfather",
+        "the bodfather"
+      ]
+    },
+    "85": {
+      "input": "blur\nChoices:\nA. ublur\nB. blue\nC. blucr\nD. blnur",
+      "output": [
+        "B. blue",
+        "blue"
+      ]
+    },
+    "86": {
+      "input": "fall out boy\nChoices:\nA. faqll out boy\nB. fall out bot\nC. falbl out boy\nD. fall outt boy",
+      "output": [
+        "B. fall out bot",
+        "fall out bot"
+      ]
+    },
+    "87": {
+      "input": "aliens\nChoices:\nA. allens\nB. alien\nC. alienys\nD. alhens",
+      "output": [
+        "A. allens",
+        "allens"
+      ]
+    },
+    "88": {
+      "input": "witness\nChoices:\nA. witsess\nB. wetness\nC. wimness\nD. witnpss",
+      "output": [
+        "B. wetness",
+        "wetness"
+      ]
+    },
+    "89": {
+      "input": "star wars\nChoices:\nA. star wart\nB. star waqs\nC. stal wars\nD. star wafs",
+      "output": [
+        "A. star wart",
+        "star wart"
+      ]
+    },
+    "90": {
+      "input": "night club\nChoices:\nA. light club\nB. nigut club\nC. night cslub\nD. nigdht club",
+      "output": [
+        "A. light club",
+        "light club"
+      ]
+    },
+    "91": {
+      "input": "midnight oil\nChoices:\nA. midnight oils\nB. midnighz oil\nC. midnights oil\nD. midnight soil",
+      "output": [
+        "D. midnight soil",
+        "midnight soil"
+      ]
+    },
+    "92": {
+      "input": "the abyss\nChoices:\nA. toe abyss\nB. thehabyss\nC. the aboss\nD. tse abyss",
+      "output": [
+        "A. toe abyss",
+        "toe abyss"
+      ]
+    },
+    "93": {
+      "input": "red hot chili peppers\nChoices:\nA. red hot chili poppers\nB. red hwt chili peppers\nC. red hot chili peppercs\nD. red hot chili peppners",
+      "output": [
+        "A. red hot chili poppers",
+        "red hot chili poppers"
+      ]
+    },
+    "94": {
+      "input": "nine inch nails\nChoices:\nA. nine ionch nails\nB. nine inch sails\nC. nine inch qnails\nD. nine isch nails",
+      "output": [
+        "B. nine inch sails",
+        "nine inch sails"
+      ]
+    },
+    "95": {
+      "input": "bob seger & the silver bullet band\nChoices:\nA. bob seger & the silver mullet band\nB. bob seger & the silver bullet bend\nC. rob seger & the silver bullet band\nD. bob seger & thewsilver bullet band",
+      "output": [
+        "A. bob seger & the silver mullet band",
+        "bob seger & the silver mullet band"
+      ]
+    },
+    "96": {
+      "input": "it's a wonderful life\nChoices:\nA. it's a wonderful line\nB. it's a londerful life\nC. it's a wonderful lifr\nD. it's a wonderful libfe",
+      "output": [
+        "A. it's a wonderful line",
+        "it's a wonderful line"
+      ]
+    },
+    "97": {
+      "input": "the beach boys\nChoices:\nA. the leach boys\nB. the beacmh boys\nC. the beach boy\nD. the bkeach boys",
+      "output": [
+        "A. the leach boys",
+        "the leach boys"
+      ]
+    },
+    "98": {
+      "input": "full metal jacket\nChoices:\nA. fullmmetal jacket\nB. full mpetal jacket\nC. full metal jactet\nD. dull metal jacket",
+      "output": [
+        "D. dull metal jacket",
+        "dull metal jacket"
+      ]
+    },
+    "99": {
+      "input": "seven brides for seven brothers\nChoices:\nA. seven bride for seven brothers\nB. seven brides for seven byrothers\nC. seven brides for seven brotders\nD. seven brides for seven brothels",
+      "output": [
+        "D. seven brides for seven brothels",
+        "seven brides for seven brothels"
+      ]
+    },
+    "100": {
+      "input": "jethro tull\nChoices:\nA. jethro dull\nB. jethro tult\nC. jethrpo tull\nD. jethro tuill",
+      "output": [
+        "A. jethro dull",
+        "jethro dull"
+      ]
+    },
+    "101": {
+      "input": "en vogue\nChoices:\nA. eon vogue\nB. en vogbue\nC. en vfogue\nD. en rogue",
+      "output": [
+        "D. en rogue",
+        "en rogue"
+      ]
+    },
+    "102": {
+      "input": "true grit\nChoices:\nA. true grmt\nB. true sgrit\nC. true brit\nD. tlrue grit",
+      "output": [
+        "C. true brit",
+        "true brit"
+      ]
+    },
+    "103": {
+      "input": "reo speedwagon\nChoices:\nA. reo speedwagons\nB. oreo speedwagon\nC. reo speedwayon\nD. reo spreedwagon",
+      "output": [
+        "B. oreo speedwagon",
+        "oreo speedwagon"
+      ]
+    },
+    "104": {
+      "input": "lost in translation\nChoices:\nA. cost in translation\nB. lost in translations\nC. last in translation\nD. lost il translation",
+      "output": [
+        "A. cost in translation",
+        "cost in translation"
+      ]
+    },
+    "105": {
+      "input": "ben folds five\nChoices:\nA. ben foldsk five\nB. ben folds fpve\nC. ten folds five\nD. bengfolds five",
+      "output": [
+        "C. ten folds five",
+        "ten folds five"
+      ]
+    },
+    "106": {
+      "input": "the artist\nChoices:\nA. thw artist\nB. kthe artist\nC. xthe artist\nD. toe artist",
+      "output": [
+        "D. toe artist",
+        "toe artist"
+      ]
+    },
+    "107": {
+      "input": "backstreet boys\nChoices:\nA. backstreet toys\nB. backstreet boy\nC. backstreret boys\nD. bacqkstreet boys",
+      "output": [
+        "A. backstreet toys",
+        "backstreet toys"
+      ]
+    },
+    "108": {
+      "input": "top gun\nChoices:\nA. tap gun\nB. top gaun\nC. top gum\nD. top guns",
+      "output": [
+        "C. top gum",
+        "top gum"
+      ]
+    },
+    "109": {
+      "input": "counting crows\nChoices:\nA. mounting crows\nB. coufting crows\nC. counting crowj\nD. counting brows",
+      "output": [
+        "D. counting brows",
+        "counting brows"
+      ]
+    },
+    "110": {
+      "input": "planet of the apes\nChoices:\nA. planet of the ales\nB. planet of the ape\nC. planet of the apoes\nD. plrnet of the apes",
+      "output": [
+        "A. planet of the ales",
+        "planet of the ales"
+      ]
+    },
+    "111": {
+      "input": "pantera\nChoices:\nA. paitera\nB. spantera\nC. lantern\nD. panera",
+      "output": [
+        "D. panera",
+        "panera"
+      ]
+    },
+    "112": {
+      "input": "the hug\nChoices:\nA. the hrug\nB. the yug\nC. the huwg\nD. the mug",
+      "output": [
+        "D. the mug",
+        "the mug"
+      ]
+    },
+    "113": {
+      "input": "pink floyd\nChoices:\nA. pinks floyd\nB. pink floayd\nC. prnk floyd\nD. pine floyd",
+      "output": [
+        "D. pine floyd",
+        "pine floyd"
+      ]
+    },
+    "114": {
+      "input": "roxy music\nChoices:\nA. roxy musij\nB. roxy zusic\nC. poxy music\nD. roxy musiz",
+      "output": [
+        "C. poxy music",
+        "poxy music"
+      ]
+    },
+    "115": {
+      "input": "lawrence of arabia\nChoices:\nA. lawrences of arabia\nB. lawrence of arabica\nC. awrence of arabia\nD. lawrfence of arabia",
+      "output": [
+        "B. lawrence of arabica",
+        "lawrence of arabica"
+      ]
+    },
+    "116": {
+      "input": "bad company\nChoices:\nA. bad companys\nB. badc company\nC. bad vcompany\nD. sad company",
+      "output": [
+        "D. sad company",
+        "sad company"
+      ]
+    },
+    "117": {
+      "input": "scream\nChoices:\nA. cream\nB. secream\nC. scoeam\nD. sxream",
+      "output": [
+        "A. cream",
+        "cream"
+      ]
+    },
+    "118": {
+      "input": "the wild bunch\nChoices:\nA. tee wild bunch\nB. the wilsd bunch\nC. the wild brunch\nD. thc wild bunch",
+      "output": [
+        "C. the wild brunch",
+        "the wild brunch"
+      ]
+    },
+    "119": {
+      "input": "the princess and the frog\nChoices:\nA. the princess aud the frog\nB. the princess and the frig\nC. tee princess and the frog\nD. the princess and tge frog",
+      "output": [
+        "B. the princess and the frig",
+        "the princess and the frig"
+      ]
+    },
+    "120": {
+      "input": "steely dan\nChoices:\nA. steely don\nB. steemly dan\nC. steiely dan\nD. steelycdan",
+      "output": [
+        "A. steely don",
+        "steely don"
+      ]
+    },
+    "121": {
+      "input": "pearl jam\nChoices:\nA. pegarl jam\nB. pearls jam\nC. pearl ham\nD. pearl jams",
+      "output": [
+        "C. pearl ham",
+        "pearl ham"
+      ]
+    },
+    "122": {
+      "input": "kool & the gang\nChoices:\nA. kozol & the gang\nB. kool & tlhe gang\nC. fool & the gang\nD. kofol & the gang",
+      "output": [
+        "C. fool & the gang",
+        "fool & the gang"
+      ]
+    },
+    "123": {
+      "input": "the sting\nChoices:\nA. the stink\nB. thegsting\nC. the soing\nD. the mting",
+      "output": [
+        "A. the stink",
+        "the stink"
+      ]
+    },
+    "124": {
+      "input": "jungle book\nChoices:\nA. jingle book\nB. jundgle book\nC. junxle book\nD. jungleg book",
+      "output": [
+        "A. jingle book",
+        "jingle book"
+      ]
+    },
+    "125": {
+      "input": "last action hero\nChoices:\nA. last actions hero\nB. last action herko\nC. last actin hero\nD. lost action hero",
+      "output": [
+        "D. lost action hero",
+        "lost action hero"
+      ]
+    },
+    "126": {
+      "input": "panic! at the disco\nChoices:\nA. panic! at the cisco\nB. panic! at the discos\nC. panic! at thexdisco\nD. panic! art the disco",
+      "output": [
+        "A. panic! at the cisco",
+        "panic! at the cisco"
+      ]
+    },
+    "127": {
+      "input": "10 years\nChoices:\nA. 10 yenars\nB. 10 ears\nC. 10 yearws\nD. 10 yearbs",
+      "output": [
+        "B. 10 ears",
+        "10 ears"
+      ]
+    },
+    "128": {
+      "input": "the beatles\nChoices:\nA. gthe beatles\nB. tohe beatles\nC. ethe beatles\nD. the beagles",
+      "output": [
+        "D. the beagles",
+        "the beagles"
+      ]
+    },
+    "129": {
+      "input": "rush\nChoices:\nA. ruxsh\nB. rwsh\nC. hush\nD. zush",
+      "output": [
+        "C. hush",
+        "hush"
+      ]
+    },
+    "130": {
+      "input": "the commodores\nChoices:\nA. thescommodores\nB. the commodorks\nC. thy commodores\nD. the commoores",
+      "output": [
+        "B. the commodorks",
+        "the commodorks"
+      ]
+    },
+    "131": {
+      "input": "cat on a hot tin roof\nChoices:\nA. cat on a hot tjn roof\nB. cat cn a hot tin roof\nC. cat on a hot tin roof\nD. cat on a hot tin goof",
+      "output": [
+        "D. cat on a hot tin goof",
+        "cat on a hot tin goof"
+      ]
+    },
+    "132": {
+      "input": "pink floyd\nChoices:\nA. piqk floyd\nB. pink flomyd\nC. pink floyds\nD. fink floyd",
+      "output": [
+        "D. fink floyd",
+        "fink floyd"
+      ]
+    },
+    "133": {
+      "input": "the thing\nChoices:\nA. the thong\nB. phe thing\nC. the thing\nD. the things",
+      "output": [
+        "A. the thong",
+        "the thong"
+      ]
+    },
+    "134": {
+      "input": "jackson five\nChoices:\nA. sjackson five\nB. jackson fire\nC. jacksons five\nD. jackson pfive",
+      "output": [
+        "B. jackson fire",
+        "jackson fire"
+      ]
+    },
+    "135": {
+      "input": "con air\nChoices:\nA. cov air\nB. conb air\nC. can air\nD. con gair",
+      "output": [
+        "A. cov air",
+        "cov air"
+      ]
+    },
+    "136": {
+      "input": "happy mondays\nChoices:\nA. happy moondays\nB. happycmondays\nC. sappy mondays\nD. happy mogndays",
+      "output": [
+        "C. sappy mondays",
+        "sappy mondays"
+      ]
+    },
+    "137": {
+      "input": "offspring\nChoices:\nA. offsprinig\nB. offsprinc\nC. offespring\nD. offstring",
+      "output": [
+        "D. offstring",
+        "offstring"
+      ]
+    },
+    "138": {
+      "input": "superclunk\nChoices:\nA. suaperclunk\nB. superchunk\nC. fsuperclunk\nD. supernclunk",
+      "output": [
+        "B. superchunk",
+        "superchunk"
+      ]
+    },
+    "139": {
+      "input": "the philadelphia story\nChoices:\nA. the philadelphia store\nB. fhe philadelphia story\nC. the philadelphiapstory\nD. thexphiladelphia story",
+      "output": [
+        "A. the philadelphia store",
+        "the philadelphia store"
+      ]
+    },
+    "140": {
+      "input": "echo & the bunnymen\nChoices:\nA. echo & vhe bunnymen\nB. echo & the funnymen\nC. echo x& the bunnymen\nD. echo & tshe bunnymen",
+      "output": [
+        "B. echo & the funnymen",
+        "echo & the funnymen"
+      ]
+    },
+    "141": {
+      "input": "12 angry men\nChoices:\nA. 2 angry men\nB. 12 angry mhen\nC. 12oangry men\nD. 12 hangry men",
+      "output": [
+        "D. 12 hangry men",
+        "12 hangry men"
+      ]
+    },
+    "142": {
+      "input": "the mash\nChoices:\nA. tee mash\nB. the maseh\nC. thj mash\nD. the smash",
+      "output": [
+        "D. the smash",
+        "the smash"
+      ]
+    },
+    "143": {
+      "input": "jack reacher\nChoices:\nA. jqck reacher\nB. jaci reacher\nC. jack teacher\nD. jackkreacher",
+      "output": [
+        "C. jack teacher",
+        "jack teacher"
+      ]
+    },
+    "144": {
+      "input": "system of a down\nChoices:\nA. system mof a down\nB. shstem of a down\nC. syster of a down\nD. system of a gown",
+      "output": [
+        "D. system of a gown",
+        "system of a gown"
+      ]
+    },
+    "145": {
+      "input": "love story\nChoices:\nA. live story\nB. love stoery\nC. love storey\nD. lrve story",
+      "output": [
+        "A. live story",
+        "live story"
+      ]
+    },
+    "146": {
+      "input": "the cranberries\nChoices:\nA. the crapberries\nB. tthe cranberries\nC. the csranberries\nD. the cranbgerries",
+      "output": [
+        "A. the crapberries",
+        "the crapberries"
+      ]
+    },
+    "147": {
+      "input": "toy story\nChoices:\nA. top story\nB. toyqstory\nC. toe story\nD. toy stoty",
+      "output": [
+        "C. toe story",
+        "toe story"
+      ]
+    },
+    "148": {
+      "input": "the green mile\nChoices:\nA. the green miles\nB. the gueen mile\nC. the gregn mile\nD. the green bile",
+      "output": [
+        "D. the green bile",
+        "the green bile"
+      ]
+    },
+    "149": {
+      "input": "earth, wind, & fire\nChoices:\nA. earth, winds, & fire\nB. earth, wind, & fires\nC. earth, wind,v & fire\nD. earth, wink, & fire",
+      "output": [
+        "D. earth, wink, & fire",
+        "earth, wink, & fire"
+      ]
+    },
+    "150": {
+      "input": "oasis\nChoices:\nA. basis\nB. iasis\nC. oasqs\nD. oaszis",
+      "output": [
+        "A. basis",
+        "basis"
+      ]
+    },
+    "151": {
+      "input": "ace in the hole\nChoices:\nA. ace in the hofe\nB. ace in ths hole\nC. ace in nthe hole\nD. ape in the hole",
+      "output": [
+        "D. ape in the hole",
+        "ape in the hole"
+      ]
+    },
+    "152": {
+      "input": "taylor swift\nChoices:\nA. tzaylor swift\nB. taylors swift\nC. taylor snift\nD. ftaylor swift",
+      "output": [
+        "C. taylor snift",
+        "taylor snift"
+      ]
+    },
+    "153": {
+      "input": "gone with the wind\nChoices:\nA. gone with the winm\nB. gong with the wind\nC. goke with the wind\nD. gone with the wynd",
+      "output": [
+        "B. gong with the wind",
+        "gong with the wind"
+      ]
+    },
+    "154": {
+      "input": "singin' in the rain\nChoices:\nA. silgin' in the rain\nB. singint in the rain\nC. singin' in the ruin\nD. sizngin' in the rain",
+      "output": [
+        "C. singin' in the ruin",
+        "singin' in the ruin"
+      ]
+    },
+    "155": {
+      "input": "coldplay\nChoices:\nA. coldpnay\nB. colldplay\nC. coldglay\nD. soldplay",
+      "output": [
+        "D. soldplay",
+        "soldplay"
+      ]
+    },
+    "156": {
+      "input": "quatermass and the pit\nChoices:\nA. quatermasss and the pat\nB. quatermass and the pip\nC. qualermass and the pit\nD. quatermass and the zit",
+      "output": [
+        "D. quatermass and the zit",
+        "quatermass and the zit"
+      ]
+    },
+    "157": {
+      "input": "joy division\nChoices:\nA. job division\nB. jxoy division\nC. toy division\nD. joy divvision",
+      "output": [
+        "C. toy division",
+        "toy division"
+      ]
+    },
+    "158": {
+      "input": "creedence clearwater revival\nChoices:\nA. creedence clearwatee revival\nB. creedence clqarwater revival\nC. creedence clearwafer revival\nD. crecedence clearwater revival",
+      "output": [
+        "C. creedence clearwafer revival",
+        "creedence clearwafer revival"
+      ]
+    },
+    "159": {
+      "input": "the moody blues\nChoices:\nA. the mfody blues\nB. the moody blueds\nC. the moody blueus\nD. the moldy blues",
+      "output": [
+        "D. the moldy blues",
+        "the moldy blues"
+      ]
+    },
+    "160": {
+      "input": "star wars\nChoices:\nA. stars wars\nB. stat wars\nC. star wwars\nD. star warg",
+      "output": [
+        "B. stat wars",
+        "stat wars"
+      ]
+    },
+    "161": {
+      "input": "the french connection\nChoices:\nA. the french connecteion\nB. tee french connection\nC. the french connections\nD. the french convection",
+      "output": [
+        "D. the french convection",
+        "the french convection"
+      ]
+    },
+    "162": {
+      "input": "jojo rabbit\nChoices:\nA. mojo rabbit\nB. jojo vrabbit\nC. jojo rababit\nD. jojvo rabbit",
+      "output": [
+        "A. mojo rabbit",
+        "mojo rabbit"
+      ]
+    },
+    "163": {
+      "input": "a bridge too far\nChoices:\nA. a bridge toe far\nB. a bridge top far\nC. a bridge too fat\nD. a bfridge too far",
+      "output": [
+        "C. a bridge too fat",
+        "a bridge too fat"
+      ]
+    },
+    "164": {
+      "input": "it's a beautiful day\nChoices:\nA. it's u beautiful day\nB. it's as beautiful day\nC. it's a beautiful ray\nD. it's a beautiful dam",
+      "output": [
+        "D. it's a beautiful dam",
+        "it's a beautiful dam"
+      ]
+    },
+    "165": {
+      "input": "deadpool\nChoices:\nA. deadpxol\nB. deadpoo\nC. dradpool\nD. deadpouol",
+      "output": [
+        "B. deadpoo",
+        "deadpoo"
+      ]
+    },
+    "166": {
+      "input": "blade\nChoices:\nA. blades\nB. blkade\nC. slade\nD. blaqe",
+      "output": [
+        "C. slade",
+        "slade"
+      ]
+    },
+    "167": {
+      "input": "the godmothers\nChoices:\nA. the godmothqrs\nB. ghe godmothers\nC. the godmother\nD. the grdmothers",
+      "output": [
+        "C. the godmother",
+        "the godmother"
+      ]
+    },
+    "168": {
+      "input": "men in black\nChoices:\nA. hen in black\nB. man in black\nC. hmen in black\nD. men ib black",
+      "output": [
+        "A. hen in black",
+        "hen in black"
+      ]
+    },
+    "169": {
+      "input": "the who!\nChoices:\nA. the whom!\nB. thehwho!\nC. dhe who!\nD. tmhe who!",
+      "output": [
+        "A. the whom!",
+        "the whom!"
+      ]
+    },
+    "170": {
+      "input": "star wars\nChoices:\nA. star wars\nB. spar wars\nC. sdtar wars\nD. stxr wars",
+      "output": [
+        "B. spar wars",
+        "spar wars"
+      ]
+    },
+    "171": {
+      "input": "the sum of all fears\nChoices:\nA. the sudm of all fears\nB. the mum of all fears\nC. the sums of all fears\nD. the sum of all fear",
+      "output": [
+        "B. the mum of all fears",
+        "the mum of all fears"
+      ]
+    },
+    "172": {
+      "input": "my fair lady\nChoices:\nA. my fair laddy\nB. my fmair lady\nC. my faird lady\nD. my fair laady",
+      "output": [
+        "A. my fair laddy",
+        "my fair laddy"
+      ]
+    },
+    "173": {
+      "input": "dolly dots\nChoices:\nA. dolly kots\nB. dolly dot\nC. dolly dotcs\nD. dolly dott",
+      "output": [
+        "A. dolly kots",
+        "dolly kots"
+      ]
+    },
+    "174": {
+      "input": "the dark knight\nChoices:\nA. the dark knigst\nB. the dark ksight\nC. tie dark knight\nD. the dork knight",
+      "output": [
+        "D. the dork knight",
+        "the dork knight"
+      ]
+    },
+    "175": {
+      "input": "pixies\nChoices:\nA. pgxies\nB. pihies\nC. pigies\nD. pinxies",
+      "output": [
+        "C. pigies",
+        "pigies"
+      ]
+    },
+    "176": {
+      "input": "star wars\nChoices:\nA. star warl\nB. star warfs\nC. sar wars\nD. stab wars",
+      "output": [
+        "D. stab wars",
+        "stab wars"
+      ]
+    },
+    "177": {
+      "input": "killing joke\nChoices:\nA. killing toke\nB. killing jokes\nC. killing coke\nD. villing joke",
+      "output": [
+        "A. killing toke",
+        "killing toke"
+      ]
+    },
+    "178": {
+      "input": "alice cooper\nChoices:\nA. alice cohper\nB. alice cooter\nC. alice pooper\nD. alicea cooper",
+      "output": [
+        "C. alice pooper",
+        "alice pooper"
+      ]
+    },
+    "179": {
+      "input": "big trouble in little china\nChoices:\nA. big trouble in little chins\nB. big trouble in littmle china\nC. bigwtrouble in little china\nD. big troubles in little china",
+      "output": [
+        "A. big trouble in little chins",
+        "big trouble in little chins"
+      ]
+    },
+    "180": {
+      "input": "gone with the wind\nChoices:\nA. gone with the winds\nB. gone with the wine\nC. gone with tpe wind\nD. guone with the wind",
+      "output": [
+        "B. gone with the wine",
+        "gone with the wine"
+      ]
+    },
+    "181": {
+      "input": "a tribe called quest\nChoices:\nA. a tribe valled quests\nB. a tribe callew quest\nC. a tribe called queso\nD. a tribe callel quest",
+      "output": [
+        "C. a tribe called queso",
+        "a tribe called queso"
+      ]
+    },
+    "182": {
+      "input": "vertigo\nChoices:\nA. vwertigo\nB. vxertigo\nC. vesrtigo\nD. wertigo",
+      "output": [
+        "D. wertigo",
+        "wertigo"
+      ]
+    },
+    "183": {
+      "input": "dirty dancing\nChoices:\nA. dirty danqcing\nB. dirty lancing\nC. djrty dancing\nD. dirty cancing",
+      "output": [
+        "B. dirty lancing",
+        "dirty lancing"
+      ]
+    },
+    "184": {
+      "input": "goo goo dolls\nChoices:\nA. goo goo dills\nB. goo goo dohlls\nC. goo goto dolls\nD. goo gfoo dolls",
+      "output": [
+        "A. goo goo dills",
+        "goo goo dills"
+      ]
+    },
+    "185": {
+      "input": "you've got mail\nChoices:\nA. you've lot mail\nB. you've goht mail\nC. you'veigot mail\nD. you've got fail",
+      "output": [
+        "D. you've got fail",
+        "you've got fail"
+      ]
+    },
+    "186": {
+      "input": "apocalypse now\nChoices:\nA. iapocalypse now\nB. apocalypse ncow\nC. apocalypse cow\nD. apocalypxse now",
+      "output": [
+        "C. apocalypse cow",
+        "apocalypse cow"
+      ]
+    },
+    "187": {
+      "input": "lawrence of arabia\nChoices:\nA. lawrence of arabida\nB. ljwrence of arabia\nC. lawrence of arabica\nD. lawrenqe of arabia",
+      "output": [
+        "C. lawrence of arabica",
+        "lawrence of arabica"
+      ]
+    },
+    "188": {
+      "input": "little shop of horrors\nChoices:\nA. little shoy of horrors\nB. little hop of horrors\nC. little wshop of horrors\nD. ulittle shop of horrors",
+      "output": [
+        "B. little hop of horrors",
+        "little hop of horrors"
+      ]
+    },
+    "189": {
+      "input": "pitch perfect\nChoices:\nA. witch perfect\nB. patch perfect\nC. pitchn perfect\nD. pitcgh perfect",
+      "output": [
+        "A. witch perfect",
+        "witch perfect"
+      ]
+    },
+    "190": {
+      "input": "the verve\nChoices:\nA. the verqve\nB. the perve\nC. thse verve\nD. tche verve",
+      "output": [
+        "B. the perve",
+        "the perve"
+      ]
+    },
+    "191": {
+      "input": "old joy\nChoices:\nA. old jody\nB. old toy\nC. old jdy\nD. olzd joy",
+      "output": [
+        "B. old toy",
+        "old toy"
+      ]
+    },
+    "192": {
+      "input": "sex pistols\nChoices:\nA. sex fistols\nB. sex pisthls\nC. skx pistols\nD. sex piwtols",
+      "output": [
+        "A. sex fistols",
+        "sex fistols"
+      ]
+    },
+    "193": {
+      "input": "the bangles\nChoices:\nA. the mangles\nB. the mfangles\nC. the tmangles\nD. tue mangles",
+      "output": [
+        "A. the mangles",
+        "the mangles"
+      ]
+    },
+    "194": {
+      "input": "the third man\nChoices:\nA. the third men\nB. the trird man\nC. thed third man\nD. the third pan",
+      "output": [
+        "D. the third pan",
+        "the third pan"
+      ]
+    },
+    "195": {
+      "input": "apocalypse now\nChoices:\nA. ampocalypse now\nB. apocalypse not\nC. apocalypse nvow\nD. apocalcpse now",
+      "output": [
+        "B. apocalypse not",
+        "apocalypse not"
+      ]
+    },
+    "196": {
+      "input": "sleepless in seattle\nChoices:\nA. sleepless in settle\nB. sleeplekss in seattle\nC. sleepless in peattle\nD. sheepless in seattle",
+      "output": [
+        "D. sheepless in seattle",
+        "sheepless in seattle"
+      ]
+    },
+    "197": {
+      "input": "air supply\nChoices:\nA. aio supply\nB. air supply\nC. lir supply\nD. hair supply",
+      "output": [
+        "D. hair supply",
+        "hair supply"
+      ]
+    },
+    "198": {
+      "input": "babs\nChoices:\nA. jabs\nB. bab\nC. bibs\nD. baubs",
+      "output": [
+        "A. jabs",
+        "jabs"
+      ]
+    },
+    "199": {
+      "input": "green day\nChoices:\nA. green pay\nB. green dad\nC. green dazy\nD. groeen day",
+      "output": [
+        "B. green dad",
+        "green dad"
+      ]
+    },
+    "200": {
+      "input": "training day\nChoices:\nA. training days\nB. trainink day\nC. raining day\nD. trahining day",
+      "output": [
+        "C. raining day",
+        "raining day"
+      ]
+    },
+    "201": {
+      "input": "pink floyd\nChoices:\nA. punk floyd\nB. pink flhoyd\nC. pdnk floyd\nD. pzink floyd",
+      "output": [
+        "A. punk floyd",
+        "punk floyd"
+      ]
+    },
+    "202": {
+      "input": "missy elliott\nChoices:\nA. pissy elliott\nB. missywelliott\nC. missy eltliott\nD. mibssy elliott",
+      "output": [
+        "A. pissy elliott",
+        "pissy elliott"
+      ]
+    },
+    "203": {
+      "input": "the police\nChoices:\nA. tye police\nB. the polite.\nC. nhe police\nD. twhe police",
+      "output": [
+        "B. the polite.",
+        "the polite."
+      ]
+    },
+    "204": {
+      "input": "oasis\nChoices:\nA. kasis\nB. oasih\nC. wasis\nD. onasis",
+      "output": [
+        "D. onasis",
+        "onasis"
+      ]
+    },
+    "205": {
+      "input": "the deer hunter\nChoices:\nA. the deer hunhter\nB. the beer hunter\nC. the kdeer hunter\nD. the deer huntaer",
+      "output": [
+        "B. the beer hunter",
+        "the beer hunter"
+      ]
+    },
+    "206": {
+      "input": "gone with the wind\nChoices:\nA. gone with the wino\nB. gone with thecwind\nC. gone withmthe wind\nD. gone with the wicd",
+      "output": [
+        "A. gone with the wino",
+        "gone with the wino"
+      ]
+    },
+    "207": {
+      "input": "the jam\nChoices:\nA. the jams\nB. the ljam\nC. the jar\nD. the ham",
+      "output": [
+        "C. the jar",
+        "the jar"
+      ]
+    },
+    "208": {
+      "input": "the departed\nChoices:\nA. the deprarted\nB. the dephrted\nC. the dearted\nD. the defarted",
+      "output": [
+        "D. the defarted",
+        "the defarted"
+      ]
+    },
+    "209": {
+      "input": "the grand budapest hotel\nChoices:\nA. the grand budapest hostel\nB. the grind budapest hotel\nC. the grand budapest hozel\nD. the grandmbudapest hotel",
+      "output": [
+        "A. the grand budapest hostel",
+        "the grand budapest hostel"
+      ]
+    },
+    "210": {
+      "input": "o.a.r.\nChoices:\nA. e.a.r.\nB. o.alr.\nC. co.a.r.\nD. ov.a.r.",
+      "output": [
+        "A. e.a.r.",
+        "e.a.r."
+      ]
+    },
+    "211": {
+      "input": "herbie hancock\nChoices:\nA. ferbie hancock\nB. hecrbie hancock\nC. herbqe hancock\nD. hejrbie hancock",
+      "output": [
+        "A. ferbie hancock",
+        "ferbie hancock"
+      ]
+    },
+    "212": {
+      "input": "trainspotting\nChoices:\nA. trainspoeting\nB. trainspottaing\nC. trainspitting\nD. trainspqtting",
+      "output": [
+        "C. trainspitting",
+        "trainspitting"
+      ]
+    },
+    "213": {
+      "input": "steely dan\nChoices:\nA. steely dans\nB. stveely dan\nC. steely yan\nD. steely man",
+      "output": [
+        "D. steely man",
+        "steely man"
+      ]
+    },
+    "214": {
+      "input": "black sabbath\nChoices:\nA. blayk sabbath\nB. black sabjath\nC. back sabbath\nD. slack sabbath",
+      "output": [
+        "D. slack sabbath",
+        "slack sabbath"
+      ]
+    },
+    "215": {
+      "input": "muse\nChoices:\nA. muses\nB. muxse\nC. mush\nD. muso",
+      "output": [
+        "C. mush",
+        "mush"
+      ]
+    },
+    "216": {
+      "input": "the beach boys\nChoices:\nA. the beach bmoys\nB. the peach boys\nC. the beach boys\nD. the bemach boys",
+      "output": [
+        "B. the peach boys",
+        "the peach boys"
+      ]
+    },
+    "217": {
+      "input": "moby dick\nChoices:\nA. moby dikk\nB. moby duck\nC. movby dick\nD. mobyudick",
+      "output": [
+        "B. moby duck",
+        "moby duck"
+      ]
+    },
+    "218": {
+      "input": "hellboy\nChoices:\nA. hellbby\nB. hpllboy\nC. cellboy\nD. hellbfoy",
+      "output": [
+        "C. cellboy",
+        "cellboy"
+      ]
+    },
+    "219": {
+      "input": "foo fighters\nChoices:\nA. poo fighters\nB. foo fighthers\nC. foo fighter\nD. fyo fighters",
+      "output": [
+        "A. poo fighters",
+        "poo fighters"
+      ]
+    },
+    "220": {
+      "input": "the doors\nChoices:\nA. the zdoors\nB. the doord\nC. the poors\nD. tthe doors",
+      "output": [
+        "C. the poors",
+        "the poors"
+      ]
+    },
+    "221": {
+      "input": "the dark knight rises\nChoices:\nA. the bark knight rises\nB. thetdark knight rises\nC. the dork knight rises\nD. the dark kniggt rises",
+      "output": [
+        "C. the dork knight rises",
+        "the dork knight rises"
+      ]
+    },
+    "222": {
+      "input": "one of our dinosaurs is missing\nChoices:\nA. ofne of our dinosaurs is missing\nB. one af our dinosaurs is missing\nC. one of our dinosaurs is pissing\nD. one of our dinosaur is missing",
+      "output": [
+        "C. one of our dinosaurs is pissing",
+        "one of our dinosaurs is pissing"
+      ]
+    },
+    "223": {
+      "input": "the grapes of wrath\nChoices:\nA. the grdapes of wrath\nB. the graqpes of wrath\nC. the drapes of wrath\nD. tve grapes of wrath",
+      "output": [
+        "C. the drapes of wrath",
+        "the drapes of wrath"
+      ]
+    },
+    "224": {
+      "input": "fast and furious\nChoices:\nA. fast andm furious\nB. last and furious\nC. fast yand furious\nD. fast and furuous",
+      "output": [
+        "B. last and furious",
+        "last and furious"
+      ]
+    },
+    "225": {
+      "input": "the doobie brothers\nChoices:\nA. the dookie brothers\nB. the rdoobie brothers\nC. the doobie brotghers\nD. the doobiw brothers",
+      "output": [
+        "A. the dookie brothers",
+        "the dookie brothers"
+      ]
+    },
+    "226": {
+      "input": "sex pistols\nChoices:\nA. six pistols\nB. sex pistols\nC. sex pibtols\nD. sex pistoils",
+      "output": [
+        "A. six pistols",
+        "six pistols"
+      ]
+    },
+    "227": {
+      "input": "the sisterhood of the traveling pants\nChoices:\nA. the sisterhootd of the traveling pants\nB. the sisterhood of the traveling pints\nC. the sisterhood vf the traveling pants\nD. the sisterhood of the traveling pnants",
+      "output": [
+        "B. the sisterhood of the traveling pints",
+        "the sisterhood of the traveling pints"
+      ]
+    },
+    "228": {
+      "input": "the beastie boys\nChoices:\nA. the yeastie boys\nB. the beastie foys\nC. the bpeastie boys\nD. the beastiwe boys",
+      "output": [
+        "A. the yeastie boys",
+        "the yeastie boys"
+      ]
+    },
+    "229": {
+      "input": "bad company\nChoices:\nA. sad company\nB. bad compaqy\nC. bad cobmpany\nD. bad company",
+      "output": [
+        "A. sad company",
+        "sad company"
+      ]
+    },
+    "230": {
+      "input": "dave matthews band\nChoices:\nA. dave matthewsuband\nB. rave mathews band\nC. dave matthew band\nD. dave matthews gband",
+      "output": [
+        "B. rave mathews band",
+        "rave mathews band"
+      ]
+    },
+    "231": {
+      "input": "everything but the girl\nChoices:\nA. everythoing but the girl\nB. everything bunt the girl\nC. everything bit the girl\nD. everything but the gqrl",
+      "output": [
+        "C. everything bit the girl",
+        "everything bit the girl"
+      ]
+    },
+    "232": {
+      "input": "black sabbath\nChoices:\nA. black sabvbath\nB. black sabiath\nC. black sabbtath\nD. blank sabbath",
+      "output": [
+        "D. blank sabbath",
+        "blank sabbath"
+      ]
+    },
+    "233": {
+      "input": "bridge of spies\nChoices:\nA. bridge of spivs\nB. bridges of spies\nC. brikge of spies\nD. bridge off spies",
+      "output": [
+        "A. bridge of spivs",
+        "bridge of spivs"
+      ]
+    },
+    "234": {
+      "input": "earth, wind, & fire\nChoices:\nA. eareth, wind, & fire\nB. earth, bind, & fire\nC. earthm wind, & fire\nD. dearth, wind, & fire",
+      "output": [
+        "D. dearth, wind, & fire",
+        "dearth, wind, & fire"
+      ]
+    },
+    "235": {
+      "input": "bend it like beckham\nChoices:\nA. bend it like beclkham\nB. mend it like beckham\nC. bend it lifke beckham\nD. bend itj like beckham",
+      "output": [
+        "B. mend it like beckham",
+        "mend it like beckham"
+      ]
+    },
+    "236": {
+      "input": "debarge\nChoices:\nA. debxarge\nB. debarfe\nC. debaxrge\nD. detbarge",
+      "output": [
+        "B. debarfe",
+        "debarfe"
+      ]
+    },
+    "237": {
+      "input": "rain man\nChoices:\nA. ruin man\nB. rains man\nC. rain men\nD. rainmman",
+      "output": [
+        "A. ruin man",
+        "ruin man"
+      ]
+    },
+    "238": {
+      "input": "cinderella\nChoices:\nA. cinderelrla\nB. tinderella\nC. cindeorella\nD. cindqrella",
+      "output": [
+        "B. tinderella",
+        "tinderella"
+      ]
+    },
+    "239": {
+      "input": "the girl with all the gifts\nChoices:\nA. the girl with all the grifts\nB. the girl with alf the gifts\nC. the girl with iall the gifts\nD. the girl with all thke gifts",
+      "output": [
+        "A. the girl with all the grifts",
+        "the girl with all the grifts"
+      ]
+    },
+    "240": {
+      "input": "reservoir dogs\nChoices:\nA. reservoir dog\nB. resyrvoir dogs\nC. reservoir dovs\nD. reservoir logs",
+      "output": [
+        "D. reservoir logs",
+        "reservoir logs"
+      ]
+    },
+    "241": {
+      "input": "peter pan\nChoices:\nA. peter ran\nB. peqter pan\nC. petej pan\nD. peterppan",
+      "output": [
+        "A. peter ran",
+        "peter ran"
+      ]
+    },
+    "242": {
+      "input": "the man with two brains\nChoices:\nA. the man with two bvrains\nB. the man wwith two brains\nC. the man with two drains\nD. the man with tgo brains",
+      "output": [
+        "C. the man with two drains",
+        "the man with two drains"
+      ]
+    },
+    "243": {
+      "input": "pink floyd\nChoices:\nA. wink floyd\nB. pinfk floyd\nC. pink flobyd\nD. pink floyy",
+      "output": [
+        "A. wink floyd",
+        "wink floyd"
+      ]
+    },
+    "244": {
+      "input": "the monkees\nChoices:\nA. the monketes\nB. the moxkees\nC. the monkees\nD. the donkees",
+      "output": [
+        "D. the donkees",
+        "the donkees"
+      ]
+    },
+    "245": {
+      "input": "badly drawn boy\nChoices:\nA. badly drawn bov\nB. badly drawn boy\nC. badly drawn bob\nD. badly dsawn boy",
+      "output": [
+        "C. badly drawn bob",
+        "badly drawn bob"
+      ]
+    },
+    "246": {
+      "input": "n.e.r.d.\nChoices:\nA. n.e.s.d.\nB. t.e.r.d.\nC. nxe.r.d.\nD. n.el.r.d.",
+      "output": [
+        "B. t.e.r.d.",
+        "t.e.r.d."
+      ]
+    },
+    "247": {
+      "input": "the poseidon adventure\nChoices:\nA. the poseidow adventure\nB. thy poseidon adventure\nC. the poseidon adventnre\nD. the poseidon ad venture",
+      "output": [
+        "D. the poseidon ad venture",
+        "the poseidon ad venture"
+      ]
+    },
+    "248": {
+      "input": "run dmc\nChoices:\nA. runydmc\nB. run dgmc\nC. run dmic\nD. rub dmc",
+      "output": [
+        "D. rub dmc",
+        "rub dmc"
+      ]
+    },
+    "249": {
+      "input": "talking heads\nChoices:\nA. stalking heads\nB. talking head\nC. talking had\nD. talrking heads",
+      "output": [
+        "A. stalking heads",
+        "stalking heads"
+      ]
+    },
+    "250": {
+      "input": "suicide squad\nChoices:\nA. suicide squat\nB. suicide squads\nC. suicide quad\nD. suicuide squad",
+      "output": [
+        "A. suicide squat",
+        "suicide squat"
+      ]
+    },
+    "251": {
+      "input": "star wars\nChoices:\nA. stap wars\nB. staz wars\nC. scar wars\nD. svar wars",
+      "output": [
+        "C. scar wars",
+        "scar wars"
+      ]
+    },
+    "252": {
+      "input": "bad boys for life\nChoices:\nA. bad boy for life\nB. bad toys for life\nC. bazd boys for life\nD. bad bons for life",
+      "output": [
+        "B. bad toys for life",
+        "bad toys for life"
+      ]
+    },
+    "253": {
+      "input": "new order\nChoices:\nA. ndw order\nB. news order\nC. neworder\nD. few order",
+      "output": [
+        "D. few order",
+        "few order"
+      ]
+    },
+    "254": {
+      "input": "the police\nChoices:\nA. the polixce\nB. the poplice\nC. the polece\nD. the polite",
+      "output": [
+        "D. the polite",
+        "the polite"
+      ]
+    },
+    "255": {
+      "input": "pigbag\nChoices:\nA. pifgbag\nB. sigbag\nC. pfigbag\nD. ypigbag",
+      "output": [
+        "B. sigbag",
+        "sigbag"
+      ]
+    },
+    "256": {
+      "input": "toto\nChoices:\nA. thto\nB. tioto\nC. totco\nD. tote",
+      "output": [
+        "D. tote",
+        "tote"
+      ]
+    },
+    "257": {
+      "input": "requiem for a dream\nChoices:\nA. requiem for a dreram\nB. requiem for a bream\nC. reequiem for a dream\nD. requiem for a dbream",
+      "output": [
+        "B. requiem for a bream",
+        "requiem for a bream"
+      ]
+    },
+    "258": {
+      "input": "bullet for my valentine\nChoices:\nA. bullets for my valentine\nB. mullet for my valentine\nC. btllet for my valentine\nD. bullet for my valentini",
+      "output": [
+        "B. mullet for my valentine",
+        "mullet for my valentine"
+      ]
+    },
+    "259": {
+      "input": "reservoir dogs\nChoices:\nA. reservoir dog\nB. reservoirzdogs\nC. reservojr dogs\nD. reservoir bogs",
+      "output": [
+        "D. reservoir bogs",
+        "reservoir bogs"
+      ]
+    },
+    "260": {
+      "input": "the smashing pumpkins\nChoices:\nA. the smashing bumpkins\nB. thez smashing pumpkins\nC. the smashingq pumpkins\nD. the rmashing pumpkins",
+      "output": [
+        "A. the smashing bumpkins",
+        "the smashing bumpkins"
+      ]
+    },
+    "261": {
+      "input": "herb alpert and the tijuana brass\nChoices:\nA. herb alpert and the tijuana briss\nB. herb alpert and the tijuana birass\nC. herb alpert and the tihuana brass\nD. herb alpert and the tijuana bravss",
+      "output": [
+        "A. herb alpert and the tijuana briss",
+        "herb alpert and the tijuana briss"
+      ]
+    },
+    "262": {
+      "input": "the moon and sixpence\nChoices:\nA. the moon and suixpence\nB. the loon and sixpence\nC. the moon and svixpence\nD. the moon and sixwence",
+      "output": [
+        "B. the loon and sixpence",
+        "the loon and sixpence"
+      ]
+    },
+    "263": {
+      "input": "the wizard of oz\nChoices:\nA. the wizards of oz\nB. the wvzard of oz\nC. the lizard of oz\nD. the widzard of oz",
+      "output": [
+        "C. the lizard of oz",
+        "the lizard of oz"
+      ]
+    },
+    "264": {
+      "input": "black panther\nChoices:\nA. bliack panther\nB. block panther\nC. black panthers\nD. black panthek",
+      "output": [
+        "B. block panther",
+        "block panther"
+      ]
+    },
+    "265": {
+      "input": "the bay city rollers\nChoices:\nA. the baby city rollers\nB. the bay city rolleyrs\nC. tce bay city rollers\nD. the bay ciby rollers",
+      "output": [
+        "A. the baby city rollers",
+        "the baby city rollers"
+      ]
+    },
+    "266": {
+      "input": "foo fighters\nChoices:\nA. fbo fighters\nB. gfoo fighters\nC. foo fighteyrs\nD. poo fighters",
+      "output": [
+        "D. poo fighters",
+        "poo fighters"
+      ]
+    },
+    "267": {
+      "input": "herman's hermits\nChoices:\nA. herman's hemrmits\nB. germans hermits\nC. heruman's hermits\nD. hernman's hermits",
+      "output": [
+        "B. germans hermits",
+        "germans hermits"
+      ]
+    },
+    "268": {
+      "input": "the dark knight\nChoices:\nA. the dark night\nB. the park knight\nC. the darxk knight\nD. the dark knilht",
+      "output": [
+        "B. the park knight",
+        "the park knight"
+      ]
+    },
+    "269": {
+      "input": "atlantic starr\nChoices:\nA. atlantic start\nB. atlantic star\nC. atlantic ostarr\nD. ztlantic starr",
+      "output": [
+        "A. atlantic start",
+        "atlantic start"
+      ]
+    },
+    "270": {
+      "input": "days of wine and roses\nChoices:\nA. days of wine and rose\nB. days ofkwine and roses\nC. days of wine and noses\nD. dayl of wine and roses",
+      "output": [
+        "C. days of wine and noses",
+        "days of wine and noses"
+      ]
+    },
+    "271": {
+      "input": "get shorty\nChoices:\nA. wet shorty\nB. get shirty\nC. get shovrty\nD. get sbhorty",
+      "output": [
+        "B. get shirty",
+        "get shirty"
+      ]
+    },
+    "272": {
+      "input": "mad max\nChoices:\nA. madq max\nB. mada max\nC. mud max\nD. sad max",
+      "output": [
+        "D. sad max",
+        "sad max"
+      ]
+    },
+    "273": {
+      "input": "star wars\nChoices:\nA. stpr wars\nB. start wars\nC. star warts\nD. star warws",
+      "output": [
+        "B. start wars",
+        "start wars"
+      ]
+    },
+    "274": {
+      "input": "good will hunting\nChoices:\nA. gokd will hunting\nB. good wiol hunting\nC. good will punting\nD. good will hvnting",
+      "output": [
+        "C. good will punting",
+        "good will punting"
+      ]
+    },
+    "275": {
+      "input": "beatloaf\nChoices:\nA. beadtloaf\nB. beatloasf\nC. beagloaf\nD. teatloaf",
+      "output": [
+        "D. teatloaf",
+        "teatloaf"
+      ]
+    },
+    "276": {
+      "input": "belle and sebastian\nChoices:\nA. belle and sebasrtian\nB. belly and sebastian\nC. belle and sebajtian\nD. ibelle and sebastian",
+      "output": [
+        "B. belly and sebastian",
+        "belly and sebastian"
+      ]
+    },
+    "277": {
+      "input": "jaws\nChoices:\nA. jaiws\nB. jawas\nC. jgaws\nD. jams",
+      "output": [
+        "D. jams",
+        "jams"
+      ]
+    },
+    "278": {
+      "input": "star wars\nChoices:\nA. star woars\nB. star bars\nC. ktar wars\nD. stars wars",
+      "output": [
+        "B. star bars",
+        "star bars"
+      ]
+    },
+    "279": {
+      "input": "foo fighters\nChoices:\nA. poo fighters\nB. foo uighters\nC. foo fxghters\nD. foo faghters",
+      "output": [
+        "A. poo fighters",
+        "poo fighters"
+      ]
+    },
+    "280": {
+      "input": "phish\nChoices:\nA. phist\nB. phisg\nC. pkish\nD. phigh",
+      "output": [
+        "A. phist",
+        "phist"
+      ]
+    },
+    "281": {
+      "input": "paul revere and the raiders\nChoices:\nA. paul rfevere and the raiders\nB. paul severe and the raiders\nC. mpaul revere and the raiders\nD. paul erevere and the raiders",
+      "output": [
+        "B. paul severe and the raiders",
+        "paul severe and the raiders"
+      ]
+    },
+    "282": {
+      "input": "trolls\nChoices:\nA. qtrolls\nB. trells\nC. trollb\nD. trills",
+      "output": [
+        "D. trills",
+        "trills"
+      ]
+    },
+    "283": {
+      "input": "the men who stare at goats\nChoices:\nA. the men who stare at coats\nB. the men who stare akt goats\nC. the men who stare as goats\nD. the men who stare at giats",
+      "output": [
+        "A. the men who stare at coats",
+        "the men who stare at coats"
+      ]
+    },
+    "284": {
+      "input": "free willy\nChoices:\nA. frre willy\nB. freeh willy\nC. tree willy\nD. frees willy",
+      "output": [
+        "C. tree willy",
+        "tree willy"
+      ]
+    },
+    "285": {
+      "input": "schindler's list\nChoices:\nA. schindler's lihst\nB. fchindler's list\nC. schintler's list\nD. schindler's lost",
+      "output": [
+        "D. schindler's lost",
+        "schindler's lost"
+      ]
+    },
+    "286": {
+      "input": "house party\nChoices:\nA. homse party\nB. house farty\nC. houses party\nD. housed party",
+      "output": [
+        "B. house farty",
+        "house farty"
+      ]
+    },
+    "287": {
+      "input": "the matrix\nChoices:\nA. the matwix\nB. the matric\nC. the mitrix\nD. thqe matrix",
+      "output": [
+        "A. the matwix",
+        "the matwix"
+      ]
+    },
+    "288": {
+      "input": "small boy\nChoices:\nA. smell boy\nB. small boys\nC. smallyboy\nD. snmall boy",
+      "output": [
+        "A. smell boy",
+        "smell boy"
+      ]
+    },
+    "289": {
+      "input": "foo fighters\nChoices:\nA. foso fighters\nB. foo fsighters\nC. poo fighters\nD. foo fightprs",
+      "output": [
+        "C. poo fighters",
+        "poo fighters"
+      ]
+    },
+    "290": {
+      "input": "gone with the wind\nChoices:\nA. gone with the winds\nB. done with the wind\nC. gone with tge wind\nD. gone withu the wind",
+      "output": [
+        "B. done with the wind",
+        "done with the wind"
+      ]
+    },
+    "291": {
+      "input": "depeche mode\nChoices:\nA. depecxhe mode\nB. depeche hmode\nC. depeche mole\nD. depeche gmode",
+      "output": [
+        "C. depeche mole",
+        "depeche mole"
+      ]
+    },
+    "292": {
+      "input": "counting crows\nChoices:\nA. countingy crows\nB. counting cows\nC. courting crows\nD. coutnting crows",
+      "output": [
+        "B. counting cows",
+        "counting cows"
+      ]
+    },
+    "293": {
+      "input": "toy story\nChoices:\nA. tooy story\nB. tory story\nC. tloy story\nD. to story",
+      "output": [
+        "B. tory story",
+        "tory story"
+      ]
+    },
+    "294": {
+      "input": "8 mile\nChoices:\nA. 8 mill\nB. 8 male\nC. 8 oile\nD. 8 milk",
+      "output": [
+        "D. 8 milk",
+        "8 milk"
+      ]
+    },
+    "295": {
+      "input": "my big fat greek wedding\nChoices:\nA. my bzg fat greek wedding\nB. my big fatggreek wedding\nC. my big fat greek weeding\nD. my big fat greek wedading",
+      "output": [
+        "C. my big fat greek weeding",
+        "my big fat greek weeding"
+      ]
+    },
+    "296": {
+      "input": "johnny got his gun\nChoices:\nA. johnny got hiw gun\nB. johnno got his gun\nC. johnny got his run\nD. johgnny got his gun",
+      "output": [
+        "C. johnny got his run",
+        "johnny got his run"
+      ]
+    },
+    "297": {
+      "input": "the beatles\nChoices:\nA. the meatles\nB. the beatles\nC. tje beatles\nD. the beatnles",
+      "output": [
+        "A. the meatles",
+        "the meatles"
+      ]
+    },
+    "298": {
+      "input": "shutter island\nChoices:\nA. shutter inland\nB. shdtter island\nC. shuttmer island\nD. shufter island",
+      "output": [
+        "A. shutter inland",
+        "shutter inland"
+      ]
+    },
+    "299": {
+      "input": "the beatles\nChoices:\nA. the beagles\nB. the beatlhes\nC. the reatles\nD. ihe beatles",
+      "output": [
+        "A. the beagles",
+        "the beagles"
+      ]
+    },
+    "300": {
+      "input": "drag me to hell\nChoices:\nA. drag me to help\nB. drags me to hell\nC. drag mge to hell\nD. mrag me to hell",
+      "output": [
+        "A. drag me to help",
+        "drag me to help"
+      ]
+    }
+  }
+}

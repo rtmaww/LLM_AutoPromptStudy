@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "num_examples": 10
+  },
+  "task_desc": "Questions that involve enumerating objects of different types and asking the model to count them",
+  "examples": {
+    "1": {
+      "input": "I have a couch, a chair, an oven, a bed, a stove, a microwave, a toaster, a fridge, five lamps, and a table.",
+      "output": [
+        "14",
+        "fourteen"
+      ]
+    },
+    "2": {
+      "input": "I have a grape, and two bananas.",
+      "output": [
+        "3",
+        "three"
+      ]
+    },
+    "3": {
+      "input": "I have a flute, and a violin.",
+      "output": [
+        "2",
+        "two"
+      ]
+    },
+    "4": {
+      "input": "I have a cabbage, a garlic, a yam, a cauliflower, a head of broccoli, and a lettuce head.",
+      "output": [
+        "6",
+        "six"
+      ]
+    },
+    "5": {
+      "input": "I have an apple, and a strawberry.",
+      "output": [
+        "2",
+        "two"
+      ]
+    },
+    "6": {
+      "input": "I have a raspberry, three clarinets, an apple, a nectarine, four oranges, a flute, a peach, and an accordion.",
+      "output": [
+        "8",
+        "eight"
+      ]
+    },
+    "7": {
+      "input": "I have a microwave, two toasters, two chairs, a couch, a fridge, an oven, a bed, a stove, two tables, and a lamp.",
+      "output": [
+        "13",
+        "thirteen"
+      ]
+    },
+    "8": {
+      "input": "I have a garlic, a potato, a trombone, a yam, a lettuce head, a drum, a head of broccoli, a flute, a stalk of celery, a cauliflower, and a cabbage.",
+      "output": [
+        "8",
+        "eight"
+      ]
+    },
+    "9": {
+      "input": "I have a goat, a snail, a cow, a fish, two chickens, a snake, a rabbit, a mouse, and a donkey.",
+      "output": [
+        "10",
+        "ten"
+      ]
+    },
+    "10": {
+      "input": "I have a clarinet, five trumpets, a piano, a trombone, a drum, a violin, and an accordion.",
+      "output": [
+        "11",
+        "eleven"
+      ]
+    }
+  }
+}

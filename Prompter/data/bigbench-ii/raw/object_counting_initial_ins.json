@@ -1,0 +1,1 @@
+["The task involves interpreting sentences describing a list of objects, where some objects may be listed with quantities. The model's task is to count the total number of objects, taking into account the quantities mentioned. The answer should be formatted as a dictionary with a single key \"answer\" and its value as the total count of objects represented as a string."]

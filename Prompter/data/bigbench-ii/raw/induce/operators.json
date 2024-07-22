@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Given a mathematical operator definition in natural language, apply it",
+  "examples": {
+    "1": {
+      "input": "op n1 n2 ... nn selects the greatest from the n listed numbers.\nop -16 0 10 6",
+      "output": [
+        "10"
+      ]
+    },
+    "2": {
+      "input": "i op j suppresses the j first digits of i.\n125690 op 3",
+      "output": [
+        "690"
+      ]
+    },
+    "3": {
+      "input": "i op j subtracts j from i.\n7 op 3",
+      "output": [
+        "4"
+      ]
+    },
+    "4": {
+      "input": "i op j concatenates the operands in a new number.\n1 op 3",
+      "output": [
+        "13"
+      ]
+    },
+    "5": {
+      "input": "i op1 j is the product of i and j; op2 i j selects i when smaller than j, j otherwise.\nop2 (12 op1 4) (10 op1 5)",
+      "output": [
+        "48"
+      ]
+    },
+    "6": {
+      "input": "i op j suppresses the j last digits of i.\n125690 op 2",
+      "output": [
+        "1256"
+      ]
+    },
+    "7": {
+      "input": "i op j is the product of i and j.\n2 op 3 op 5",
+      "output": [
+        "30"
+      ]
+    },
+    "8": {
+      "input": "op n1 n2 ... nn extracts the first multiple of 3 from the n listed numbers.\nop 4 6 32 128",
+      "output": [
+        "6"
+      ]
+    },
+    "9": {
+      "input": "op n1 n2 ... nn selects the smallest prime from the n listed numbers.\nop 3 5 7 11",
+      "output": [
+        "3"
+      ]
+    },
+    "10": {
+      "input": "op1 i j selects i when less than j, j otherwise; op2 i j selects i when greater than j, j otherwise.\nop1 (op2 58 35) (op2 13 35)",
+      "output": [
+        "35"
+      ]
+    },
+    "11": {
+      "input": "i op j is the remainder of the integer division of i by j.\n15 op 3",
+      "output": [
+        "0"
+      ]
+    },
+    "12": {
+      "input": "op i adds just enough digits at the end of i to make a palyndromic number.\nop 127",
+      "output": [
+        "12721"
+      ]
+    },
+    "13": {
+      "input": "op i is the ith power of 2.\nop 1",
+      "output": [
+        "1"
+      ]
+    },
+    "14": {
+      "input": "op i is the number j such that the addition of i and j is 0.\nop 0",
+      "output": [
+        "0"
+      ]
+    },
+    "15": {
+      "input": "op n1 n2 ... nn selects the smallest prime from the n listed numbers.\nop -17 0 7",
+      "output": [
+        "7"
+      ]
+    },
+    "16": {
+      "input": "op n1 n2 ... nn selects the fifth from the n listed numbers.\nop -16 91 0 10 6",
+      "output": [
+        "6"
+      ]
+    },
+    "17": {
+      "input": "op n1 n2 ... nn sums the n listed numbers.\nop -16 0 10 6",
+      "output": [
+        "0"
+      ]
+    },
+    "18": {
+      "input": "i op j is the remainder of the integer division of i by j.\n37 op 5",
+      "output": [
+        "2"
+      ]
+    },
+    "19": {
+      "input": "op n1 n2 ... nn averages the n listed numbers.\nop (op 16 1) (op 10 5)",
+      "output": [
+        "8"
+      ]
+    },
+    "20": {
+      "input": "i op j is the number l such that the addition of j and l is i.\n7 op -3",
+      "output": [
+        "10"
+      ]
+    },
+    "21": {
+      "input": "op i is the ith even positive number.\nop 6",
+      "output": [
+        "12"
+      ]
+    },
+    "22": {
+      "input": "i op j suppresses the j first digits of i.\n125690 op 4",
+      "output": [
+        "90"
+      ]
+    },
+    "23": {
+      "input": "i op1 j is the product of i and j; op2 i j selects i when smaller than j, j otherwise.\nop2 (10 op1 5) (12 op1 4)",
+      "output": [
+        "48"
+      ]
+    },
+    "24": {
+      "input": "op i is the positive number j such that the product of j with itself is i.\nop 25",
+      "output": [
+        "5"
+      ]
+    },
+    "25": {
+      "input": "i op j subtracts j from i.\n176 op 23",
+      "output": [
+        "153"
+      ]
+    },
+    "26": {
+      "input": "op i is the smallest prime number greater than i.\nop 16",
+      "output": [
+        "17"
+      ]
+    },
+    "27": {
+      "input": "i op j is the product of i and j.\n-11 op -34",
+      "output": [
+        "374"
+      ]
+    },
+    "28": {
+      "input": "i op j keeps the j first digits of i.\n125690 op 2",
+      "output": [
+        "12"
+      ]
+    },
+    "29": {
+      "input": "i op j is the number l such that the addition of j and l is i.\n176 op 23",
+      "output": [
+        "153"
+      ]
+    },
+    "30": {
+      "input": "i op j is the number l such that the addition of j and l is i.\n7 op 7",
+      "output": [
+        "0"
+      ]
+    },
+    "31": {
+      "input": "op n1 n2 ... nn averages the n listed numbers.\nop 16 1 10 5",
+      "output": [
+        "8"
+      ]
+    },
+    "32": {
+      "input": "i op j is the difference of i and j.\n7 op 7",
+      "output": [
+        "0"
+      ]
+    },
+    "33": {
+      "input": "i op j is the product of j copies of i.\n2 op 3",
+      "output": [
+        "8"
+      ]
+    },
+    "34": {
+      "input": "op i is either the half of i when i is even, or its double when it is not.\nop (op 17)",
+      "output": [
+        "17"
+      ]
+    },
+    "35": {
+      "input": "op i is either the half of i when i is even, or its double when it is odd.\nop 18",
+      "output": [
+        "9"
+      ]
+    },
+    "36": {
+      "input": "i op j is the difference of i and j.\n176 op 175",
+      "output": [
+        "1"
+      ]
+    },
+    "37": {
+      "input": "i op j is the addition of i and j.\n(35 op 58) op (21 op 46)",
+      "output": [
+        "160"
+      ]
+    },
+    "38": {
+      "input": "i op j is the product of j copies of i.\n17 op 2",
+      "output": [
+        "289"
+      ]
+    },
+    "39": {
+      "input": "i op j alternates digits of i and j in a new number.\n369 op 125",
+      "output": [
+        "316295"
+      ]
+    },
+    "40": {
+      "input": "i op1 j is the product of i and j; op2 i j selects i when smaller than j, j otherwise.\nop2 (8 op1 6) (12 op1 4)",
+      "output": [
+        "48"
+      ]
+    },
+    "41": {
+      "input": "op i j selects i when not greater than j, j otherwise.\nop 58 35",
+      "output": [
+        "35"
+      ]
+    },
+    "42": {
+      "input": "op n1 n2 ... nn extracts the largest integer which divides each of the n listed numbers.\nop 22 66 121",
+      "output": [
+        "11"
+      ]
+    },
+    "43": {
+      "input": "i op j suppresses the j first digits of i.\n125690 op 2",
+      "output": [
+        "5690"
+      ]
+    },
+    "44": {
+      "input": "op i j selects i when less than j, j otherwise.\nop (op 58 58) (op 35 35)",
+      "output": [
+        "35"
+      ]
+    },
+    "45": {
+      "input": "op n1 n2 ... nn selects the second from the n listed numbers.\nop -16 91 0 10 6",
+      "output": [
+        "91"
+      ]
+    },
+    "46": {
+      "input": "op i is either the double of i when i is odd, or its half when it is even.\nop 17",
+      "output": [
+        "34"
+      ]
+    },
+    "47": {
+      "input": "op n1 n2 ... nn multiplies the n listed numbers.\nop (op -16 1 10) -5",
+      "output": [
+        "800"
+      ]
+    },
+    "48": {
+      "input": "op n1 n2 ... nn selects the greatest from the n listed numbers.\nop 0 10 6 -16",
+      "output": [
+        "10"
+      ]
+    },
+    "49": {
+      "input": "i op j is the number l such that the addition of j and l is i.\n176 op 175",
+      "output": [
+        "1"
+      ]
+    },
+    "50": {
+      "input": "op i reverts the digits of i.\nop (op 17)",
+      "output": [
+        "17"
+      ]
+    }
+  }
+}

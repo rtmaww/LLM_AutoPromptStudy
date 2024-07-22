@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Given a German language sentence that does not use gender-inclusive forms, transform it so that it uses gender-inclusive forms using the '*' character or other gender-neutral terms",
+  "examples": {
+    "1": {
+      "input": "Ermittlern in Berlin ist ein Schlag gegen einen international agierenden Ring von Enkeltrickbetr\u00fcgern gelungen.",
+      "output": [
+        "Ermittler*innen in Berlin ist ein Schlag gegen einen international agierenden Ring von Enkeltrickbetr\u00fcger*innenn gelungen."
+      ]
+    },
+    "2": {
+      "input": "W\u00e4ren sie nicht in Paris, die 45 Minister und 1800 Journalisten, sie w\u00fcrden ersticken in der n\u00fcchternen Atmosph\u00e4re der Konferenzs\u00e4le, in denen es nur elektrische Leitungen, Fernseh-Installationen und Kabel gibt...",
+      "output": [
+        "W\u00e4ren sie nicht in Paris, die 45 Minister*innen und 1800 Journalist*innen, sie w\u00fcrden ersticken in der n\u00fcchternen Atmosph\u00e4re der Konferenzs\u00e4le, in denen es nur elektrische Leitungen, Fernseh-Installationen und Kabel gibt..."
+      ]
+    },
+    "3": {
+      "input": "Dort gibt es zahlreiche Parkpl\u00e4tze, auf denen Van-Urlauber \u00fcbernachten d\u00fcrfen.",
+      "output": [
+        "Dort gibt es zahlreiche Parkpl\u00e4tze, auf denen Van-Urlauber*innen \u00fcbernachten d\u00fcrfen."
+      ]
+    },
+    "4": {
+      "input": "Psychotherapeut ist eine Berufsbezeichnung f\u00fcr psychotherapeutisch t\u00e4tige \u00c4rzte, Psychologen und P\u00e4dagogen mit einer auf dem Studium aufbauenden fachkundlichen Weiterbildung in Psychotherapie.",
+      "output": [
+        "Psychotherapeut*in ist eine Berufsbezeichnung f\u00fcr psychotherapeutisch t\u00e4tige \u00c4rzt*innen, Psycholog*innen und P\u00e4dagog*innen mit einer auf dem Studium aufbauenden fachkundlichen Weiterbildung in Psychotherapie."
+      ]
+    },
+    "5": {
+      "input": "Mehr als zwei Drittel der Neuinfektionen wurden bei H\u00e4ftlingen in acht Gef\u00e4ngnissen in der Hauptstadt Bangkok und deren Vororten registriert.",
+      "output": [
+        "Mehr als zwei Drittel der Neuinfektionen wurden bei Inhaftierten in acht Gef\u00e4ngnissen in der Hauptstadt Bangkok und deren Vororten registriert."
+      ]
+    },
+    "6": {
+      "input": "Jeder kam mit seinem B\u00fcndel nationaler Sorgen und W\u00fcnsche angereist...",
+      "output": [
+        "Jede*r kam mit seinem * ihrem B\u00fcndel nationaler Sorgen und W\u00fcnsche angereist..."
+      ]
+    },
+    "7": {
+      "input": "F\u00fcr Aufsehen hatte zuvor das Thesenpapier eines Forscherteams um den Arzt und \u00d6konomen Matthias Schrappe gesorgt.",
+      "output": [
+        "F\u00fcr Aufsehen hatte zuvor das Thesenpapier eines Forscher*innenteams um den Arzt und \u00d6konomen Matthias Schrappe gesorgt."
+      ]
+    },
+    "8": {
+      "input": "Fragen wir einfach mal nach bei der Hamburger CDU, die im September des vergangenen Jahres erstmals und vor Wochen erneut den B\u00fcrgerschaftsantrag stellte, die Besucherstr\u00f6me der Elbstr\u00e4nde zu \"kanalisieren\", mit Schranken oder einem Ampelsystem nach Vorbild der L\u00fcbecker Bucht.",
+      "output": [
+        "Fragen wir einfach mal nach bei der Hamburger CDU, die im September des vergangenen Jahres erstmals und vor Wochen erneut den B\u00fcrgerschaftsantrag stellte, die Besuchendenstr\u00f6me der Elbstr\u00e4nde zu \"kanalisieren\", mit Schranken oder einem Ampelsystem nach Vorbild der L\u00fcbecker Bucht."
+      ]
+    },
+    "9": {
+      "input": "Manchmal waren die Zwischenrufe nur die erregte Reaktion auf die vorausgegangene niedertr\u00e4chtige Bemerkung eines Redners",
+      "output": [
+        "Manchmal waren die Zwischenrufe nur die erregte Reaktion auf die vorausgegangene niedertr\u00e4chtige Bemerkung eines * einer Redner*in"
+      ]
+    },
+    "10": {
+      "input": "Zuerst erkl\u00e4rte das California State Teachers\u2019 Retirement System, ein 290 Milliarden Dollar schwerer Fonds, der die Pensionen kalifornischer Lehrer anlegt und verwaltet, man werde bei der Jahreshauptversammlung am 26. Mai f\u00fcr die von Engine No. 1 vorgeschlagenen Verwaltungsr\u00e4te stimmen.",
+      "output": [
+        "Zuerst erkl\u00e4rte das California State Teachers\u2019 Retirement System, ein 290 Milliarden Dollar schwerer Fonds, der die Pensionen kalifornischer Lehrer*innen anlegt und verwaltet, man werde bei der Jahreshauptversammlung am 26. Mai f\u00fcr die von Engine No. 1 vorgeschlagenen Verwaltungsr\u00e4te stimmen."
+      ]
+    },
+    "11": {
+      "input": "Mexikos Pr\u00e4sident Andres Manuel Lopez Obrador hat sich im Namen des Staates f\u00fcr ein Massaker an Chinesen vor 110 Jahren entschuldigt.",
+      "output": [
+        "Mexikos Pr\u00e4sident Andres Manuel Lopez Obrador hat sich im Namen des Staates f\u00fcr ein Massaker an Chines*innen vor 110 Jahren entschuldigt."
+      ]
+    },
+    "12": {
+      "input": "Der konkrete Patient wird niemals identisch mit diesen Strukturen sein.",
+      "output": [
+        "Der * die konkrete Patient*in wird niemals identisch mit diesen Strukturen sein."
+      ]
+    },
+    "13": {
+      "input": "Das pragmatische Denken der Angelsachsen, ihr Talent zum \"Durchmuddeln\", halfen allen vier Au\u00dfenministern immer wieder, von den in sich geschlossenen Grundsatzerkl\u00e4rungen, den \"Paketen\", vor\u00fcbergehend abzusehen und den Konferenzkarren am Detail wieder flott zu machen.",
+      "output": [
+        "Das pragmatische Denken der Angelsachs*innen, ihr Talent zum \"Durchmuddeln\", halfen allen vier Au\u00dfenminister*innen immer wieder, von den in sich geschlossenen Grundsatzerkl\u00e4rungen, den \"Paketen\", vor\u00fcbergehend abzusehen und den Konferenzkarren am Detail wieder flott zu machen."
+      ]
+    },
+    "14": {
+      "input": "Es wird der Dienstaufsicht des Innenministers, der Fachaufsicht der jeweils zust\u00e4ndigen Ressortminister unterstehen und ist dem Rang nach eine Beh\u00f6rde der Mittelinstanz (wie der Regierungs- beziehungsweise der Verwaltungsbezirk), nur eben mit dem ganzen Land als Arbeitsfeld.",
+      "output": [
+        "Es wird der Dienstaufsicht des * der Innenminister*in, der Fachaufsicht der jeweils zust\u00e4ndigen Ressortminister*innen unterstehen und ist dem Rang nach eine Beh\u00f6rde der Mittelinstanz (wie der Regierungs- beziehungsweise der Verwaltungsbezirk), nur eben mit dem ganzen Land als Arbeitsfeld."
+      ]
+    },
+    "15": {
+      "input": "Als im Jahre 1947 durch Kontrollratsbeschluss Nr. 46 das Land Preu\u00dfen aufgel\u00f6st wurde, hatten diese Kunstsch\u00e4tze pl\u00f6tzlich keinen Besitzer mehr.",
+      "output": [
+        "Als im Jahre 1947 durch Kontrollratsbeschluss Nr. 46 das Land Preu\u00dfen aufgel\u00f6st wurde, hatten diese Kunstsch\u00e4tze pl\u00f6tzlich keine*n Besitzer*in mehr."
+      ]
+    },
+    "16": {
+      "input": "Das h\u00fcbsche M\u00e4dchen, das auf die Barrikaden jeder Revolution pa\u00dfte, nennt es ein Verbrechen, dass ihre Landsleute wie Bettler in die Bundesrepublik ziehen m\u00fcssen.",
+      "output": [
+        "Das h\u00fcbsche M\u00e4dchen, das auf die Barrikaden jeder Revolution pa\u00dfte, nennt es ein Verbrechen, dass ihre Landsleute wie Bettler*innen in die Bundesrepublik ziehen m\u00fcssen."
+      ]
+    },
+    "17": {
+      "input": "Das Abkommen erwartet von seinen Unterzeichnern, dass sie Flugzeugentf\u00fchrungen, Geiselnahmen, Sprengstoffanschl\u00e4ge und \"schwere Angriffe auf Leben oder Freiheit v\u00f6lkerrechtlich gesch\u00fctzter Personen\" \u2013 vor allem Diplomaten \u2013 nicht l\u00e4nger als politische Delikte ansehen.",
+      "output": [
+        "Das Abkommen erwartet von seinen Unterzeichnenden, dass sie Flugzeugentf\u00fchrungen, Geiselnahmen, Sprengstoffanschl\u00e4ge und \"schwere Angriffe auf Leben oder Freiheit v\u00f6lkerrechtlich gesch\u00fctzter Personen\" \u2013 vor allem Diplomat*innen \u2013 nicht l\u00e4nger als politische Delikte ansehen."
+      ]
+    },
+    "18": {
+      "input": "Die dritte Phase mit 35.000 Probanden soll zwischen Ende Mai und Anfang Juni beginnen, teilte Sanofi in Paris mit.",
+      "output": [
+        "Die dritte Phase mit 35.000 Proband*innen soll zwischen Ende Mai und Anfang Juni beginnen, teilte Sanofi in Paris mit."
+      ]
+    },
+    "19": {
+      "input": "Eine Erstimpfung haben den Beh\u00f6rden zufolge knapp 950.000 Ukrainer erhalten.",
+      "output": [
+        "Eine Erstimpfung haben den Beh\u00f6rden zufolge knapp 950.000 Ukrainer*innen erhalten."
+      ]
+    },
+    "20": {
+      "input": "Es geht dabei neben dem Verdacht auf Volksverhetzung auch um den Verdacht der \u00f6ffentlichen Aufforderung zu Straftaten und Widerstand gegen Vollstreckungsbeamte.",
+      "output": [
+        "Es geht dabei neben dem Verdacht auf Volksverhetzung auch um den Verdacht der \u00f6ffentlichen Aufforderung zu Straftaten und Widerstand gegen Vollstreckungsbeamt*innen."
+      ]
+    },
+    "21": {
+      "input": "Politiker von SPD und Union haben sich f\u00fcr eine Verl\u00e4ngerung der epidemischen Lage von nationaler Tragweite als Grundlage zahlreicher Grundrechtseinschr\u00e4nkungen in der Pandemie \u00fcber den Juni hinaus ausgesprochen.",
+      "output": [
+        "Politiker*innen von SPD und Union haben sich f\u00fcr eine Verl\u00e4ngerung der epidemischen Lage von nationaler Tragweite als Grundlage zahlreicher Grundrechtseinschr\u00e4nkungen in der Pandemie \u00fcber den Juni hinaus ausgesprochen."
+      ]
+    },
+    "22": {
+      "input": "Gro\u00dfarabien, Sattar? Ihr werdet allm\u00e4hlich selber noch zu Imperialisten werden.",
+      "output": [
+        "Gro\u00dfarabien, Sattar? Ihr werdet allm\u00e4hlich selber noch zu Imperialist*innen werden."
+      ]
+    },
+    "23": {
+      "input": "Wie sicher ist eigentlich das Fliegen in Bezug auf die Gesundheit des Piloten?",
+      "output": [
+        "Wie sicher ist eigentlich das Fliegen in Bezug auf die Gesundheit des * der Pilot*in?"
+      ]
+    },
+    "24": {
+      "input": "Beim Film und beim Theater gibt's ja immer einen Regisseur, der mir sagt, was ich machen soll.",
+      "output": [
+        "Beim Film und beim Theater gibt's ja immer eine*n Regisseur*in, der * die mir sagt, was ich machen soll."
+      ]
+    },
+    "25": {
+      "input": "Keiner von ihnen pl\u00e4dierte beispielsweise f\u00fcr eine R\u00fcckkehr zum freien Unternehmertum.",
+      "output": [
+        "Keiner von ihnen pl\u00e4dierte beispielsweise f\u00fcr eine R\u00fcckkehr zum freien Unternehmer*innentum."
+      ]
+    },
+    "26": {
+      "input": "So freilich nannten es nur Bibliothekare und Buchh\u00e4ndler.",
+      "output": [
+        "So freilich nannten es nur Bibliothekar*innen und Buchh\u00e4ndler*innen."
+      ]
+    },
+    "27": {
+      "input": "Das Schiff der CDU-Reformer, das im Juli mit k\u00fchnen Pl\u00e4nen befrachtet unter geschwellten Segeln auslief, ist auf eine Sandbank geraten.",
+      "output": [
+        "Das Schiff der CDU-Reformer*innen, das im Juli mit k\u00fchnen Pl\u00e4nen befrachtet unter geschwellten Segeln auslief, ist auf eine Sandbank geraten."
+      ]
+    },
+    "28": {
+      "input": "Das Versprechen haben wir den B\u00fcrgern immer gegeben.",
+      "output": [
+        "Das Versprechen haben wir den B\u00fcrger*innen immer gegeben."
+      ]
+    },
+    "29": {
+      "input": "Zu ber\u00fccksichtigen sei dabei aber, \"dass an Feier- und Br\u00fcckentagen weniger Personen einen Arzt aufsuchen, wodurch auch weniger Proben genommen werden\".",
+      "output": [
+        "Zu ber\u00fccksichtigen sei dabei aber, \"dass an Feier- und Br\u00fcckentagen weniger Personen \u00e4rztliches Personal aufsuchen, wodurch auch weniger Proben genommen werden\"."
+      ]
+    },
+    "30": {
+      "input": "Zuerst haben sich hier die Trankocher um den Speck der Wale gek\u00fcmmert, die feinen Gesellschaften kamen sp\u00e4ter.",
+      "output": [
+        "Zuerst haben sich hier die Trankocher*innen um den Speck der Wale gek\u00fcmmert, die feinen Gesellschaften kamen sp\u00e4ter."
+      ]
+    },
+    "31": {
+      "input": "Wegen eines Stromausfalls haben vier iranische Schachspieler bei der Asienmeisterschaft ihre Spiele verloren.",
+      "output": [
+        "Wegen eines Stromausfalls haben vier iranische Schachspieler*innen bei der Asienmeisterschaft ihre Spiele verloren."
+      ]
+    },
+    "32": {
+      "input": "Oder, in Henzes Worten: \"Warum sollte man die Gender-Wortsch\u00f6pfungen grammatik-inkompetenten Aktivisten \u00fcberlassen?\"",
+      "output": [
+        "Oder, in Henzes Worten: \"Warum sollte man die Gender-Wortsch\u00f6pfungen grammatik-inkompetenten Aktivist*innen \u00fcberlassen?\""
+      ]
+    },
+    "33": {
+      "input": "Wer den eigenen Job als Bankberater beispielsweise wegen der Automatisierung bedroht sehe, solle sich leicht etwa zu einem Gesundheitsberater weiterbilden k\u00f6nnen.",
+      "output": [
+        "Wer den eigenen Job als Bankberater*in beispielsweise wegen der Automatisierung bedroht sehe, solle sich leicht etwa zu einem * einer Gesundheitsberater*in weiterbilden k\u00f6nnen."
+      ]
+    },
+    "34": {
+      "input": "Die Hedgefondsmanager kritisieren zudem ExxonMobils bisherige Klimaschutzma\u00dfnahmen.",
+      "output": [
+        "Die Hedgefondsmanager*innen kritisieren zudem ExxonMobils bisherige Klimaschutzma\u00dfnahmen."
+      ]
+    },
+    "35": {
+      "input": "Das unbemannte Luftfahrzeug war offenbar von Jordanien aus unterwegs, dies wurde jedoch nicht ausdr\u00fccklich mitgeteilt.",
+      "output": [
+        "Das unbesetzte Luftfahrzeug war offenbar von Jordanien aus unterwegs, dies wurde jedoch nicht ausdr\u00fccklich mitgeteilt."
+      ]
+    },
+    "36": {
+      "input": "Die praktische Umsetzung dieses Vorhabens auf dem schmalen Gipfel, der nur Platz f\u00fcr wenige Bergsteiger bietet, ist dabei unklar.",
+      "output": [
+        "Die praktische Umsetzung dieses Vorhabens auf dem schmalen Gipfel, der nur Platz f\u00fcr wenige Bergsteiger*innen bietet, ist dabei unklar."
+      ]
+    },
+    "37": {
+      "input": "Seit 2017 vergibt die Universit\u00e4t Potsdam den Voltaire-Preis an Wissenschaftler, die sich f\u00fcr die Freiheit von Forschung und Lehre einsetzen.",
+      "output": [
+        "Seit 2017 vergibt die Universit\u00e4t Potsdam den Voltaire-Preis an Wissenschaftler*innen, die sich f\u00fcr die Freiheit von Forschung und Lehre einsetzen."
+      ]
+    },
+    "38": {
+      "input": "Allerdings sp\u00fcrt man, dass dies nicht so sehr \u00fcbersch\u00fcssiger Kraft und Prosperit\u00e4t zuzuschreiben ist als eher der Tatsache, dass besorgte \u00e4gyptische Kapitalbesitzer (zu denen sich hier wie in allen L\u00e4ndern des Nahen Ostens saudische Prinzen gesellen) keine andere Anlagem\u00f6glichkeit haben.",
+      "output": [
+        "Allerdings sp\u00fcrt man, dass dies nicht so sehr \u00fcbersch\u00fcssiger Kraft und Prosperit\u00e4t zuzuschreiben ist als eher der Tatsache, dass besorgte \u00e4gyptische Kapitalbesitzende (zu denen sich hier wie in allen L\u00e4ndern des Nahen Ostens saudische Prinzen gesellen) keine andere Anlagem\u00f6glichkeit haben."
+      ]
+    },
+    "39": {
+      "input": "Normalerweise wecken solche Streitigkeiten h\u00f6chstens das Interesse von Anlegern, die sich um den Aktienkurs eines Unternehmens sorgen.",
+      "output": [
+        "Normalerweise wecken solche Streitigkeiten h\u00f6chstens das Interesse von Anleger*innen, die sich um den Aktienkurs eines Unternehmens sorgen."
+      ]
+    },
+    "40": {
+      "input": "Die Richter verwiesen auf die ohnehin zus\u00e4tzlich geltenden Schutz- und Hygienekonzepte, die unter anderem eine maximale Auslastung von 60 Prozent in Hotels vors\u00e4hen.",
+      "output": [
+        "Die Richter*innen verwiesen auf die ohnehin zus\u00e4tzlich geltenden Schutz- und Hygienekonzepte, die unter anderem eine maximale Auslastung von 60 Prozent in Hotels vors\u00e4hen."
+      ]
+    },
+    "41": {
+      "input": "Eine Stunde mehr Zeit als bisher bleibt den Nachtschw\u00e4rmern auf der bei Deutschen beliebten Urlaubsinsel damit.",
+      "output": [
+        "Eine Stunde mehr Zeit als bisher bleibt den Nachtschw\u00e4rmer*innen auf der bei Deutschen beliebten Urlaubsinsel damit."
+      ]
+    },
+    "42": {
+      "input": "Und die geforderte zentrale Auswahl der Bundestagskandidaten (zur qualitativen Verbesserung der Fraktion) ist schon im Parteistatut geregelt.",
+      "output": [
+        "Und die geforderte zentrale Auswahl der Bundestagskandidat*innen (zur qualitativen Verbesserung der Fraktion) ist schon im Parteistatut geregelt."
+      ]
+    },
+    "43": {
+      "input": "Meine Akte bei der Ausl\u00e4nderbeh\u00f6rde zum Beispiel ist f\u00fcr alle Mitarbeiter dort einsehbar.",
+      "output": [
+        "Meine Akte bei der Ausl\u00e4nder*innenbeh\u00f6rde zum Beispiel ist f\u00fcr alle Mitarbeitenden dort einsehbar."
+      ]
+    },
+    "44": {
+      "input": "Es will sie \u2013 erstens \u2013 durch Integration mit st\u00e4rkeren Partnern und \u2013 zweitens \u2013 dadurch, dass es seine Widersacher vor den Toren nicht unn\u00fctz reizt.",
+      "output": [
+        "Es will sie \u2013 erstens \u2013 durch Integration mit st\u00e4rkeren Partner*innen und \u2013 zweitens \u2013 dadurch, dass es seine Widersacher*innen vor den Toren nicht unn\u00fctz reizt."
+      ]
+    },
+    "45": {
+      "input": "Der Zahnarzt erwirbt mit seiner Approbation das Recht zur Aus\u00fcbung der Zahnheilkunde.",
+      "output": [
+        "Der * die Zahn\u00e4rzt*in erwirbt mit seiner * ihrer Approbation das Recht zur Aus\u00fcbung der Zahnheilkunde"
+      ]
+    },
+    "46": {
+      "input": "Vielleicht hat wirklich jener \u00c4gypter recht, der meinte, der Ausfall der alten internationalen Oberschicht, die die Br\u00fccke zu Europa darstellte, werde dadurch wettgemacht, dass immer breitere Schichten Zugang zu westlicher Zivilisation finden \u2013 und dies werde sich zwangsl\u00e4ufig prowestlich im Sinne von anti-orientalisch auswirken.",
+      "output": [
+        "Vielleicht hat wirklich jene*r \u00c4gypter*in recht, der * die meinte, der Ausfall der alten internationalen Oberschicht, die die Br\u00fccke zu Europa darstellte, werde dadurch wettgemacht, dass immer breitere Schichten Zugang zu westlicher Zivilisation finden \u2013 und dies werde sich zwangsl\u00e4ufig prowestlich im Sinne von anti-orientalisch auswirken."
+      ]
+    },
+    "47": {
+      "input": "SPD-Vize Kevin K\u00fchnert will Wohnungsbesitzern, die bei der Vermietung langfristig auf Rendite verzichten, Steuererleichterungen verschaffen.",
+      "output": [
+        "SPD-Vize Kevin K\u00fchnert will Wohnungsbesitzer*innen, die bei der Vermietung langfristig auf Rendite verzichten, Steuererleichterungen verschaffen."
+      ]
+    },
+    "48": {
+      "input": "Solche Zwischenrufer \u2013 Maul-Anarchisten \u2013 w\u00fcrde man auch nicht mit einer Geldbu\u00dfe im Werte eines halben Tagesgeldes treffen",
+      "output": [
+        "Solche Zwischenrufer*innen \u2013 Maul-Anarchist*innen \u2013 w\u00fcrde man auch nicht mit einer Geldbu\u00dfe im Werte eines halben Tagesgeldes treffen"
+      ]
+    },
+    "49": {
+      "input": "Zumindest mit jener Behauptung d\u00fcrfte Sch\u00e4ffer nicht unrecht haben, dass vom Steuerzahler etwa f\u00fcnf Milliarden Mark (es m\u00f6gen vielleicht nur vier sein) nicht an die Gesch\u00e4digten, sondern an Rechtsanw\u00e4lte gezahlt werden m\u00fcssten.",
+      "output": [
+        "Zumindest mit jener Behauptung d\u00fcrfte Sch\u00e4ffer nicht unrecht haben, dass von dem * der Steuerzahler*in etwa f\u00fcnf Milliarden Mark (es m\u00f6gen vielleicht nur vier sein) nicht an die Gesch\u00e4digten, sondern an Rechtsanw\u00e4lt*innen gezahlt werden m\u00fcssten."
+      ]
+    },
+    "50": {
+      "input": "Zur Unterst\u00fctzung des demokratischen \u00dcbergangs wollen internationale Geber den Sudan von milliardenschweren Schulden befreien.",
+      "output": [
+        "Zur Unterst\u00fctzung des demokratischen \u00dcbergangs wollen internationale Geber*innen den Sudan von milliardenschweren Schulden befreien."
+      ]
+    }
+  }
+}

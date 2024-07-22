@@ -1,0 +1,1808 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Unscramble the given letters to form an English word",
+  "examples": {
+    "1": {
+      "input": "The word ehelws is a scrambled version of the English word ",
+      "output": [
+        "wheels"
+      ]
+    },
+    "2": {
+      "input": "The word ocadtps is a scrambled version of the English word ",
+      "output": [
+        "podcast"
+      ]
+    },
+    "3": {
+      "input": "The word nadb is a scrambled version of the English word ",
+      "output": [
+        "band"
+      ]
+    },
+    "4": {
+      "input": "The word saac is a scrambled version of the English word ",
+      "output": [
+        "casa"
+      ]
+    },
+    "5": {
+      "input": "The word nerovn is a scrambled version of the English word ",
+      "output": [
+        "vernon"
+      ]
+    },
+    "6": {
+      "input": "The word etisydn is a scrambled version of the English word ",
+      "output": [
+        "density"
+      ]
+    },
+    "7": {
+      "input": "The word icsnssgudi is a scrambled version of the English word ",
+      "output": [
+        "discussing"
+      ]
+    },
+    "8": {
+      "input": "The word efrfyje is a scrambled version of the English word ",
+      "output": [
+        "jeffrey"
+      ]
+    },
+    "9": {
+      "input": "The word ogiggln is a scrambled version of the English word ",
+      "output": [
+        "logging"
+      ]
+    },
+    "10": {
+      "input": "The word idndvedi is a scrambled version of the English word ",
+      "output": [
+        "dividend"
+      ]
+    },
+    "11": {
+      "input": "The word oobtrs is a scrambled version of the English word ",
+      "output": [
+        "robots"
+      ]
+    },
+    "12": {
+      "input": "The word teahh is a scrambled version of the English word ",
+      "output": [
+        "heath"
+      ]
+    },
+    "13": {
+      "input": "The word cirlce is a scrambled version of the English word ",
+      "output": [
+        "circle"
+      ]
+    },
+    "14": {
+      "input": "The word sorisumi is a scrambled version of the English word ",
+      "output": [
+        "missouri"
+      ]
+    },
+    "15": {
+      "input": "The word tihw is a scrambled version of the English word ",
+      "output": [
+        "with"
+      ]
+    },
+    "16": {
+      "input": "The word clpeansiap is a scrambled version of the English word ",
+      "output": [
+        "appliances"
+      ]
+    },
+    "17": {
+      "input": "The word etrsgueupo is a scrambled version of the English word ",
+      "output": [
+        "portuguese"
+      ]
+    },
+    "18": {
+      "input": "The word lolp is a scrambled version of the English word ",
+      "output": [
+        "poll"
+      ]
+    },
+    "19": {
+      "input": "The word lgilnayior is a scrambled version of the English word ",
+      "output": [
+        "originally"
+      ]
+    },
+    "20": {
+      "input": "The word zocenidgre is a scrambled version of the English word ",
+      "output": [
+        "recognized"
+      ]
+    },
+    "21": {
+      "input": "The word rdiesct is a scrambled version of the English word ",
+      "output": [
+        "credits"
+      ]
+    },
+    "22": {
+      "input": "The word acntnniici is a scrambled version of the English word ",
+      "output": [
+        "cincinnati"
+      ]
+    },
+    "23": {
+      "input": "The word cgaeansrfr is a scrambled version of the English word ",
+      "output": [
+        "fragrances"
+      ]
+    },
+    "24": {
+      "input": "The word gouhbt is a scrambled version of the English word ",
+      "output": [
+        "bought"
+      ]
+    },
+    "25": {
+      "input": "The word eanlp is a scrambled version of the English word ",
+      "output": [
+        "panel"
+      ]
+    },
+    "26": {
+      "input": "The word okecspt is a scrambled version of the English word ",
+      "output": [
+        "pockets"
+      ]
+    },
+    "27": {
+      "input": "The word ivnbrtlecoe is a scrambled version of the English word ",
+      "output": [
+        "convertible"
+      ]
+    },
+    "28": {
+      "input": "The word irasrgtre is a scrambled version of the English word ",
+      "output": [
+        "registrar"
+      ]
+    },
+    "29": {
+      "input": "The word tnaeladstr is a scrambled version of the English word ",
+      "output": [
+        "translated"
+      ]
+    },
+    "30": {
+      "input": "The word ronw is a scrambled version of the English word ",
+      "output": [
+        "worn"
+      ]
+    },
+    "31": {
+      "input": "The word vurecs is a scrambled version of the English word ",
+      "output": [
+        "curves"
+      ]
+    },
+    "32": {
+      "input": "The word achtdme is a scrambled version of the English word ",
+      "output": [
+        "matched"
+      ]
+    },
+    "33": {
+      "input": "The word reasf is a scrambled version of the English word ",
+      "output": [
+        "fears"
+      ]
+    },
+    "34": {
+      "input": "The word ganam is a scrambled version of the English word ",
+      "output": [
+        "manga"
+      ]
+    },
+    "35": {
+      "input": "The word radorbe is a scrambled version of the English word ",
+      "output": [
+        "broader"
+      ]
+    },
+    "36": {
+      "input": "The word ebllsaba is a scrambled version of the English word ",
+      "output": [
+        "baseball"
+      ]
+    },
+    "37": {
+      "input": "The word meeesd is a scrambled version of the English word ",
+      "output": [
+        "seemed"
+      ]
+    },
+    "38": {
+      "input": "The word eepj is a scrambled version of the English word ",
+      "output": [
+        "jeep"
+      ]
+    },
+    "39": {
+      "input": "The word mteiemtco is a scrambled version of the English word ",
+      "output": [
+        "committee"
+      ]
+    },
+    "40": {
+      "input": "The word exceed is a scrambled version of the English word ",
+      "output": [
+        "exceed"
+      ]
+    },
+    "41": {
+      "input": "The word netc is a scrambled version of the English word ",
+      "output": [
+        "cnet"
+      ]
+    },
+    "42": {
+      "input": "The word marak is a scrambled version of the English word ",
+      "output": [
+        "karma"
+      ]
+    },
+    "43": {
+      "input": "The word imdp is a scrambled version of the English word ",
+      "output": [
+        "pmid"
+      ]
+    },
+    "44": {
+      "input": "The word petk is a scrambled version of the English word ",
+      "output": [
+        "kept"
+      ]
+    },
+    "45": {
+      "input": "The word htsewcnkasaa is a scrambled version of the English word ",
+      "output": [
+        "saskatchewan"
+      ]
+    },
+    "46": {
+      "input": "The word erelfy is a scrambled version of the English word ",
+      "output": [
+        "freely"
+      ]
+    },
+    "47": {
+      "input": "The word itondiad is a scrambled version of the English word ",
+      "output": [
+        "addition"
+      ]
+    },
+    "48": {
+      "input": "The word aanxx is a scrambled version of the English word ",
+      "output": [
+        "xanax"
+      ]
+    },
+    "49": {
+      "input": "The word teass is a scrambled version of the English word ",
+      "output": [
+        "asset"
+      ]
+    },
+    "50": {
+      "input": "The word eomcsbe is a scrambled version of the English word ",
+      "output": [
+        "becomes"
+      ]
+    },
+    "51": {
+      "input": "The word otnniigdicon is a scrambled version of the English word ",
+      "output": [
+        "conditioning"
+      ]
+    },
+    "52": {
+      "input": "The word epabewg is a scrambled version of the English word ",
+      "output": [
+        "webpage"
+      ]
+    },
+    "53": {
+      "input": "The word melyrrfo is a scrambled version of the English word ",
+      "output": [
+        "formerly"
+      ]
+    },
+    "54": {
+      "input": "The word tliiyut is a scrambled version of the English word ",
+      "output": [
+        "utility"
+      ]
+    },
+    "55": {
+      "input": "The word ebjcot is a scrambled version of the English word ",
+      "output": [
+        "object"
+      ]
+    },
+    "56": {
+      "input": "The word lendsirch is a scrambled version of the English word ",
+      "output": [
+        "childrens"
+      ]
+    },
+    "57": {
+      "input": "The word noudr is a scrambled version of the English word ",
+      "output": [
+        "round"
+      ]
+    },
+    "58": {
+      "input": "The word lalh is a scrambled version of the English word ",
+      "output": [
+        "hall"
+      ]
+    },
+    "59": {
+      "input": "The word ahtt is a scrambled version of the English word ",
+      "output": [
+        "that"
+      ]
+    },
+    "60": {
+      "input": "The word rblompe is a scrambled version of the English word ",
+      "output": [
+        "problem"
+      ]
+    },
+    "61": {
+      "input": "The word ipoertsepr is a scrambled version of the English word ",
+      "output": [
+        "properties"
+      ]
+    },
+    "62": {
+      "input": "The word ronb is a scrambled version of the English word ",
+      "output": [
+        "born"
+      ]
+    },
+    "63": {
+      "input": "The word pledpisu is a scrambled version of the English word ",
+      "output": [
+        "supplied"
+      ]
+    },
+    "64": {
+      "input": "The word getsgssu is a scrambled version of the English word ",
+      "output": [
+        "suggests"
+      ]
+    },
+    "65": {
+      "input": "The word utonliso is a scrambled version of the English word ",
+      "output": [
+        "solution"
+      ]
+    },
+    "66": {
+      "input": "The word einmrsa is a scrambled version of the English word ",
+      "output": [
+        "remains"
+      ]
+    },
+    "67": {
+      "input": "The word sraht is a scrambled version of the English word ",
+      "output": [
+        "trash"
+      ]
+    },
+    "68": {
+      "input": "The word tincgihsw is a scrambled version of the English word ",
+      "output": [
+        "switching"
+      ]
+    },
+    "69": {
+      "input": "The word iarem is a scrambled version of the English word ",
+      "output": [
+        "marie"
+      ]
+    },
+    "70": {
+      "input": "The word rngya is a scrambled version of the English word ",
+      "output": [
+        "angry"
+      ]
+    },
+    "71": {
+      "input": "The word notd is a scrambled version of the English word ",
+      "output": [
+        "dont"
+      ]
+    },
+    "72": {
+      "input": "The word bitiyalli is a scrambled version of the English word ",
+      "output": [
+        "liability"
+      ]
+    },
+    "73": {
+      "input": "The word rcmeeoov is a scrambled version of the English word ",
+      "output": [
+        "overcome"
+      ]
+    },
+    "74": {
+      "input": "The word eodrmn is a scrambled version of the English word ",
+      "output": [
+        "modern"
+      ]
+    },
+    "75": {
+      "input": "The word tsihsnesy is a scrambled version of the English word ",
+      "output": [
+        "synthesis"
+      ]
+    },
+    "76": {
+      "input": "The word mriep is a scrambled version of the English word ",
+      "output": [
+        "prime"
+      ]
+    },
+    "77": {
+      "input": "The word ttsiicorren is a scrambled version of the English word ",
+      "output": [
+        "restriction"
+      ]
+    },
+    "78": {
+      "input": "The word setp is a scrambled version of the English word ",
+      "output": [
+        "step"
+      ]
+    },
+    "79": {
+      "input": "The word aondamn is a scrambled version of the English word ",
+      "output": [
+        "madonna"
+      ]
+    },
+    "80": {
+      "input": "The word oblvemare is a scrambled version of the English word ",
+      "output": [
+        "removable"
+      ]
+    },
+    "81": {
+      "input": "The word ehets is a scrambled version of the English word ",
+      "output": [
+        "these"
+      ]
+    },
+    "82": {
+      "input": "The word eotlh is a scrambled version of the English word ",
+      "output": [
+        "hotel"
+      ]
+    },
+    "83": {
+      "input": "The word ftufs is a scrambled version of the English word ",
+      "output": [
+        "stuff"
+      ]
+    },
+    "84": {
+      "input": "The word rseesdsad is a scrambled version of the English word ",
+      "output": [
+        "addresses"
+      ]
+    },
+    "85": {
+      "input": "The word masbyes is a scrambled version of the English word ",
+      "output": [
+        "embassy"
+      ]
+    },
+    "86": {
+      "input": "The word beclsiesac is a scrambled version of the English word ",
+      "output": [
+        "accessible"
+      ]
+    },
+    "87": {
+      "input": "The word agarnbi is a scrambled version of the English word ",
+      "output": [
+        "bargain"
+      ]
+    },
+    "88": {
+      "input": "The word ookt is a scrambled version of the English word ",
+      "output": [
+        "took"
+      ]
+    },
+    "89": {
+      "input": "The word toiacrvi is a scrambled version of the English word ",
+      "output": [
+        "victoria"
+      ]
+    },
+    "90": {
+      "input": "The word ciatnfoaliqui is a scrambled version of the English word ",
+      "output": [
+        "qualification"
+      ]
+    },
+    "91": {
+      "input": "The word togiiaotnen is a scrambled version of the English word ",
+      "output": [
+        "negotiation"
+      ]
+    },
+    "92": {
+      "input": "The word ealss is a scrambled version of the English word ",
+      "output": [
+        "sales"
+      ]
+    },
+    "93": {
+      "input": "The word rrngaist is a scrambled version of the English word ",
+      "output": [
+        "starring"
+      ]
+    },
+    "94": {
+      "input": "The word ztsemidocu is a scrambled version of the English word ",
+      "output": [
+        "customized"
+      ]
+    },
+    "95": {
+      "input": "The word nagh is a scrambled version of the English word ",
+      "output": [
+        "hang"
+      ]
+    },
+    "96": {
+      "input": "The word itnningaco is a scrambled version of the English word ",
+      "output": [
+        "containing"
+      ]
+    },
+    "97": {
+      "input": "The word tehb is a scrambled version of the English word ",
+      "output": [
+        "beth"
+      ]
+    },
+    "98": {
+      "input": "The word pimlse is a scrambled version of the English word ",
+      "output": [
+        "simple"
+      ]
+    },
+    "99": {
+      "input": "The word tossc is a scrambled version of the English word ",
+      "output": [
+        "costs"
+      ]
+    },
+    "100": {
+      "input": "The word heorclba is a scrambled version of the English word ",
+      "output": [
+        "bachelor"
+      ]
+    },
+    "101": {
+      "input": "The word erortiin is a scrambled version of the English word ",
+      "output": [
+        "interior"
+      ]
+    },
+    "102": {
+      "input": "The word ehratd is a scrambled version of the English word ",
+      "output": [
+        "thread"
+      ]
+    },
+    "103": {
+      "input": "The word oturefn is a scrambled version of the English word ",
+      "output": [
+        "fortune"
+      ]
+    },
+    "104": {
+      "input": "The word nlighes is a scrambled version of the English word ",
+      "output": [
+        "english"
+      ]
+    },
+    "105": {
+      "input": "The word zraibl is a scrambled version of the English word ",
+      "output": [
+        "brazil"
+      ]
+    },
+    "106": {
+      "input": "The word iedoatnrfe is a scrambled version of the English word ",
+      "output": [
+        "federation"
+      ]
+    },
+    "107": {
+      "input": "The word fofece is a scrambled version of the English word ",
+      "output": [
+        "coffee"
+      ]
+    },
+    "108": {
+      "input": "The word nthiec is a scrambled version of the English word ",
+      "output": [
+        "ethnic"
+      ]
+    },
+    "109": {
+      "input": "The word teihk is a scrambled version of the English word ",
+      "output": [
+        "keith"
+      ]
+    },
+    "110": {
+      "input": "The word iettpe is a scrambled version of the English word ",
+      "output": [
+        "petite"
+      ]
+    },
+    "111": {
+      "input": "The word tisoesmcu is a scrambled version of the English word ",
+      "output": [
+        "customise"
+      ]
+    },
+    "112": {
+      "input": "The word waiatn is a scrambled version of the English word ",
+      "output": [
+        "taiwan"
+      ]
+    },
+    "113": {
+      "input": "The word rioanetop is a scrambled version of the English word ",
+      "output": [
+        "operation"
+      ]
+    },
+    "114": {
+      "input": "The word letf is a scrambled version of the English word ",
+      "output": [
+        "left"
+      ]
+    },
+    "115": {
+      "input": "The word enenykd is a scrambled version of the English word ",
+      "output": [
+        "kennedy"
+      ]
+    },
+    "116": {
+      "input": "The word erd is a scrambled version of the English word ",
+      "output": [
+        "red"
+      ]
+    },
+    "117": {
+      "input": "The word korewr is a scrambled version of the English word ",
+      "output": [
+        "worker"
+      ]
+    },
+    "118": {
+      "input": "The word lilemr is a scrambled version of the English word ",
+      "output": [
+        "miller"
+      ]
+    },
+    "119": {
+      "input": "The word esorvtin is a scrambled version of the English word ",
+      "output": [
+        "investor"
+      ]
+    },
+    "120": {
+      "input": "The word tdgrerica is a scrambled version of the English word ",
+      "output": [
+        "cartridge"
+      ]
+    },
+    "121": {
+      "input": "The word wstidte is a scrambled version of the English word ",
+      "output": [
+        "twisted"
+      ]
+    },
+    "122": {
+      "input": "The word idyslaho is a scrambled version of the English word ",
+      "output": [
+        "holidays"
+      ]
+    },
+    "123": {
+      "input": "The word sirtf is a scrambled version of the English word ",
+      "output": [
+        "first"
+      ]
+    },
+    "124": {
+      "input": "The word linslomi is a scrambled version of the English word ",
+      "output": [
+        "millions"
+      ]
+    },
+    "125": {
+      "input": "The word ioloatncre is a scrambled version of the English word ",
+      "output": [
+        "relocation"
+      ]
+    },
+    "126": {
+      "input": "The word illoctnecos is a scrambled version of the English word ",
+      "output": [
+        "collections"
+      ]
+    },
+    "127": {
+      "input": "The word loes is a scrambled version of the English word ",
+      "output": [
+        "lose"
+      ]
+    },
+    "128": {
+      "input": "The word ceaep is a scrambled version of the English word ",
+      "output": [
+        "peace"
+      ]
+    },
+    "129": {
+      "input": "The word rhagce is a scrambled version of the English word ",
+      "output": [
+        "charge"
+      ]
+    },
+    "130": {
+      "input": "The word onfrim is a scrambled version of the English word ",
+      "output": [
+        "inform"
+      ]
+    },
+    "131": {
+      "input": "The word faec is a scrambled version of the English word ",
+      "output": [
+        "face"
+      ]
+    },
+    "132": {
+      "input": "The word atonxita is a scrambled version of the English word ",
+      "output": [
+        "taxation"
+      ]
+    },
+    "133": {
+      "input": "The word rckadte is a scrambled version of the English word ",
+      "output": [
+        "tracked"
+      ]
+    },
+    "134": {
+      "input": "The word kooeld is a scrambled version of the English word ",
+      "output": [
+        "looked"
+      ]
+    },
+    "135": {
+      "input": "The word eagnemtgen is a scrambled version of the English word ",
+      "output": [
+        "engagement"
+      ]
+    },
+    "136": {
+      "input": "The word tiaolired is a scrambled version of the English word ",
+      "output": [
+        "editorial"
+      ]
+    },
+    "137": {
+      "input": "The word upimgjn is a scrambled version of the English word ",
+      "output": [
+        "jumping"
+      ]
+    },
+    "138": {
+      "input": "The word akilgtn is a scrambled version of the English word ",
+      "output": [
+        "talking"
+      ]
+    },
+    "139": {
+      "input": "The word ritsosfl is a scrambled version of the English word ",
+      "output": [
+        "florists"
+      ]
+    },
+    "140": {
+      "input": "The word zroapc is a scrambled version of the English word ",
+      "output": [
+        "prozac"
+      ]
+    },
+    "141": {
+      "input": "The word tuies is a scrambled version of the English word ",
+      "output": [
+        "suite"
+      ]
+    },
+    "142": {
+      "input": "The word pcieysf is a scrambled version of the English word ",
+      "output": [
+        "specify"
+      ]
+    },
+    "143": {
+      "input": "The word arahnbi is a scrambled version of the English word ",
+      "output": [
+        "bahrain"
+      ]
+    },
+    "144": {
+      "input": "The word baosrdba is a scrambled version of the English word ",
+      "output": [
+        "barbados"
+      ]
+    },
+    "145": {
+      "input": "The word cnooyem is a scrambled version of the English word ",
+      "output": [
+        "economy"
+      ]
+    },
+    "146": {
+      "input": "The word iocasl is a scrambled version of the English word ",
+      "output": [
+        "social"
+      ]
+    },
+    "147": {
+      "input": "The word oyipgcn is a scrambled version of the English word ",
+      "output": [
+        "copying"
+      ]
+    },
+    "148": {
+      "input": "The word aretseucr is a scrambled version of the English word ",
+      "output": [
+        "creatures"
+      ]
+    },
+    "149": {
+      "input": "The word koosb is a scrambled version of the English word ",
+      "output": [
+        "books"
+      ]
+    },
+    "150": {
+      "input": "The word ngiga is a scrambled version of the English word ",
+      "output": [
+        "aging"
+      ]
+    },
+    "151": {
+      "input": "The word uinrgcroc is a scrambled version of the English word ",
+      "output": [
+        "occurring"
+      ]
+    },
+    "152": {
+      "input": "The word jreaainbaz is a scrambled version of the English word ",
+      "output": [
+        "azerbaijan"
+      ]
+    },
+    "153": {
+      "input": "The word esedcsac is a scrambled version of the English word ",
+      "output": [
+        "accessed"
+      ]
+    },
+    "154": {
+      "input": "The word abedsldi is a scrambled version of the English word ",
+      "output": [
+        "disabled"
+      ]
+    },
+    "155": {
+      "input": "The word crteneco is a scrambled version of the English word ",
+      "output": [
+        "concrete"
+      ]
+    },
+    "156": {
+      "input": "The word iocsplhmac is a scrambled version of the English word ",
+      "output": [
+        "accomplish"
+      ]
+    },
+    "157": {
+      "input": "The word roosd is a scrambled version of the English word ",
+      "output": [
+        "doors"
+      ]
+    },
+    "158": {
+      "input": "The word teaehr is a scrambled version of the English word ",
+      "output": [
+        "heater"
+      ]
+    },
+    "159": {
+      "input": "The word oquutbe is a scrambled version of the English word ",
+      "output": [
+        "bouquet"
+      ]
+    },
+    "160": {
+      "input": "The word eaedprap is a scrambled version of the English word ",
+      "output": [
+        "appeared"
+      ]
+    },
+    "161": {
+      "input": "The word tlndoasc is a scrambled version of the English word ",
+      "output": [
+        "scotland"
+      ]
+    },
+    "162": {
+      "input": "The word nroagiliab is a scrambled version of the English word ",
+      "output": [
+        "aboriginal"
+      ]
+    },
+    "163": {
+      "input": "The word ialelbre is a scrambled version of the English word ",
+      "output": [
+        "reliable"
+      ]
+    },
+    "164": {
+      "input": "The word irpvsseeim is a scrambled version of the English word ",
+      "output": [
+        "impressive"
+      ]
+    },
+    "165": {
+      "input": "The word rppadwe is a scrambled version of the English word ",
+      "output": [
+        "wrapped"
+      ]
+    },
+    "166": {
+      "input": "The word itngciex is a scrambled version of the English word ",
+      "output": [
+        "exciting"
+      ]
+    },
+    "167": {
+      "input": "The word cathw is a scrambled version of the English word ",
+      "output": [
+        "watch"
+      ]
+    },
+    "168": {
+      "input": "The word eiocnftin is a scrambled version of the English word ",
+      "output": [
+        "infection"
+      ]
+    },
+    "169": {
+      "input": "The word eterdnage is a scrambled version of the English word ",
+      "output": [
+        "generated"
+      ]
+    },
+    "170": {
+      "input": "The word btatyinciouacl is a scrambled version of the English word ",
+      "output": [
+        "accountability"
+      ]
+    },
+    "171": {
+      "input": "The word nuriertfu is a scrambled version of the English word ",
+      "output": [
+        "furniture"
+      ]
+    },
+    "172": {
+      "input": "The word icalfiof is a scrambled version of the English word ",
+      "output": [
+        "official"
+      ]
+    },
+    "173": {
+      "input": "The word utitgpn is a scrambled version of the English word ",
+      "output": [
+        "putting"
+      ]
+    },
+    "174": {
+      "input": "The word iinsgnhfi is a scrambled version of the English word ",
+      "output": [
+        "finishing"
+      ]
+    },
+    "175": {
+      "input": "The word berahl is a scrambled version of the English word ",
+      "output": [
+        "herbal"
+      ]
+    },
+    "176": {
+      "input": "The word eniatrmsma is a scrambled version of the English word ",
+      "output": [
+        "mainstream"
+      ]
+    },
+    "177": {
+      "input": "The word eohnc is a scrambled version of the English word ",
+      "output": [
+        "cohen"
+      ]
+    },
+    "178": {
+      "input": "The word khaes is a scrambled version of the English word ",
+      "output": [
+        "shake"
+      ]
+    },
+    "179": {
+      "input": "The word iumvatelcu is a scrambled version of the English word ",
+      "output": [
+        "cumulative"
+      ]
+    },
+    "180": {
+      "input": "The word inerldcy is a scrambled version of the English word ",
+      "output": [
+        "cylinder"
+      ]
+    },
+    "181": {
+      "input": "The word drcimeaoma is a scrambled version of the English word ",
+      "output": [
+        "macromedia"
+      ]
+    },
+    "182": {
+      "input": "The word olg is a scrambled version of the English word ",
+      "output": [
+        "log"
+      ]
+    },
+    "183": {
+      "input": "The word nexddie is a scrambled version of the English word ",
+      "output": [
+        "indexed"
+      ]
+    },
+    "184": {
+      "input": "The word elilgtn is a scrambled version of the English word ",
+      "output": [
+        "telling"
+      ]
+    },
+    "185": {
+      "input": "The word usseid is a scrambled version of the English word ",
+      "output": [
+        "issued"
+      ]
+    },
+    "186": {
+      "input": "The word akicgbn is a scrambled version of the English word ",
+      "output": [
+        "backing"
+      ]
+    },
+    "187": {
+      "input": "The word oenmdcmre is a scrambled version of the English word ",
+      "output": [
+        "recommend"
+      ]
+    },
+    "188": {
+      "input": "The word norsmaftr is a scrambled version of the English word ",
+      "output": [
+        "transform"
+      ]
+    },
+    "189": {
+      "input": "The word torhf is a scrambled version of the English word ",
+      "output": [
+        "forth"
+      ]
+    },
+    "190": {
+      "input": "The word usbtitetsu is a scrambled version of the English word ",
+      "output": [
+        "substitute"
+      ]
+    },
+    "191": {
+      "input": "The word rdiagtn is a scrambled version of the English word ",
+      "output": [
+        "trading"
+      ]
+    },
+    "192": {
+      "input": "The word wto is a scrambled version of the English word ",
+      "output": [
+        "two"
+      ]
+    },
+    "193": {
+      "input": "The word nigw is a scrambled version of the English word ",
+      "output": [
+        "wing"
+      ]
+    },
+    "194": {
+      "input": "The word naej is a scrambled version of the English word ",
+      "output": [
+        "jean"
+      ]
+    },
+    "195": {
+      "input": "The word ecedftin is a scrambled version of the English word ",
+      "output": [
+        "infected"
+      ]
+    },
+    "196": {
+      "input": "The word mraad is a scrambled version of the English word ",
+      "output": [
+        "drama"
+      ]
+    },
+    "197": {
+      "input": "The word emirspt is a scrambled version of the English word ",
+      "output": [
+        "permits"
+      ]
+    },
+    "198": {
+      "input": "The word nrikds is a scrambled version of the English word ",
+      "output": [
+        "drinks"
+      ]
+    },
+    "199": {
+      "input": "The word tceassnin is a scrambled version of the English word ",
+      "output": [
+        "instances"
+      ]
+    },
+    "200": {
+      "input": "The word einsgvtin is a scrambled version of the English word ",
+      "output": [
+        "investing"
+      ]
+    },
+    "201": {
+      "input": "The word iopct is a scrambled version of the English word ",
+      "output": [
+        "topic"
+      ]
+    },
+    "202": {
+      "input": "The word aontsnido is a scrambled version of the English word ",
+      "output": [
+        "donations"
+      ]
+    },
+    "203": {
+      "input": "The word lboibitapry is a scrambled version of the English word ",
+      "output": [
+        "probability"
+      ]
+    },
+    "204": {
+      "input": "The word anbiwro is a scrambled version of the English word ",
+      "output": [
+        "rainbow"
+      ]
+    },
+    "205": {
+      "input": "The word tdieed is a scrambled version of the English word ",
+      "output": [
+        "edited"
+      ]
+    },
+    "206": {
+      "input": "The word undssoath is a scrambled version of the English word ",
+      "output": [
+        "thousands"
+      ]
+    },
+    "207": {
+      "input": "The word maes is a scrambled version of the English word ",
+      "output": [
+        "same"
+      ]
+    },
+    "208": {
+      "input": "The word klcecane is a scrambled version of the English word ",
+      "output": [
+        "necklace"
+      ]
+    },
+    "209": {
+      "input": "The word hnceis is a scrambled version of the English word ",
+      "output": [
+        "inches"
+      ]
+    },
+    "210": {
+      "input": "The word hweossr is a scrambled version of the English word ",
+      "output": [
+        "showers"
+      ]
+    },
+    "211": {
+      "input": "The word tasap is a scrambled version of the English word ",
+      "output": [
+        "pasta"
+      ]
+    },
+    "212": {
+      "input": "The word hndurte is a scrambled version of the English word ",
+      "output": [
+        "thunder"
+      ]
+    },
+    "213": {
+      "input": "The word eoncssd is a scrambled version of the English word ",
+      "output": [
+        "seconds"
+      ]
+    },
+    "214": {
+      "input": "The word rlama is a scrambled version of the English word ",
+      "output": [
+        "alarm"
+      ]
+    },
+    "215": {
+      "input": "The word rtonoiab is a scrambled version of the English word ",
+      "output": [
+        "abortion"
+      ]
+    },
+    "216": {
+      "input": "The word keesw is a scrambled version of the English word ",
+      "output": [
+        "weeks"
+      ]
+    },
+    "217": {
+      "input": "The word eelvpdo is a scrambled version of the English word ",
+      "output": [
+        "develop"
+      ]
+    },
+    "218": {
+      "input": "The word eiercvre is a scrambled version of the English word ",
+      "output": [
+        "receiver"
+      ]
+    },
+    "219": {
+      "input": "The word ecedftaf is a scrambled version of the English word ",
+      "output": [
+        "affected"
+      ]
+    },
+    "220": {
+      "input": "The word dolehm is a scrambled version of the English word ",
+      "output": [
+        "holdem"
+      ]
+    },
+    "221": {
+      "input": "The word taef is a scrambled version of the English word ",
+      "output": [
+        "fate"
+      ]
+    },
+    "222": {
+      "input": "The word corefd is a scrambled version of the English word ",
+      "output": [
+        "forced"
+      ]
+    },
+    "223": {
+      "input": "The word asreeutr is a scrambled version of the English word ",
+      "output": [
+        "treasure"
+      ]
+    },
+    "224": {
+      "input": "The word oomb is a scrambled version of the English word ",
+      "output": [
+        "boom"
+      ]
+    },
+    "225": {
+      "input": "The word viwseepr is a scrambled version of the English word ",
+      "output": [
+        "previews"
+      ]
+    },
+    "226": {
+      "input": "The word ristsat is a scrambled version of the English word ",
+      "output": [
+        "artists"
+      ]
+    },
+    "227": {
+      "input": "The word triosse is a scrambled version of the English word ",
+      "output": [
+        "stories"
+      ]
+    },
+    "228": {
+      "input": "The word momyt is a scrambled version of the English word ",
+      "output": [
+        "tommy"
+      ]
+    },
+    "229": {
+      "input": "The word eujntmtsad is a scrambled version of the English word ",
+      "output": [
+        "adjustment"
+      ]
+    },
+    "230": {
+      "input": "The word cetsnrco is a scrambled version of the English word ",
+      "output": [
+        "concerts"
+      ]
+    },
+    "231": {
+      "input": "The word eederm is a scrambled version of the English word ",
+      "output": [
+        "redeem"
+      ]
+    },
+    "232": {
+      "input": "The word tjnincoucon is a scrambled version of the English word ",
+      "output": [
+        "conjunction"
+      ]
+    },
+    "233": {
+      "input": "The word oeprrt is a scrambled version of the English word ",
+      "output": [
+        "report"
+      ]
+    },
+    "234": {
+      "input": "The word rwioggn is a scrambled version of the English word ",
+      "output": [
+        "growing"
+      ]
+    },
+    "235": {
+      "input": "The word eevarl is a scrambled version of the English word ",
+      "output": [
+        "reveal"
+      ]
+    },
+    "236": {
+      "input": "The word piedsrin is a scrambled version of the English word ",
+      "output": [
+        "inspired"
+      ]
+    },
+    "237": {
+      "input": "The word rybihd is a scrambled version of the English word ",
+      "output": [
+        "hybrid"
+      ]
+    },
+    "238": {
+      "input": "The word ulbma is a scrambled version of the English word ",
+      "output": [
+        "album"
+      ]
+    },
+    "239": {
+      "input": "The word oreddsen is a scrambled version of the English word ",
+      "output": [
+        "endorsed"
+      ]
+    },
+    "240": {
+      "input": "The word orokb is a scrambled version of the English word ",
+      "output": [
+        "brook"
+      ]
+    },
+    "241": {
+      "input": "The word anfnit is a scrambled version of the English word ",
+      "output": [
+        "infant"
+      ]
+    },
+    "242": {
+      "input": "The word rigieenneng is a scrambled version of the English word ",
+      "output": [
+        "engineering"
+      ]
+    },
+    "243": {
+      "input": "The word aoclf is a scrambled version of the English word ",
+      "output": [
+        "focal"
+      ]
+    },
+    "244": {
+      "input": "The word eatsg is a scrambled version of the English word ",
+      "output": [
+        "stage"
+      ]
+    },
+    "245": {
+      "input": "The word torepr is a scrambled version of the English word ",
+      "output": [
+        "report"
+      ]
+    },
+    "246": {
+      "input": "The word petd is a scrambled version of the English word ",
+      "output": [
+        "dept"
+      ]
+    },
+    "247": {
+      "input": "The word eictoztrhainaacr is a scrambled version of the English word ",
+      "output": [
+        "characterization"
+      ]
+    },
+    "248": {
+      "input": "The word icnousnlco is a scrambled version of the English word ",
+      "output": [
+        "conclusion"
+      ]
+    },
+    "249": {
+      "input": "The word dorajn is a scrambled version of the English word ",
+      "output": [
+        "jordan"
+      ]
+    },
+    "250": {
+      "input": "The word ocondcr is a scrambled version of the English word ",
+      "output": [
+        "concord"
+      ]
+    },
+    "251": {
+      "input": "The word rhots is a scrambled version of the English word ",
+      "output": [
+        "short"
+      ]
+    },
+    "252": {
+      "input": "The word lamc is a scrambled version of the English word ",
+      "output": [
+        "calm"
+      ]
+    },
+    "253": {
+      "input": "The word usicotac is a scrambled version of the English word ",
+      "output": [
+        "acoustic"
+      ]
+    },
+    "254": {
+      "input": "The word gnnteapr is a scrambled version of the English word ",
+      "output": [
+        "pregnant"
+      ]
+    },
+    "255": {
+      "input": "The word rteaeangu is a scrambled version of the English word ",
+      "output": [
+        "guarantee"
+      ]
+    },
+    "256": {
+      "input": "The word erekg is a scrambled version of the English word ",
+      "output": [
+        "greek"
+      ]
+    },
+    "257": {
+      "input": "The word oneotss is a scrambled version of the English word ",
+      "output": [
+        "soonest"
+      ]
+    },
+    "258": {
+      "input": "The word uetrsbgrpe is a scrambled version of the English word ",
+      "output": [
+        "petersburg"
+      ]
+    },
+    "259": {
+      "input": "The word ereatns is a scrambled version of the English word ",
+      "output": [
+        "eastern"
+      ]
+    },
+    "260": {
+      "input": "The word pnsorso is a scrambled version of the English word ",
+      "output": [
+        "sponsor"
+      ]
+    },
+    "261": {
+      "input": "The word lssasce is a scrambled version of the English word ",
+      "output": [
+        "classes"
+      ]
+    },
+    "262": {
+      "input": "The word zlaap is a scrambled version of the English word ",
+      "output": [
+        "plaza"
+      ]
+    },
+    "263": {
+      "input": "The word erethnet is a scrambled version of the English word ",
+      "output": [
+        "ethernet"
+      ]
+    },
+    "264": {
+      "input": "The word noyjdee is a scrambled version of the English word ",
+      "output": [
+        "enjoyed"
+      ]
+    },
+    "265": {
+      "input": "The word innoctnecos is a scrambled version of the English word ",
+      "output": [
+        "connections"
+      ]
+    },
+    "266": {
+      "input": "The word foas is a scrambled version of the English word ",
+      "output": [
+        "sofa"
+      ]
+    },
+    "267": {
+      "input": "The word duyj is a scrambled version of the English word ",
+      "output": [
+        "judy"
+      ]
+    },
+    "268": {
+      "input": "The word urertcn is a scrambled version of the English word ",
+      "output": [
+        "current"
+      ]
+    },
+    "269": {
+      "input": "The word geienrli is a scrambled version of the English word ",
+      "output": [
+        "lingerie"
+      ]
+    },
+    "270": {
+      "input": "The word saeriil is a scrambled version of the English word ",
+      "output": [
+        "israeli"
+      ]
+    },
+    "271": {
+      "input": "The word tenomr is a scrambled version of the English word ",
+      "output": [
+        "mentor"
+      ]
+    },
+    "272": {
+      "input": "The word slakaa is a scrambled version of the English word ",
+      "output": [
+        "alaska"
+      ]
+    },
+    "273": {
+      "input": "The word lelyk is a scrambled version of the English word ",
+      "output": [
+        "kelly"
+      ]
+    },
+    "274": {
+      "input": "The word arpt is a scrambled version of the English word ",
+      "output": [
+        "part"
+      ]
+    },
+    "275": {
+      "input": "The word bayb is a scrambled version of the English word ",
+      "output": [
+        "baby"
+      ]
+    },
+    "276": {
+      "input": "The word ugesfere is a scrambled version of the English word ",
+      "output": [
+        "refugees"
+      ]
+    },
+    "277": {
+      "input": "The word kunyf is a scrambled version of the English word ",
+      "output": [
+        "funky"
+      ]
+    },
+    "278": {
+      "input": "The word eoxdb is a scrambled version of the English word ",
+      "output": [
+        "boxed"
+      ]
+    },
+    "279": {
+      "input": "The word orovge is a scrambled version of the English word ",
+      "output": [
+        "groove"
+      ]
+    },
+    "280": {
+      "input": "The word rseetpn is a scrambled version of the English word ",
+      "output": [
+        "present"
+      ]
+    },
+    "281": {
+      "input": "The word aanlc is a scrambled version of the English word ",
+      "output": [
+        "canal"
+      ]
+    },
+    "282": {
+      "input": "The word fulitfcdi is a scrambled version of the English word ",
+      "output": [
+        "difficult"
+      ]
+    },
+    "283": {
+      "input": "The word irtoctnaat is a scrambled version of the English word ",
+      "output": [
+        "attraction"
+      ]
+    },
+    "284": {
+      "input": "The word teiacrba is a scrambled version of the English word ",
+      "output": [
+        "bacteria"
+      ]
+    },
+    "285": {
+      "input": "The word sithenizcip is a scrambled version of the English word ",
+      "output": [
+        "citizenship"
+      ]
+    },
+    "286": {
+      "input": "The word dieslvma is a scrambled version of the English word ",
+      "output": [
+        "maldives"
+      ]
+    },
+    "287": {
+      "input": "The word ifarear is a scrambled version of the English word ",
+      "output": [
+        "airfare"
+      ]
+    },
+    "288": {
+      "input": "The word knaes is a scrambled version of the English word ",
+      "output": [
+        "snake"
+      ]
+    },
+    "289": {
+      "input": "The word asy is a scrambled version of the English word ",
+      "output": [
+        "say"
+      ]
+    },
+    "290": {
+      "input": "The word reryt is a scrambled version of the English word ",
+      "output": [
+        "terry"
+      ]
+    },
+    "291": {
+      "input": "The word maec is a scrambled version of the English word ",
+      "output": [
+        "came"
+      ]
+    },
+    "292": {
+      "input": "The word sepovirrsu is a scrambled version of the English word ",
+      "output": [
+        "supervisor"
+      ]
+    },
+    "293": {
+      "input": "The word assyes is a scrambled version of the English word ",
+      "output": [
+        "essays"
+      ]
+    },
+    "294": {
+      "input": "The word rhut is a scrambled version of the English word ",
+      "output": [
+        "hurt"
+      ]
+    },
+    "295": {
+      "input": "The word nohsj is a scrambled version of the English word ",
+      "output": [
+        "johns"
+      ]
+    },
+    "296": {
+      "input": "The word atx is a scrambled version of the English word ",
+      "output": [
+        "tax"
+      ]
+    },
+    "297": {
+      "input": "The word agitcrest is a scrambled version of the English word ",
+      "output": [
+        "strategic"
+      ]
+    },
+    "298": {
+      "input": "The word higehr is a scrambled version of the English word ",
+      "output": [
+        "higher"
+      ]
+    },
+    "299": {
+      "input": "The word eivnepsex is a scrambled version of the English word ",
+      "output": [
+        "expensive"
+      ]
+    },
+    "300": {
+      "input": "The word eolsdrhth is a scrambled version of the English word ",
+      "output": [
+        "threshold"
+      ]
+    }
+  }
+}

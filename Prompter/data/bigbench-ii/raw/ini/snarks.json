@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "num_examples": 10
+  },
+  "task_desc": "Determine which of two sentences is sarcastic",
+  "examples": {
+    "1": {
+      "input": "(a) Just healthy meals wouldn't cut it for his active lifestyle. (b) Just healthy meals cut it for his active lifestyle.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "2": {
+      "input": "(a) And the likelihood of internet-connected cars being hacked and controlled remotely,....zero. (b) And the likelihood of internet-connected cars being hacked and controlled remotely,....high.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "3": {
+      "input": "(a) College is happening: forgetting assignments, stressing over grades, worrying about finals, etc. It's been a stressful semester. (b) College is happening: forgetting assignments, stressing over grades, worrying about finals, etc. It's been a fun semester.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "4": {
+      "input": "(a) One failed test 6 years ago is simply insufficient proof of her cheating in last night's fight. (b) One failed test 6 years ago is simply devastating proof of her cheating in last night's fight.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "5": {
+      "input": "(a) Whistleblowers are great, heroes, they're in the public interest. They're accusing one of us? Back them up. (b) Whistleblowers are great, heroes, they're in the public interest. They're accusing one of us? Lock them up.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "6": {
+      "input": "(a) Good thing you can boil impurities out of water (b) Good thing you can boil Uranium out of water\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "7": {
+      "input": "(a) The best way to defeat a stronger/larger and better regimented force is by fighting on their terms. (b) The best way to defeat a stronger/larger and better regimented force is by fighting on your terms.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    },
+    "8": {
+      "input": "(a) Yeah, obviously that startup has terrible support because they are just tiny indie company. (b) Yeah, obviously that megaconglomerate has terrible support because they are just tiny indie company.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "9": {
+      "input": "(a) Well, Alabama did beat the 1st ranked team. Surely that should be enough to get them in. (b) Well, Alabama did beat the 17th ranked team. Surely that should be enough to get them in.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "B",
+        "B.",
+        "B. (b)",
+        "(b)"
+      ]
+    },
+    "10": {
+      "input": "(a) With new designs coming ten times slower than their competitors, Honda will soon be at the top of the market. (b) With new designs coming ten times faster than their competitors, Honda will soon be at the top of the market.\nChoices:\nA. (a)\nB. (b)",
+      "output": [
+        "A",
+        "A.",
+        "A. (a)",
+        "(a)"
+      ]
+    }
+  }
+}

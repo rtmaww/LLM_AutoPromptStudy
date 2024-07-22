@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "num_examples": 50
+  },
+  "task_desc": "Clarify the meaning of sentences with ambiguous pronouns",
+  "examples": {
+    "1": {
+      "input": "The cook is always teaching the assistant new techniques because she likes to teach others.\nChoices:\nA. The cook likes to teach\nB. The assistant likes to teach\nC. Ambiguous",
+      "output": [
+        "A. The cook likes to teach",
+        "The cook likes to teach"
+      ]
+    },
+    "2": {
+      "input": "The driver yelled at the tailor after she broke a window.\nChoices:\nA. The driver broke a window\nB. The tailor broke a window\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "3": {
+      "input": "The educator was meeting with a student to discuss her grading policy.\nChoices:\nA. It was the educator's grading policy\nB. It was the student's grading policy\nC. Ambiguous",
+      "output": [
+        "A. It was the educator's grading policy",
+        "It was the educator's grading policy"
+      ]
+    },
+    "4": {
+      "input": "The technician told the customer that they could pay with cash.\nChoices:\nA. The technician could pay\nB. The customer could pay\nC. Ambiguous",
+      "output": [
+        "B. The customer could pay",
+        "The customer could pay"
+      ]
+    },
+    "5": {
+      "input": "The assistant asked the physician if he needs any help.\nChoices:\nA. Asked if the assistant needs help\nB. Asked if the physician needs help\nC. Ambiguous",
+      "output": [
+        "B. Asked if the physician needs help",
+        "Asked if the physician needs help"
+      ]
+    },
+    "6": {
+      "input": "The patient was referred to the specialist because she is an expert on rare skin conditions.\nChoices:\nA. The patient is an expert\nB. The specialist is an expert\nC. Ambiguous",
+      "output": [
+        "B. The specialist is an expert",
+        "The specialist is an expert"
+      ]
+    },
+    "7": {
+      "input": "The practitioner made a house call for the patient because they felt gravely ill.\nChoices:\nA. The practitioner felt ill\nB. The patient felt ill\nC. Ambiguous",
+      "output": [
+        "B. The patient felt ill",
+        "The patient felt ill"
+      ]
+    },
+    "8": {
+      "input": "The undergraduate applied to work with the scientist because they needed a lab assistant.\nChoices:\nA. The undergraduate needed an assistant\nB. The scientist needed an assistant\nC. Ambiguous",
+      "output": [
+        "B. The scientist needed an assistant",
+        "The scientist needed an assistant"
+      ]
+    },
+    "9": {
+      "input": "The patient was referred to the specialist because they had a rare skin condition.\nChoices:\nA. The patient had a skin condition\nB. The specialist had a skin condition\nC. Ambiguous",
+      "output": [
+        "A. The patient had a skin condition",
+        "The patient had a skin condition"
+      ]
+    },
+    "10": {
+      "input": "The cleaner called the guard and asked her to open the door.\nChoices:\nA. Asked the cleaner\nB. Asked the guard\nC. Ambiguous",
+      "output": [
+        "B. Asked the guard",
+        "Asked the guard"
+      ]
+    },
+    "11": {
+      "input": "The developer corrected the secretary because they better understood the problem.\nChoices:\nA. The developer understood the problem\nB. The secretary understood the problem\nC. Ambiguous",
+      "output": [
+        "A. The developer understood the problem",
+        "The developer understood the problem"
+      ]
+    },
+    "12": {
+      "input": "The customer asked the salesperson if he could send the prices of each product.\nChoices:\nA. The customer would send the prices\nB. The salesperson would send the prices\nC. Ambiguous",
+      "output": [
+        "B. The salesperson would send the prices",
+        "The salesperson would send the prices"
+      ]
+    },
+    "13": {
+      "input": "The developer was unable to communicate with the writer because they focus on code.\nChoices:\nA. The developer focuses on code\nB. The writer focuses on code\nC. Ambiguous",
+      "output": [
+        "A. The developer focuses on code",
+        "The developer focuses on code"
+      ]
+    },
+    "14": {
+      "input": "The manager asked the employee to not forget his car.\nChoices:\nA. It was the manager's car\nB. It was the employee's car\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "15": {
+      "input": "The chief encouraged the writer because he wrote a good book.\nChoices:\nA. The chief wrote a good book\nB. The writer wrote a good book\nC. Ambiguous",
+      "output": [
+        "B. The writer wrote a good book",
+        "The writer wrote a good book"
+      ]
+    },
+    "16": {
+      "input": "The hygienist told the patient that he should floss every day.\nChoices:\nA. The hygienist should floss\nB. The patient should floss\nC. Ambiguous",
+      "output": [
+        "B. The patient should floss",
+        "The patient should floss"
+      ]
+    },
+    "17": {
+      "input": "The scientist will collaborate with the artist, and she will share a story.\nChoices:\nA. The scientist will share a story\nB. The artist will share a story\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "18": {
+      "input": "The CEO bought the accountant a car because she needed one.\nChoices:\nA. The CEO needed a car\nB. The accountant needed a car\nC. Ambiguous",
+      "output": [
+        "B. The accountant needed a car",
+        "The accountant needed a car"
+      ]
+    },
+    "19": {
+      "input": "The chief told the counselor that he took the day off.\nChoices:\nA. The chief took the day off\nB. The counselor took the day off\nC. Ambiguous",
+      "output": [
+        "A. The chief took the day off",
+        "The chief took the day off"
+      ]
+    },
+    "20": {
+      "input": "The chief told the counselor that she took the day off.\nChoices:\nA. The chief took the day off\nB. The counselor took the day off\nC. Ambiguous",
+      "output": [
+        "A. The chief took the day off",
+        "The chief took the day off"
+      ]
+    },
+    "21": {
+      "input": "The worker told the pedestrian that he was repairing the sidewalk as quickly as possible.\nChoices:\nA. The worker was repairing\nB. The pedestrian was repairing\nC. Ambiguous",
+      "output": [
+        "A. The worker was repairing",
+        "The worker was repairing"
+      ]
+    },
+    "22": {
+      "input": "The janitor warned the child not to step on the wet floor, otherwise she would have to mop it all over again.\nChoices:\nA. The janitor would have to mop\nB. The child would have to mop\nC. Ambiguous",
+      "output": [
+        "A. The janitor would have to mop",
+        "The janitor would have to mop"
+      ]
+    },
+    "23": {
+      "input": "The guard called the cleaner and asked him to open the door.\nChoices:\nA. Asked the guard\nB. Asked the cleaner\nC. Ambiguous",
+      "output": [
+        "B. Asked the cleaner",
+        "Asked the cleaner"
+      ]
+    },
+    "24": {
+      "input": "The cleaner called the guard and asked him to open the door.\nChoices:\nA. Asked the cleaner\nB. Asked the guard\nC. Ambiguous",
+      "output": [
+        "B. Asked the guard",
+        "Asked the guard"
+      ]
+    },
+    "25": {
+      "input": "The driver yelled at the tailor after he broke a window.\nChoices:\nA. The driver broke a window\nB. The tailor broke a window\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "26": {
+      "input": "Bailey will plan to meet the director at his office\nChoices:\nA. It will be Bailey's office\nB. It will be the director's office\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "27": {
+      "input": "The reporter and the chef discussed her favorite dishes.\nChoices:\nA. They discussed the reporter's favorite dishes\nB. They discussed the chef's favorite dishes\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "28": {
+      "input": "Bailey planned to meet the director at their office\nChoices:\nA. The office was the director's office\nB. The office was Bailey's office\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "29": {
+      "input": "The homeowner asked the inspector if the house they had purchased was structurally sound.\nChoices:\nA. The homeowner had purchased\nB. The inspector had purchased\nC. Ambiguous",
+      "output": [
+        "A. The homeowner had purchased",
+        "The homeowner had purchased"
+      ]
+    },
+    "30": {
+      "input": "The writer tried to fool the salesperson and told him a fake story.\nChoices:\nA. Told the writer a fake story\nB. Told the salesperson a fake story\nC. Ambiguous",
+      "output": [
+        "B. Told the salesperson a fake story",
+        "Told the salesperson a fake story"
+      ]
+    },
+    "31": {
+      "input": "My cousin called his boss for more information\nChoices:\nA. They were my cousin's boss\nB. They were the boss's boss\nC. Ambiguous",
+      "output": [
+        "A. They were my cousin's boss",
+        "They were my cousin's boss"
+      ]
+    },
+    "32": {
+      "input": "The carpenter told the onlooker that he had been working on the house for three weeks.\nChoices:\nA. The carpenter had been working on the house\nB. The onlooker had been working on the house\nC. Ambiguous",
+      "output": [
+        "A. The carpenter had been working on the house",
+        "The carpenter had been working on the house"
+      ]
+    },
+    "33": {
+      "input": "The student set up a meeting with the architect to review their blueprints.\nChoices:\nA. The blueprints were the student's\nB. The blueprints were the architect's\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "34": {
+      "input": "The customer asked the salesperson if they could send the prices of each product.\nChoices:\nA. The customer would send the prices\nB. The salesperson would send the prices\nC. Ambiguous",
+      "output": [
+        "B. The salesperson would send the prices",
+        "The salesperson would send the prices"
+      ]
+    },
+    "35": {
+      "input": "The developer was unable to communicate with the writer because he focuses on code.\nChoices:\nA. The developer focuses on code\nB. The writer focuses on code\nC. Ambiguous",
+      "output": [
+        "A. The developer focuses on code",
+        "The developer focuses on code"
+      ]
+    },
+    "36": {
+      "input": "Bailey plans to meet the director at their office\nChoices:\nA. It is Bailey's office\nB. It is the director's office\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "37": {
+      "input": "The investigator wanted to interview the witness in person, but they were too late.\nChoices:\nA. The investigator was too late\nB. The witness was too late\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "38": {
+      "input": "The taxpayer met with the accountant to find out if they could help with tax preparation.\nChoices:\nA. The taxpayer could help\nB. The accountant could help\nC. Ambiguous",
+      "output": [
+        "B. The accountant could help",
+        "The accountant could help"
+      ]
+    },
+    "39": {
+      "input": "The worker told the pedestrian that he should avoid the closed portion of the street.\nChoices:\nA. The worker should avoid the closed portion\nB. The pedestrian should avoid the closed portion\nC. Ambiguous",
+      "output": [
+        "B. The pedestrian should avoid the closed portion",
+        "The pedestrian should avoid the closed portion"
+      ]
+    },
+    "40": {
+      "input": "The laborer handed the secretary a hammer because he asked for a tool.\nChoices:\nA. The laborer asked for a tool\nB. The secretary asked for a tool\nC. Ambiguous",
+      "output": [
+        "B. The secretary asked for a tool",
+        "The secretary asked for a tool"
+      ]
+    },
+    "41": {
+      "input": "The reporter and the chef will discuss her favorite dishes.\nChoices:\nA. They will discuss the reporter's favorite dishes\nB. They will discuss the chef's favorite dishes\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "42": {
+      "input": "The assistant asked the physician if they need any help.\nChoices:\nA. Asked if the assistant needs help\nB. Asked if the physician needs help\nC. Ambiguous",
+      "output": [
+        "B. Asked if the physician needs help",
+        "Asked if the physician needs help"
+      ]
+    },
+    "43": {
+      "input": "Bailey planned to meet the director at her office\nChoices:\nA. The office was the director's office\nB. The office was Bailey's office\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "44": {
+      "input": "Bailey plans to meet the director at her office\nChoices:\nA. It is Bailey's office\nB. It is the director's office\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "45": {
+      "input": "The educator was meeting with a student to discuss his grading policy.\nChoices:\nA. It was the educator's grading policy\nB. It was the student's grading policy\nC. Ambiguous",
+      "output": [
+        "A. It was the educator's grading policy",
+        "It was the educator's grading policy"
+      ]
+    },
+    "46": {
+      "input": "The hygienist told the patient that she should floss every day.\nChoices:\nA. The hygienist should floss\nB. The patient should floss\nC. Ambiguous",
+      "output": [
+        "B. The patient should floss",
+        "The patient should floss"
+      ]
+    },
+    "47": {
+      "input": "This story could not be published without the writer and her friends' support.\nChoices:\nA. They were the writer's friends\nB. They were the friends' friends\nC. They were the story's friends\nD. Ambiguous",
+      "output": [
+        "A. They were the writer's friends",
+        "They were the writer's friends"
+      ]
+    },
+    "48": {
+      "input": "After meeting with the producers, Sam will go to their office.\nChoices:\nA. It will be the producers' office\nB. It will be Sam's office\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "49": {
+      "input": "After meeting with the producers, Sam goes to their office.\nChoices:\nA. It is Sam's office\nB. It is the producers' office\nC. Ambiguous",
+      "output": [
+        "C. Ambiguous",
+        "Ambiguous"
+      ]
+    },
+    "50": {
+      "input": "The undergraduate applied to work with the scientist because he needed a lab assistant.\nChoices:\nA. The undergraduate needed an assistant\nB. The scientist needed an assistant\nC. Ambiguous",
+      "output": [
+        "B. The scientist needed an assistant",
+        "The scientist needed an assistant"
+      ]
+    }
+  }
+}

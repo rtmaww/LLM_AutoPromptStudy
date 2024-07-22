@@ -1,0 +1,1808 @@
+{
+  "metadata": {
+    "num_examples": 300
+  },
+  "task_desc": "Sort a list of words",
+  "examples": {
+    "1": {
+      "input": "floodlit cosmetic squawbush obstetrician examine ringlet furnace susan dorcas frankel never universe assuage maxine offbeat omen",
+      "output": [
+        "assuage cosmetic dorcas examine floodlit frankel furnace maxine never obstetrician offbeat omen ringlet squawbush susan universe"
+      ]
+    },
+    "2": {
+      "input": "abort suave sobriquet leathery",
+      "output": [
+        "abort leathery sobriquet suave"
+      ]
+    },
+    "3": {
+      "input": "joaquin indoctrinate seamy cloy harbin insular lodge prologue vermont jibe",
+      "output": [
+        "cloy harbin indoctrinate insular jibe joaquin lodge prologue seamy vermont"
+      ]
+    },
+    "4": {
+      "input": "foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate",
+      "output": [
+        "alterate aseptic cayenne chandigarh debauch declassify dingy equanimity excursion foamflower groupoid inclement kruger lawful october only scorch"
+      ]
+    },
+    "5": {
+      "input": "phagocyte flub",
+      "output": [
+        "flub phagocyte"
+      ]
+    },
+    "6": {
+      "input": "repairmen burdensome hewn",
+      "output": [
+        "burdensome hewn repairmen"
+      ]
+    },
+    "7": {
+      "input": "cankerworm thorax codeposit cause ferry tuple wellington playroom pastoral",
+      "output": [
+        "cankerworm cause codeposit ferry pastoral playroom thorax tuple wellington"
+      ]
+    },
+    "8": {
+      "input": "hurst spirogyra dangle magnetron accelerate amuse provoke shanghai speculate mcgregor uk frigga scholastic supple waylay",
+      "output": [
+        "accelerate amuse dangle frigga hurst magnetron mcgregor provoke scholastic shanghai speculate spirogyra supple uk waylay"
+      ]
+    },
+    "9": {
+      "input": "inquisitor beneficial selfish hall aile promiscuous circumcision bloke monaural jeopardy salesman pa apologetic spaghetti congenial socratic coerce",
+      "output": [
+        "aile apologetic beneficial bloke circumcision coerce congenial hall inquisitor jeopardy monaural pa promiscuous salesman selfish socratic spaghetti"
+      ]
+    },
+    "10": {
+      "input": "priscilla plop workforce arithmetic snug hoarse basidiomycetes rector volt analogy otherwise excruciate ploy delegable void harmony",
+      "output": [
+        "analogy arithmetic basidiomycetes delegable excruciate harmony hoarse otherwise plop ploy priscilla rector snug void volt workforce"
+      ]
+    },
+    "11": {
+      "input": "nostalgia demoniac tungstate harp vulcan eighteenth kindred culpable holloway halve ammo dignitary chewy julep log flux theatric altitude",
+      "output": [
+        "altitude ammo chewy culpable demoniac dignitary eighteenth flux halve harp holloway julep kindred log nostalgia theatric tungstate vulcan"
+      ]
+    },
+    "12": {
+      "input": "smote where secondhand megavolt burette alabaster distributor downwind",
+      "output": [
+        "alabaster burette distributor downwind megavolt secondhand smote where"
+      ]
+    },
+    "13": {
+      "input": "slit fiefdom algal firework dixie picayune polariscope postmark kalmuk bootlegger transact toy cyclone breastplate septillion feed",
+      "output": [
+        "algal bootlegger breastplate cyclone dixie feed fiefdom firework kalmuk picayune polariscope postmark septillion slit toy transact"
+      ]
+    },
+    "14": {
+      "input": "molten lament pennant bois wetland sleight baudelaire",
+      "output": [
+        "baudelaire bois lament molten pennant sleight wetland"
+      ]
+    },
+    "15": {
+      "input": "tee taper inequivalent cowbell incalculable goldenseal densitometer tarrytown corpulent dragonhead anastomosis embraceable total panacea suicide extrusive inductance",
+      "output": [
+        "anastomosis corpulent cowbell densitometer dragonhead embraceable extrusive goldenseal incalculable inductance inequivalent panacea suicide taper tarrytown tee total"
+      ]
+    },
+    "16": {
+      "input": "meredith pillow tee plebian adsorption herewith rheumatic nevada apex",
+      "output": [
+        "adsorption apex herewith meredith nevada pillow plebian rheumatic tee"
+      ]
+    },
+    "17": {
+      "input": "pelagic licensable buick decollimate billiard real tractor eighty radiochemical",
+      "output": [
+        "billiard buick decollimate eighty licensable pelagic radiochemical real tractor"
+      ]
+    },
+    "18": {
+      "input": "inapproachable faint lahore smalltime leadsman pillage sapphire sprite",
+      "output": [
+        "faint inapproachable lahore leadsman pillage sapphire smalltime sprite"
+      ]
+    },
+    "19": {
+      "input": "hodges deoxyribose troupe motorcade devisee stratify auerbach decor incommensurable dianne",
+      "output": [
+        "auerbach decor deoxyribose devisee dianne hodges incommensurable motorcade stratify troupe"
+      ]
+    },
+    "20": {
+      "input": "supervene snafu emanuel breakoff lockup cohomology marlboro minneapolis paranoia silversmith",
+      "output": [
+        "breakoff cohomology emanuel lockup marlboro minneapolis paranoia silversmith snafu supervene"
+      ]
+    },
+    "21": {
+      "input": "thalia venous brasilia parabola keats sagging cackle grandpa dusky sis transcendent",
+      "output": [
+        "brasilia cackle dusky grandpa keats parabola sagging sis thalia transcendent venous"
+      ]
+    },
+    "22": {
+      "input": "postmark dalton minerva sulky login glutamate altimeter uppercut altercate infusible evocable",
+      "output": [
+        "altercate altimeter dalton evocable glutamate infusible login minerva postmark sulky uppercut"
+      ]
+    },
+    "23": {
+      "input": "airdrop qualify knoweth lock verdict fallen pegboard antietam batt",
+      "output": [
+        "airdrop antietam batt fallen knoweth lock pegboard qualify verdict"
+      ]
+    },
+    "24": {
+      "input": "mature asleep fade kane duty bail migrant binge",
+      "output": [
+        "asleep bail binge duty fade kane mature migrant"
+      ]
+    },
+    "25": {
+      "input": "quakeress giddap simmons orange martensite headwind ruination nco stanhope aurora onset averred o'neill peugeot disgruntle kingbird hydroxyl photography sentient opt",
+      "output": [
+        "aurora averred disgruntle giddap headwind hydroxyl kingbird martensite nco o'neill onset opt orange peugeot photography quakeress ruination sentient simmons stanhope"
+      ]
+    },
+    "26": {
+      "input": "wheelhouse bronzy actaeon molybdenum soak comprehensible december enquire situs transoceanic analytic bellamy heckman mild fluoresce",
+      "output": [
+        "actaeon analytic bellamy bronzy comprehensible december enquire fluoresce heckman mild molybdenum situs soak transoceanic wheelhouse"
+      ]
+    },
+    "27": {
+      "input": "breakoff buffoon saucy saint malfunction duodenum x's hop coypu ideal sen inland attention encroach pterodactyl unity",
+      "output": [
+        "attention breakoff buffoon coypu duodenum encroach hop ideal inland malfunction pterodactyl saint saucy sen unity x's"
+      ]
+    },
+    "28": {
+      "input": "lunchtime loblolly stygian duckling subtlety tide asocial gurkha lawbreaker blair",
+      "output": [
+        "asocial blair duckling gurkha lawbreaker loblolly lunchtime stygian subtlety tide"
+      ]
+    },
+    "29": {
+      "input": "polytypy evaporate philanthropic novosibirsk shish",
+      "output": [
+        "evaporate novosibirsk philanthropic polytypy shish"
+      ]
+    },
+    "30": {
+      "input": "thymus gallop democrat bourbon throw pus hematite lifeboat heublein commerce analyses joke buggy transcribe oratorio whimsic blackjack declamation",
+      "output": [
+        "analyses blackjack bourbon buggy commerce declamation democrat gallop hematite heublein joke lifeboat oratorio pus throw thymus transcribe whimsic"
+      ]
+    },
+    "31": {
+      "input": "depressor approximable gift yogi transgress lumpur booth oracular nottingham printmake alexandre munson",
+      "output": [
+        "alexandre approximable booth depressor gift lumpur munson nottingham oracular printmake transgress yogi"
+      ]
+    },
+    "32": {
+      "input": "plural dose allstate stalin dyad multitudinous powderpuff",
+      "output": [
+        "allstate dose dyad multitudinous plural powderpuff stalin"
+      ]
+    },
+    "33": {
+      "input": "formatted scriptural month arsenate colony isotherm fortuitous lizzie bamako tetragonal masque electric sleety kidnapping sheer",
+      "output": [
+        "arsenate bamako colony electric formatted fortuitous isotherm kidnapping lizzie masque month scriptural sheer sleety tetragonal"
+      ]
+    },
+    "34": {
+      "input": "dwell clank greatcoat margin harness reverberate ireland sadist luzon cur yule competitor crucifixion strengthen blueberry vacuum beside twine vito catskill",
+      "output": [
+        "beside blueberry catskill clank competitor crucifixion cur dwell greatcoat harness ireland luzon margin reverberate sadist strengthen twine vacuum vito yule"
+      ]
+    },
+    "35": {
+      "input": "soluble hydrostatic lola michaelangelo standby bottlecap mysore gator incurred stockton henri clasp curfew mock went gob",
+      "output": [
+        "bottlecap clasp curfew gator gob henri hydrostatic incurred lola michaelangelo mock mysore soluble standby stockton went"
+      ]
+    },
+    "36": {
+      "input": "select gummy mindful flunky moral nnw tiffany",
+      "output": [
+        "flunky gummy mindful moral nnw select tiffany"
+      ]
+    },
+    "37": {
+      "input": "transgressor sidewinder tacky casualty shouldn't courtier leprosy avoidance gibbon merge",
+      "output": [
+        "avoidance casualty courtier gibbon leprosy merge shouldn't sidewinder tacky transgressor"
+      ]
+    },
+    "38": {
+      "input": "search marcello depreciate unary frame numbly sprout clench agamemnon herbivorous eject zaire lien forum",
+      "output": [
+        "agamemnon clench depreciate eject forum frame herbivorous lien marcello numbly search sprout unary zaire"
+      ]
+    },
+    "39": {
+      "input": "rudiment nurture apoplexy preponderant mortician foam sinusoidal strabismic bakersfield boy talkie",
+      "output": [
+        "apoplexy bakersfield boy foam mortician nurture preponderant rudiment sinusoidal strabismic talkie"
+      ]
+    },
+    "40": {
+      "input": "enunciable nuclear exalt nu detriment emendable archaism ninth deniable piteous leslie slocum schoolmaster varian",
+      "output": [
+        "archaism deniable detriment emendable enunciable exalt leslie ninth nu nuclear piteous schoolmaster slocum varian"
+      ]
+    },
+    "41": {
+      "input": "punic deathward pigeon",
+      "output": [
+        "deathward pigeon punic"
+      ]
+    },
+    "42": {
+      "input": "indignation boxy coauthor glutamine adult pilewort dunkirk handlebar",
+      "output": [
+        "adult boxy coauthor dunkirk glutamine handlebar indignation pilewort"
+      ]
+    },
+    "43": {
+      "input": "limousine crash jehovah poodle pier gemstone fluid whoever chopstick lacerate rationale sc urn",
+      "output": [
+        "chopstick crash fluid gemstone jehovah lacerate limousine pier poodle rationale sc urn whoever"
+      ]
+    },
+    "44": {
+      "input": "propriety lineage march domingo voice quintillion tensile carson waterfront nimbus greenware eleven jaeger yolk beardsley octogenarian polarography wish",
+      "output": [
+        "beardsley carson domingo eleven greenware jaeger lineage march nimbus octogenarian polarography propriety quintillion tensile voice waterfront wish yolk"
+      ]
+    },
+    "45": {
+      "input": "horticulture osborne correspond fracture medallion inhomogeneous timeshare rickettsia flashlight carlsbad bilge leery",
+      "output": [
+        "bilge carlsbad correspond flashlight fracture horticulture inhomogeneous leery medallion osborne rickettsia timeshare"
+      ]
+    },
+    "46": {
+      "input": "peculiar margaret contravention ingratiate dreg superintendent drapery bizarre sequential",
+      "output": [
+        "bizarre contravention drapery dreg ingratiate margaret peculiar sequential superintendent"
+      ]
+    },
+    "47": {
+      "input": "deconvolve look regulus support bulldoze skippy needle cusp treadle necromancy molybdate winery",
+      "output": [
+        "bulldoze cusp deconvolve look molybdate necromancy needle regulus skippy support treadle winery"
+      ]
+    },
+    "48": {
+      "input": "mattson begat skyway mental",
+      "output": [
+        "begat mattson mental skyway"
+      ]
+    },
+    "49": {
+      "input": "workstation sniff capacity epitome makeup scripture frankfurt shaman coral culpa oriental",
+      "output": [
+        "capacity coral culpa epitome frankfurt makeup oriental scripture shaman sniff workstation"
+      ]
+    },
+    "50": {
+      "input": "flogging landis anagram trafficking delphic",
+      "output": [
+        "anagram delphic flogging landis trafficking"
+      ]
+    },
+    "51": {
+      "input": "sorption ruminate shipman saturnine secondhand ingrained bomb auspices telepathy montana this allan alan derek certainty planet castanet crupper trio spur",
+      "output": [
+        "alan allan auspices bomb castanet certainty crupper derek ingrained montana planet ruminate saturnine secondhand shipman sorption spur telepathy this trio"
+      ]
+    },
+    "52": {
+      "input": "seizure gannet kevin antonym woolgather stepson flintlock rangeland massif lindberg waterway rainy schottky superannuate furnace",
+      "output": [
+        "antonym flintlock furnace gannet kevin lindberg massif rainy rangeland schottky seizure stepson superannuate waterway woolgather"
+      ]
+    },
+    "53": {
+      "input": "industrious handwrite superlative deterring cahoot steven amidst physiotherapist seersucker graven viaduct",
+      "output": [
+        "amidst cahoot deterring graven handwrite industrious physiotherapist seersucker steven superlative viaduct"
+      ]
+    },
+    "54": {
+      "input": "stocky walton earthen yond whalebone brown doldrum claw carcinogen champ cornet thoriate queen gymnastic finish mccarty patriotic heighten nymphomaniac",
+      "output": [
+        "brown carcinogen champ claw cornet doldrum earthen finish gymnastic heighten mccarty nymphomaniac patriotic queen stocky thoriate walton whalebone yond"
+      ]
+    },
+    "55": {
+      "input": "utah pyroxene noontime fresh bulblet",
+      "output": [
+        "bulblet fresh noontime pyroxene utah"
+      ]
+    },
+    "56": {
+      "input": "champ jigsaw acclaim pipeline exempt gadwall hypothalamus clothbound sensory lozenge hayes conclusion delirious dyestuff hood seashell commodity plentiful sarcastic teen",
+      "output": [
+        "acclaim champ clothbound commodity conclusion delirious dyestuff exempt gadwall hayes hood hypothalamus jigsaw lozenge pipeline plentiful sarcastic seashell sensory teen"
+      ]
+    },
+    "57": {
+      "input": "cityscape maier excerpt bible divert woodwind",
+      "output": [
+        "bible cityscape divert excerpt maier woodwind"
+      ]
+    },
+    "58": {
+      "input": "joanna epic pascal carousel pinwheel notch hypophyseal tugging",
+      "output": [
+        "carousel epic hypophyseal joanna notch pascal pinwheel tugging"
+      ]
+    },
+    "59": {
+      "input": "egghead galley nitroglycerine insignia tuft tablet ascetic mcelroy godmother sandusky quarrelsome menace espionage folic gabriel birch everyone male",
+      "output": [
+        "ascetic birch egghead espionage everyone folic gabriel galley godmother insignia male mcelroy menace nitroglycerine quarrelsome sandusky tablet tuft"
+      ]
+    },
+    "60": {
+      "input": "bundy moiety demented",
+      "output": [
+        "bundy demented moiety"
+      ]
+    },
+    "61": {
+      "input": "libra mimeograph sheen indolent qed ponderous pluton indecipherable otter edible offenbach effect sawfish freestone impale pony",
+      "output": [
+        "edible effect freestone impale indecipherable indolent libra mimeograph offenbach otter pluton ponderous pony qed sawfish sheen"
+      ]
+    },
+    "62": {
+      "input": "lordosis roomy earnest chirp poughkeepsie arthropod interim rhythmic wool tun helena pavanne tab",
+      "output": [
+        "arthropod chirp earnest helena interim lordosis pavanne poughkeepsie rhythmic roomy tab tun wool"
+      ]
+    },
+    "63": {
+      "input": "lucrative you've tunnel archery bride coquette polytypy barbudo radix arlen lockwood teem officious",
+      "output": [
+        "archery arlen barbudo bride coquette lockwood lucrative officious polytypy radix teem tunnel you've"
+      ]
+    },
+    "64": {
+      "input": "sparling lovelorn yearn mcginnis mosque click erosive sling chill anastasia gamble lorry humility pall",
+      "output": [
+        "anastasia chill click erosive gamble humility lorry lovelorn mcginnis mosque pall sling sparling yearn"
+      ]
+    },
+    "65": {
+      "input": "proprietor abet castigate ganymede heron opium point tread deign",
+      "output": [
+        "abet castigate deign ganymede heron opium point proprietor tread"
+      ]
+    },
+    "66": {
+      "input": "capsize peritectic starfish oboist splotch",
+      "output": [
+        "capsize oboist peritectic splotch starfish"
+      ]
+    },
+    "67": {
+      "input": "vote roy anomalous director bestow marlowe gauss jess myel kowalewski chain sedan halma wrist expressway acerbity sing hallmark",
+      "output": [
+        "acerbity anomalous bestow chain director expressway gauss hallmark halma jess kowalewski marlowe myel roy sedan sing vote wrist"
+      ]
+    },
+    "68": {
+      "input": "telekinesis mainstay tableau sagacity puberty morphophonemic yuh tommy domain picasso",
+      "output": [
+        "domain mainstay morphophonemic picasso puberty sagacity tableau telekinesis tommy yuh"
+      ]
+    },
+    "69": {
+      "input": "radius wadi quash larry tapestry wiremen glow gm hirsch bialystok divorce libertarian holly heavyweight wrinkle",
+      "output": [
+        "bialystok divorce glow gm heavyweight hirsch holly larry libertarian quash radius tapestry wadi wiremen wrinkle"
+      ]
+    },
+    "70": {
+      "input": "donald turmoil round lark sousa balfour baseline tidbit bottlecap phenomena",
+      "output": [
+        "balfour baseline bottlecap donald lark phenomena round sousa tidbit turmoil"
+      ]
+    },
+    "71": {
+      "input": "intimacy christen drake hypocritic corcoran stipulate magnitude driven",
+      "output": [
+        "christen corcoran drake driven hypocritic intimacy magnitude stipulate"
+      ]
+    },
+    "72": {
+      "input": "apparition party hilarious powdery tablespoonful lockhart mouthpiece",
+      "output": [
+        "apparition hilarious lockhart mouthpiece party powdery tablespoonful"
+      ]
+    },
+    "73": {
+      "input": "cleanup queue hymn breastwork redbird degrade",
+      "output": [
+        "breastwork cleanup degrade hymn queue redbird"
+      ]
+    },
+    "74": {
+      "input": "viburnum hieronymus allure cleric exhumation nrc geophysics exonerate mettlesome visual wolve tracy circadian mcintyre",
+      "output": [
+        "allure circadian cleric exhumation exonerate geophysics hieronymus mcintyre mettlesome nrc tracy viburnum visual wolve"
+      ]
+    },
+    "75": {
+      "input": "bernadine bamboo",
+      "output": [
+        "bamboo bernadine"
+      ]
+    },
+    "76": {
+      "input": "gourd seater corruption magnanimity dilettante alexandre hadron dovetail biochemic vase grump ego preston sidearm pathos lane auger shrive minsk",
+      "output": [
+        "alexandre auger biochemic corruption dilettante dovetail ego gourd grump hadron lane magnanimity minsk pathos preston seater shrive sidearm vase"
+      ]
+    },
+    "77": {
+      "input": "saul fresco teen chopstick footwork smalley anaplasmosis palisade orthography storey bumble pilate clue ingot fiesta",
+      "output": [
+        "anaplasmosis bumble chopstick clue fiesta footwork fresco ingot orthography palisade pilate saul smalley storey teen"
+      ]
+    },
+    "78": {
+      "input": "porosity captaincy tenderhearted ouzel nematode global liggett siegfried saprophyte erudition monsanto porterhouse",
+      "output": [
+        "captaincy erudition global liggett monsanto nematode ouzel porosity porterhouse saprophyte siegfried tenderhearted"
+      ]
+    },
+    "79": {
+      "input": "dew rico hagstrom filtrate dhabi acquire mercer hodgepodge pal",
+      "output": [
+        "acquire dew dhabi filtrate hagstrom hodgepodge mercer pal rico"
+      ]
+    },
+    "80": {
+      "input": "illegal barberry shorefront",
+      "output": [
+        "barberry illegal shorefront"
+      ]
+    },
+    "81": {
+      "input": "matrilineal doubleton collet abalone led alamo whelk glandular ghost popular larkspur sweat cruddy tundra olympia homebuilder could terror jessica",
+      "output": [
+        "abalone alamo collet could cruddy doubleton ghost glandular homebuilder jessica larkspur led matrilineal olympia popular sweat terror tundra whelk"
+      ]
+    },
+    "82": {
+      "input": "atop planetoid sooth froze wyeth hickman paid",
+      "output": [
+        "atop froze hickman paid planetoid sooth wyeth"
+      ]
+    },
+    "83": {
+      "input": "crump informal dutiable guzzle assume biblical clone indissoluble ornate thread ike koenig",
+      "output": [
+        "assume biblical clone crump dutiable guzzle ike indissoluble informal koenig ornate thread"
+      ]
+    },
+    "84": {
+      "input": "bobolink cogent bilharziasis burdock ransom travail rousseau diamagnetic broke addressograph repugnant stupefy lisp furtive fist immodesty bedfast",
+      "output": [
+        "addressograph bedfast bilharziasis bobolink broke burdock cogent diamagnetic fist furtive immodesty lisp ransom repugnant rousseau stupefy travail"
+      ]
+    },
+    "85": {
+      "input": "cayley telephotography coddington atkinson alcott inattention naacp prentice cincinnati careful",
+      "output": [
+        "alcott atkinson careful cayley cincinnati coddington inattention naacp prentice telephotography"
+      ]
+    },
+    "86": {
+      "input": "fugal coldhearted khmer wainscot tyranny poliomyelitis build vetch compensatory glide aborning",
+      "output": [
+        "aborning build coldhearted compensatory fugal glide khmer poliomyelitis tyranny vetch wainscot"
+      ]
+    },
+    "87": {
+      "input": "imbrium philology reverie organic envious compositor appropriable olin casserole desire soy writeup tempest ornithology simply mealy cauliflower lousewort single",
+      "output": [
+        "appropriable casserole cauliflower compositor desire envious imbrium lousewort mealy olin organic ornithology philology reverie simply single soy tempest writeup"
+      ]
+    },
+    "88": {
+      "input": "classroom walden sentry seed grill dusty silverware",
+      "output": [
+        "classroom dusty grill seed sentry silverware walden"
+      ]
+    },
+    "89": {
+      "input": "behold oxalic maybe hew steel termcap pray stiffen dissipate misogyny format dew",
+      "output": [
+        "behold dew dissipate format hew maybe misogyny oxalic pray steel stiffen termcap"
+      ]
+    },
+    "90": {
+      "input": "suffix apollo crampon numinous licensee rivulet menfolk situs becalm clef parameter brouhaha billionth",
+      "output": [
+        "apollo becalm billionth brouhaha clef crampon licensee menfolk numinous parameter rivulet situs suffix"
+      ]
+    },
+    "91": {
+      "input": "programmed gird canopy rheumatic pinehurst",
+      "output": [
+        "canopy gird pinehurst programmed rheumatic"
+      ]
+    },
+    "92": {
+      "input": "bewitch jessica emancipate pyrometer bestselling approximant camel gluey",
+      "output": [
+        "approximant bestselling bewitch camel emancipate gluey jessica pyrometer"
+      ]
+    },
+    "93": {
+      "input": "gautama dual opposite urea slunk",
+      "output": [
+        "dual gautama opposite slunk urea"
+      ]
+    },
+    "94": {
+      "input": "wind stubble ancient thai cole procrastinate",
+      "output": [
+        "ancient cole procrastinate stubble thai wind"
+      ]
+    },
+    "95": {
+      "input": "grommet mcintosh dorchester stanza clausius thoriate aloe iceman wah chassis hygrometer defoliate skipjack assess oddball pensacola conjure",
+      "output": [
+        "aloe assess chassis clausius conjure defoliate dorchester grommet hygrometer iceman mcintosh oddball pensacola skipjack stanza thoriate wah"
+      ]
+    },
+    "96": {
+      "input": "lorinda waterline dickey bizet codicil gull captious hydrogenate successive",
+      "output": [
+        "bizet captious codicil dickey gull hydrogenate lorinda successive waterline"
+      ]
+    },
+    "97": {
+      "input": "moss altimeter chamber woodpeck",
+      "output": [
+        "altimeter chamber moss woodpeck"
+      ]
+    },
+    "98": {
+      "input": "zan natalie coplanar stevenson",
+      "output": [
+        "coplanar natalie stevenson zan"
+      ]
+    },
+    "99": {
+      "input": "stratum wednesday nibelung combatant led hearten homogeneous estrogen fell facsimile martin stalemate incongruity package binuclear adipic jorgenson spangle",
+      "output": [
+        "adipic binuclear combatant estrogen facsimile fell hearten homogeneous incongruity jorgenson led martin nibelung package spangle stalemate stratum wednesday"
+      ]
+    },
+    "100": {
+      "input": "analyses timeshare blueback telephony usa falter credential erda geophysics fireproof den shibboleth swampland keynote porte stonewort testimonial augustine guitar meter",
+      "output": [
+        "analyses augustine blueback credential den erda falter fireproof geophysics guitar keynote meter porte shibboleth stonewort swampland telephony testimonial timeshare usa"
+      ]
+    },
+    "101": {
+      "input": "minnow wand caw clipboard heath homebuilder whatnot reverberate magician patron silica prowess backside ferrer miscreant june hecuba laudatory eh corpulent",
+      "output": [
+        "backside caw clipboard corpulent eh ferrer heath hecuba homebuilder june laudatory magician minnow miscreant patron prowess reverberate silica wand whatnot"
+      ]
+    },
+    "102": {
+      "input": "condescend rampant percolate coltish date rochester placid significant",
+      "output": [
+        "coltish condescend date percolate placid rampant rochester significant"
+      ]
+    },
+    "103": {
+      "input": "sub taxied conway politic babysit",
+      "output": [
+        "babysit conway politic sub taxied"
+      ]
+    },
+    "104": {
+      "input": "whirl connubial aberrant baritone mcgovern scrim damascus nematocyst blitzkrieg geometrician taste",
+      "output": [
+        "aberrant baritone blitzkrieg connubial damascus geometrician mcgovern nematocyst scrim taste whirl"
+      ]
+    },
+    "105": {
+      "input": "kingsley thruway reprisal baronial kidnap holeable carabao etude saturable peterson deal pinhole offspring soy gaberones",
+      "output": [
+        "baronial carabao deal etude gaberones holeable kidnap kingsley offspring peterson pinhole reprisal saturable soy thruway"
+      ]
+    },
+    "106": {
+      "input": "irremovable memorable leland peril pend cheek palaeontology autosuggestible garish purport among shortage",
+      "output": [
+        "among autosuggestible cheek garish irremovable leland memorable palaeontology pend peril purport shortage"
+      ]
+    },
+    "107": {
+      "input": "parmesan murk faculty wring avid veterinarian doorbell dec zinc handiwork dazzle",
+      "output": [
+        "avid dazzle dec doorbell faculty handiwork murk parmesan veterinarian wring zinc"
+      ]
+    },
+    "108": {
+      "input": "scrawl stint abjure downdraft clint nikolai sinus aromatic doria basalt lute faith latrobe approximant uk monkish apposite lubbock candlelight gwen",
+      "output": [
+        "abjure apposite approximant aromatic basalt candlelight clint doria downdraft faith gwen latrobe lubbock lute monkish nikolai scrawl sinus stint uk"
+      ]
+    },
+    "109": {
+      "input": "conveyance panel norma endothelial sonant tack advantageous intelligentsia chartroom dead lamentation secret ashen",
+      "output": [
+        "advantageous ashen chartroom conveyance dead endothelial intelligentsia lamentation norma panel secret sonant tack"
+      ]
+    },
+    "110": {
+      "input": "blossom crash nail recovery lake",
+      "output": [
+        "blossom crash lake nail recovery"
+      ]
+    },
+    "111": {
+      "input": "biracial wring cecil hitherto spokesman lag stub ronald gourd renault spirogyra clitoris",
+      "output": [
+        "biracial cecil clitoris gourd hitherto lag renault ronald spirogyra spokesman stub wring"
+      ]
+    },
+    "112": {
+      "input": "firepower atheism aqueduct eyesight conscionable erode perish boylston concordant fief rarefy counterthreat inattention perfume polaron teleology medico gab borealis",
+      "output": [
+        "aqueduct atheism borealis boylston concordant conscionable counterthreat erode eyesight fief firepower gab inattention medico perfume perish polaron rarefy teleology"
+      ]
+    },
+    "113": {
+      "input": "keto wield yeah who'll newlywed",
+      "output": [
+        "keto newlywed who'll wield yeah"
+      ]
+    },
+    "114": {
+      "input": "concurred somewhere crescendo participant amanita this runneth magnum anvil citywide minnie agee bogota stone colt temptress teethe vainglorious mullion",
+      "output": [
+        "agee amanita anvil bogota citywide colt concurred crescendo magnum minnie mullion participant runneth somewhere stone teethe temptress this vainglorious"
+      ]
+    },
+    "115": {
+      "input": "pacify discriminatory captious",
+      "output": [
+        "captious discriminatory pacify"
+      ]
+    },
+    "116": {
+      "input": "gm criminal campsite variate sideway",
+      "output": [
+        "campsite criminal gm sideway variate"
+      ]
+    },
+    "117": {
+      "input": "knot immutable may tempt drayman kinetic infelicity watson polaris affect speedup cortical adair indirect nightgown mollycoddle",
+      "output": [
+        "adair affect cortical drayman immutable indirect infelicity kinetic knot may mollycoddle nightgown polaris speedup tempt watson"
+      ]
+    },
+    "118": {
+      "input": "comet pincer snippet manley injun spokesperson hydrate heusen cocksure",
+      "output": [
+        "cocksure comet heusen hydrate injun manley pincer snippet spokesperson"
+      ]
+    },
+    "119": {
+      "input": "bumpy impeccable rectitude illegible jocular sheik derail dahlia cholinesterase capella middleman sang potent heiress amass",
+      "output": [
+        "amass bumpy capella cholinesterase dahlia derail heiress illegible impeccable jocular middleman potent rectitude sang sheik"
+      ]
+    },
+    "120": {
+      "input": "needle derek ronnie gambit paintbrush victor newtonian enchantress cysteine laughter latin inflorescent amp myra tv doorman sister",
+      "output": [
+        "amp cysteine derek doorman enchantress gambit inflorescent latin laughter myra needle newtonian paintbrush ronnie sister tv victor"
+      ]
+    },
+    "121": {
+      "input": "newt arson parthia seismography mugho aspect census",
+      "output": [
+        "arson aspect census mugho newt parthia seismography"
+      ]
+    },
+    "122": {
+      "input": "quern owl levity pentateuch deane persistent jackie auspices rosy groton three simian",
+      "output": [
+        "auspices deane groton jackie levity owl pentateuch persistent quern rosy simian three"
+      ]
+    },
+    "123": {
+      "input": "systemic lao euphoric o'dell pareto jurisprudent stowage reclamation",
+      "output": [
+        "euphoric jurisprudent lao o'dell pareto reclamation stowage systemic"
+      ]
+    },
+    "124": {
+      "input": "annul dostoevsky",
+      "output": [
+        "annul dostoevsky"
+      ]
+    },
+    "125": {
+      "input": "mccullough stork exxon fiend petal cadillac loot kerygma hyperthermia ejector hooch",
+      "output": [
+        "cadillac ejector exxon fiend hooch hyperthermia kerygma loot mccullough petal stork"
+      ]
+    },
+    "126": {
+      "input": "that'll rhombic intermittent",
+      "output": [
+        "intermittent rhombic that'll"
+      ]
+    },
+    "127": {
+      "input": "sparge seclude pensive minim said cave",
+      "output": [
+        "cave minim pensive said seclude sparge"
+      ]
+    },
+    "128": {
+      "input": "puddle franz",
+      "output": [
+        "franz puddle"
+      ]
+    },
+    "129": {
+      "input": "authentic james bowditch aphorism contentious bazaar remunerate delusive plasm nebulae bounce hereto odessa attribute",
+      "output": [
+        "aphorism attribute authentic bazaar bounce bowditch contentious delusive hereto james nebulae odessa plasm remunerate"
+      ]
+    },
+    "130": {
+      "input": "coma bryan village raindrop proline pickup net anecdotal",
+      "output": [
+        "anecdotal bryan coma net pickup proline raindrop village"
+      ]
+    },
+    "131": {
+      "input": "packet whalebone utrecht cavernous contralto leadeth sick gash handyman huber",
+      "output": [
+        "cavernous contralto gash handyman huber leadeth packet sick utrecht whalebone"
+      ]
+    },
+    "132": {
+      "input": "masculine ulcerate tor terminology kale inapplicable crosswalk functorial cavern twelvefold welsh poverty science cavort gilbert abuse orthicon gino berra",
+      "output": [
+        "abuse berra cavern cavort crosswalk functorial gilbert gino inapplicable kale masculine orthicon poverty science terminology tor twelvefold ulcerate welsh"
+      ]
+    },
+    "133": {
+      "input": "silicone efface diaphanous mastodon starry lard scoundrel aileron",
+      "output": [
+        "aileron diaphanous efface lard mastodon scoundrel silicone starry"
+      ]
+    },
+    "134": {
+      "input": "tristate crypt stand hippie benefit shanghai liquidate",
+      "output": [
+        "benefit crypt hippie liquidate shanghai stand tristate"
+      ]
+    },
+    "135": {
+      "input": "counterintuitive dulse curlicue concertmaster vane instrumentation limit lantern",
+      "output": [
+        "concertmaster counterintuitive curlicue dulse instrumentation lantern limit vane"
+      ]
+    },
+    "136": {
+      "input": "tenderfoot kindred cute exudate walkover transversal salle o'sullivan laugh nodular stilt strafe crunchy togs sail calcite holeable codfish uri",
+      "output": [
+        "calcite codfish crunchy cute exudate holeable kindred laugh nodular o'sullivan sail salle stilt strafe tenderfoot togs transversal uri walkover"
+      ]
+    },
+    "137": {
+      "input": "vociferous inefficient screwworm create puppeteer bezel propane lappet protege gopher barbara",
+      "output": [
+        "barbara bezel create gopher inefficient lappet propane protege puppeteer screwworm vociferous"
+      ]
+    },
+    "138": {
+      "input": "cotangent atrocious diaper thereby norwich reluctant pelagic dovetail vertebral",
+      "output": [
+        "atrocious cotangent diaper dovetail norwich pelagic reluctant thereby vertebral"
+      ]
+    },
+    "139": {
+      "input": "circumcision tiny hero lager servo middlemen falmouth delegable azores compressible imbibe clitoris irma regimen crepe quetzal upstand impress exam acquisitive",
+      "output": [
+        "acquisitive azores circumcision clitoris compressible crepe delegable exam falmouth hero imbibe impress irma lager middlemen quetzal regimen servo tiny upstand"
+      ]
+    },
+    "140": {
+      "input": "shenandoah carla satiable beatrice weapon throughput ana hardboiled newlywed moines ttl",
+      "output": [
+        "ana beatrice carla hardboiled moines newlywed satiable shenandoah throughput ttl weapon"
+      ]
+    },
+    "141": {
+      "input": "hoopla cayenne yeager wasteland nouakchott cautious introduce punjabi tenneco sienna lifo fluid forte simper multiplex loquacity cameroon saltbush vile momentary",
+      "output": [
+        "cameroon cautious cayenne fluid forte hoopla introduce lifo loquacity momentary multiplex nouakchott punjabi saltbush sienna simper tenneco vile wasteland yeager"
+      ]
+    },
+    "142": {
+      "input": "ark ruminate handicap controlling upholstery illusionary otter tarpon",
+      "output": [
+        "ark controlling handicap illusionary otter ruminate tarpon upholstery"
+      ]
+    },
+    "143": {
+      "input": "solstice roadway loquacious niece planet steed abutted hondo loosen agamemnon islamic capacity tibet hitachi essex casualty guinea aquatic suspicion",
+      "output": [
+        "abutted agamemnon aquatic capacity casualty essex guinea hitachi hondo islamic loosen loquacious niece planet roadway solstice steed suspicion tibet"
+      ]
+    },
+    "144": {
+      "input": "fluoride sanatoria firebug gallagher gusty bismuth eastward groton till confident whirl incentive latinate telltale woodside multiple",
+      "output": [
+        "bismuth confident eastward firebug fluoride gallagher groton gusty incentive latinate multiple sanatoria telltale till whirl woodside"
+      ]
+    },
+    "145": {
+      "input": "covalent spiderwort horowitz divisive spiritual cheshire affluent gideon quadrature julio peanut epsilon diagnostician grover folklore gothic salient",
+      "output": [
+        "affluent cheshire covalent diagnostician divisive epsilon folklore gideon gothic grover horowitz julio peanut quadrature salient spiderwort spiritual"
+      ]
+    },
+    "146": {
+      "input": "maybe inveigh meliorate tapestry catfish ampex citron",
+      "output": [
+        "ampex catfish citron inveigh maybe meliorate tapestry"
+      ]
+    },
+    "147": {
+      "input": "ecosystem cloudy ferret knotty",
+      "output": [
+        "cloudy ecosystem ferret knotty"
+      ]
+    },
+    "148": {
+      "input": "rose vestry horrendous puppeteer decrement bp database permit pritchard ere hippie serene tabular desert rhapsodic struggle",
+      "output": [
+        "bp database decrement desert ere hippie horrendous permit pritchard puppeteer rhapsodic rose serene struggle tabular vestry"
+      ]
+    },
+    "149": {
+      "input": "deepen diva ambrose faro scrubby spume planoconvex blind sway",
+      "output": [
+        "ambrose blind deepen diva faro planoconvex scrubby spume sway"
+      ]
+    },
+    "150": {
+      "input": "bingle couplet",
+      "output": [
+        "bingle couplet"
+      ]
+    },
+    "151": {
+      "input": "bad waistline satisfactory nell crazy tablespoonful brillouin calypso subtlety marco fair garry hackle superannuate expulsion conservation chicanery libra wolfgang",
+      "output": [
+        "bad brillouin calypso chicanery conservation crazy expulsion fair garry hackle libra marco nell satisfactory subtlety superannuate tablespoonful waistline wolfgang"
+      ]
+    },
+    "152": {
+      "input": "sibyl cathy breeze gateway bloom togo donovan democrat",
+      "output": [
+        "bloom breeze cathy democrat donovan gateway sibyl togo"
+      ]
+    },
+    "153": {
+      "input": "dempsey bookseller landlord vodka pinehurst concentric",
+      "output": [
+        "bookseller concentric dempsey landlord pinehurst vodka"
+      ]
+    },
+    "154": {
+      "input": "bryophyta inorganic barricade lauderdale clyde dustbin she'll proserpine aeneas banish upend hanson gush boredom basque impel marsh",
+      "output": [
+        "aeneas banish barricade basque boredom bryophyta clyde dustbin gush hanson impel inorganic lauderdale marsh proserpine she'll upend"
+      ]
+    },
+    "155": {
+      "input": "cassandra wacky sora snug",
+      "output": [
+        "cassandra snug sora wacky"
+      ]
+    },
+    "156": {
+      "input": "goodwin dervish megohm principal consignor electrocardiograph furthest dreadnought least poison clothbound egotism deterrent ablate",
+      "output": [
+        "ablate clothbound consignor dervish deterrent dreadnought egotism electrocardiograph furthest goodwin least megohm poison principal"
+      ]
+    },
+    "157": {
+      "input": "patrick scapegoat d penman cadaver opposite centrifuge tarsier forgetful papacy car fullerton trig emancipate conspiracy twit elliott during sketchy",
+      "output": [
+        "cadaver car centrifuge conspiracy d during elliott emancipate forgetful fullerton opposite papacy patrick penman scapegoat sketchy tarsier trig twit"
+      ]
+    },
+    "158": {
+      "input": "penis chestnut mimicked coy etruscan bimolecular sourberry platinum daytime holyoke nawab alumnus snowbank zircon alum planeload intimacy",
+      "output": [
+        "alum alumnus bimolecular chestnut coy daytime etruscan holyoke intimacy mimicked nawab penis planeload platinum snowbank sourberry zircon"
+      ]
+    },
+    "159": {
+      "input": "calligraphy mangrove",
+      "output": [
+        "calligraphy mangrove"
+      ]
+    },
+    "160": {
+      "input": "diatonic knowledgeable pity sprawl those usps molar",
+      "output": [
+        "diatonic knowledgeable molar pity sprawl those usps"
+      ]
+    },
+    "161": {
+      "input": "sacramento subsidiary michelin omelet",
+      "output": [
+        "michelin omelet sacramento subsidiary"
+      ]
+    },
+    "162": {
+      "input": "eaten shinbone enthusiastic katydid satisfaction megohm dusenbury embark manor evil epigenetic parachute equilateral supplicate baryon acme volt bareback kerosene colorate",
+      "output": [
+        "acme bareback baryon colorate dusenbury eaten embark enthusiastic epigenetic equilateral evil katydid kerosene manor megohm parachute satisfaction shinbone supplicate volt"
+      ]
+    },
+    "163": {
+      "input": "fort ambush hilarious danubian paris shipmate othello pure antiquity germicide wasn't",
+      "output": [
+        "ambush antiquity danubian fort germicide hilarious othello paris pure shipmate wasn't"
+      ]
+    },
+    "164": {
+      "input": "g utrecht iceland bleak governor romp craftspeople versailles",
+      "output": [
+        "bleak craftspeople g governor iceland romp utrecht versailles"
+      ]
+    },
+    "165": {
+      "input": "xi linus alienate jeff rouge search honey lakehurst sumptuous hackmatack east inconceivable justiciable",
+      "output": [
+        "alienate east hackmatack honey inconceivable jeff justiciable lakehurst linus rouge search sumptuous xi"
+      ]
+    },
+    "166": {
+      "input": "pharmacy fingerling degradation inhabitant middleweight errand heterosexual",
+      "output": [
+        "degradation errand fingerling heterosexual inhabitant middleweight pharmacy"
+      ]
+    },
+    "167": {
+      "input": "actual ligget analyses gallon irruption colon credo plasmon eh",
+      "output": [
+        "actual analyses colon credo eh gallon irruption ligget plasmon"
+      ]
+    },
+    "168": {
+      "input": "peg quadriceps kept communion smuggle",
+      "output": [
+        "communion kept peg quadriceps smuggle"
+      ]
+    },
+    "169": {
+      "input": "sian nancy nucleant vivid longish martyr fluctuate juggle snobbery janice thomson rototill",
+      "output": [
+        "fluctuate janice juggle longish martyr nancy nucleant rototill sian snobbery thomson vivid"
+      ]
+    },
+    "170": {
+      "input": "versailles gagwriter spectrophotometer",
+      "output": [
+        "gagwriter spectrophotometer versailles"
+      ]
+    },
+    "171": {
+      "input": "nimbus rig lethe radon",
+      "output": [
+        "lethe nimbus radon rig"
+      ]
+    },
+    "172": {
+      "input": "brothel effusion emerald yaounde parsimony cochlea jacobian inseminate katmandu",
+      "output": [
+        "brothel cochlea effusion emerald inseminate jacobian katmandu parsimony yaounde"
+      ]
+    },
+    "173": {
+      "input": "format fountainhead pleistocene shiloh killdeer zoom goethe snatch redolent laxative culprit sunk divide brute torpedo stigma bureaucrat minutiae calla litterbug",
+      "output": [
+        "brute bureaucrat calla culprit divide format fountainhead goethe killdeer laxative litterbug minutiae pleistocene redolent shiloh snatch stigma sunk torpedo zoom"
+      ]
+    },
+    "174": {
+      "input": "eschew lucifer canticle normalcy choline godfrey toddle migrant seagram juxtaposition kajar",
+      "output": [
+        "canticle choline eschew godfrey juxtaposition kajar lucifer migrant normalcy seagram toddle"
+      ]
+    },
+    "175": {
+      "input": "brock commonwealth satire familial extol funnel contention reid",
+      "output": [
+        "brock commonwealth contention extol familial funnel reid satire"
+      ]
+    },
+    "176": {
+      "input": "schroeder cheerful sagacious turquoise chlorine murder joust cancelling catharsis insufferable veto blare fishpond lemma chaos ionic advert cossack wahl ama",
+      "output": [
+        "advert ama blare cancelling catharsis chaos cheerful chlorine cossack fishpond insufferable ionic joust lemma murder sagacious schroeder turquoise veto wahl"
+      ]
+    },
+    "177": {
+      "input": "important chastise",
+      "output": [
+        "chastise important"
+      ]
+    },
+    "178": {
+      "input": "simplistic foothold mcneil proportionate regurgitate silt quahog providential somewhat wince solidarity heathenish bridle salle dravidian indiana hiatt festival arrhenius sinister",
+      "output": [
+        "arrhenius bridle dravidian festival foothold heathenish hiatt indiana mcneil proportionate providential quahog regurgitate salle silt simplistic sinister solidarity somewhat wince"
+      ]
+    },
+    "179": {
+      "input": "jessie gyrate kernighan lifeguard pursuant lumber tenderloin prairie aroma execrate tool hindustan malpractice pica commend cylindric son circe thorstein",
+      "output": [
+        "aroma circe commend cylindric execrate gyrate hindustan jessie kernighan lifeguard lumber malpractice pica prairie pursuant son tenderloin thorstein tool"
+      ]
+    },
+    "180": {
+      "input": "indicate quagmire predacious gut vantage marshal across smuggle flight directrix admixture",
+      "output": [
+        "across admixture directrix flight gut indicate marshal predacious quagmire smuggle vantage"
+      ]
+    },
+    "181": {
+      "input": "inapplicable dorado ulna hirsch fecund coverlet trafficked cosmos gannet exclusive electrify fawn easy ptolemaic indignation",
+      "output": [
+        "cosmos coverlet dorado easy electrify exclusive fawn fecund gannet hirsch inapplicable indignation ptolemaic trafficked ulna"
+      ]
+    },
+    "182": {
+      "input": "theoretician choirmaster mcintosh snapback dodecahedron axiology",
+      "output": [
+        "axiology choirmaster dodecahedron mcintosh snapback theoretician"
+      ]
+    },
+    "183": {
+      "input": "soprano deacon tenspot theodore",
+      "output": [
+        "deacon soprano tenspot theodore"
+      ]
+    },
+    "184": {
+      "input": "multitudinous adopt wage worcestershire pacifist afghan glimmer friday",
+      "output": [
+        "adopt afghan friday glimmer multitudinous pacifist wage worcestershire"
+      ]
+    },
+    "185": {
+      "input": "implement usual gravitate brandy distant",
+      "output": [
+        "brandy distant gravitate implement usual"
+      ]
+    },
+    "186": {
+      "input": "apache harangue demented boulder sarcoma bale",
+      "output": [
+        "apache bale boulder demented harangue sarcoma"
+      ]
+    },
+    "187": {
+      "input": "sinter cortex kangaroo pillage threshold insane mcleod roundabout stipulate marionette trammel incident",
+      "output": [
+        "cortex incident insane kangaroo marionette mcleod pillage roundabout sinter stipulate threshold trammel"
+      ]
+    },
+    "188": {
+      "input": "inconsequential phonon thousandth entertain cinnamon cottontail unimodal utmost cotta anita windsor transposition rhesus extraterritorial volumetric snowflake my junco impinge shifty",
+      "output": [
+        "anita cinnamon cotta cottontail entertain extraterritorial impinge inconsequential junco my phonon rhesus shifty snowflake thousandth transposition unimodal utmost volumetric windsor"
+      ]
+    },
+    "189": {
+      "input": "ventilate liveth healey windsurf sleeve",
+      "output": [
+        "healey liveth sleeve ventilate windsurf"
+      ]
+    },
+    "190": {
+      "input": "nathaniel view hangover hitler eastern sore recuperate",
+      "output": [
+        "eastern hangover hitler nathaniel recuperate sore view"
+      ]
+    },
+    "191": {
+      "input": "bottle kenney chapati okinawa boon bedtime",
+      "output": [
+        "bedtime boon bottle chapati kenney okinawa"
+      ]
+    },
+    "192": {
+      "input": "keelson offensive refugee regulate hewn auction patchy garage rhodolite woe mockup felicia choppy childbearing inapplicable",
+      "output": [
+        "auction childbearing choppy felicia garage hewn inapplicable keelson mockup offensive patchy refugee regulate rhodolite woe"
+      ]
+    },
+    "193": {
+      "input": "lubricant mug desecrater hyde pansy estoppal strategist amigo gjetost pregnant tristan recumbent mccoy frock trastevere smith i'd whizzing",
+      "output": [
+        "amigo desecrater estoppal frock gjetost hyde i'd lubricant mccoy mug pansy pregnant recumbent smith strategist trastevere tristan whizzing"
+      ]
+    },
+    "194": {
+      "input": "buzzy hindu waddle steprelation forborne implementation tuple sophocles volcanic russet satellite myrtle panjandrum dissipate squishy ulterior",
+      "output": [
+        "buzzy dissipate forborne hindu implementation myrtle panjandrum russet satellite sophocles squishy steprelation tuple ulterior volcanic waddle"
+      ]
+    },
+    "195": {
+      "input": "secretarial emphases awe confound few competition rev eliminate raptorial fain gargantuan contrive horsepower baja lass biz",
+      "output": [
+        "awe baja biz competition confound contrive eliminate emphases fain few gargantuan horsepower lass raptorial rev secretarial"
+      ]
+    },
+    "196": {
+      "input": "canton accuracy probationary greenwood interviewee craft pallet cap pollock texan taxon mash boutique moneymake durham beetle zazen squawbush oat fulsome",
+      "output": [
+        "accuracy beetle boutique canton cap craft durham fulsome greenwood interviewee mash moneymake oat pallet pollock probationary squawbush taxon texan zazen"
+      ]
+    },
+    "197": {
+      "input": "wang fluorite ineducable felony soapsud peach",
+      "output": [
+        "felony fluorite ineducable peach soapsud wang"
+      ]
+    },
+    "198": {
+      "input": "plastisol verona sparkman bela crowbar turn promise alton prospectus locust bravado federal concave latch",
+      "output": [
+        "alton bela bravado concave crowbar federal latch locust plastisol promise prospectus sparkman turn verona"
+      ]
+    },
+    "199": {
+      "input": "eddy sabbath imperturbable",
+      "output": [
+        "eddy imperturbable sabbath"
+      ]
+    },
+    "200": {
+      "input": "phosphate perceive hewn longitudinal proponent pepsi crater watchful quite dystrophy douglas instructor wisecrack nassau",
+      "output": [
+        "crater douglas dystrophy hewn instructor longitudinal nassau pepsi perceive phosphate proponent quite watchful wisecrack"
+      ]
+    },
+    "201": {
+      "input": "drip pam walton sperry hyperbolic inopportune counterflow beet siltation strict korea",
+      "output": [
+        "beet counterflow drip hyperbolic inopportune korea pam siltation sperry strict walton"
+      ]
+    },
+    "202": {
+      "input": "revelatory rabbi neonate medea garage swahili muon december byline atlanta cursory ambient applicant sluggish stanton wei weaken conley",
+      "output": [
+        "ambient applicant atlanta byline conley cursory december garage medea muon neonate rabbi revelatory sluggish stanton swahili weaken wei"
+      ]
+    },
+    "203": {
+      "input": "option athabascan tarpaulin blair tarbell delphine marietta",
+      "output": [
+        "athabascan blair delphine marietta option tarbell tarpaulin"
+      ]
+    },
+    "204": {
+      "input": "cuttlefish notice mung kennan nucleotide mcclain cutover beagle freedman trypsin sapiens northrup symbiotic calabash face combinatoric",
+      "output": [
+        "beagle calabash combinatoric cutover cuttlefish face freedman kennan mcclain mung northrup notice nucleotide sapiens symbiotic trypsin"
+      ]
+    },
+    "205": {
+      "input": "small script forceful heinrich knack adventure exile milwaukee plaudit splenetic mckenna corp forgave welch mackerel churchwoman",
+      "output": [
+        "adventure churchwoman corp exile forceful forgave heinrich knack mackerel mckenna milwaukee plaudit script small splenetic welch"
+      ]
+    },
+    "206": {
+      "input": "fire fran phantom curriculum felon folic nilpotent acclimate birdbath lesson pea",
+      "output": [
+        "acclimate birdbath curriculum felon fire folic fran lesson nilpotent pea phantom"
+      ]
+    },
+    "207": {
+      "input": "prokaryotic defray awe nash craftspeople lymphoma income songful capistrano juicy inadequacy",
+      "output": [
+        "awe capistrano craftspeople defray inadequacy income juicy lymphoma nash prokaryotic songful"
+      ]
+    },
+    "208": {
+      "input": "cosponsor stabile coalescent nih neologism dispelled yeomanry argue equilibrium genesis baptism",
+      "output": [
+        "argue baptism coalescent cosponsor dispelled equilibrium genesis neologism nih stabile yeomanry"
+      ]
+    },
+    "209": {
+      "input": "joey simultaneity wilhelm all foyer sis gestation screwy monarchic mardi",
+      "output": [
+        "all foyer gestation joey mardi monarchic screwy simultaneity sis wilhelm"
+      ]
+    },
+    "210": {
+      "input": "accident gloomy congo",
+      "output": [
+        "accident congo gloomy"
+      ]
+    },
+    "211": {
+      "input": "pamela agglutinin pessimist blimp inanimate snapshot",
+      "output": [
+        "agglutinin blimp inanimate pamela pessimist snapshot"
+      ]
+    },
+    "212": {
+      "input": "pollux pamphlet circus",
+      "output": [
+        "circus pamphlet pollux"
+      ]
+    },
+    "213": {
+      "input": "sweatshirt bone ia wagoneer doleful homeobox hindustan convergent",
+      "output": [
+        "bone convergent doleful hindustan homeobox ia sweatshirt wagoneer"
+      ]
+    },
+    "214": {
+      "input": "quartet cutlass barge intricacy",
+      "output": [
+        "barge cutlass intricacy quartet"
+      ]
+    },
+    "215": {
+      "input": "davies seton charon benchmark waldorf standstill parasympathetic chevy sightsee steven andesite moreover biota purveyor bearish sweep",
+      "output": [
+        "andesite bearish benchmark biota charon chevy davies moreover parasympathetic purveyor seton sightsee standstill steven sweep waldorf"
+      ]
+    },
+    "216": {
+      "input": "definite translate aggression arachne lengthy sanford bystander asplenium gneiss southeast",
+      "output": [
+        "aggression arachne asplenium bystander definite gneiss lengthy sanford southeast translate"
+      ]
+    },
+    "217": {
+      "input": "experience ks pablo hamstrung gerundial regressive transposable picosecond divide crore certify harm ph.d",
+      "output": [
+        "certify crore divide experience gerundial hamstrung harm ks pablo ph.d picosecond regressive transposable"
+      ]
+    },
+    "218": {
+      "input": "magnetite lip prognosticate electrolysis absurdum physique lin birdie rigel jupiter synonym worksheet nautical fingerling meistersinger lykes turbinate",
+      "output": [
+        "absurdum birdie electrolysis fingerling jupiter lin lip lykes magnetite meistersinger nautical physique prognosticate rigel synonym turbinate worksheet"
+      ]
+    },
+    "219": {
+      "input": "juno backplane parcel afoot catatonic quibble camden jo public lea chantey fact oscar mallory striptease monmouth",
+      "output": [
+        "afoot backplane camden catatonic chantey fact jo juno lea mallory monmouth oscar parcel public quibble striptease"
+      ]
+    },
+    "220": {
+      "input": "panama scandium glyceride maori analogy temerity homicide pullback euphorbia dusk weighty conscience",
+      "output": [
+        "analogy conscience dusk euphorbia glyceride homicide maori panama pullback scandium temerity weighty"
+      ]
+    },
+    "221": {
+      "input": "befit extramarital erudite rung squirmy hibbard seam infighting",
+      "output": [
+        "befit erudite extramarital hibbard infighting rung seam squirmy"
+      ]
+    },
+    "222": {
+      "input": "nguyen shrimp emitter firecracker",
+      "output": [
+        "emitter firecracker nguyen shrimp"
+      ]
+    },
+    "223": {
+      "input": "livre substitution ix frisian panoramic buckley",
+      "output": [
+        "buckley frisian ix livre panoramic substitution"
+      ]
+    },
+    "224": {
+      "input": "parrish frustrater wold",
+      "output": [
+        "frustrater parrish wold"
+      ]
+    },
+    "225": {
+      "input": "character salish wring satire vineyard frightful bert",
+      "output": [
+        "bert character frightful salish satire vineyard wring"
+      ]
+    },
+    "226": {
+      "input": "caprice levee refractometer sprinkle headwall hockey he'll adolescent fossiliferous springy augusta surjection",
+      "output": [
+        "adolescent augusta caprice fossiliferous he'll headwall hockey levee refractometer springy sprinkle surjection"
+      ]
+    },
+    "227": {
+      "input": "psychiatric savage apartheid picnicker silken long kyle plyscore forklift optic schuster tranquil intensify collide typhus cherub consistent experimentation gambia ablution",
+      "output": [
+        "ablution apartheid cherub collide consistent experimentation forklift gambia intensify kyle long optic picnicker plyscore psychiatric savage schuster silken tranquil typhus"
+      ]
+    },
+    "228": {
+      "input": "legacy titus shakespearian date nearby mathematician bathroom griddle regretting inattentive yellow sundial",
+      "output": [
+        "bathroom date griddle inattentive legacy mathematician nearby regretting shakespearian sundial titus yellow"
+      ]
+    },
+    "229": {
+      "input": "whisper eyesight titmice mirage fletch cry biennial creedal miltonic fraudulent j",
+      "output": [
+        "biennial creedal cry eyesight fletch fraudulent j miltonic mirage titmice whisper"
+      ]
+    },
+    "230": {
+      "input": "vertebral welcome pacific cornell ruffian bondsmen trisyllable hardwire",
+      "output": [
+        "bondsmen cornell hardwire pacific ruffian trisyllable vertebral welcome"
+      ]
+    },
+    "231": {
+      "input": "terrapin tenant clamshell forever aboveground dewdrop dodge booky transpiration munificent satanic",
+      "output": [
+        "aboveground booky clamshell dewdrop dodge forever munificent satanic tenant terrapin transpiration"
+      ]
+    },
+    "232": {
+      "input": "mayflower titular sanitarium spay geochemistry slunk bitten impossible separate standard melanism hesitater nutmeg",
+      "output": [
+        "bitten geochemistry hesitater impossible mayflower melanism nutmeg sanitarium separate slunk spay standard titular"
+      ]
+    },
+    "233": {
+      "input": "bemadden diem univalent thailand spangle expletive law haw blaine lubbock ascii eightyfold bronzy louvre",
+      "output": [
+        "ascii bemadden blaine bronzy diem eightyfold expletive haw law louvre lubbock spangle thailand univalent"
+      ]
+    },
+    "234": {
+      "input": "obelisk amphibole aeneas entourage passe volstead cindy",
+      "output": [
+        "aeneas amphibole cindy entourage obelisk passe volstead"
+      ]
+    },
+    "235": {
+      "input": "discovery interim libreville grit yesteryear circumference buckle drool skulk baobab whey hanoverian vulture charybdis detector hyena sarsparilla",
+      "output": [
+        "baobab buckle charybdis circumference detector discovery drool grit hanoverian hyena interim libreville sarsparilla skulk vulture whey yesteryear"
+      ]
+    },
+    "236": {
+      "input": "lew upside incommensurable salutary earthworm trisodium terpsichorean salk creak thee assurance chink undulate narrow nietzsche monitor fidelity intricate glycerin",
+      "output": [
+        "assurance chink creak earthworm fidelity glycerin incommensurable intricate lew monitor narrow nietzsche salk salutary terpsichorean thee trisodium undulate upside"
+      ]
+    },
+    "237": {
+      "input": "nairobi mummy cetus olav narcotic litigant inconsiderate conciliate lymphocyte pit pillar hole perchlorate enumerable perceptual",
+      "output": [
+        "cetus conciliate enumerable hole inconsiderate litigant lymphocyte mummy nairobi narcotic olav perceptual perchlorate pillar pit"
+      ]
+    },
+    "238": {
+      "input": "impede appliance pulitzer superior",
+      "output": [
+        "appliance impede pulitzer superior"
+      ]
+    },
+    "239": {
+      "input": "town machinery saratoga sac handle circumvent horseshoe bergman handel accra widget strive cashier cycad heyday berkshire",
+      "output": [
+        "accra bergman berkshire cashier circumvent cycad handel handle heyday horseshoe machinery sac saratoga strive town widget"
+      ]
+    },
+    "240": {
+      "input": "cursor jubilate fable wriggle mollycoddle gunplay browne collage southward peculate dark insignia doe creamy",
+      "output": [
+        "browne collage creamy cursor dark doe fable gunplay insignia jubilate mollycoddle peculate southward wriggle"
+      ]
+    },
+    "241": {
+      "input": "caveman diversionary granville elect cutlet hallucinogen blob sidereal dichondra mcpherson deadlock clone litterbug obstruent gunnery plasm lunge carr",
+      "output": [
+        "blob carr caveman clone cutlet deadlock dichondra diversionary elect granville gunnery hallucinogen litterbug lunge mcpherson obstruent plasm sidereal"
+      ]
+    },
+    "242": {
+      "input": "handprint gusto enrollee shake chancellor peruvian tahiti toggle astm dome watermelon centrex sashay notebook peek codicil harvard blot silt",
+      "output": [
+        "astm blot centrex chancellor codicil dome enrollee gusto handprint harvard notebook peek peruvian sashay shake silt tahiti toggle watermelon"
+      ]
+    },
+    "243": {
+      "input": "snivel surfactant hinge shipmen phonetic bought toluene esplanade tater spillover berry shepard badland teet paleolithic pencil offend apology figaro plagiarist",
+      "output": [
+        "apology badland berry bought esplanade figaro hinge offend paleolithic pencil phonetic plagiarist shepard shipmen snivel spillover surfactant tater teet toluene"
+      ]
+    },
+    "244": {
+      "input": "consultation renovate treadmill marilyn certainty delight strategy coin substantial ky",
+      "output": [
+        "certainty coin consultation delight ky marilyn renovate strategy substantial treadmill"
+      ]
+    },
+    "245": {
+      "input": "nestor transship stapleton",
+      "output": [
+        "nestor stapleton transship"
+      ]
+    },
+    "246": {
+      "input": "plank terry akin mollify emma ginseng acadia laden pharmacology minuend insane togging intonate homeward nose gamesmanship insure",
+      "output": [
+        "acadia akin emma gamesmanship ginseng homeward insane insure intonate laden minuend mollify nose pharmacology plank terry togging"
+      ]
+    },
+    "247": {
+      "input": "lawsuit toad mice abut repudiate conformation bauer mackintosh angle goucher",
+      "output": [
+        "abut angle bauer conformation goucher lawsuit mackintosh mice repudiate toad"
+      ]
+    },
+    "248": {
+      "input": "baseplate pundit ecole ingestion",
+      "output": [
+        "baseplate ecole ingestion pundit"
+      ]
+    },
+    "249": {
+      "input": "mawkish chair regent thermofax sanatoria pigskin depreciate seminar catawba vowel",
+      "output": [
+        "catawba chair depreciate mawkish pigskin regent sanatoria seminar thermofax vowel"
+      ]
+    },
+    "250": {
+      "input": "sanhedrin scratchy helical beau venezuela awash bessie extricable indoeuropean vice pendulum cream animism",
+      "output": [
+        "animism awash beau bessie cream extricable helical indoeuropean pendulum sanhedrin scratchy venezuela vice"
+      ]
+    },
+    "251": {
+      "input": "arachnid san banshee lockwood dailey alum",
+      "output": [
+        "alum arachnid banshee dailey lockwood san"
+      ]
+    },
+    "252": {
+      "input": "crowfoot scrupulous campfire contrast purgatory",
+      "output": [
+        "campfire contrast crowfoot purgatory scrupulous"
+      ]
+    },
+    "253": {
+      "input": "mermaid dunham",
+      "output": [
+        "dunham mermaid"
+      ]
+    },
+    "254": {
+      "input": "coward municipal hardware militant hawk merge sawtooth boletus lizard lounsbury allotted homicidal alter",
+      "output": [
+        "allotted alter boletus coward hardware hawk homicidal lizard lounsbury merge militant municipal sawtooth"
+      ]
+    },
+    "255": {
+      "input": "pillory leeway piquant mouse expensive juggle pilgrimage blather creamery pedestal oxidate counterattack propulsion protrusive plumb football",
+      "output": [
+        "blather counterattack creamery expensive football juggle leeway mouse oxidate pedestal pilgrimage pillory piquant plumb propulsion protrusive"
+      ]
+    },
+    "256": {
+      "input": "birthplace passivate sow usage lawmake puritan takeover furze incubi consign nectareous conner astrophysical honeycomb zoroaster",
+      "output": [
+        "astrophysical birthplace conner consign furze honeycomb incubi lawmake nectareous passivate puritan sow takeover usage zoroaster"
+      ]
+    },
+    "257": {
+      "input": "squashberry forsake rhenish grandiose",
+      "output": [
+        "forsake grandiose rhenish squashberry"
+      ]
+    },
+    "258": {
+      "input": "landlord spooky katharine unidirectional snuggle coextensive hooves involute pompano hubby thomson michelin barren molly slim spell conferrable downstairs mollycoddle",
+      "output": [
+        "barren coextensive conferrable downstairs hooves hubby involute katharine landlord michelin molly mollycoddle pompano slim snuggle spell spooky thomson unidirectional"
+      ]
+    },
+    "259": {
+      "input": "him correspond seashore herpes",
+      "output": [
+        "correspond herpes him seashore"
+      ]
+    },
+    "260": {
+      "input": "alchemist pliable adsorbate",
+      "output": [
+        "adsorbate alchemist pliable"
+      ]
+    },
+    "261": {
+      "input": "heavenward nellie acute rhythmic accelerate inconsequential lucius felicity",
+      "output": [
+        "accelerate acute felicity heavenward inconsequential lucius nellie rhythmic"
+      ]
+    },
+    "262": {
+      "input": "rusty anionic insistent oscillate",
+      "output": [
+        "anionic insistent oscillate rusty"
+      ]
+    },
+    "263": {
+      "input": "pinkish helm cabinet smithson salesgirl honky scrawny osteoporosis play equipoise aback impound abscissae mortician",
+      "output": [
+        "aback abscissae cabinet equipoise helm honky impound mortician osteoporosis pinkish play salesgirl scrawny smithson"
+      ]
+    },
+    "264": {
+      "input": "frugal exclude magnesite pinhead statesmen adventitious lounge crumb connoisseur beltsville ucla technique grandmother",
+      "output": [
+        "adventitious beltsville connoisseur crumb exclude frugal grandmother lounge magnesite pinhead statesmen technique ucla"
+      ]
+    },
+    "265": {
+      "input": "spot skyrocket xerxes quack pigeon ali pilewort disquisition sc cackle safety lancashire calorie leslie enzymology",
+      "output": [
+        "ali cackle calorie disquisition enzymology lancashire leslie pigeon pilewort quack safety sc skyrocket spot xerxes"
+      ]
+    },
+    "266": {
+      "input": "frenchman translucent madman lumbar rebel privilege inviolate rampage imperceptible",
+      "output": [
+        "frenchman imperceptible inviolate lumbar madman privilege rampage rebel translucent"
+      ]
+    },
+    "267": {
+      "input": "impudent pole doubleton manifest poliomyelitis horrendous coercive suppression bouffant smokestack gatlinburg houseboat fuselage abhorrent source rescue",
+      "output": [
+        "abhorrent bouffant coercive doubleton fuselage gatlinburg horrendous houseboat impudent manifest pole poliomyelitis rescue smokestack source suppression"
+      ]
+    },
+    "268": {
+      "input": "rakish catwalk perversion startle woodcock income irreclaimable hereinafter sniff artifice",
+      "output": [
+        "artifice catwalk hereinafter income irreclaimable perversion rakish sniff startle woodcock"
+      ]
+    },
+    "269": {
+      "input": "ire wadi dietician halite bowel freewheel bestow default leguminous legible",
+      "output": [
+        "bestow bowel default dietician freewheel halite ire legible leguminous wadi"
+      ]
+    },
+    "270": {
+      "input": "charta infallible raillery balk specie electrophorus wisdom gawk doppler caught opaque spongy lamplight pfennig toluene chard season necromantic breve accommodate",
+      "output": [
+        "accommodate balk breve caught chard charta doppler electrophorus gawk infallible lamplight necromantic opaque pfennig raillery season specie spongy toluene wisdom"
+      ]
+    },
+    "271": {
+      "input": "devious querulous portfolio romantic glenda trailside balky room pilot deallocate hipster craze coda vault luzon fundamental poop wreathe barefoot",
+      "output": [
+        "balky barefoot coda craze deallocate devious fundamental glenda hipster luzon pilot poop portfolio querulous romantic room trailside vault wreathe"
+      ]
+    },
+    "272": {
+      "input": "ow cubit upbring gullible awash inane gown bateau scottsdale auxin eutectic jurisprudential pirouette shockley nepenthe pussycat schwartz mistletoe travelogue",
+      "output": [
+        "auxin awash bateau cubit eutectic gown gullible inane jurisprudential mistletoe nepenthe ow pirouette pussycat schwartz scottsdale shockley travelogue upbring"
+      ]
+    },
+    "273": {
+      "input": "indulge twinkle porpoise resume gallus wynn christen expellable inductee ballast quadrature grope pyrex po real dance lucky phosphorus extracellular",
+      "output": [
+        "ballast christen dance expellable extracellular gallus grope inductee indulge lucky phosphorus po porpoise pyrex quadrature real resume twinkle wynn"
+      ]
+    },
+    "274": {
+      "input": "mercenary afterimage impel crib interruptible homologous pensive chinese adjunct queasy shakeable chamois prize symbiosis necrotic",
+      "output": [
+        "adjunct afterimage chamois chinese crib homologous impel interruptible mercenary necrotic pensive prize queasy shakeable symbiosis"
+      ]
+    },
+    "275": {
+      "input": "strawberry tim rube rampart goucher sting exalt columbia caliphate lubricious swarm",
+      "output": [
+        "caliphate columbia exalt goucher lubricious rampart rube sting strawberry swarm tim"
+      ]
+    },
+    "276": {
+      "input": "arbutus edict nectareous showcase indiscriminate tinfoil dour strabismus hangar sensitive pythagorean exposit neumann tum abut femur econometric",
+      "output": [
+        "abut arbutus dour econometric edict exposit femur hangar indiscriminate nectareous neumann pythagorean sensitive showcase strabismus tinfoil tum"
+      ]
+    },
+    "277": {
+      "input": "homologous dragonfly extrusive sinistral bravura jackdaw birthright commerce surge physic trinket montclair empty kowalewski garish salutory irrefutable beatify",
+      "output": [
+        "beatify birthright bravura commerce dragonfly empty extrusive garish homologous irrefutable jackdaw kowalewski montclair physic salutory sinistral surge trinket"
+      ]
+    },
+    "278": {
+      "input": "medici precept cotty abyss plastic berg smart theist duly surety riddle",
+      "output": [
+        "abyss berg cotty duly medici plastic precept riddle smart surety theist"
+      ]
+    },
+    "279": {
+      "input": "charismatic echolocation flock raft bantam haydn damn climatology smithereens pigmentation",
+      "output": [
+        "bantam charismatic climatology damn echolocation flock haydn pigmentation raft smithereens"
+      ]
+    },
+    "280": {
+      "input": "orthicon texan orgasm capsize shutoff invariant tube chicagoan distant harp lang picky delve ostracism exponentiate",
+      "output": [
+        "capsize chicagoan delve distant exponentiate harp invariant lang orgasm orthicon ostracism picky shutoff texan tube"
+      ]
+    },
+    "281": {
+      "input": "sneaky heap razorback oncology plane adjectival mann keyword continual holly vanadium curvilinear teflon",
+      "output": [
+        "adjectival continual curvilinear heap holly keyword mann oncology plane razorback sneaky teflon vanadium"
+      ]
+    },
+    "282": {
+      "input": "cruise huddle tool malformed posey periclean procedural hell quasar locale decorticate whenever achromatic finnish",
+      "output": [
+        "achromatic cruise decorticate finnish hell huddle locale malformed periclean posey procedural quasar tool whenever"
+      ]
+    },
+    "283": {
+      "input": "stupid workhorse way sabbatical",
+      "output": [
+        "sabbatical stupid way workhorse"
+      ]
+    },
+    "284": {
+      "input": "mutuel someplace diacritic uranus prussia periscope runny brevet squire swelter lung",
+      "output": [
+        "brevet diacritic lung mutuel periscope prussia runny someplace squire swelter uranus"
+      ]
+    },
+    "285": {
+      "input": "lane trick perpetuity familial disquisition stagnate genital chinquapin sonic fusillade brownish guess caretaker neuron",
+      "output": [
+        "brownish caretaker chinquapin disquisition familial fusillade genital guess lane neuron perpetuity sonic stagnate trick"
+      ]
+    },
+    "286": {
+      "input": "coyote edwardine concessionaire parch chester hygroscopic magna granary repentant decontrolling taxonomy abner",
+      "output": [
+        "abner chester concessionaire coyote decontrolling edwardine granary hygroscopic magna parch repentant taxonomy"
+      ]
+    },
+    "287": {
+      "input": "cochineal pretoria merchant asiatic bragg apricot bangle boone pm foxhound",
+      "output": [
+        "apricot asiatic bangle boone bragg cochineal foxhound merchant pm pretoria"
+      ]
+    },
+    "288": {
+      "input": "bust midshipmen musicale urinary chalk rocket resiny horror tangential sapient dumb serf pathway urea goucher fatty masonry dentistry cowboy roadrunner",
+      "output": [
+        "bust chalk cowboy dentistry dumb fatty goucher horror masonry midshipmen musicale pathway resiny roadrunner rocket sapient serf tangential urea urinary"
+      ]
+    },
+    "289": {
+      "input": "hateful detoxify ferruginous circumpolar",
+      "output": [
+        "circumpolar detoxify ferruginous hateful"
+      ]
+    },
+    "290": {
+      "input": "horseshoe piece monkeyflower stung unesco filial danzig kenya",
+      "output": [
+        "danzig filial horseshoe kenya monkeyflower piece stung unesco"
+      ]
+    },
+    "291": {
+      "input": "maim squashy consonant plastisol glass snuffle avenge morpheme adam president jamaica geminid syringa perseverant mathews",
+      "output": [
+        "adam avenge consonant geminid glass jamaica maim mathews morpheme perseverant plastisol president snuffle squashy syringa"
+      ]
+    },
+    "292": {
+      "input": "sanctimonious excommunicate aqueduct sharecrop deprive form snakeroot marketeer a's fritter caliphate ductile lattice spectroscopy soapsud spout temper icosahedral eutectic",
+      "output": [
+        "a's aqueduct caliphate deprive ductile eutectic excommunicate form fritter icosahedral lattice marketeer sanctimonious sharecrop snakeroot soapsud spectroscopy spout temper"
+      ]
+    },
+    "293": {
+      "input": "foliate damon europa potpourri",
+      "output": [
+        "damon europa foliate potpourri"
+      ]
+    },
+    "294": {
+      "input": "revelation prow o maladjust brimstone sideway incipient",
+      "output": [
+        "brimstone incipient maladjust o prow revelation sideway"
+      ]
+    },
+    "295": {
+      "input": "decennial hydraulic deconvolution ehrlich migratory led congressmen wavelength friedman locke crap tart funereal thiamin rand",
+      "output": [
+        "congressmen crap decennial deconvolution ehrlich friedman funereal hydraulic led locke migratory rand tart thiamin wavelength"
+      ]
+    },
+    "296": {
+      "input": "granola posh",
+      "output": [
+        "granola posh"
+      ]
+    },
+    "297": {
+      "input": "oblong bucolic whoosh",
+      "output": [
+        "bucolic oblong whoosh"
+      ]
+    },
+    "298": {
+      "input": "proximate recipient runabout rudimentary texas headlight spent nerve portia trek glue hecatomb duly crumb catchy bluebonnet marksman herschel",
+      "output": [
+        "bluebonnet catchy crumb duly glue headlight hecatomb herschel marksman nerve portia proximate recipient rudimentary runabout spent texas trek"
+      ]
+    },
+    "299": {
+      "input": "narrow threw haifa arcade aspheric",
+      "output": [
+        "arcade aspheric haifa narrow threw"
+      ]
+    },
+    "300": {
+      "input": "tumultuous infuse legendre removal fledgling bernoulli numb fame canyon ultimate aberdeen conductor loam decode construct spiny converge",
+      "output": [
+        "aberdeen bernoulli canyon conductor construct converge decode fame fledgling infuse legendre loam numb removal spiny tumultuous ultimate"
+      ]
+    }
+  }
+}

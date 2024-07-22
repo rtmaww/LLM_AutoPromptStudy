@@ -1,0 +1,1148 @@
+{
+  "metadata": {
+    "num_examples": 190
+  },
+  "task_desc": "Given a small set of sentences about a particular date, answer the provided question.",
+  "examples": {
+    "1": {
+      "input": "Jane visits the bookstore on the 16th of each month starting from the October of 2009. It is her 5th visit to the bookstore today. What is the date today in MM/DD/YYYY?\nChoices:\nA 02/06/2010\nB 12/21/2009\nC 02/16/1933\nD 02/16/2010\nE 11/30/2009\nF 05/24/2010",
+      "output": [
+        "D"
+      ]
+    },
+    "2": {
+      "input": "Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 01/09/1961\nB 01/02/1961\nC 10/01/1960\nD 12/26/1960\nE 07/26/1960\nF 12/26/1936",
+      "output": [
+        "D"
+      ]
+    },
+    "3": {
+      "input": "Jane is celebrating the last day of Jan 2012. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 01/29/2012\nB 09/30/2011\nC 02/06/2012\nD 01/30/2012\nE 01/30/1925",
+      "output": [
+        "D"
+      ]
+    },
+    "4": {
+      "input": "The day before yesterday was 11/23/1933. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 11/25/1933\nB 11/26/1933\nC 07/26/1934\nD 08/23/1933\nE 11/26/1976\nF 12/06/1933",
+      "output": [
+        "B"
+      ]
+    },
+    "5": {
+      "input": "Today is Sep 9, 1909. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 08/11/1909\nB 07/24/1909\nC 09/09/1909\nD 09/08/1962\nE 09/08/1909\nF 09/15/1909",
+      "output": [
+        "E"
+      ]
+    },
+    "6": {
+      "input": "The current local time is 3:02 pm of 5/4/2004. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 06/14/2003\nB 05/03/2003\nC 12/04/2002\nD 06/02/2003\nE 05/04/2003",
+      "output": [
+        "E"
+      ]
+    },
+    "7": {
+      "input": "Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 01/02/1930\nB 08/02/1930\nC 01/02/1884\nD 11/06/1929\nE 03/30/1930\nF 01/02/1877",
+      "output": [
+        "A"
+      ]
+    },
+    "8": {
+      "input": "Today's meeting is rescheduled to 11 am tomorrow, 10/16/1924. What is the date today in MM/DD/YYYY?\nChoices:\nA 10/15/1924\nB 10/15/1835\nC 10/14/1924\nD 10/29/1924\nE 09/17/1924",
+      "output": [
+        "A"
+      ]
+    },
+    "9": {
+      "input": "Today is the first day of 2007. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 12/24/2006\nB 06/25/2006\nC 03/05/2007\nD 12/25/2016\nE 12/25/2006\nF 12/25/1945",
+      "output": [
+        "E"
+      ]
+    },
+    "10": {
+      "input": "Jane booked a flight for tomorrow, Jul 29, 2002. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 07/27/2002\nB 07/28/2002\nC 12/27/2001\nD 07/27/1921\nE 12/27/2002",
+      "output": [
+        "A"
+      ]
+    },
+    "11": {
+      "input": "May 6, 1992 is like yesterday to Jane, but that is actually ten years ago. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 07/07/2001\nB 05/05/2001\nC 02/11/2001\nD 05/06/2001\nE 08/06/2000",
+      "output": [
+        "D"
+      ]
+    },
+    "12": {
+      "input": "Today is 9/7. Jane is watching NFL 2003. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 08/14/2003\nB 08/10/2003\nC 08/08/2003\nD 06/01/2003\nE 04/07/2003\nF 08/07/2003",
+      "output": [
+        "F"
+      ]
+    },
+    "13": {
+      "input": "Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. John is correct. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 06/19/2019\nB 06/24/2019\nC 08/26/2019\nD 06/25/2019\nE 06/26/2019\nF 07/03/2019",
+      "output": [
+        "E"
+      ]
+    },
+    "14": {
+      "input": "Today is Sep 9, 1909. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 09/10/1909\nB 09/24/1909\nC 07/03/1909\nD 12/10/1909\nE 08/13/1909\nF 09/10/1892",
+      "output": [
+        "A"
+      ]
+    },
+    "15": {
+      "input": "Jane scheduled 3 apointments with 5 poeple for tomorrow (Tue, 7/9/1972). What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 07/03/1972\nB 10/28/1971\nC 06/28/1972\nD 06/14/1972\nE 09/28/1972\nF 06/23/1972",
+      "output": [
+        "C"
+      ]
+    },
+    "16": {
+      "input": "Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 01/30/2011\nB 04/10/2011\nC 01/29/2011\nD 01/28/2011\nE 06/29/2010",
+      "output": [
+        "C"
+      ]
+    },
+    "17": {
+      "input": "Today is 3/5, and it is Jane's second time in the year 1973 to see a meteor shower. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 03/08/1983\nB 03/06/1973\nC 03/02/1973\nD 04/05/1973\nE 03/05/2007\nF 01/02/1973",
+      "output": [
+        "B"
+      ]
+    },
+    "18": {
+      "input": "Jane scheduled 3 apointments with 5 poeple for tomorrow (Tue, 7/9/1972). What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 06/08/2059\nB 06/22/1972\nC 12/08/1971\nD 06/08/2034\nE 06/08/1972\nF 06/07/1972",
+      "output": [
+        "E"
+      ]
+    },
+    "19": {
+      "input": "Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date today in MM/DD/YYYY?\nChoices:\nA 05/12/2001\nB 03/12/2002\nC 01/31/2002\nD 03/14/2002\nE 04/02/2002\nF 03/12/1908",
+      "output": [
+        "B"
+      ]
+    },
+    "20": {
+      "input": "Jane booked a flight for tomorrow, Jul 29, 2002. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 07/29/2001\nB 04/24/2002\nC 07/30/2002\nD 07/28/2002\nE 07/29/2002\nF 07/29/1947",
+      "output": [
+        "E"
+      ]
+    },
+    "21": {
+      "input": "In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date today in MM/DD/YYYY?\nChoices:\nA 01/16/2003\nB 11/21/2002\nC 09/04/2002\nD 11/22/2002\nE 08/24/2002\nF 11/23/2002",
+      "output": [
+        "D"
+      ]
+    },
+    "22": {
+      "input": "The current local time is 3:02 pm of 5/4/2004. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 04/27/2004\nB 05/18/2004\nC 04/28/2004\nD 05/27/2004\nE 04/27/2003\nF 04/24/2004",
+      "output": [
+        "A"
+      ]
+    },
+    "23": {
+      "input": "Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 12/31/2007\nB 01/01/2008\nC 02/03/2008\nD 01/02/2008\nE 12/27/2007",
+      "output": [
+        "B"
+      ]
+    },
+    "24": {
+      "input": "Today is Christmas Eve of 1937. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 12/11/1937\nB 12/25/1937\nC 01/04/1938\nD 12/04/1937\nE 12/25/2006\nF 07/25/1937",
+      "output": [
+        "B"
+      ]
+    },
+    "25": {
+      "input": "May 6, 1992 is like yesterday to Jane, but that is actually ten years ago. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 05/26/2002\nB 05/05/2001\nC 05/05/1902\nD 05/05/2084\nE 05/01/2002\nF 05/05/2002",
+      "output": [
+        "F"
+      ]
+    },
+    "26": {
+      "input": "It was Sept. 1st, 2021 a week ago. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 05/25/2021\nB 08/29/1925\nC 08/30/2021\nD 08/29/2021\nE 08/28/2021\nF 09/19/2021",
+      "output": [
+        "D"
+      ]
+    },
+    "27": {
+      "input": "On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 06/25/1964\nB 05/25/2018\nC 06/24/2017\nD 06/25/2063\nE 06/25/2017\nF 07/25/2017",
+      "output": [
+        "E"
+      ]
+    },
+    "28": {
+      "input": "The day before yesterday was 11/23/1933. What is the date today in MM/DD/YYYY?\nChoices:\nA 08/29/1933\nB 01/04/1934\nC 11/25/1967\nD 11/25/1933\nE 11/04/1933\nF 12/09/1933",
+      "output": [
+        "D"
+      ]
+    },
+    "29": {
+      "input": "It is 4/19/1969 today. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 06/21/1969\nB 01/18/1969\nC 04/16/1969\nD 05/18/1969\nE 04/20/1969\nF 05/11/1969",
+      "output": [
+        "E"
+      ]
+    },
+    "30": {
+      "input": "This is the last day of 1899. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 01/01/1900\nB 01/22/1900\nC 01/01/1899\nD 02/06/1900\nE 01/08/1900\nF 01/01/1827",
+      "output": [
+        "A"
+      ]
+    },
+    "31": {
+      "input": "On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 06/19/2017\nB 07/17/2017\nC 06/20/2017\nD 06/18/2017\nE 06/15/2017\nF 07/10/2017",
+      "output": [
+        "A"
+      ]
+    },
+    "32": {
+      "input": "Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 01/06/2008\nB 07/03/2007\nC 01/02/2008\nD 01/11/2008\nE 01/17/2008\nF 01/03/2008",
+      "output": [
+        "F"
+      ]
+    },
+    "33": {
+      "input": "It is 4/19/1969 today. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 03/19/1969\nB 04/08/1969\nC 03/24/1969\nD 04/04/1969\nE 04/10/1969\nF 04/09/1969",
+      "output": [
+        "F"
+      ]
+    },
+    "34": {
+      "input": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 05/09/2021\nB 05/01/2021\nC 08/03/2021\nD 02/19/2021\nE 04/30/2021\nF 07/06/2021",
+      "output": [
+        "E"
+      ]
+    },
+    "35": {
+      "input": "Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 06/02/1960\nB 01/02/1960\nC 01/02/1967\nD 12/19/1959\nE 12/26/1959\nF 01/02/2016",
+      "output": [
+        "B"
+      ]
+    },
+    "36": {
+      "input": "2015 is coming in 36 hours. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 12/09/2013\nB 01/19/2014\nC 12/28/2013\nD 07/29/2013\nE 12/29/2013\nF 02/28/2014",
+      "output": [
+        "E"
+      ]
+    },
+    "37": {
+      "input": "On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 06/18/2030\nB 09/18/2016\nC 06/18/2016\nD 07/18/2015\nE 06/22/2016\nF 06/25/2016",
+      "output": [
+        "C"
+      ]
+    },
+    "38": {
+      "input": "It was Sept. 1st, 2021 a week ago. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 09/09/2021\nB 09/08/2021\nC 08/19/2021\nD 09/09/1934\nE 02/09/2021\nF 09/13/2021",
+      "output": [
+        "A"
+      ]
+    },
+    "39": {
+      "input": "Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 12/25/1929\nB 09/20/1929\nC 12/16/1929\nD 12/28/1929\nE 01/22/1930\nF 12/25/2006",
+      "output": [
+        "A"
+      ]
+    },
+    "40": {
+      "input": "Jane visits the bookstore on the 16th of each month starting from the October of 2009. It is her 5th visit to the bookstore today. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 01/16/2010\nB 12/19/2009\nC 01/15/2010\nD 02/11/2010\nE 01/17/2010\nF 10/09/2009",
+      "output": [
+        "A"
+      ]
+    },
+    "41": {
+      "input": "2015 is coming in 36 hours. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 03/07/2015\nB 11/28/2014\nC 11/23/2014\nD 12/20/2014\nE 12/05/2014\nF 11/29/2014",
+      "output": [
+        "F"
+      ]
+    },
+    "42": {
+      "input": "The current local time is 3:02 pm of 5/4/2004. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 05/05/1915\nB 05/06/2004\nC 05/05/2004\nD 01/05/2005\nE 02/15/2004\nF 05/04/2004",
+      "output": [
+        "C"
+      ]
+    },
+    "43": {
+      "input": "On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date today in MM/DD/YYYY?\nChoices:\nA 06/17/2017\nB 07/16/2017\nC 06/18/2017\nD 06/18/2016\nE 06/18/2054\nF 12/18/2016",
+      "output": [
+        "C"
+      ]
+    },
+    "44": {
+      "input": "Jane was born on the last day of Feburary in 2000. Today is her 16-year-old birthday. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 03/02/2016\nB 03/01/1968\nC 02/20/2016\nD 03/01/2016\nE 03/01/2104\nF 03/01/2048",
+      "output": [
+        "D"
+      ]
+    },
+    "45": {
+      "input": "Jane booked a flight for tomorrow, Jul 29, 2002. What is the date today in MM/DD/YYYY?\nChoices:\nA 10/09/2002\nB 08/18/2002\nC 07/16/2002\nD 07/28/2002\nE 11/28/2002\nF 09/11/2002",
+      "output": [
+        "D"
+      ]
+    },
+    "46": {
+      "input": "Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 01/01/2003\nB 11/01/1960\nC 02/01/1961\nD 01/01/1958\nE 01/01/1961\nF 04/09/1961",
+      "output": [
+        "E"
+      ]
+    },
+    "47": {
+      "input": "Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 04/11/1985\nB 04/13/1985\nC 04/12/1987\nD 04/07/1975\nE 04/12/1986\nF 04/10/1985",
+      "output": [
+        "A"
+      ]
+    },
+    "48": {
+      "input": "Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 04/10/1985\nB 05/10/1975\nC 03/10/1986\nD 04/17/1985\nE 04/12/1986\nF 04/07/1985",
+      "output": [
+        "D"
+      ]
+    },
+    "49": {
+      "input": "Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 01/21/2070\nB 01/20/2011\nC 01/26/2011\nD 01/28/2011\nE 01/21/2011\nF 06/21/2011",
+      "output": [
+        "E"
+      ]
+    },
+    "50": {
+      "input": "Today is Sep 9, 1909. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 12/10/1908\nB 12/14/1909\nC 09/09/1909\nD 07/03/1909\nE 09/10/1909\nF 09/11/1909",
+      "output": [
+        "E"
+      ]
+    },
+    "51": {
+      "input": "Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 02/28/2015\nB 03/31/2016\nC 02/28/2016\nD 02/28/1992\nE 03/27/2016\nF 03/06/2016",
+      "output": [
+        "C"
+      ]
+    },
+    "52": {
+      "input": "The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 01/06/1960\nB 12/27/2018\nC 01/06/2019\nD 01/07/2019\nE 01/06/2058\nF 10/06/2019",
+      "output": [
+        "C"
+      ]
+    },
+    "53": {
+      "input": "Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. Jane is correct. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 06/17/2063\nB 05/18/2019\nC 05/20/2019\nD 06/17/2019\nE 05/13/2019\nF 06/08/2019",
+      "output": [
+        "D"
+      ]
+    },
+    "54": {
+      "input": "Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 01/22/2020\nB 01/23/2020\nC 03/23/2020\nD 01/23/2078\nE 01/23/2011",
+      "output": [
+        "B"
+      ]
+    },
+    "55": {
+      "input": "Today is Christmas Eve of 1937. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 12/28/1937\nB 12/31/1937\nC 12/31/1938\nD 12/27/1937\nE 12/03/1937",
+      "output": [
+        "B"
+      ]
+    },
+    "56": {
+      "input": "2015 is coming in 36 hours. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 02/13/2015\nB 12/29/2014\nC 10/26/2014\nD 12/28/2014\nE 11/07/2014\nF 10/03/2014",
+      "output": [
+        "D"
+      ]
+    },
+    "57": {
+      "input": "The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 05/27/1943\nB 06/04/1943\nC 06/01/2005\nD 03/20/1943\nE 05/24/1943\nF 06/01/1943",
+      "output": [
+        "F"
+      ]
+    },
+    "58": {
+      "input": "Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 08/12/2020\nB 07/29/2020\nC 09/06/2020\nD 08/20/2020\nE 08/12/2045\nF 08/12/2093",
+      "output": [
+        "A"
+      ]
+    },
+    "59": {
+      "input": "Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 02/13/2011\nB 01/22/2011\nC 01/24/2011\nD 01/23/2011\nE 12/31/2010\nF 12/26/2010",
+      "output": [
+        "D"
+      ]
+    },
+    "60": {
+      "input": "Jane booked a flight for tomorrow, Jul 29, 2002. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 06/27/2002\nB 06/21/2002\nC 10/28/2001\nD 10/28/2002\nE 06/28/2002\nF 08/25/2002",
+      "output": [
+        "E"
+      ]
+    },
+    "61": {
+      "input": "Jane scheduled 3 apointments with 5 poeple for tomorrow (Tue, 7/9/1972). What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 07/09/1972\nB 12/01/1972\nC 07/01/2008\nD 05/13/1972\nE 07/01/1972\nF 08/12/1972",
+      "output": [
+        "E"
+      ]
+    },
+    "62": {
+      "input": "Jane scheduled 3 apointments with 5 poeple for tomorrow (Tue, 7/9/1972). What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 06/24/1972\nB 07/16/1972\nC 07/15/1972\nD 06/18/1972\nE 07/29/1972\nF 07/15/2037",
+      "output": [
+        "C"
+      ]
+    },
+    "63": {
+      "input": "Jane visits the bookstore on the 16th of each month starting from the October of 2009. It is her 5th visit to the bookstore today. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 02/14/2010\nB 02/17/2096\nC 02/17/2010\nD 11/17/2009\nE 02/16/2010\nF 02/26/2010",
+      "output": [
+        "C"
+      ]
+    },
+    "64": {
+      "input": "Jane got her job in 2016. Today is her 3-year work anniversary. She still remember that on Dec 2, her second day at work, she spilled coffee on her laptop. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 02/29/2020\nB 11/30/2065\nC 02/18/2020\nD 09/21/2019\nE 11/29/2019\nF 11/30/2019",
+      "output": [
+        "F"
+      ]
+    },
+    "65": {
+      "input": "The current local time is 3:02 pm of 5/4/2004. What is the date today in MM/DD/YYYY?\nChoices:\nA 05/05/2004\nB 05/04/2005\nC 04/28/2004\nD 05/04/2004\nE 05/03/2004\nF 05/11/2004",
+      "output": [
+        "D"
+      ]
+    },
+    "66": {
+      "input": "The day before yesterday was 11/23/1933. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 11/25/1933\nB 12/02/1974\nC 12/16/1933\nD 11/11/1933\nE 12/23/1933\nF 12/02/1933",
+      "output": [
+        "F"
+      ]
+    },
+    "67": {
+      "input": "Today, 8/3/1997, is a day that we will never forget. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 08/21/1997\nB 10/24/1997\nC 07/23/1997\nD 07/24/1997\nE 08/14/1997\nF 06/11/1997",
+      "output": [
+        "D"
+      ]
+    },
+    "68": {
+      "input": "Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date today in MM/DD/YYYY?\nChoices:\nA 01/08/1930\nB 01/06/1930\nC 01/01/1930\nD 12/31/1929\nE 10/01/1930\nF 02/27/1930",
+      "output": [
+        "C"
+      ]
+    },
+    "69": {
+      "input": "Yesterday was April 30, 2021. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 05/15/2021\nB 04/23/2021\nC 04/15/2021\nD 06/05/2021\nE 04/19/2021\nF 04/24/2021",
+      "output": [
+        "F"
+      ]
+    },
+    "70": {
+      "input": "Jane was born on the last day of Feburary in 2000. Today is her 16-year-old birthday. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 03/07/2016\nB 02/23/2016\nC 03/07/2070\nD 03/06/2016\nE 03/08/2016",
+      "output": [
+        "A"
+      ]
+    },
+    "71": {
+      "input": "Tomorrow is 11/12/2019. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 11/10/2076\nB 11/10/2019\nC 09/10/2019\nD 11/06/2019\nE 11/11/2019\nF 11/17/2019",
+      "output": [
+        "B"
+      ]
+    },
+    "72": {
+      "input": "Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date today in MM/DD/YYYY?\nChoices:\nA 05/02/2019\nB 11/08/2019\nC 01/19/2020\nD 02/02/2020\nE 02/01/2020\nF 01/23/2020",
+      "output": [
+        "D"
+      ]
+    },
+    "73": {
+      "input": "Today is 3/5, and it is Jane's second time in the year 1973 to see a meteor shower. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 04/05/1973\nB 03/04/1973\nC 01/02/1973\nD 03/05/1973\nE 03/04/2007\nF 03/05/1983",
+      "output": [
+        "B"
+      ]
+    },
+    "74": {
+      "input": "Today is the last day of the first quarter of 2008. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 03/21/2104\nB 10/21/2008\nC 03/22/2008\nD 03/21/2008\nE 06/24/2008\nF 06/04/2008",
+      "output": [
+        "D"
+      ]
+    },
+    "75": {
+      "input": "Yesterday was April 30, 2021. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 05/02/2020\nB 05/02/2000\nC 05/02/2021\nD 05/03/2021\nE 05/02/2022\nF 04/04/2021",
+      "output": [
+        "C"
+      ]
+    },
+    "76": {
+      "input": "Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 12/26/2007\nB 12/26/1951\nC 05/26/2007\nD 12/05/2007\nE 09/26/2008\nF 12/26/2099",
+      "output": [
+        "A"
+      ]
+    },
+    "77": {
+      "input": "Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 09/13/2020\nB 08/14/2020\nC 09/13/2057\nD 07/26/2020\nE 10/04/2020\nF 09/13/2084",
+      "output": [
+        "A"
+      ]
+    },
+    "78": {
+      "input": "Today is 9/7. Jane is watching NFL 2003. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 08/28/1959\nB 08/29/2003\nC 08/28/2003\nD 06/14/2003\nE 03/28/2003\nF 08/28/2043",
+      "output": [
+        "C"
+      ]
+    },
+    "79": {
+      "input": "Jane got her job in 2016. Today is her 3-year work anniversary. She still remember that on Dec 2, her second day at work, she spilled coffee on her laptop. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 08/02/2020\nB 12/02/1950\nC 11/18/2019\nD 12/02/2019\nE 01/02/2020\nF 12/01/2019",
+      "output": [
+        "D"
+      ]
+    },
+    "80": {
+      "input": "Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 04/01/1930\nB 12/01/1929\nC 12/01/1973\nD 12/02/1929\nE 12/11/1929\nF 12/04/1929",
+      "output": [
+        "B"
+      ]
+    },
+    "81": {
+      "input": "Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 03/16/2002\nB 02/23/2002\nC 03/02/2001\nD 03/02/2003\nE 11/25/2001\nF 03/02/2002",
+      "output": [
+        "F"
+      ]
+    },
+    "82": {
+      "input": "Jane was born on the last day of Feburary in 2000. Today is her 16-year-old birthday. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 05/04/2016\nB 07/29/2015\nC 02/02/2016\nD 11/08/2015\nE 01/30/2016\nF 01/29/2016",
+      "output": [
+        "F"
+      ]
+    },
+    "83": {
+      "input": "Jane was born on the last day of Feburary in 2000. Today is her 16-year-old birthday. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 02/28/2015\nB 03/10/2015\nC 03/08/2015\nD 04/28/2015\nE 02/21/2015\nF 03/28/2015",
+      "output": [
+        "A"
+      ]
+    },
+    "84": {
+      "input": "Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 03/25/2017\nB 03/01/2017\nC 03/01/2116\nD 02/20/2017\nE 03/17/2017\nF 03/01/2076",
+      "output": [
+        "B"
+      ]
+    },
+    "85": {
+      "input": "Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date today in MM/DD/YYYY?\nChoices:\nA 08/28/2017\nB 02/22/2017\nC 03/01/2017\nD 01/28/2018\nE 02/07/2017\nF 02/28/2017",
+      "output": [
+        "F"
+      ]
+    },
+    "86": {
+      "input": "Today is 3/5, and it is Jane's second time in the year 1973 to see a meteor shower. What is the date today in MM/DD/YYYY?\nChoices:\nA 04/05/1973\nB 03/02/1973\nC 01/22/2007\nD 01/02/1973\nE 03/05/1973\nF 03/08/1983",
+      "output": [
+        "E"
+      ]
+    },
+    "87": {
+      "input": "Today, 8/3/1997, is a day that we will never forget. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 08/04/1997\nB 08/04/1978\nC 08/04/2043\nD 08/07/1997\nE 08/04/1935\nF 05/01/1997",
+      "output": [
+        "A"
+      ]
+    },
+    "88": {
+      "input": "Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 09/19/2020\nB 09/13/2020\nC 06/13/2021\nD 10/05/2020\nE 12/13/2020\nF 09/13/1991",
+      "output": [
+        "B"
+      ]
+    },
+    "89": {
+      "input": "Today is 3/5, and it is Jane's second time in the year 1973 to see a meteor shower. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 03/06/1973\nB 03/02/1973\nC 03/08/1983\nD 04/05/1973\nE 03/05/1972\nF 01/02/1973",
+      "output": [
+        "A"
+      ]
+    },
+    "90": {
+      "input": "Yesterday was April 30, 2021. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 05/10/2021\nB 03/13/2021\nC 04/10/2021\nD 04/27/2021\nE 05/09/2021\nF 05/08/2021",
+      "output": [
+        "F"
+      ]
+    },
+    "91": {
+      "input": "It is 4/19/1969 today. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 04/26/1969\nB 04/05/1969\nC 05/11/1969\nD 04/27/1969\nE 05/14/1969\nF 04/25/1969",
+      "output": [
+        "A"
+      ]
+    },
+    "92": {
+      "input": "Today is 3/5, and it is Jane's second time in the year 1973 to see a meteor shower. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 04/05/1973\nB 03/02/1973\nC 03/05/1972\nD 01/02/1973\nE 03/08/1983\nF 03/12/1973",
+      "output": [
+        "F"
+      ]
+    },
+    "93": {
+      "input": "Today is Sep 9, 1909. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 08/29/1909\nB 08/30/1967\nC 08/30/1909\nD 08/30/1977\nE 08/02/1909\nF 08/16/1909",
+      "output": [
+        "C"
+      ]
+    },
+    "94": {
+      "input": "Today is 9/7. Jane is watching NFL 2003. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 09/06/2003\nB 09/21/2003\nC 09/05/2003\nD 10/23/2003\nE 09/06/2102",
+      "output": [
+        "A"
+      ]
+    },
+    "95": {
+      "input": "Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 01/01/1898\nB 01/01/1994\nC 08/01/1929\nD 01/08/1929\nE 01/01/1891\nF 01/01/1929",
+      "output": [
+        "F"
+      ]
+    },
+    "96": {
+      "input": "Today is 9/7. Jane is watching NFL 2003. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 09/08/1916\nB 09/13/2003\nC 08/18/2003\nD 09/08/2003\nE 09/15/2003\nF 09/01/2003",
+      "output": [
+        "D"
+      ]
+    },
+    "97": {
+      "input": "Today is Christmas Eve of 1937. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 08/17/1937\nB 09/18/1937\nC 12/18/1937\nD 12/17/1937\nE 12/16/1937",
+      "output": [
+        "D"
+      ]
+    },
+    "98": {
+      "input": "The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 06/04/1943\nB 03/09/1943\nC 06/03/1943\nD 04/11/1943\nE 09/03/1943\nF 08/03/1942",
+      "output": [
+        "C"
+      ]
+    },
+    "99": {
+      "input": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 05/31/1993\nB 05/17/2021\nC 07/07/2021\nD 05/31/2021\nE 06/01/2021\nF 05/30/2021",
+      "output": [
+        "D"
+      ]
+    },
+    "100": {
+      "input": "Today is 3/5, and it is Jane's second time in the year 1973 to see a meteor shower. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 02/23/1973\nB 01/02/1973\nC 02/24/1973\nD 03/08/1983\nE 04/05/1973\nF 03/02/1973",
+      "output": [
+        "A"
+      ]
+    },
+    "101": {
+      "input": "Today's meeting is rescheduled to 11 am tomorrow, 10/16/1924. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 10/16/1924\nB 07/16/1925\nC 10/17/1924\nD 10/15/1924\nE 10/16/1922\nF 10/16/2010",
+      "output": [
+        "A"
+      ]
+    },
+    "102": {
+      "input": "Today is the last day of the first quarter of 2008. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 04/15/2008\nB 10/07/2008\nC 09/07/2008\nD 03/24/2008\nE 04/07/2008\nF 04/06/2008",
+      "output": [
+        "E"
+      ]
+    },
+    "103": {
+      "input": "Today is Christmas Eve of 1937. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 09/23/1938\nB 12/23/1896\nC 12/24/1937\nD 01/06/1938\nE 12/31/1937\nF 12/23/1937",
+      "output": [
+        "F"
+      ]
+    },
+    "104": {
+      "input": "2015 is coming in 36 hours. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 01/02/2015\nB 12/23/2014\nC 12/19/2014\nD 12/18/2014\nE 11/21/2014\nF 12/20/2014",
+      "output": [
+        "C"
+      ]
+    },
+    "105": {
+      "input": "Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 12/02/2007\nB 12/03/2007\nC 01/02/2007\nD 11/18/2007\nE 11/04/2007\nF 12/02/1928",
+      "output": [
+        "A"
+      ]
+    },
+    "106": {
+      "input": "Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 09/20/2019\nB 10/01/2019\nC 10/24/2019\nD 09/12/1970\nE 09/12/2019",
+      "output": [
+        "E"
+      ]
+    },
+    "107": {
+      "input": "Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 04/13/1985\nB 04/10/1985\nC 01/02/2071\nD 04/07/1985\nE 04/11/1985\nF 03/10/1986",
+      "output": [
+        "E"
+      ]
+    },
+    "108": {
+      "input": "The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 01/13/2019\nB 02/11/2019\nC 02/04/2019\nD 01/14/2019\nE 01/16/2019\nF 12/31/2018",
+      "output": [
+        "D"
+      ]
+    },
+    "109": {
+      "input": "This is the last day of 1899. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 02/07/1900\nB 02/22/1900\nC 01/13/1900\nD 01/07/1900\nE 10/07/1900\nF 01/07/1828",
+      "output": [
+        "D"
+      ]
+    },
+    "110": {
+      "input": "Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 12/22/1929\nB 10/31/1929\nC 11/19/1929\nD 12/22/1973\nE 09/22/1929",
+      "output": [
+        "A"
+      ]
+    },
+    "111": {
+      "input": "In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 09/12/2002\nB 11/30/2002\nC 11/21/2002\nD 11/21/2076\nE 11/07/2002\nF 11/15/2002",
+      "output": [
+        "C"
+      ]
+    },
+    "112": {
+      "input": "Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 01/03/2020\nB 02/04/2020\nC 04/03/2020\nD 11/03/2020\nE 02/03/1964\nF 02/03/2020",
+      "output": [
+        "F"
+      ]
+    },
+    "113": {
+      "input": "Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 01/18/2011\nB 01/12/2011\nC 01/12/2069\nD 01/13/2011\nE 05/12/2010\nF 08/12/2010",
+      "output": [
+        "B"
+      ]
+    },
+    "114": {
+      "input": "Today is 9/7. Jane is watching NFL 2003. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 09/05/2003\nB 08/30/2003\nC 08/31/2074\nD 08/31/2003\nE 06/30/2004",
+      "output": [
+        "D"
+      ]
+    },
+    "115": {
+      "input": "Jane booked a flight for tomorrow, Jul 29, 2002. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 08/03/2002\nB 10/22/2002\nC 06/03/2002\nD 08/04/2002\nE 08/04/1930\nF 07/04/2003",
+      "output": [
+        "D"
+      ]
+    },
+    "116": {
+      "input": "In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 12/01/2002\nB 11/24/2002\nC 06/23/2003\nD 05/23/2002\nE 11/23/2002",
+      "output": [
+        "E"
+      ]
+    },
+    "117": {
+      "input": "Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. John is correct. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 06/20/2019\nB 06/22/2019\nC 06/29/2019\nD 06/21/2019\nE 06/20/2028\nF 06/20/1921",
+      "output": [
+        "A"
+      ]
+    },
+    "118": {
+      "input": "The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 05/21/1943\nB 10/23/1942\nC 07/01/1943\nD 05/24/1943\nE 05/23/1943",
+      "output": [
+        "E"
+      ]
+    },
+    "119": {
+      "input": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 04/29/2021\nB 05/21/2021\nC 04/06/2021\nD 06/24/2021\nE 05/20/2021",
+      "output": [
+        "E"
+      ]
+    },
+    "120": {
+      "input": "Jane is celebrating the last day of Jan 2012. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 10/31/2011\nB 01/31/2011\nC 06/30/2011\nD 02/01/2011\nE 02/08/2011\nF 04/20/2011",
+      "output": [
+        "B"
+      ]
+    },
+    "121": {
+      "input": "Yesterday was April 30, 2021. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 04/29/2021\nB 05/02/2021\nC 04/11/2021\nD 05/01/2021\nE 03/14/2021\nF 05/02/1960",
+      "output": [
+        "B"
+      ]
+    },
+    "122": {
+      "input": "May 6, 1992 is like yesterday to Jane, but that is actually ten years ago. What is the date today in MM/DD/YYYY?\nChoices:\nA 05/06/2095\nB 05/06/1935\nC 05/06/1912\nD 08/06/2002\nE 05/06/2002\nF 05/06/1964",
+      "output": [
+        "E"
+      ]
+    },
+    "123": {
+      "input": "Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 01/01/2020\nB 01/02/2020\nC 10/02/2019\nD 11/05/2019\nE 01/02/1931\nF 01/03/2020",
+      "output": [
+        "B"
+      ]
+    },
+    "124": {
+      "input": "It was Sept. 1st, 2021 a week ago. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 09/05/2021\nB 08/08/2021\nC 09/25/2021\nD 08/09/2021\nE 10/04/2021\nF 07/25/2021",
+      "output": [
+        "B"
+      ]
+    },
+    "125": {
+      "input": "Today is 9/7. Jane is watching NFL 2003. What is the date today in MM/DD/YYYY?\nChoices:\nA 12/05/2003\nB 08/08/2003\nC 07/07/2003\nD 09/07/2003\nE 11/20/2003\nF 09/06/2003",
+      "output": [
+        "D"
+      ]
+    },
+    "126": {
+      "input": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 05/23/2020\nB 04/13/2021\nC 05/24/2021\nD 05/23/2054\nE 05/23/1940\nF 05/23/2021",
+      "output": [
+        "F"
+      ]
+    },
+    "127": {
+      "input": "Today is 9/7. Jane is watching NFL 2003. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 12/07/2002\nB 08/24/2002\nC 09/07/2002\nD 09/07/1918\nE 09/08/2002\nF 09/28/2002",
+      "output": [
+        "C"
+      ]
+    },
+    "128": {
+      "input": "Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. John is correct. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 06/12/2022\nB 06/12/2019\nC 06/11/2019\nD 06/13/2019\nE 08/25/2019\nF 03/24/2019",
+      "output": [
+        "B"
+      ]
+    },
+    "129": {
+      "input": "The day before yesterday was 11/23/1933. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 10/25/1921\nB 10/25/1989\nC 10/26/1933\nD 10/25/1933\nE 11/22/1933",
+      "output": [
+        "D"
+      ]
+    },
+    "130": {
+      "input": "Jane is celebrating the last day of Jan 2012. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 02/06/2012\nB 08/24/2011\nC 01/22/2012\nD 01/24/2012\nE 01/24/1923\nF 01/24/1947",
+      "output": [
+        "D"
+      ]
+    },
+    "131": {
+      "input": "Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. John is correct. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 02/18/2019\nB 06/18/2066\nC 06/18/2019\nD 06/18/1933\nE 05/28/2019\nF 11/18/2019",
+      "output": [
+        "C"
+      ]
+    },
+    "132": {
+      "input": "In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 11/22/2001\nB 10/21/2002\nC 07/21/2002\nD 10/22/1923\nE 10/15/2002\nF 10/22/2002",
+      "output": [
+        "F"
+      ]
+    },
+    "133": {
+      "input": "Jane scheduled 3 apointments with 5 poeple for tomorrow (Tue, 7/9/1972). What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 07/09/1923\nB 08/05/1972\nC 09/01/1972\nD 07/09/1972\nE 07/09/2007\nF 09/04/1972",
+      "output": [
+        "D"
+      ]
+    },
+    "134": {
+      "input": "Jane got her job in 2016. Today is her 3-year work anniversary. She still remember that on Dec 2, her second day at work, she spilled coffee on her laptop. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 11/21/2019\nB 11/20/2019\nC 03/21/2020\nD 11/21/2080\nE 02/21/2020\nF 11/22/2019",
+      "output": [
+        "A"
+      ]
+    },
+    "135": {
+      "input": "Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date today in MM/DD/YYYY?\nChoices:\nA 01/30/2008\nB 01/02/2085\nC 01/02/2008\nD 12/04/2007\nE 01/11/2008\nF 08/02/2008",
+      "output": [
+        "C"
+      ]
+    },
+    "136": {
+      "input": "Today is Christmas Eve of 1937. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 12/24/1862\nB 01/10/1937\nC 10/24/1936\nD 12/24/1936\nE 03/24/1936\nF 12/29/1936",
+      "output": [
+        "D"
+      ]
+    },
+    "137": {
+      "input": "Today is Sep 9, 1909. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 08/09/1909\nB 08/10/1909\nC 05/09/1910\nD 08/08/1909\nE 08/09/1820\nF 08/19/1909",
+      "output": [
+        "A"
+      ]
+    },
+    "138": {
+      "input": "2015 is coming in 36 hours. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 01/09/2015\nB 12/30/2059\nC 12/30/2014\nD 01/01/2015\nE 01/04/2015\nF 12/31/2014",
+      "output": [
+        "C"
+      ]
+    },
+    "139": {
+      "input": "In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 11/29/2002\nB 11/15/2002\nC 11/30/2002\nD 12/27/2002\nE 12/11/2002\nF 11/29/2078",
+      "output": [
+        "A"
+      ]
+    },
+    "140": {
+      "input": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 06/12/2021\nB 06/05/2021\nC 07/29/2021\nD 05/22/2021\nE 06/17/2021\nF 05/29/2021",
+      "output": [
+        "F"
+      ]
+    },
+    "141": {
+      "input": "In the UK, people usually put the day before the month when formatting the date. Therefore, today is 02/01/1987 to them. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 01/23/1987\nB 01/09/2023\nC 01/09/1948\nD 01/08/1987\nE 03/17/1987\nF 01/09/1987",
+      "output": [
+        "F"
+      ]
+    },
+    "142": {
+      "input": "Jane got her job in 2016. Today is her 3-year work anniversary. She still remember that on Dec 2, her second day at work, she spilled coffee on her laptop. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 11/23/2019\nB 06/24/2019\nC 03/24/2019\nD 11/24/2019\nE 02/29/2020",
+      "output": [
+        "D"
+      ]
+    },
+    "143": {
+      "input": "The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 01/08/2018\nB 01/07/2018\nC 01/02/2018\nD 01/12/2018\nE 05/07/2017\nF 10/29/2017",
+      "output": [
+        "B"
+      ]
+    },
+    "144": {
+      "input": "Jane is celebrating the last day of Jan 2012. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 01/31/2012\nB 02/01/2016\nC 02/01/2079\nD 11/10/2011\nE 01/04/2012\nF 02/01/2012",
+      "output": [
+        "F"
+      ]
+    },
+    "145": {
+      "input": "Today is the last day of the first quarter of 2008. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 04/09/2008\nB 09/01/2008\nC 03/14/2008\nD 03/31/2008\nE 04/01/2058\nF 04/01/2008",
+      "output": [
+        "F"
+      ]
+    },
+    "146": {
+      "input": "Jane was born on the last day of Feburary in 2000. Today is her 16-year-old birthday. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 02/21/2016\nB 02/28/2016\nC 03/13/2016\nD 04/28/2016\nE 06/01/2016\nF 11/28/2015",
+      "output": [
+        "B"
+      ]
+    },
+    "147": {
+      "input": "Tomorrow is 11/12/2019. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 02/12/2020\nB 11/12/2019\nC 10/22/2019\nD 11/14/2019\nE 12/10/2019",
+      "output": [
+        "B"
+      ]
+    },
+    "148": {
+      "input": "Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. John is correct. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 02/20/2019\nB 06/10/2019\nC 06/20/2019\nD 06/25/2019\nE 12/20/2018",
+      "output": [
+        "C"
+      ]
+    },
+    "149": {
+      "input": "Today, 8/3/1997, is a day that we will never forget. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 06/12/1997\nB 07/03/1997\nC 08/03/1996\nD 07/02/1997\nE 09/22/1997\nF 07/12/1997",
+      "output": [
+        "B"
+      ]
+    },
+    "150": {
+      "input": "Jane is celebrating the last day of Jan 2012. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 12/21/2011\nB 12/31/2011\nC 12/30/2011\nD 12/31/2074\nE 12/31/2108\nF 03/29/2012",
+      "output": [
+        "B"
+      ]
+    },
+    "151": {
+      "input": "Today is Sep 9, 1909. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 09/16/1952\nB 09/16/1909\nC 09/16/1876\nD 08/22/1909\nE 12/16/1909\nF 10/14/1909",
+      "output": [
+        "B"
+      ]
+    },
+    "152": {
+      "input": "Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date 10 days ago in MM/DD/YYYY?\nChoices:\nA 04/13/1985\nB 04/07/1985\nC 05/13/1985\nD 04/10/1986\nE 03/10/1986\nF 03/31/1985",
+      "output": [
+        "F"
+      ]
+    },
+    "153": {
+      "input": "Today is Sep 9, 1909. What is the date today in MM/DD/YYYY?\nChoices:\nA 09/09/1909\nB 09/30/1909\nC 11/19/1909\nD 09/09/1939\nE 09/09/1886\nF 12/11/1909",
+      "output": [
+        "A"
+      ]
+    },
+    "154": {
+      "input": "Today is the second day of the third month of 1966. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 02/26/1966\nB 01/13/1966\nC 02/02/1966\nD 10/23/1966\nE 02/23/1968\nF 02/23/1966",
+      "output": [
+        "F"
+      ]
+    },
+    "155": {
+      "input": "Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 04/12/2001\nB 02/11/2002\nC 02/12/2002\nD 02/08/2002\nE 05/22/2002\nF 02/18/2002",
+      "output": [
+        "C"
+      ]
+    },
+    "156": {
+      "input": "Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 02/23/2020\nB 02/13/2020\nC 02/09/2095\nD 12/09/2020\nE 02/09/2020\nF 02/27/2020",
+      "output": [
+        "E"
+      ]
+    },
+    "157": {
+      "input": "Today, 8/3/1997, is a day that we will never forget. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 10/07/1996\nB 08/03/2035\nC 05/03/1997\nD 08/03/1996\nE 08/04/1996",
+      "output": [
+        "D"
+      ]
+    },
+    "158": {
+      "input": "Today is the second day of the third month of 1966. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 03/04/1966\nB 04/03/1966\nC 03/03/1965\nD 03/03/2021\nE 03/02/1966\nF 03/03/1966",
+      "output": [
+        "F"
+      ]
+    },
+    "159": {
+      "input": "Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 03/10/1986\nB 04/07/1985\nC 05/13/1985\nD 04/10/1984\nE 04/12/1986\nF 04/10/1985",
+      "output": [
+        "D"
+      ]
+    },
+    "160": {
+      "input": "Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date today in MM/DD/YYYY?\nChoices:\nA 01/12/2011\nB 01/08/2011\nC 01/22/1990\nD 01/22/2011\nE 01/22/2086\nF 01/23/2011",
+      "output": [
+        "D"
+      ]
+    },
+    "161": {
+      "input": "Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 01/16/1961\nB 01/09/1961\nC 01/09/1963\nD 03/09/1960\nE 07/09/1960\nF 02/28/1961",
+      "output": [
+        "B"
+      ]
+    },
+    "162": {
+      "input": "Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date one week ago from today in MM/DD/YYYY?\nChoices:\nA 12/06/2010\nB 01/15/2011\nC 01/17/2011\nD 03/15/2011\nE 12/24/2010",
+      "output": [
+        "B"
+      ]
+    },
+    "163": {
+      "input": "Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 05/04/2017\nB 03/01/1919\nC 03/01/2017\nD 03/01/2005\nE 02/15/2017\nF 06/02/2017",
+      "output": [
+        "C"
+      ]
+    },
+    "164": {
+      "input": "In the UK, people usually put the day before the month when formatting the date. Therefore, today is 02/01/1987 to them. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 01/09/1986\nB 01/02/1986\nC 12/05/1985\nD 11/10/1985\nE 12/20/1985\nF 10/22/1985",
+      "output": [
+        "B"
+      ]
+    },
+    "165": {
+      "input": "Today is Sep 9, 1909. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 09/09/1920\nB 09/09/1908\nC 07/05/1908\nD 09/09/1870\nE 09/04/1908\nF 09/13/1908",
+      "output": [
+        "B"
+      ]
+    },
+    "166": {
+      "input": "Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 02/08/2011\nB 12/22/2010\nC 06/22/2010\nD 12/01/2010\nE 01/05/2011\nF 12/21/2010",
+      "output": [
+        "B"
+      ]
+    },
+    "167": {
+      "input": "Today is the last day of the first quarter of 2008. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 02/29/2008\nB 02/08/2008\nC 12/26/2007\nD 02/28/2008\nE 02/01/2008\nF 08/29/2008",
+      "output": [
+        "A"
+      ]
+    },
+    "168": {
+      "input": "In the UK, people usually put the day before the month when formatting the date. Therefore, today is 02/01/1987 to them. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 12/02/1986\nB 12/01/1986\nC 03/02/1986\nD 12/02/2032\nE 12/02/2062\nF 02/06/1987",
+      "output": [
+        "A"
+      ]
+    },
+    "169": {
+      "input": "Today is the second day of the third month of 1966. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 12/09/1965\nB 03/02/1966\nC 03/28/1966\nD 03/26/1966\nE 03/09/1966\nF 02/22/1966",
+      "output": [
+        "E"
+      ]
+    },
+    "170": {
+      "input": "Tomorrow is 11/12/2019. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 08/21/2019\nB 11/18/2019\nC 11/18/2025\nD 11/18/2011\nE 02/18/2020\nF 11/04/2019",
+      "output": [
+        "B"
+      ]
+    },
+    "171": {
+      "input": "Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 03/08/2017\nB 03/07/2058\nC 03/07/2017\nD 03/07/2018\nE 03/07/1992\nF 03/15/2017",
+      "output": [
+        "C"
+      ]
+    },
+    "172": {
+      "input": "Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 01/21/2010\nB 01/08/2010\nC 10/29/2009\nD 02/05/2010\nE 01/23/2010\nF 01/22/2010",
+      "output": [
+        "F"
+      ]
+    },
+    "173": {
+      "input": "Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 03/14/2002\nB 12/13/2001\nC 03/10/2002\nD 03/13/2002\nE 08/13/2001\nF 02/27/2002",
+      "output": [
+        "D"
+      ]
+    },
+    "174": {
+      "input": "Today is the last day of the first quarter of 2008. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 04/01/2008\nB 01/17/2008\nC 03/31/2008\nD 04/01/2007\nE 04/01/2063\nF 03/22/2008",
+      "output": [
+        "A"
+      ]
+    },
+    "175": {
+      "input": "Jane scheduled 3 apointments with 5 poeple for tomorrow (Tue, 7/9/1972). What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 07/08/1910\nB 07/08/1971\nC 07/09/1971\nD 07/15/1971\nE 07/01/1971\nF 07/07/1971",
+      "output": [
+        "B"
+      ]
+    },
+    "176": {
+      "input": "Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 05/13/2002\nB 03/20/2002\nC 03/19/2002\nD 11/19/2002\nE 03/26/2002",
+      "output": [
+        "C"
+      ]
+    },
+    "177": {
+      "input": "Yesterday was April 30, 2021. What is the date a month ago in MM/DD/YYYY?\nChoices:\nA 04/01/2094\nB 03/22/2021\nC 03/18/2021\nD 03/31/2021\nE 04/01/2021\nF 02/21/2021",
+      "output": [
+        "E"
+      ]
+    },
+    "178": {
+      "input": "Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 03/10/1986\nB 04/10/1985\nC 04/09/1985\nD 04/07/1985\nE 04/11/1986\nF 05/13/1985",
+      "output": [
+        "C"
+      ]
+    },
+    "179": {
+      "input": "Today's meeting is rescheduled to 11 am tomorrow, 10/16/1924. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 10/22/1944\nB 10/22/1924\nC 10/07/1924\nD 10/21/1924\nE 08/22/1925\nF 11/21/1924",
+      "output": [
+        "B"
+      ]
+    },
+    "180": {
+      "input": "Yesterday was April 30, 2021. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 05/15/2020\nB 05/01/2020\nC 05/08/2020\nD 04/01/2020\nE 05/01/1971",
+      "output": [
+        "B"
+      ]
+    },
+    "181": {
+      "input": "The current local time is 3:02 pm of 5/4/2004. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 05/10/2004\nB 05/11/2004\nC 04/12/2004\nD 05/05/2004\nE 05/21/2004\nF 05/25/2004",
+      "output": [
+        "B"
+      ]
+    },
+    "182": {
+      "input": "May 6, 1992 is like yesterday to Jane, but that is actually ten years ago. What is the date 24 hours later in MM/DD/YYYY?\nChoices:\nA 05/15/2002\nB 05/04/2002\nC 05/17/2002\nD 05/07/1982\nE 09/07/2001\nF 05/07/2002",
+      "output": [
+        "F"
+      ]
+    },
+    "183": {
+      "input": "Today is the first day of 2007. What is the date today in MM/DD/YYYY?\nChoices:\nA 05/01/2007\nB 01/01/2007\nC 01/01/1951\nD 01/01/2096\nE 01/22/2007\nF 12/18/2006",
+      "output": [
+        "B"
+      ]
+    },
+    "184": {
+      "input": "Jane visits the bookstore on the 16th of each month starting from the October of 2009. It is her 5th visit to the bookstore today. What is the date one year ago from today in MM/DD/YYYY?\nChoices:\nA 08/16/2009\nB 02/16/2009\nC 02/16/2004\nD 03/13/2009\nE 01/26/2009\nF 02/15/2009",
+      "output": [
+        "B"
+      ]
+    },
+    "185": {
+      "input": "On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date yesterday in MM/DD/YYYY?\nChoices:\nA 07/18/2017\nB 06/17/2017\nC 06/17/2111\nD 07/13/2017\nE 06/26/2017\nF 06/25/2017",
+      "output": [
+        "B"
+      ]
+    },
+    "186": {
+      "input": "The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 06/03/1943\nB 03/15/1943\nC 08/03/1942\nD 06/02/1943\nE 07/04/1943\nF 05/06/1943",
+      "output": [
+        "A"
+      ]
+    },
+    "187": {
+      "input": "Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date today in MM/DD/YYYY?\nChoices:\nA 04/12/1986\nB 04/07/1985\nC 03/10/1986\nD 04/10/1985\nE 04/13/1985\nF 05/13/1985",
+      "output": [
+        "D"
+      ]
+    },
+    "188": {
+      "input": "In the UK, people usually put the day before the month when formatting the date. Therefore, today is 02/01/1987 to them. What is the date tomorrow in MM/DD/YYYY?\nChoices:\nA 12/06/1986\nB 01/03/1987\nC 01/04/1987\nD 01/09/1987\nE 01/03/2035\nF 02/03/1986",
+      "output": [
+        "B"
+      ]
+    },
+    "189": {
+      "input": "Jane is celebrating the last day of Jan 2012. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 03/16/2012\nB 02/01/2012\nC 01/31/2012\nD 02/06/2012\nE 02/07/2014\nF 02/07/2012",
+      "output": [
+        "D"
+      ]
+    },
+    "190": {
+      "input": "It was Sept. 1st, 2021 a week ago. What is the date one week from today in MM/DD/YYYY?\nChoices:\nA 10/15/2020\nB 10/13/2021\nC 09/05/2021\nD 09/09/2021\nE 09/15/2021\nF 09/22/2021",
+      "output": [
+        "E"
+      ]
+    }
+  }
+}
