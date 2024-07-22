@@ -106,6 +106,7 @@ python3 Prompter/AutoPrompter --task_cty "bigbench-ii" \
                     --TEST_DATA_NUMBER 200 \
 
 ```
+our code also support reusing the results of previous steps which can save the use of APIs during the experiment.
 ## Our params in experiment
 
 | ops_method | STORE_BATCH_SIZE | GEN_BATCH_SIZE | GEN_SUBSAMPLE | GEN_DATA_NUMBER | OPS_step |
@@ -122,5 +123,5 @@ python3 Prompter/AutoPrompter --task_cty "bigbench-ii" \
 ```shell
 python3 Prompter/instruction_tree.py
 ```
-![RUNOOB 图标](https://static.jyshare.com/images/runoob-logo.png)
+![图标](https://github.com/rtmaww/LLM_AutoPromptStudy/blob/main/instruction_tree.png)
 
