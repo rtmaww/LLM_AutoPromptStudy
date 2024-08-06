@@ -218,6 +218,34 @@ class AutoPrompter(object):
                         f.write(f'{prompt}\t{score}\n')
         return scalar_scores
     
+    
+    def prompt_initial(self):
+        
+    
+        instructions = []
+        self.initializer = Initializer(inferencer=self.initial_inferencer)
+       
+        ini_instruction_path = f"AutoPrompter/Prompter/data/bigbench-ii/raw/{self.task}_initial_ins.json"
+        if not os.path.exists(ini_instruction_path):
+            if self.GEN_SUBSAMPLE > 1:
+                for cur_ind in range(self.GEN_SUBSAMPLE):
+                    self.initial_conf['[EXAMPLE]'] = subsample_data(self.prompt_gen_data,self.GEN_DATA_NUMBER)
+                    instructions.extend(self.initializer.prompt_initialization(template=self.initial_template,initial_kwargs=self.initial_conf))
+            else:
+                self.initial_conf['[EXAMPLE]'] = subsample_data(self.prompt_gen_data,self.GEN_DATA_NUMBER)
+                instructions = self.initializer.prompt_initialization(template=self.initial_template,initial_kwargs=self.initial_conf)
+         
+            with open(ini_instruction_path,'w',encoding='utf-8') as f:
+                json.dump(instructions,f)
+        else:
+            with open(ini_instruction_path,'r',encoding='utf-8') as f:
+                instructions = json.load(f)
+
+        
+        
+        return instructions
+    
+    
     def prompt_generation(self,ini_instructions = None,ini_step = 0,ini_from_start = False,load_from_ckpt=False):
         
        
@@ -226,27 +254,7 @@ class AutoPrompter(object):
         # 1. support read initial prompts in cache_file or parameter list.
         # 2. support initialized with LLM (need task examples or simple task desc.)
         if ini_instructions is None:
-            instructions = []
-            self.initializer = Initializer(inferencer=self.initial_inferencer)
-            if self.initial_stylization:
-                ini_instruction_path = f"AutoPrompter/Prompter/data/bigbench-ii/raw/style_{self.task}_initial_ins.json"
-            else:
-                ini_instruction_path = f"AutoPrompter/Prompter/data/bigbench-ii/raw/{self.task}_initial_ins.json"
-            
-            
-            if not os.path.exists(ini_instruction_path):
-                for cur_ind in range(self.GEN_SUBSAMPLE):
-                    self.initial_conf['[EXAMPLE]'] = subsample_data(self.prompt_gen_data,self.GEN_DATA_NUMBER)
-                    instructions.extend(self.initializer.prompt_initialization(template=self.initial_template,initial_kwargs=self.initial_conf))
-                if args.initial_stylization:
-                    for ind,item in enumerate(instructions):
-                        instructions[ind] = instructions[ind].strip().lstrip("<START>").strip().rstrip("<END>").strip()
-                        
-                with open(ini_instruction_path,'w',encoding='utf-8') as f:
-                    json.dump(instructions,f)
-            else:
-                with open(ini_instruction_path,'r',encoding='utf-8') as f:
-                    instructions = json.load(f)
+            instructions = self.prompt_initial()
         else:
             print("initial instructions in parameters.")
             instructions = ini_instructions
@@ -870,6 +878,120 @@ class APE_Prompter(AutoPrompter):
         return histories,instructions
    
 
+class Behavior_Prompter(AutoPrompter):
+
+    def set_Constant(self):
+        super().set_Constant()
+        self.method = "Behavior"
+        self.STORE_BATCH_SIZE = 5
+        
+    
+    def set_Conf(self):
+        super().set_Conf()
+       
+        ops_infer_conf = {
+            "model" : "gpt-4",
+            "n":2 ,
+            "system_prompt":"You are a helpful assistant."
+        }
+        
+        self.ops_infer_conf = merge_conf(generation_gen_conf,ops_infer_conf)
+    
+
+    def __init__(self,args) -> None:
+        super().__init__(args)
+        self.gen_inferencer = GPT_Inference(promptBuilder=None,
+                                            gen_kwargs=self.ops_infer_conf)
+        #slots[INS | ERROR EXAMPLE]
+        self.optimization_template_1 = template.Generate_Ins_behavior_Template()
+        #slots [INS | EXAMPLE | FEEDBACK]
+        self.optimization_template_2 = template.Ops_Error_Behavior_Template()
+
+
+
+    def prompt_initial(self):
+        
+        instructions = super().prompt_initial()
+        if self.eval_model == "turbo":
+            self.concat_template = template.Concat_Ins_behavior_Template_Turbo()
+        else:
+            self.concat_template = template.Concat_Ins_behavior_Template_Llama()
+        
+        behavior_instructions = []
+        
+        for instruction in instructions[:1]:
+            random_select_example = subsample_data(self.prompt_gen_data,1)
+            self.generate_example_template_conf = {
+                "[INS]":instruction,
+                "[EXAMPLE]": random_select_example
+                    }
+            
+            example_templete = self.initializer.prompt_initialization(template=self.optimization_template_1,initial_kwargs=self.generate_example_template_conf)
+            
+            compose_instruction = self.concat_template.fill({"[EXAMPLE]":random_select_example,
+                                                             "[INS]":instruction,
+                                                             "[ANSWER]":example_templete[0]})
+            print(compose_instruction)
+            behavior_instructions.append(compose_instruction)
+            
+        return behavior_instructions
+
+            
+    def optimize(self,evaluation_result,error_example = None):
+
+        instructions = evaluation_result.prompts
+        
+        if error_example == None:
+            ERROR_EXAMPLE_COUNT = 2
+
+            error_example = get_error_example(
+                evaluation_result= evaluation_result,
+                examples=self.eval_data,
+                error_demo_cnt=ERROR_EXAMPLE_COUNT
+            )
+        optimized_instructions = []
+        optimized_histories = [[] for i in range(len(instructions))]
+        
+        for ind,instruction in enumerate(instructions):
+            
+
+            optimize_kwargs = {
+                "[ERROR_EXAMPLE]":error_example[ind],
+                # "[EXAMPLE]":error_example[ind][:2]
+            }
+
+
+            split_instruction = instruction.split("#### Examples")[0]
+            example = instruction.replace("## Input", "||||").replace("## Output", "||||").split("||||")[1].strip()
+                
+            feedback_history,update_instructions = self.optimizer.prompt_optimize(
+                template=self.optimization_template_2,
+                prompts=split_instruction,
+                optimize_kwargs=optimize_kwargs
+                )
+            
+            optimized_histories.append(feedback_history)
+            update_instructions = extract_instruction(update_instructions)
+            
+            for ins in update_instructions:
+                _, update_example = self.optimizer.prompt_optimize(
+                    template=self.optimization_template_1,
+                    prompts=ins,
+                    optimize_kwargs= {"[INS]":instruction,
+                    "[EXAMPLE]": ([example],['0'])}
+                    )
+                
+                compose_instruction = self.concat_template.fill({"[EXAMPLE]":example,
+                                                             "[INS]":ins,
+                                                             "[ANSWER]":update_example[0]})
+                
+                
+            
+                optimized_instructions.append(compose_instruction)
+            
+            
+        return optimized_histories,optimized_instructions
+ 
 
 
 
@@ -888,6 +1010,8 @@ if __name__ == "__main__":
         prompter = LLM_AS_OPtimizer_prompter(args)
     elif args.ops_method == "APO_AGENT":
         prompter = APO_Agent_Prompter(args)
+    elif args.ops_method == "Behavior":
+        prompter = Behavior_Prompter(args)
     else:
         raise ValueError ("not implemented")
     #prompter = Muti_Initial_Prompter(args)

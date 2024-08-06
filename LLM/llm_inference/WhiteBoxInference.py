@@ -1,6 +1,6 @@
 
 import sys
-sys.path.append("/Users/wangxiaolei/Downloads/AutoPrompter/LLM")
+sys.path.append("AutoPrompter/LLM")
 from llm_inference.LLMInference import LLMInference,LLMInferenceResult
 
 

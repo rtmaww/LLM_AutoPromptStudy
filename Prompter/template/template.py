@@ -147,7 +147,7 @@ class ErrorExampleTemplate():
 class PromptScoreTemplate():
     def __init__(self) -> None:
         self.template = "text: [INS]\nscore: [SCORE]\n"
-        self.delimiter = "\n"
+        self.delimiter = "\n\n"
     def fill(self,score_dict):
         template = ""
         
@@ -179,7 +179,9 @@ class Initial_Prompt_Fewshot_Template(Template):
     def __init__(self) -> None:
         self.template = \
 '''Following is several examples of a task. The input of each sample are following \"## Input\",and the outputs are following \"## Output\".
+
 [EXAMPLE]
+
 Please read the description and samples and write a BRIEF instruction of this task. The instruction should also specify the formatting of the answer.
 Instruction:'''
         print(self.template)
@@ -236,6 +238,7 @@ class Initial_Prompt_Fewshot_Seed_Template(Template):
     def __init__(self) -> None:
          self.template = \
 '''Following is several examples of a task. The input of each sample are following \"## Input\",and the outputs are following \"## Output\".
+
 [EXAMPLE]
 
 Please read the description and samples and write a BRIEF instruction of this task. [SEED_DICT]
@@ -331,34 +334,7 @@ class EvaluationTemplate(Template):
 
         return super().fill(slots,self.template)
 
-class Concat_Ins_behavior_Template(Template):
-    def __init__(self) -> None:
-        super().__init__()
-        self.template = \
-'''STRICTLY follow every detail of the following instruction and write out all the thinking process BEFORE writing the answer. 
 
-### Instruction
-[INS]
-
-[EXAMPLE]
-(all the thinking process and the answer)
-'''
-
-class ThinkProcessGenerationTemplate(EvaluationTemplate):
-    def __init__(self) -> None:
-        super().__init__()
-        self.template = \
-'''STRICTLY follow every detail of the following instruction and write out all the thinking process BEFORE writing the answer. 
-
-### Instruction
-[INS]
-
-[EXAMPLE]
-(all the thinking process and the answer)
-'''
-    def fill(self, slots, template=None):
-        return super().fill(slots, template)
-    
     
 class Ops_Paraphrase_Plus_Template(Template):
     def __init__(self) -> None:
@@ -405,7 +381,7 @@ class Zero_COT_EvaluationTemplate(Template):
 class Ops_ParaphraseTemplate(Template):
     def __init__(self) -> None:
         self.template = \
-'''Generate a variation of the following instruction while keeping the semantic meaning of every sentence.
+'''Generate a variation of the following instruction while keeping the semantic meaning.
 Input: 
 [INS]
 
@@ -418,15 +394,15 @@ Output:'''
 class Ops_Query_Feedback_Template(Template):
     def __init__(self) -> None:
         self.template = \
-'''I'm trying to write a zero-shot classifier prompt.
-
+'''
 My current prompt is: 
 \"[INS]\" 
 
-But this prompt gets the following examples wrong: 
+But it gets the following examples wrong: 
 [ERROR_EXAMPLE]
 
-give 3 reasons why the prompt could have gotten these examples wrong. Wrap each reason with <START> and <END>.
+give 3 reasons why the prompt could have gotten these examples wrong.
+Wrap each reason with <START> and <END>.
 '''
         self.slots = ['[INS]','[ERROR_EXAMPLE]']
 
@@ -438,8 +414,7 @@ give 3 reasons why the prompt could have gotten these examples wrong. Wrap each 
 class Ops_Update_Feedback_Template(Template):
     def __init__(self) -> None:
         self.template = \
-'''I'm trying to write a zero-shot classifier. 
-
+'''
 My current prompt is: 
 \"[INS]\"  
 
@@ -466,7 +441,6 @@ class Error_Example_Template_Agent(Template):
         self.template = '''[INDEX]
 The model's input is:
 [INPUT]
-
 The model's response is:
 [OUTPUT]
 The correct label is: [Answer]
@@ -538,10 +512,8 @@ class Ops_Query_Feedback_For_Agent(Template):
 
 My current prompt is: 
 [INS]
-
 But this prompt gets the following examples wrong:
 [ERROR_EXAMPLE]
-
 For each wrong example, carefully examine each question and wrong answer step by step, provide comprehensive and different reasons why the prompt leads to the wrong answer. At last, based on all these reasons, summarize and list all the aspects that can improve the prompt.'''
 
         self.slots = ["[INS]","[ERROR_EXAMPLE]"]
@@ -556,16 +528,14 @@ class Ops_Update_For_Agent(Template):
     def __init__(self) -> None:
         self.template = \
 '''I'm writing prompts for a language model designed for a task.
-
 My current prompt is:
 [INS]
-
 But this prompt gets the following examples wrong:
 [ERROR_EXAMPLE]
-
 Based on these errors, the problems with this prompt and the reasons are:
 [FEEDBACK]
-
+There is a list of former prompts including the current prompt, and each prompt is modified from its former prompts:
+[Former_Prompts]
 Based on the above information, please write 2 new prompts following these guidelines:
 1. The new prompts should solve the current prompt's problems.
 2. The new prompts should consider the list of prompts and evolve based on the current prompt.
@@ -574,7 +544,7 @@ Based on the above information, please write 2 new prompts following these guide
 The new prompts are:
 '''
 
-        self.slots = ['[INS]','[ERROR_EXAMPLE]','[FEEDBACK]']
+        self.slots = ['[INS]','[ERROR_EXAMPLE]','[FEEDBACK]','[Former_Prompts]']
     def fill(self,slots,template=None):
         example_template = Error_Example_Template_Agent()
         slots["[ERROR_EXAMPLE]"] = example_template.fill(examples=slots["[ERROR_EXAMPLE]"])
@@ -589,11 +559,11 @@ class Ops_Prompt_Score_Example_Template(Template):
 [INS_SCORE]
 
 Below are some problems.
-##Problems:
 
+Problems:
 [EXAMPLE]
 
-Generate an instruction that is different from all the instructions <INS> above, and has a higher score than all the instructions <INS> above. The instruction should begin with <INS> and end with </INS>. The instruction should be concise, effective and should also specify the formatting of the answer.
+Generate an instruction that is different from all the instructions <INS> above, and has a higher score than all the instructions <INS> above. The instruction should begin with <INS> and end with </INS>. The instruction should be concise, effective, and generally applicable to all problems above.
 '''
         self.slots = ['[INS_SCORE]','[EXAMPLE]']
     def fill(self, slots,template=None):
@@ -627,7 +597,9 @@ Now, I need you to:
     def fill(self, slots, template=None):
         return super().fill(slots, template)
 
-class Ops_Error_Behavior_Template(Ops_Query_Feedback_Template):
+
+
+class Ops_Error_Behavior_Template(Template):
     def __init__(self) -> None:
         super().__init__()
         self.template = \
@@ -640,16 +612,75 @@ However, this instruction got the following samples wrong ("## Input" is followe
 [ERROR_EXAMPLE]
 
 Please read the thinking process of the follower and analyze:
-1. Given the correct answer, anaylze why the follower make mistakes.
-2. How can the instruction be improved to avoid the follower making similar mistakes? Please give 3 explicit suggestions.
-3. Based on the analysis and improvement advice, please SLIGHTLY revise the original instruction to avoid the follower make similar mistakes. Write the instruction in this format:
-<START>
-(improved instruction)
-<END>
+1. Analyze at which step did the follower make mistakes in each example.
+2. Provide 3 suggestions for further breaking down the solution at the failed steps. 
+3. Based on the suggestions, write a new step-by-step instruction that can effectively guide the followers towards successfully completing the task. Wrap the new instruction with <START> and <END>.
 '''
-    def fill(self, slots, template=None):
-        return super().fill(slots, template)
-    
+
+        self.slots = ['[INS]','[ERROR_EXAMPLE]']
+
+    def fill(self,slots,template=None):
+        error_example_template = ErrorExampleTemplate()
+        slots['[ERROR_EXAMPLE]'] = error_example_template.fill(slots['[ERROR_EXAMPLE]'])
+        return super().fill(slots,self.template)
+
+
+class Generate_Ins_behavior_Template(Template):
+    def __init__(self) -> None:
+        super().__init__()
+        self.template = \
+'''STRICTLY follow every detail of the following instruction and write out all the thinking process BEFORE writing the answer. 
+
+### Instruction
+[INS]
+
+[EXAMPLE]
+''' 
+        self.slots = ['[INS]','[EXAMPLE]']
+
+    def fill(self, slots):
+        example_template = ExampleTemplate()
+        slots['[EXAMPLE]'] = example_template.fill(examples=slots['[EXAMPLE]'],test=True)
+        return super().fill(slots)
+
+
+class Concat_Ins_behavior_Template_Turbo(Template):
+    def __init__(self) -> None:
+        super().__init__()
+        self.template = \
+'''[INS]
+
+#### Examples
+Here are some examples to help you thinking. DONOT simply copy the outputs in the examples!
+
+[EXAMPLE]
+[ANSWER]
+'''
+        self.slots = ['[INS]','[EXAMPLE]','[ANSWER]']
+    def fill(self, slots):
+        example_template = ExampleTemplate()
+        slots['[EXAMPLE]'] = example_template.fill(examples=slots['[EXAMPLE]'],test=True)
+        return super().fill(slots)
+
+
+class Concat_Ins_behavior_Template_Llama(Template):
+    def __init__(self) -> None:
+        super().__init__()
+        self.template = \
+'''[INS]
+
+#### Examples
+Here are some examples to help you thinking.
+
+[EXAMPLE]
+[ANSWER]
+'''
+        self.slots = ['[INS]','[EXAMPLE]','[ANSWER]']
+    def fill(self, slots):
+        example_template = ExampleTemplate()
+        slots['[EXAMPLE]'] = example_template.fill(examples=slots['[EXAMPLE]'],test=True)
+        return super().fill(slots)
+
 
 
 
